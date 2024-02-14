@@ -1,0 +1,11 @@
+global.eGravity = 10
+global.playAs = 1
+global.paused = 1
+global.lastPressed = 1
+global.dippSpeed = 10
+global.dippHealth = 20
+global.dippSpecial = 0
+global.dippSpringGet = 0
+global.upgrade = 0
+global.upgrade1Get = 0
+global.upgrade2Get = 0
