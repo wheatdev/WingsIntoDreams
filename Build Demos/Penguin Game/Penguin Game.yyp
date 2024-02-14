@@ -26,6 +26,7 @@
   },
   "resources": [
     {"id":{"name":"dippWalk","path":"sprites/dippWalk/dippWalk.yy",},},
+    {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},},
     {"id":{"name":"placeholder","path":"sprites/placeholder/placeholder.yy",},},
     {"id":{"name":"dippJump2","path":"sprites/dippJump2/dippJump2.yy",},},
     {"id":{"name":"test2","path":"sprites/test2/test2.yy",},},

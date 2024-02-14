@@ -9,6 +9,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"dippWalk","order":8,"path":"sprites/dippWalk/dippWalk.yy",},
+    {"name":"Sprite13","order":13,"path":"sprites/Sprite13/Sprite13.yy",},
     {"name":"placeholder","order":5,"path":"sprites/placeholder/placeholder.yy",},
     {"name":"dippJump2","order":6,"path":"sprites/dippJump2/dippJump2.yy",},
     {"name":"test2","order":12,"path":"sprites/test2/test2.yy",},
