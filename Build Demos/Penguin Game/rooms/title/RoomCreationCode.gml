@@ -4,12 +4,14 @@ global.eGravity = 10
 global.playAs = 1
 global.paused = -1
 global.lastPressed = 1
+global.allowDamage = 0
 
 global.theMoney = 0 
 
 global.dippSpeed = 10
 global.dippHealth = 20
 global.dippHealthMax = 20
+global.dippBounce = 0
 global.dippSpecial = 0
 global.dippSpringGet = 0
 

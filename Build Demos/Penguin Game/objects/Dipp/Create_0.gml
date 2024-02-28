@@ -1,5 +1,6 @@
 image_xscale = .2
 image_yscale = .2
+instance_create_depth(x,y,1,dippScarf)
 
 dippState = 0
 coyoteTime = 0

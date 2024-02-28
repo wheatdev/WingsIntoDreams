@@ -5,3 +5,4 @@ if keyboard_check(vk_down) or keyboard_check(ord("S")){
 }
 image_xscale = .2
 image_yscale = .2
+image_alpha = .7

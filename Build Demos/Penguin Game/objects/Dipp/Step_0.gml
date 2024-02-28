@@ -6,7 +6,7 @@ if global.paused = -1{
 		if place_meeting(x,y+global.eGravity,Ground){
 			y = y - global.eGravity
 			coyoteTime = 5
-			maxHeight = y - 280
+			maxHeight = y - 300
 			jumpState = 1
 			if swordUse < 1{
 				dippState = 1
@@ -15,6 +15,7 @@ if global.paused = -1{
 		if place_meeting(x,y-global.eGravity,Ground){
 			jumpState = 0
 			coyoteTime = 0
+			global.dippBounce = 0
 		}
 		if keyboard_check(ord("A")) or keyboard_check(vk_left){
 			x = x - global.dippSpeed
@@ -37,7 +38,7 @@ if global.paused = -1{
 		if keyboard_check_released(vk_right) or  keyboard_check_released(vk_left) or  keyboard_check_released(ord("A")) or  keyboard_check_released(ord("D")){
 			dippState = 1
 		}
-		if (keyboard_check(ord("Z")) or keyboard_check(ord("I"))) and jumpState = 1{
+		if (keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("I"))) and jumpState = 1{
 			if coyoteTime > 0{
 				jumpState = 2
 				audio_play_sound(dippJumpSE,0,false)
@@ -73,13 +74,13 @@ if global.paused = -1{
 			if keyboard_check(ord("A")) or keyboard_check(ord("D")) or keyboard_check(vk_left) or keyboard_check(vk_right){
 				dippState = 6
 				if keyboard_check(ord("A")) or keyboard_check(vk_left){
-					x = x - (global.dippSpeed * .2)
+					x = x - (global.dippSpeed * 1.05)
 					if place_meeting(x-(global.dippSpeed * 1.2),y,Ground){
 						x = x + (global.dippSpeed * 1.2)
 					}
 				}
 				if keyboard_check(ord("D")) or keyboard_check(vk_right){
-					x = x + (global.dippSpeed * .2)
+					x = x + (global.dippSpeed * 1.05)
 					if place_meeting(x+(global.dippSpeed * 1.2),y,Ground){
 						x = x - (global.dippSpeed * 1.2)
 					}
@@ -102,8 +103,27 @@ if global.paused = -1{
 				swordUse = 0
 			}
 		}
+		if global.dippBounce > 1{
+			y = y - global.eGravity
+			global.dippBounce = global.dippBounce - 1
+			jumpState = 2
+		}
 		if jumpState = 0 and swordUse = 0{
 			dippState = 4
+		}
+		global.allowDamage = global.allowDamage - 1
+		if global.allowDamage < 0{
+			global.allowDamage = 0
+		}
+		if global.allowDamage > 1{
+			dippState = 9
+			image_alpha = .5
+		}
+		else{
+			image_alpha = 1
+		}
+		if global.dippHealth > global.dippHealthMax{
+			global.dippHealth = global.dippHealthMax
 		}
 		if dippState = 1{
 			sprite_index = dippStand
@@ -125,6 +145,9 @@ if global.paused = -1{
 		}
 		if dippState = 7{
 			sprite_index = dippSword3
+		}
+		if dippState = 9{
+			sprite_index = dippPain
 		}
 	}
 }
