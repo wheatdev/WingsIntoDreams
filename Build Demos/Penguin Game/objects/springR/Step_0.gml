@@ -24,12 +24,10 @@ if global.paused = -1{
 		}
 		if bouncePlayer = 1{
 			timer = timer + 1
-			if global.playAs = 1{
-				Player.x = Player.x + 10
-				if Player.x > bouncetoX or timer > 15{
-					bouncePlayer = 0
-					timer = 0
-				}
+			Player.x = Player.x + 10
+			if Player.x > bouncetoX or timer > 15{
+				bouncePlayer = 0
+				timer = 0
 			}
 		}
 		if place_meeting(x,y,DippSword) or place_meeting(x,y-global.eGravity,crusher){

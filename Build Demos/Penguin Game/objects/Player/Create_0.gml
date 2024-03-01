@@ -1,5 +1,5 @@
 pHealth = 20
-pMaxHealth = 20
+pHealthMax = 20
 pSpeed = 10
 pState = 0
 coyoteTime = 0

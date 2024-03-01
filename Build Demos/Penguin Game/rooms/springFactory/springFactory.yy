@@ -7,7 +7,6 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_4449AFAB","path":"rooms/springFactory/springFactory.yy",},
     {"name":"inst_1E43129C","path":"rooms/springFactory/springFactory.yy",},
     {"name":"inst_1F5BB389","path":"rooms/springFactory/springFactory.yy",},
     {"name":"inst_1BADC801","path":"rooms/springFactory/springFactory.yy",},
@@ -301,6 +300,7 @@
     {"name":"inst_5ECBBA14","path":"rooms/springFactory/springFactory.yy",},
     {"name":"inst_7EF0D3EC","path":"rooms/springFactory/springFactory.yy",},
     {"name":"inst_8472BC4","path":"rooms/springFactory/springFactory.yy",},
+    {"name":"inst_4449AFAB","path":"rooms/springFactory/springFactory.yy",},
   ],
   "isDnd": false,
   "layers": [

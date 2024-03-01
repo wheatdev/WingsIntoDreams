@@ -68,17 +68,24 @@ if global.paused = -1{
 		if global.isDamaged > 0{
 			pState = 9
 		}
-		if global.dippHealth > global.dippHealthMax{
-			global.dippHealth = global.dippHealthMax
+		if pHealth > pHealthMax{
+			pHealth = pHealthMax
+		}
+		if global.allowDamage = 0{
+			if place_meeting(x,y-global.eGravity,crusher){
+				pHealth = pHealth - 10
+				global.isDamaged = 15
+				global.allowDamage = 100
+			}
+			if place_meeting(x,y+global.eGravity,spikes){
+				pHealth = pHealth - 5
+				global.pBounce = 20
+				global.allowDamage = 20
+				global.isDamaged = 15
+			}
 		}
 	}
 	else{
-		if global.isDamaged > 0{
-			sprite_index = dippDeath1
-		}
-		if global.isDamaged < 0{
-			sprite_index = dippDeath2
-		}
 		global.isDamaged = global.isDamaged - 2
 		y = y + global.eGravity
 		if place_meeting(x,y+global.eGravity,Ground){
