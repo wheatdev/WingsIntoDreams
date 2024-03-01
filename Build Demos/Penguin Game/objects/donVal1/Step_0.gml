@@ -10,7 +10,7 @@ if direct = 2{
 		direct = 1
 	}
 }
-if place_meeting(x,y,Dipp){
+if place_meeting(x,y,Player){
 	global.theMoney = global.theMoney + 1
 	audio_play_sound(donVal1GetSE,0,false)
 	instance_destroy()

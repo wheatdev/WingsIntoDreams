@@ -15,7 +15,7 @@ if global.paused = -1{
 		if place_meeting(x,y-global.eGravity,Ground){
 			jumpState = 0
 			coyoteTime = 0
-			global.dippBounce = 0
+			global.pBounce = 0
 		}
 		if keyboard_check(ord("A")) or keyboard_check(vk_left){
 			x = x - global.dippSpeed
@@ -46,6 +46,7 @@ if global.paused = -1{
 		}
 		if jumpState = 2{
 			if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down){
+				instance_create_depth(x,y,0,DippSword)
 				swordUse = -1
 			}
 			dippState = 3
@@ -90,6 +91,10 @@ if global.paused = -1{
 				if jumpState = 1{
 					dippState = 5
 				}
+				else{
+					dippState = 8
+					swordUse = swordUse + 3
+				}
 			}
 			if swordUse > 40{
 				swordUse = 0
@@ -103,28 +108,46 @@ if global.paused = -1{
 				swordUse = 0
 			}
 		}
-		if global.dippBounce > 1{
+		if global.pBounce > 1{
 			y = y - global.eGravity
-			global.dippBounce = global.dippBounce - 1
+			global.pBounce = global.pBounce - 1
 			jumpState = 2
 		}
 		if jumpState = 0 and swordUse = 0{
 			dippState = 4
 		}
 		global.allowDamage = global.allowDamage - 1
+		global.isDamaged = global.isDamaged - 1
 		if global.allowDamage < 0{
 			global.allowDamage = 0
 		}
+		if global.isDamaged < 0{
+			global.isDamaged = 0
+		}
 		if global.allowDamage > 1{
-			dippState = 9
 			image_alpha = .5
 		}
 		else{
 			image_alpha = 1
 		}
+		if global.isDamaged > 0{
+			dippState = 9
+		}
 		if global.dippHealth > global.dippHealthMax{
 			global.dippHealth = global.dippHealthMax
 		}
+		
+		if global.dippSpecial = 1{
+			if keyboard_check(ord("P")) or keyboard_check(ord("C")){
+				dippState = 10
+				if place_meeting(x,y+(global.eGravity * 2), Ground){
+					global.pBounce = 45
+				}
+			}
+		}
+			
+		
+		
 		if dippState = 1{
 			sprite_index = dippStand
 		}
@@ -146,8 +169,27 @@ if global.paused = -1{
 		if dippState = 7{
 			sprite_index = dippSword3
 		}
+		if dippState = 8{
+			sprite_index = dippAirSword1
+		}
 		if dippState = 9{
 			sprite_index = dippPain
+		}
+		if dippState = 10{
+			sprite_index = dippSpring
+		}
+	}
+	else{
+		if global.isDamaged > 0{
+			sprite_index = dippDeath1
+		}
+		if global.isDamaged < 0{
+			sprite_index = dippDeath2
+		}
+		global.isDamaged = global.isDamaged - 2
+		y = y + global.eGravity
+		if place_meeting(x,y+global.eGravity,Ground){
+			y = y - global.eGravity
 		}
 	}
 }

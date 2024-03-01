@@ -1,9 +1,9 @@
 if downStab = 0{
 	swordUse = swordUse + 1
-	if swordUse = 40{
+	if swordUse > 40{
 		instance_destroy()
 	}
-	if place_meeting(x,y+global.eGravity,Ground){
+	if place_meeting(x,y+(global.eGravity * 2),Ground){
 		if keyboard_check(vk_left) or keyboard_check(vk_right) or keyboard_check(ord("A")) or keyboard_check(ord("D")){
 			sprite_index = dippSword22
 		}
@@ -14,6 +14,10 @@ if downStab = 0{
 	else{
 		if keyboard_check(vk_left) or keyboard_check(vk_right) or keyboard_check(ord("A")) or keyboard_check(ord("D")){
 			sprite_index = dippSword22
+		}
+		else{
+			sprite_index = dippAirSword2
+			swordUse = swordUse + 3
 		}
 	}
 }

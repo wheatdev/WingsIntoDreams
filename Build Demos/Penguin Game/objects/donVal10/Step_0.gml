@@ -10,7 +10,7 @@ if direct = 2{
 		direct = 1
 	}
 }
-if place_meeting(x,y,Dipp){
+if place_meeting(x,y,Player){
 	global.theMoney = global.theMoney + 10
 	instance_destroy()
 }

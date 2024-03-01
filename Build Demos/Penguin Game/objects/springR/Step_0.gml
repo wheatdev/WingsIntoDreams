@@ -13,8 +13,8 @@ if global.paused = -1{
 				direct = 1
 			}
 		}
-		if place_meeting(x,y,Dipp){
-			if place_meeting(x+64,y,Ground){
+		if place_meeting(x,y,Player){
+			if place_meeting(x+100,y,Ground){
 				bouncetoX = x
 			}
 			else{
@@ -23,16 +23,18 @@ if global.paused = -1{
 			}
 		}
 		if bouncePlayer = 1{
+			timer = timer + 1
 			if global.playAs = 1{
-				Dipp.x = Dipp.x + 10
-				if Dipp.x > bouncetoX{
+				Player.x = Player.x + 10
+				if Player.x > bouncetoX or timer > 15{
 					bouncePlayer = 0
+					timer = 0
 				}
 			}
 		}
 		if place_meeting(x,y,DippSword) or place_meeting(x,y-global.eGravity,crusher){
 			active = 0
-			maxHeight = y + 1000
+			maxHeight = y + 2000
 		}
 		if place_meeting(x+5,y,Ground){
 			instance_create_depth(x-20,y,0,springL)

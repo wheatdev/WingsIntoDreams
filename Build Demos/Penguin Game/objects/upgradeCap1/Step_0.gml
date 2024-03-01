@@ -10,7 +10,7 @@ if direct = 2{
 		direct = 1
 	}
 }
-if place_meeting(x,y,Dipp){
+if place_meeting(x,y,Player){
 	global.upgrade = global.upgrade + 1
 	global.upgrade1Get = 1
 	audio_play_sound(upgradeGetSE,0,false)

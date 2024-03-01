@@ -11,7 +11,8 @@ if direct = 2{
 	}
 }
 allowCollect = allowCollect + 1
-if place_meeting(x,y,Dipp) and allowCollect > 50{
+if place_meeting(x,y,Player) and allowCollect > 50{
 	global.dippSpringGet = 1
+	global.dippSpecial = 1
 	instance_destroy()
 }
