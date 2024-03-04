@@ -20,6 +20,6 @@ global.dippSpringGet = 0
 global.upgrade = 0
 global.upgrade1Get = 0
 global.upgrade2Get = 0
+global.upgrade3Get = 0
 
 global.pauseX = 1
-global.pauseY = 1

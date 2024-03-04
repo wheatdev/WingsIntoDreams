@@ -21,18 +21,18 @@ if global.paused = -1{
 			x = x - global.dippSpeed
 			if swordUse < 1
 				dippState = 2
-			}
-			if place_meeting(x - global.dippSpeed,y,Ground){
-				x = x + global.dippSpeed
-			}			
+			}	
 		if keyboard_check(ord("D")) or keyboard_check(vk_right){
 			x = x+ global.dippSpeed
 			if swordUse < 1{
 				dippState = 2
 			}
-			if place_meeting(x + global.dippSpeed,y,Ground){
-				x = x - global.dippSpeed
-			}
+		}
+		if place_meeting(x - global.dippSpeed,y,Ground){
+			x = x + global.dippSpeed
+		}		
+		if place_meeting(x + global.dippSpeed,y,Ground){
+			x = x - global.dippSpeed
 		}
 
 		if keyboard_check_released(vk_right) or  keyboard_check_released(vk_left) or  keyboard_check_released(ord("A")) or  keyboard_check_released(ord("D")){
