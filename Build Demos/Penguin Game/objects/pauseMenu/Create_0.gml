@@ -1,4 +1,5 @@
 depth = -10
+selected = -1
 instance_create_depth(x,y,0,pauseCharacterMenu)
 instance_create_depth(x,y,0,pauseCharacter)
 instance_create_depth(x,y,0,pauseOption1)
