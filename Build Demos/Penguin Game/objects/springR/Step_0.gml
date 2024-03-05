@@ -33,6 +33,18 @@ if global.paused = -1{
 		if place_meeting(x,y,DippSword) or place_meeting(x,y-global.eGravity,crusher){
 			active = 0
 			maxHeight = y + 2000
+			if place_meeting(x,y,DippSword){
+				if roll = 0{
+					randDrop = irandom_range(0,10)
+					roll = 1
+				}
+				if randDrop = 10{
+					instance_create_depth(x,y,0,heal2)
+				}
+				if randDrop = 9 or randDrop = 8{
+					instance_create_depth(x,y,0,heal1)
+				}
+			}
 		}
 		if place_meeting(x+5,y,Ground){
 			instance_create_depth(x-20,y,0,springL)

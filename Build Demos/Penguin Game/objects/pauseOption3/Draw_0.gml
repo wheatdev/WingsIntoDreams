@@ -1,10 +1,10 @@
 if global.pauseX = 3{
 	if global.playAs = 1{
 		if selectY = 1{
-			draw_text(x-280,y-150,"> HEALTH: " + string(global.dippHealthMax))
+			draw_text(x-280,y-150,"> HEALTH: " + string(global.dippHealth) + "/" +string(global.dippHealthMax))
 		}
 		else{
-			draw_text(x-280,y-150,"HEALTH: " + string(global.dippHealthMax))
+			draw_text(x-280,y-150,"HEALTH: " + string(global.dippHealth) + "/"+ string(global.dippHealthMax))
 		}
 		if selectY = 2{
 			draw_text(x-280,y,"> ATTACK: " + string(global.dippAttack))

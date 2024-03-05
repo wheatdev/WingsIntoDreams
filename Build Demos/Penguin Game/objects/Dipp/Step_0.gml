@@ -1,5 +1,5 @@
 if global.paused = -1{
-	if global.dippHealth > 1{
+	if global.dippHealth > 0{
 		y = y + global.eGravity
 		image_xscale = global.lastPressed/5
 		coyoteTime = coyoteTime - 1
@@ -136,11 +136,14 @@ if global.paused = -1{
 		if global.dippHealth > global.dippHealthMax{
 			global.dippHealth = global.dippHealthMax
 		}
+		if global.dippHealth < 0{
+			global.dippHealth = 0
+		}
 		
 		if global.dippSpecial = 1{
 			if keyboard_check(ord("P")) or keyboard_check(ord("C")){
 				dippState = 10
-				if place_meeting(x,y+(global.eGravity * 2), Ground){
+				if place_meeting(x,y+(global.eGravity * 3), Ground){
 					global.pBounce = 45
 				}
 			}

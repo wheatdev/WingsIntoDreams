@@ -22,6 +22,10 @@ if global.paused = -1{
 		else{
 			image_alpha = 1
 		}
+		y = y + global.eGravity
+		if place_meeting(x,y+global.eGravity,Ground){
+			y = y - global.eGravity	
+		}
 	}
 	else{
 		image_angle = image_angle - 5
