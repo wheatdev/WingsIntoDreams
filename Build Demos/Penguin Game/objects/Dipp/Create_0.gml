@@ -7,3 +7,4 @@ coyoteTime = 0
 jumpState = 0
 maxHeight = y
 swordUse = 0
+inWater = 0

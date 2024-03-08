@@ -23,11 +23,21 @@ if global.pauseX = 2{
 			selectX = selectX - 1
 		}
 		if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")){
-			if selectX = 1 and selectY = 1{
-				global.dippSpecial = 0
+			if global.playAs = 1{
+				if selectX = 1 and selectY = 1{
+					global.dippSpecial = 0
+				}
+				if selectX = 2 and selectY = 1 and global.dippSpringGet = 1{
+					global.dippSpecial = 1
+				}
 			}
-			if selectX = 2 and selectY = 1 and global.dippSpringGet = 1{
-				global.dippSpecial = 1
+			if global.playAs = 2{
+				if selectX = 1 and selectY = 1{
+					global.gumSpecial = 0
+				}
+				if selectX = 2 and selectY = 1 and global.dippSpringGet = 1{
+					global.gumSpecial = 1
+				}
 			}
 		}
 	}

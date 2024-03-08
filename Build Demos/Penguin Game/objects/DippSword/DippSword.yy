@@ -35,5 +35,5 @@
     "path":"sprites/dippSword1/dippSword1.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

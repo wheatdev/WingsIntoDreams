@@ -4,6 +4,9 @@ if global.paused = -1{
 			global.dippHealth = global.dippHealth - 5
 			audio_play_sound(dippHurtSE,0,false)
 		}
+		if global.playAs = 1{
+			global.gumHealth = global.gumHealth - 2
+		}
 		global.pBounce = 20
 		global.allowDamage = 20
 		global.isDamaged = 15

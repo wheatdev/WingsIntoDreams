@@ -5,6 +5,11 @@ if global.playAs = 1{
 	image_xscale = .3
 	image_yscale = .3
 }
+if global.playAs = 2{
+	sprite_index = A2CStand
+	image_xscale = .4
+	image_yscale = .4
+}
 if global.paused = 1{
 	visible = true
 }

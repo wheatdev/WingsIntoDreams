@@ -1,4 +1,4 @@
-if global.dippHealth > 0{
+if global.dippHealth > 0 and global.playAs = 1{
 	x = Dipp.x
 	y = Dipp.y
 	if global.allowDamage > 1{

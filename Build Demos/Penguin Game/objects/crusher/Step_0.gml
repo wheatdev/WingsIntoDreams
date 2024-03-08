@@ -9,6 +9,9 @@ if global.paused = -1{
 				audio_play_sound(dippHurtSE,0,false)
 				global.dippHealth = global.dippHealth - 10
 			}
+			if global.playAs = 2{
+				global.gumHealth = global.gumHealth - 5
+			}
 			global.isDamaged = 15
 			global.allowDamage = 100
 			allowRide = 0
