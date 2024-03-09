@@ -3,11 +3,12 @@ if global.playAs = 2{
 		if global.gumHealth > 0{
 			y = y + global.eGravity
 			image_xscale = global.lastPressed/4
+			image_yscale = global.eGravity/40
 			coyoteTime = coyoteTime - 1
 			if place_meeting(x,y+global.eGravity,Ground){
 				y = y - global.eGravity
 				coyoteTime = 5
-				maxHeight = y - 250
+				maxHeight = y - (25 * global.eGravity)
 				jumpState = 1
 			}
 			if place_meeting(x,y-global.eGravity,Ground){
@@ -38,9 +39,17 @@ if global.playAs = 2{
 			}
 			if jumpState = 2{
 				y = y - (global.eGravity * 2)
-				if y < maxHeight{
-					gumState = 4
-					jumpState = 0
+				if global.eGravity > 0{
+					if y < maxHeight{
+						gumState = 4
+						jumpState = 0
+					}
+				}
+				else{
+					if y > maxHeight{
+						gumState = 4
+						jumpState = 0
+					}
 				}
 				if keyboard_check_released(ord("Z")) or keyboard_check_released(ord("I")){
 					gumState = 4

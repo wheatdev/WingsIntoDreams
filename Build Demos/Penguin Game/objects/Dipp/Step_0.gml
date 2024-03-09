@@ -4,11 +4,12 @@ if global.playAs = 1{
 			if inWater = 0{
 				y = y + global.eGravity
 				image_xscale = global.lastPressed/5
+				image_yscale = global.eGravity/50
 				coyoteTime = coyoteTime - 1
 				if place_meeting(x,y+global.eGravity,Ground){
 					y = y - global.eGravity
 					coyoteTime = 5
-					maxHeight = y - 300
+					maxHeight = y - (30 * global.eGravity)
 					jumpState = 1
 					if swordUse < 1{
 						dippState = 1
@@ -53,9 +54,17 @@ if global.playAs = 1{
 					}
 					dippState = 3
 					y = y - (global.eGravity * 2)
-					if y < maxHeight{
-						dippState = 4
-						jumpState = 0
+					if global.eGravity > 0{
+						if y < maxHeight{
+							dippState = 4
+							jumpState = 0
+						}
+					}
+					else{
+						if y > maxHeight{
+							dippState = 4
+							jumpState = 0
+						}
 					}
 					if keyboard_check_released(ord("Z")) or keyboard_check_released(ord("I")){
 						dippState = 4
@@ -194,7 +203,7 @@ if global.playAs = 1{
 				if keyboard_check(ord("W")) or keyboard_check(vk_up){
 					y = y - global.dippSpeed
 					if place_meeting(x,y,waterSurface){
-						maxHeight = y - 200
+						maxHeight = y - 250
 						jumpState = 2
 						swordUse = 0
 						inWater = 0

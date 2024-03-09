@@ -29,6 +29,7 @@ if global.paused = -1{
 	}
 	else{
 		image_angle = image_angle - 5
+		image_speed = 0
 		y = y + global.eGravity
 		image_alpha = 1
 	}

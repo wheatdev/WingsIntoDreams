@@ -16,7 +16,7 @@ global.playerStartX = 0
 global.playerStartY = 0
 global.dippActive = 1
 global.gumActive = 1
-global.earnestActive = 1
+global.earnestActive = 0
 
 global.dippSpeed = 10
 global.dippHealth = 20

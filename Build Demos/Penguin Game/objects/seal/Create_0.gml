@@ -1,0 +1,8 @@
+image_xscale = .3
+image_yscale = .3
+sealHealth = 3
+allowHit = 0
+angry = 0
+inWater = 0
+timer = 0
+direct = -1
