@@ -15,6 +15,10 @@ if global.paused = -1{
 			eHealth = eHealth - global.dippAttack
 			allowHit = 30
 		}
+		if place_meeting(x,y,gumShoot) and allowHit = 0{
+			eHealth = eHealth - global.gumAttack
+			allowHit = 10
+		}
 		if allowHit > 0{
 		allowHit = allowHit - 1	
 		image_alpha = .5

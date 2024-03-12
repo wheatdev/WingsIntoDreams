@@ -6,3 +6,6 @@ angry = 0
 inWater = 0
 timer = 0
 direct = -1
+range = x
+randDrop = 0
+roll = 0 

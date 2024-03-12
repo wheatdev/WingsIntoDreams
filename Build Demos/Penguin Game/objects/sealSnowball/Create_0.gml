@@ -7,5 +7,7 @@ if Player.x < x{
 else{
 	direct = 1
 }
+active  = 1
 deathY = y + 2000
 randDrop = 0
+roll = 0 

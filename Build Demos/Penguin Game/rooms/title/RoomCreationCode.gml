@@ -1,8 +1,10 @@
 window_set_fullscreen(true)
+window_set_caption("Wings into Dreams")
 
 global.eGravity = 10
 global.playAs = 1
 global.paused = -1
+global.fullscreen = 1
 global.lastPressed = 1
 global.allowDamage = 0
 global.isDamaged = 0 
@@ -22,12 +24,12 @@ global.dippSpeed = 10
 global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
-global.dippSpecial = 0
-global.dippSpringGet = 0
+global.dippSpecial = 1
+global.dippSpringGet = 1
 
 global.gumSpeed = 8
-global.gumHealth = 25
-global.gumHealthMax = 25
+global.gumHealth = 30
+global.gumHealthMax = 30
 global.gumAttack = 3
 global.gumSpecial = 1
 

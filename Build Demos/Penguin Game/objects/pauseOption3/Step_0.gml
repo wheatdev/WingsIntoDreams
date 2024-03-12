@@ -38,7 +38,22 @@ if global.pauseX = 3{
 						global.dippSpeed = global.dippSpeed + 1
 						global.upgrade = global.upgrade - 1
 					}
-			}
+				}
+				if global.playAs = 2{
+					if selectY = 1{
+						global.gumHealth = global.gumHealth + 5
+						global.gumHealthMax = global.gumHealthMax + 5
+						global.upgrade = global.upgrade - 1
+					}
+					if selectY = 2{
+						global.gumAttack = global.gumAttack + 1
+						global.upgrade = global.upgrade - 1
+					}
+					if selectY = 3{
+						global.gumSpeed = global.gumSpeed + 1
+						global.upgrade = global.upgrade - 1
+					}
+				}
 			}
 		}
 	}

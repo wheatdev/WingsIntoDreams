@@ -84,6 +84,21 @@ if global.playAs = 2{
 			if global.gumHealth < 0{
 				global.gumHealth = 0
 			}
+			
+			if keyboard_check(ord("P")){
+				if global.gumSpecial = 1{
+					x  = x + (10 * global.lastPressed)
+					if jumpState = 1{
+						jumpState = 1
+					}
+					else{
+						y = y - (global.eGravity * .2)
+					}
+					if place_meeting(x+(10 * global.lastPressed),y,Ground){
+						x = x - (10 * global.lastPressed)
+					}
+				}
+			}
 		}
 		else{
 			if global.isDamaged > 0{

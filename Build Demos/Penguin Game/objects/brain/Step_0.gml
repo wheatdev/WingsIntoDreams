@@ -66,3 +66,12 @@ view_camera[0] = camera_create_view(Player.x - 683, Player.y - 484, 1366, 768, 0
 if keyboard_check(vk_escape){
 	game_end()
 }
+if keyboard_check_pressed(ord("F")){
+	global.fullscreen = global.fullscreen * -1
+}
+if global.fullscreen = 1{
+	window_set_fullscreen(true)
+}
+if global.fullscreen = -1{
+	window_set_fullscreen(false)
+}

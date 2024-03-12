@@ -2,13 +2,16 @@ if global.paused = -1{
 	if sealHealth > 0{
 		image_xscale = .3 * direct
 		if inWater = 0{
+			range = abs(x - Player.x)
 			y = y + global.eGravity
 			if place_meeting(x,y+global.eGravity,Ground){
 				y = y - global.eGravity
 			}
 			if angry = 0{
 				if timer = 1{
-					instance_create_depth(x,y,0,sealSnowball)
+					if range < 1500{
+						instance_create_depth(x,y,0,sealSnowball)
+					}
 				}
 				if timer > 70{
 					timer = 0
@@ -55,6 +58,12 @@ if global.paused = -1{
 				global.pBounce = 45
 			}
 		}
+		if place_meeting(x,y,gumShoot) and allowHit = 0{
+			sealHealth = sealHealth - global.gumAttack
+			allowHit = 10
+			angry = 1
+			y = y - global.eGravity
+		}
 		if allowHit > 0{
 			allowHit = allowHit - 1
 			image_alpha = .5
@@ -64,6 +73,16 @@ if global.paused = -1{
 		}
 	}
 	else{
+		if roll = 0{
+			randDrop = irandom_range(0,10)
+			if randDrop = 10{
+				instance_create_depth(x,y,0,heal2)
+			}
+			if randDrop = 9 or randDrop = 8{
+				instance_create_depth(x,y,0,heal1)
+			}
+			roll = 1
+		}
 		image_alpha = 1
 		image_speed = 0
 		image_angle = image_angle + 5
