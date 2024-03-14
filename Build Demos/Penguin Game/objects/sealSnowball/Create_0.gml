@@ -1,6 +1,7 @@
 size = .3
 image_xscale = size
 image_yscale =size
+depth = 3
 if Player.x < x{
 	direct = -1
 }

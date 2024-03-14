@@ -1,29 +1,6 @@
 if global.playAs = 1{
 	if global.paused = -1{
 		if global.dippHealth > 0{
-			global.allowDamage = global.allowDamage - 1
-			global.isDamaged = global.isDamaged - 1
-			if global.allowDamage < 0{
-				global.allowDamage = 0
-			}
-			if global.isDamaged < 0{
-				global.isDamaged = 0
-			}
-			if global.allowDamage > 1{
-				image_alpha = .5
-			}
-			else{
-				image_alpha = 1
-			}
-			if global.isDamaged > 0{
-				dippState = 9
-			}
-			if global.dippHealth > global.dippHealthMax{
-				global.dippHealth = global.dippHealthMax
-			}
-			if global.dippHealth < 0{
-				global.dippHealth = 0
-			}
 			if inWater = 0{
 				y = y + global.eGravity
 				image_xscale = global.lastPressed/5
@@ -172,6 +149,29 @@ if global.playAs = 1{
 					swordUse = 0
 				}
 				
+				global.allowDamage = global.allowDamage - 1
+				global.isDamaged = global.isDamaged - 1
+				if global.allowDamage < 0{
+					global.allowDamage = 0
+				}
+				if global.isDamaged < 0{
+					global.isDamaged = 0
+				}
+				if global.allowDamage > 1{
+					image_alpha = .5
+				}
+				else{
+					image_alpha = 1
+				}
+				if global.isDamaged > 0{
+					dippState = 9
+				}
+				if global.dippHealth > global.dippHealthMax{
+					global.dippHealth = global.dippHealthMax
+				}
+				if global.dippHealth < 0{
+					global.dippHealth = 0
+				}
 
 				if dippState = 1{
 					sprite_index = dippStand

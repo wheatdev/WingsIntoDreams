@@ -1,4 +1,4 @@
-depth = 1
+depth = 4
 bHealth = 10
 allowHit = 0
 
