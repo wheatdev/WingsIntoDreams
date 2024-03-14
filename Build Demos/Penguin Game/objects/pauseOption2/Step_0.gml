@@ -3,6 +3,30 @@ if global.paused = 1{
 }
 else{
 	visible = false
+	if global.playAs = 1{
+		if global.dippSpecial = 0{
+			selectX = 1
+			selectY = 1
+		}
+		if global.dippSpecial = 1{
+			selectX = 2
+			selectY = 1
+		}
+		if global.dippSpecial = 2{
+			selectX = 1
+			selectY = 2
+		}
+	}
+	if global.playAs = 2{
+		if global.gumSpecial = 0{
+			selectX = 1
+			selectY = 1
+		}
+		if global.gumSpecial = 1{
+			selectX = 2
+			selectY = 1
+		}
+	}
 }
 x = Player.x
 y = Player.y - (100 + active)
@@ -29,6 +53,9 @@ if global.pauseX = 2{
 				}
 				if selectX = 2 and selectY = 1 and global.dippSpringGet = 1{
 					global.dippSpecial = 1
+				}
+				if selectX = 1 and selectY = 2 and global.dippGlideGet = 1{
+					global.dippSpecial = 2
 				}
 			}
 			if global.playAs = 2{

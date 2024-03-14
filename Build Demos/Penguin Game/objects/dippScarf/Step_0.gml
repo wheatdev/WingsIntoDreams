@@ -11,3 +11,9 @@ if global.dippHealth > 0 and global.playAs = 1{
 else{
 	instance_destroy()
 }
+if global.dippSpecial = 2 and (keyboard_check(ord("P")) or keyboard_check(ord("C"))){
+	visible = false
+}
+else{
+	visible = true
+}

@@ -14,6 +14,14 @@ if global.pauseX = 2{
 				draw_text(x,y-150,"SPRING")
 			}	
 		}
+		if global.dippGlideGet = 1{
+			if selectY = 2 and selectX = 1{
+				draw_text(x-280,y-50,"> GLIDE")
+			}
+			else{
+				draw_text(x-280,y-50,"GLIDE")
+			}	
+		}
 	}
 	if global.playAs = 2{
 		if selectY = 1 and selectX = 1{
@@ -28,6 +36,12 @@ if global.pauseX = 2{
 		else{
 			draw_text(x,y-150,"DASH")
 		}	
+	}
+	if selectX<1{
+		selectX = 1
+	}
+	if selectX > 2{
+		selectX = 2
 	}
 }
 draw_sprite(pauseoption2,0,x,y)

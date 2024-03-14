@@ -26,6 +26,7 @@ global.dippHealthMax = 20
 global.dippAttack = 1
 global.dippSpecial = 1
 global.dippSpringGet = 1
+global.dippGlideGet = 0
 
 global.gumSpeed = 8
 global.gumHealth = 30
@@ -43,4 +44,5 @@ global.upgrade = 0
 global.upgrade1Get = 0
 global.upgrade2Get = 0
 global.upgrade3Get = 0
+global.upgrade4Get = 0
 
