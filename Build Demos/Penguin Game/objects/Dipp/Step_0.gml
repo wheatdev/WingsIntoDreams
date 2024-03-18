@@ -142,7 +142,7 @@ if global.playAs = 1{
 					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) and jumpState != 1){
 						dippState = 11
 						swordUse = -2
-						y = y - (global.eGravity * .7)
+						y = y - (global.eGravity * .85)
 					}
 				}
 				if place_meeting(x,y,waterSurface){
@@ -272,6 +272,26 @@ if global.playAs = 1{
 				if place_meeting(x+global.dippSpeed,y,Ground){
 					x = x - global.dippSpeed
 				}
+				global.allowDamage = global.allowDamage - 1
+				global.isDamaged = global.isDamaged - 1
+				if global.allowDamage < 0{
+					global.allowDamage = 0
+				}
+				if global.isDamaged < 0{
+					global.isDamaged = 0
+				}
+				if global.allowDamage > 1{
+					image_alpha = .5
+				}
+				else{
+					image_alpha = 1
+				}
+				if global.dippHealth > global.dippHealthMax{
+					global.dippHealth = global.dippHealthMax
+				}
+				if global.dippHealth < 0{
+					global.dippHealth = 0
+				}
 			}
 		}
 		else{
@@ -281,10 +301,17 @@ if global.playAs = 1{
 			if global.isDamaged < 0{
 				sprite_index = dippDeath2
 			}
+			image_angle = 0
 			global.isDamaged = global.isDamaged - 2
 			y = y + global.eGravity
 			if place_meeting(x,y+global.eGravity,Ground){
 				y = y - global.eGravity
+			}
+			if place_meeting(x - global.dippSpeed,y,Ground){
+				x = x + global.dippSpeed
+			}		
+			if place_meeting(x + global.dippSpeed,y,Ground){
+				x = x - global.dippSpeed
 			}
 		}
 	}

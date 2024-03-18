@@ -20,10 +20,14 @@ else{
 		global.paused = global.paused * -1
 	}
 	if keyboard_check(ord("A")) or keyboard_check(vk_left){
-		global.lastPressed = -1
+		if global.playAs = 1 and global.dippHealth > 0{
+			global.lastPressed = -1
+		}
 	}
 	if keyboard_check(ord("D")) or keyboard_check(vk_right){
-		global.lastPressed =1
+		if global.playAs = 1 and global.dippHealth > 0{
+			global.lastPressed = 1
+		}
 	}
 	if keyboard_check_pressed(ord("Q")){
 		global.playAs = global.playAs - 1
