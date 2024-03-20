@@ -66,6 +66,7 @@ if global.paused = -1{
 						directX = 1
 					}
 					directY = irandom_range(-1,1)
+					timer = 0
 				}
 			}
 			x = x - (directX * 7)

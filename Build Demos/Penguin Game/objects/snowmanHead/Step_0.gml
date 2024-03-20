@@ -66,24 +66,12 @@ if global.paused = -1{
 			if place_meeting(x+5,y,Ground){
 				x = x - 5
 			}
-			if place_meeting(x+5,y,IceSlope1){
-				y = y - 6.4	
-			}
-			if place_meeting(x+5,y,IceSlope3){
-				y = y - 3.2
-			}
 			image_angle = image_angle - 5
 		}
 		else{
 			x = x - 5
 			if place_meeting(x-5,y,Ground){
 				x = x + 5
-			}
-			if place_meeting(x-5,y,IceSlope2){
-				y = y - 6.4	
-			}
-			if place_meeting(x-5,y,IceSlope4){
-				y = y - 3.2
 			}
 			image_angle = image_angle + 5
 		}

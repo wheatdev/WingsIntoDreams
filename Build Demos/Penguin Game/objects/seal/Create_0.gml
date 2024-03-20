@@ -10,3 +10,4 @@ direct = -1
 range = x
 randDrop = 0
 roll = 0 
+epicFlip = 0

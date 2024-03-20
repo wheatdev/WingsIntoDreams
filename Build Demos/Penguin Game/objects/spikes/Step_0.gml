@@ -8,7 +8,7 @@ if global.paused = -1{
 			global.gumHealth = global.gumHealth - 2
 		}
 		global.pBounce = 20
-		global.allowDamage = 20
+		global.allowDamage = 50
 		global.isDamaged = 15
 	}
 }

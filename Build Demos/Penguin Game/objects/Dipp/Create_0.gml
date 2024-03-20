@@ -9,3 +9,4 @@ jumpState = 0
 maxHeight = y
 swordUse = 0
 inWater = 0
+direct = 0

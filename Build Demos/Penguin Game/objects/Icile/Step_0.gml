@@ -2,7 +2,7 @@ if global.paused = -1{
 	rangeX = abs(x - Player.x)
 	rangeY = abs(y - Player.y)
 	if active = 0{
-		if rangeX < 300 and rangeY < 600{
+		if rangeX < 200 and rangeY < 600{
 			active = 1
 		}
 	}

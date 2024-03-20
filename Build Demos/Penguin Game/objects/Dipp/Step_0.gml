@@ -21,32 +21,37 @@ if global.playAs = 1{
 					coyoteTime = 0
 					global.pBounce = 0
 				}
-				if keyboard_check(ord("A")) or keyboard_check(vk_left){
-					x = x - global.dippSpeed
-					if swordUse < 1
-						dippState = 2
-					}	
-				if keyboard_check(ord("D")) or keyboard_check(vk_right){
-					x = x+ global.dippSpeed
+				if keyboard_check(vk_left) or keyboard_check(ord("A")){
+					direct = -1
+				}
+				if keyboard_check(vk_right) or keyboard_check(ord("D")){
+					direct = 1
+				}
+				if keyboard_check(vk_right) or  keyboard_check(vk_left) or  keyboard_check(ord("A")) or  keyboard_check(ord("D")){
 					if swordUse < 1{
-						dippState = 2
+						dippState = 2	
 					}
 				}
-				if place_meeting(x - global.dippSpeed,y,Ground){
-					x = x + global.dippSpeed
-				}		
-				if place_meeting(x + global.dippSpeed,y,Ground){
-					x = x - global.dippSpeed
-				}
-
 				if keyboard_check_released(vk_right) or  keyboard_check_released(vk_left) or  keyboard_check_released(ord("A")) or  keyboard_check_released(ord("D")){
 					dippState = 1
+					direct = 0
 				}
+				x = x + (global.dippSpeed * direct)
+				if place_meeting(x+(global.dippSpeed * direct),y,Ground){
+					x = x - global.dippSpeed * direct
+					direct = 0
+				}
+				if place_meeting(x+(global.dippSpeed * global.lastPressed),y,Ground){
+					x = x -	(global.dippSpeed * global.lastPressed)
+				}		
 				if (keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("I"))) and jumpState = 1{
 					if coyoteTime > 0{
 						jumpState = 2
 						audio_play_sound(dippJumpSE,0,false)
 					}
+				}
+				if jumpState = 1 and coyoteTime < 1{
+					jumpState = 0
 				}
 				if jumpState = 2{
 					if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down){

@@ -64,6 +64,14 @@ if global.paused = -1{
 			angry = 1
 			y = y - global.eGravity
 		}
+		if place_meeting(x,y,Orca){
+			epicFlip = 1
+		}
+		if epicFlip = 1{
+			sprite_index = sealMove
+			y = y - (global.eGravity * 3)
+			image_angle = image_angle + 15
+		}
 		if allowHit > 0{
 			allowHit = allowHit - 1
 			image_alpha = .5
