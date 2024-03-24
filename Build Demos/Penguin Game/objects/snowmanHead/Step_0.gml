@@ -47,7 +47,7 @@ if global.paused = -1{
 		if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot){
 			flingy = y + 1000
 			if place_meeting(x,y,DippSword) and (keyboard_check(ord("S")) or keyboard_check(vk_down)){
-				global.pBounce = 30
+				global.pBounce = 60
 			}
 			if roll = 0{
 				randDrop = irandom_range(0,10)
@@ -82,6 +82,12 @@ if global.paused = -1{
 			}
 			global.allowDamage = 40
 			global.isDamaged = 10
+		}
+		if place_meeting(x+5,y,IceSlopeG1) or place_meeting(x-5,y,IceSlopeG2){
+			y = y - 3.2
+		}
+		if place_meeting(x+5,y,IceSlopeN1) or place_meeting(x-5,y,IceSlopeN2){
+			y = y - 6.4
 		}
 				
 	}

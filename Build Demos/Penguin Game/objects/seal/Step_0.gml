@@ -1,15 +1,19 @@
 if global.paused = -1{
 	if sealHealth > 0{
 		image_xscale = .3 * direct
+		if abs(Player.x - x) < 50{
+			image_xscale = .3
+		}
 		if inWater = 0{
 			range = abs(x - Player.x)
+			rangeY = abs(Player.y - y)
 			y = y + global.eGravity
 			if place_meeting(x,y+global.eGravity,Ground){
 				y = y - global.eGravity
 			}
 			if angry = 0{
 				if timer = 1{
-					if range < 1500{
+					if range < 3000 and rangeY < 500{
 						instance_create_depth(x,y,0,sealSnowball)
 					}
 				}
@@ -57,6 +61,10 @@ if global.paused = -1{
 			if keyboard_check(ord("S")) or keyboard_check(vk_down){
 				global.pBounce = 45
 			}
+		}
+		if place_meeting(x,y,Snowball) and allowHit = 0{
+			sealHealth = sealHealth - 2
+			allowHit = 50
 		}
 		if place_meeting(x,y,gumShoot) and allowHit = 0{
 			sealHealth = sealHealth - global.gumAttack

@@ -1,0 +1,10 @@
+image_xscale = .2
+image_yscale = .2
+depth = 4
+timer = 0
+rangeX = x
+rangeY = y
+directX = 0
+directY = 0
+active = 1
+sting = 0

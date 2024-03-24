@@ -45,8 +45,8 @@ if global.paused = -1{
 				if Player.x < x{
 					directX = 1
 				}
-				else{
-					directX = -1
+				if Player.x > x{
+					directX = -1	
 				}
 				if Player.y < y{
 					directY = 1
@@ -78,6 +78,9 @@ if global.paused = -1{
 				y = y + (directY * 7)
 			}
 			image_xscale = directX
+			if abs(Player.x - x) < 100{
+				image_xscale = 1
+			}
 			if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 				if global.playAs = 1{
 					global.dippHealth = global.dippHealth - 10
@@ -101,5 +104,9 @@ if global.paused = -1{
 		y = y + global.eGravity
 		image_alpha = 1
 		image_angle = image_angle + 15
+		drop = drop + 1
+		if drop = 1{
+			instance_create_depth(x,y,depth,donVal50)
+		}
 	}
 }

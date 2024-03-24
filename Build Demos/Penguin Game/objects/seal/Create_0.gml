@@ -8,6 +8,7 @@ inWater = 0
 timer = 0
 direct = -1
 range = x
+rangeY = y
 randDrop = 0
 roll = 0 
 epicFlip = 0

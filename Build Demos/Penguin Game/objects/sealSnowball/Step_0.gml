@@ -31,6 +31,15 @@ if global.paused = -1{
 				instance_create_depth(x,y,0,heal1)
 			}
 		}
+		if place_meeting(x,y,Snowball){
+			active = 0
+		}
+		if place_meeting(x+5,y,IceSlopeG1) or place_meeting(x-5,y,IceSlopeG2){
+			y = y - 3.2
+		}
+		if place_meeting(x+5,y,IceSlopeN1) or place_meeting(x-5,y,IceSlopeN2){
+			y = y - 6.4
+		}
 		if place_meeting(x,y,water){
 			size = size - .01
 		}

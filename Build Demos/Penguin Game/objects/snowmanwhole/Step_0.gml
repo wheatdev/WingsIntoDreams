@@ -8,11 +8,17 @@ if global.paused = -1{
 		}
 		range = abs(x - Player.x)
 		image_xscale = direct * .35
+		if abs(Player.x - x) < 50{
+			image_xscale = .35
+		}
 		if x > Player.x{
 			direct = 1
 		}
 		else{
 			direct = -1
+		}
+		if place_meeting(x,y,snowmanHead) and allowAmmends = 1{
+			friend = 1
 		}
 		if friend = 1{
 			allowAmmends = 0
@@ -44,9 +50,6 @@ if global.paused = -1{
 				instance_create_depth(x,y,depth,snowmanSnowball)
 				allowAmmends = 1
 				toss = 0
-			}
-			if place_meeting(x,y,snowmanHead) and allowAmmends = 1{
-				friend = 1
 			}
 			if (place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot))and allowAmmends = 1{
 				active = 0

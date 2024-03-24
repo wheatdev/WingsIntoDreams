@@ -30,3 +30,4 @@ timer = 0
 directX = 1
 directY = 0
 inWater = 1
+drop = 0

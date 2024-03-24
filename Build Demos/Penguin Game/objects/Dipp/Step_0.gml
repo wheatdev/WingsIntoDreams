@@ -23,9 +23,15 @@ if global.playAs = 1{
 				}
 				if keyboard_check(vk_left) or keyboard_check(ord("A")){
 					direct = -1
+					if keyboard_check(vk_right) or keyboard_check(ord("D")){
+						direct = 0	
+					}
 				}
 				if keyboard_check(vk_right) or keyboard_check(ord("D")){
 					direct = 1
+					if keyboard_check(vk_left) or keyboard_check(ord("A")){
+						direct = 0
+					}
 				}
 				if keyboard_check(vk_right) or  keyboard_check(vk_left) or  keyboard_check(ord("A")) or  keyboard_check(ord("D")){
 					if swordUse < 1{
@@ -260,10 +266,23 @@ if global.playAs = 1{
 					y = y + global.dippSpeed
 				}
 				if keyboard_check(ord("A")) or keyboard_check(vk_left){
-					x = x - global.dippSpeed
+					direct = -1
+					if keyboard_check_released(ord("A")) or keyboard_check_released(vk_left){
+						direct = 0
+					}
 				}
 				if keyboard_check(ord("D")) or keyboard_check(vk_right){
-					x = x + global.dippSpeed
+					direct = 1
+					if keyboard_check_released(ord("D")) or keyboard_check_released(vk_right){
+						direct = 0
+					}
+				}
+					
+
+				x = x + global.dippSpeed * direct
+				if place_meeting(x+(global.dippSpeed * direct),y,Ground){
+					x = x - global.dippSpeed * direct
+					direct = 0
 				}
 				if place_meeting(x,y-global.dippSpeed,Ground){
 					y = y + global.dippSpeed

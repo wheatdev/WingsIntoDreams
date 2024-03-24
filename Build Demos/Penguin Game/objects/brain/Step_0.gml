@@ -1,6 +1,6 @@
 if room = title{
 	if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter){
-		room_goto(conicCaves)
+		room_goto(conCaveTemple)
 	}
 }
 else{
@@ -23,9 +23,15 @@ else{
 		if global.playAs = 1 and global.dippHealth > 0{
 			global.lastPressed = -1
 		}
+		if global.playAs = 2 and global.gumHealth > 0{
+			global.lastPressed = -1
+		}
 	}
 	if keyboard_check(ord("D")) or keyboard_check(vk_right){
 		if global.playAs = 1 and global.dippHealth > 0{
+			global.lastPressed = 1
+		}
+		if global.playAs = 2 and global.gumHealth > 0{
 			global.lastPressed = 1
 		}
 	}

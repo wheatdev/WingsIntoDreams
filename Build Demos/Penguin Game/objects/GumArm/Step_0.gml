@@ -39,15 +39,7 @@ if global.gumHealth > 0 and global.playAs = 2{
 		image_angle = 0	
 	}
 	if keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X")){
-		if shootAngle = 0{
-			instance_create_depth(x,y,0,gumShootH)
-		}
-		if shootAngle = 1{
-			instance_create_depth(x,y,0,gumShootUp)
-		}
-		if shootAngle = 2{
-			instance_create_depth(x,y,0,gumShootDown)
-		}
+		instance_create_depth(x,y,0,gumShoot)
 	}
 }
 else{

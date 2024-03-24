@@ -16,21 +16,30 @@ if global.playAs = 2{
 				coyoteTime = 0
 				global.pBounce = 0
 			}
-			if keyboard_check(ord("A")) or keyboard_check(vk_left){
-				x = x - global.gumSpeed
+			if keyboard_check(vk_left) or keyboard_check(ord("A")){
+				direct = -1
+				if keyboard_check(vk_right) or keyboard_check(ord("D")){
+					direct = 0	
+				}
 			}
-			if keyboard_check(ord("D")) or keyboard_check(vk_right){
-				x = x+ global.gumSpeed
+			if keyboard_check(vk_right) or keyboard_check(ord("D")){
+				direct = 1
+				if keyboard_check(vk_left) or keyboard_check(ord("A")){
+					direct = 0
+				}
 			}
-			if place_meeting(x - global.gumSpeed,y,Ground){
-				x = x + global.gumSpeed
-			}		
-			if place_meeting(x + global.gumSpeed,y,Ground){
-				x = x - global.gumSpeed
-			}
+				x = x + (global.gumSpeed * direct)
+				if place_meeting(x+(global.gumSpeed * direct),y,Ground){
+					x = x - global.gumSpeed * direct
+					direct = 0
+				}
+				if place_meeting(x+(global.gumSpeed * global.lastPressed),y,Ground){
+					x = x -	(global.gumSpeed * global.lastPressed)
+				}	
 
 			if keyboard_check_released(vk_right) or  keyboard_check_released(vk_left) or  keyboard_check_released(ord("A")) or  keyboard_check_released(ord("D")){
 				gumState = 1
+				direct = 0
 			}
 			if (keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("I"))) and jumpState = 1{
 				if coyoteTime > 0{

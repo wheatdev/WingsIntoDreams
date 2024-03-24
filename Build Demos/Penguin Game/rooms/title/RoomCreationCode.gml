@@ -13,11 +13,10 @@ global.pBounce = 0
 global.pauseX = 1
 
 global.storyProgress = 0
-global.cutsceneTime = 0
 global.playerStartX = 0
 global.playerStartY = 0
 global.dippActive = 1
-global.gumActive = 0
+global.gumActive = 1
 global.earnestActive = 0
 
 global.dippSpeed = 10
@@ -46,3 +45,9 @@ global.upgrade2Get = 0
 global.upgrade3Get = 0
 global.upgrade4Get = 0
 
+global.key = 0
+global.key1 = 0
+global.key2 = 0
+global.key3 = 0
+global.key4 = 0
+global.mechanism = 0
