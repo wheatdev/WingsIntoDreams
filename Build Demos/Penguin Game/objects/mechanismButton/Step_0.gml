@@ -13,6 +13,12 @@ if global.paused = -1{
 			if room = CCC2{
 				global.mechanism = 1000
 			}
+			if room = CCC3{
+				global.mechanism = 2000	
+			}
+			if room = CCC4{
+				global.mechanism = 1000	
+			}
 			activated = 2
 		}
 	}

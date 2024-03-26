@@ -4,5 +4,5 @@ audio_play_sound(conicCavesMusic,0,true)
 global.pBounce = 0
 global.isDamaged = 0
 global.allowDamage = 0
-
 global.key = 0
+instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)

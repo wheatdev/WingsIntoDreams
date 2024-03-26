@@ -3,8 +3,8 @@ if global.paused = -1{
 	if place_meeting(x,y,Player){
 		audio_play_sound(portalTeleport,0,false)
 		if room = conCaveTemple{
-			global.playerStartX = 704
-			global.playerStartY = 64
+			global.playerStartX = 224
+			global.playerStartY = 480
 			room_goto(CCC3)
 		}
 	}
