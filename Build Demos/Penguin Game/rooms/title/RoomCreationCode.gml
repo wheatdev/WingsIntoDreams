@@ -14,7 +14,7 @@ global.pBounce = 0
 global.pauseX = 1
 
 global.storyProgress = 0
-global.lastIn = 0
+global.lastIn = 1
 global.cutsceneTimer = 0
 global.cameraActive = 0
 global.playerStartX = 255

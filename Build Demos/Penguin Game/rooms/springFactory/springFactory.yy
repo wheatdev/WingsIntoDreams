@@ -625,6 +625,7 @@
     {"name":"inst_10D8E618","path":"rooms/springFactory/springFactory.yy",},
     {"name":"inst_361BF29A","path":"rooms/springFactory/springFactory.yy",},
     {"name":"inst_33E6E4BF","path":"rooms/springFactory/springFactory.yy",},
+    {"name":"inst_AD5BCF3","path":"rooms/springFactory/springFactory.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -1248,6 +1249,7 @@
         {"$GMRInstance":"","%Name":"inst_DA09734","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_DA09734","objectId":{"name":"SlopeG1","path":"objects/SlopeG1/SlopeG1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16832.0,"y":-6304.0,},
         {"$GMRInstance":"","%Name":"inst_508CDB59","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_508CDB59","objectId":{"name":"SlopeG1","path":"objects/SlopeG1/SlopeG1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":16768.0,"y":-6272.0,},
         {"$GMRInstance":"","%Name":"inst_33E6E4BF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33E6E4BF","objectId":{"name":"checkpoint","path":"objects/checkpoint/checkpoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":9.0,"scaleY":1.0,"x":13472.0,"y":2752.0,},
+        {"$GMRInstance":"","%Name":"inst_AD5BCF3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_AD5BCF3","objectId":{"name":"HUD","path":"objects/HUD/HUD.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":288.0,"y":160.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

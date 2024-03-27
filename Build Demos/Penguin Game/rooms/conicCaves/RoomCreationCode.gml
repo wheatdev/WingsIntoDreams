@@ -5,6 +5,7 @@ global.pBounce = 0
 global.isDamaged = 0
 global.allowDamage = 0
 global.key = 0
+global.lastIn = 4
 instance_create_depth(global.playerStartX,global.playerStartY,0,dippScarf)
 if global.storyProgress < 4{
 	global.storyProgress = 4

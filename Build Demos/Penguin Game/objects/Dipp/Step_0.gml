@@ -153,6 +153,7 @@ if global.playAs = 1{
 					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) and jumpState != 1){
 						dippState = 11
 						swordUse = 0
+						global.pBounce = 0
 						y = y - (global.eGravity * .85)
 					}
 				}

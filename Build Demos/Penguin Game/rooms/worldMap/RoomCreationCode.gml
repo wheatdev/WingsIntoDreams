@@ -8,3 +8,7 @@ global.key2 = 0
 global.key3 = 0
 global.key4 = 0
 global.mechanism = 0
+
+global.dippHealth = global.dippHealthMax
+global.gumHealth = global.gumHealthMax
+global.earnestHealth = global.earnestHealthMax
