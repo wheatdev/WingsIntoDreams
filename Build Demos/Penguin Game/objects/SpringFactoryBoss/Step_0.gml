@@ -58,6 +58,6 @@ if global.paused = -1{
 		}
 	}
 	else{
-		room_goto(conicCaves)
+		room_goto(worldMap)
 	}
 }

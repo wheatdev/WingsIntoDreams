@@ -1,4 +1,4 @@
-if global.paused = -1{
+if global.paused = -1 and global.cameraActive = 1{
 	if state = 1{
 		if flingx = 1{
 			x = x - 20

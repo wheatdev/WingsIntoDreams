@@ -71,7 +71,12 @@ else{
 			global.playAs = 2
 		}
 	}
-view_camera[0] = camera_create_view(Player.x - 683, Player.y - 484, 1366, 768, 0, Dipp, 5, 5, -1, -1);
+if global.cameraActive = 1{	
+	view_camera[0] = camera_create_view(Player.x - 683, Player.y - 484, 1366, 768, 0, Dipp, 5, 5, -1, -1)
+}
+if room = conCaveTemple and global.cameraActive = 0{
+	view_camera[0] = camera_create_view(playerCutscene.x - 683, playerCutscene.y - 484, 1366, 768, 0, Dipp, 5, 5, -1, -1)
+}
 }
 if keyboard_check(vk_escape){
 	game_end()

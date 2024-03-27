@@ -1,4 +1,4 @@
-if global.paused = -1{
+if global.paused = -1 and global.cameraActive = 1{
 	if eHealth > 0{
 		range = abs(x - Player.x)
 		shoot = shoot + 1

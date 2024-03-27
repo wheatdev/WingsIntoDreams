@@ -5,8 +5,8 @@ if global.paused = -1{
 		}
 		else{
 			timer = timer + 1
-			if timer = 100{
-				instance_create_depth(x,y-600,0,springCanonL)
+			if timer = 300{
+				instance_create_depth(x,y-1200,0,springCanonL)
 			}
 		}
 	}

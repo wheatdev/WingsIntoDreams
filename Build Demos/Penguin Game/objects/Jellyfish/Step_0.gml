@@ -1,4 +1,4 @@
-if global.paused = -1{
+if global.paused = -1 and global.cameraActive = 1{
 	if active = 1{
 		rangeX = abs(x - Player.x)
 		rangeY = abs(y - Player.y)

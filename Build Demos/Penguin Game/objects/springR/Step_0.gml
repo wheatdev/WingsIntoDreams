@@ -13,7 +13,7 @@ if global.paused = -1{
 				direct = 1
 			}
 		}
-		if place_meeting(x,y,Player){
+		if place_meeting(x,y,Player) and global.allowDamage = 0{
 			if place_meeting(x+100,y,Ground){
 				bouncetoX = x
 			}

@@ -89,7 +89,7 @@ if global.playAs = 1{
 						swordUse = -1
 					}	
 				}
-				if keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X")) and swordUse = 0{
+				if (keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X"))) and swordUse = 0{
 					instance_create_depth(x,y,0,DippSword)
 					swordUse = 1
 				}
@@ -143,7 +143,7 @@ if global.playAs = 1{
 				if global.dippSpecial = 1{
 					if keyboard_check(ord("P")) or keyboard_check(ord("C")){
 						dippState = 10
-						swordUse = -2
+						swordUse = 0
 						if place_meeting(x,y+(global.eGravity * 3), Ground){
 							global.pBounce = 45
 						}
@@ -152,7 +152,7 @@ if global.playAs = 1{
 				if global.dippSpecial = 2{
 					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) and jumpState != 1){
 						dippState = 11
-						swordUse = -2
+						swordUse = 0
 						y = y - (global.eGravity * .85)
 					}
 				}

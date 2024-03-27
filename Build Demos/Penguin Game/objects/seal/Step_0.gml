@@ -1,4 +1,4 @@
-if global.paused = -1{
+if global.paused = -1 and global.cameraActive = 1{
 	if sealHealth > 0{
 		image_xscale = .3 * direct
 		if abs(Player.x - x) < 50{

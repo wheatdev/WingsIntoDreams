@@ -21,7 +21,7 @@ if global.paused = -1{
 			global.playerStartY = 5120
 		}
 			global.key = global.key + 1
-			audio_play_sound(portalTeleport,0,false)
+			audio_play_sound(portalTeleportSE,0,false)
 			room_goto(conCaveTemple)
 	}
 	if direct = 1{

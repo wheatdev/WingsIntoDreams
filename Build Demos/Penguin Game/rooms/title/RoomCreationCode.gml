@@ -1,4 +1,5 @@
 window_set_fullscreen(true)
+randomize()
 window_set_caption("Wings into Dreams")
 
 global.eGravity = 10
@@ -13,6 +14,9 @@ global.pBounce = 0
 global.pauseX = 1
 
 global.storyProgress = 0
+global.lastIn = 0
+global.cutsceneTimer = 0
+global.cameraActive = 0
 global.playerStartX = 255
 global.playerStartY = 563
 global.lastSafeX = 0

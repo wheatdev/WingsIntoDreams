@@ -5,6 +5,10 @@ if place_meeting(x,y,DippSword) and donValChest = 0{
 		global.pBounce = 20
 	}
 }
+if place_meeting(x,y,Player) and(keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up)) and donValChest= 0{
+	donValChest = 1
+	instance_create_depth(x,y-50,-1,donVal50)
+}
 if donValChest = 1{
 	sprite_index = chestopen
 }

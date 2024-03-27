@@ -26,7 +26,7 @@ if global.paused = -1{
 		y = startY + 40	
 		global.mechanism = global.mechanism - 1
 		if global.mechanism = 0{
-			audio_play_sound(portalTeleport,0,false)
+			audio_play_sound(portalTeleportSE,0,false)
 			room_restart()
 		}
 	}

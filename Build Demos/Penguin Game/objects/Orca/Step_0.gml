@@ -1,4 +1,4 @@
-if global.paused = -1{
+if global.paused = -1 and global.cameraActive = 1{
 	if oHealth > 0{
 		if (place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot)) and allowHit = 0{
 			allowHit = 50
