@@ -12,9 +12,12 @@ global.isDamaged = 0
 global.theMoney = 0 
 global.pBounce = 0
 global.pauseX = 1
+global.escapeRope = 0
 
 global.storyProgress = 0
 global.lastIn = 1
+global.minesUnlock = 0
+
 global.cutsceneTimer = 0
 global.cameraActive = 0
 global.playerStartX = 255
@@ -57,3 +60,5 @@ global.key2 = 0
 global.key3 = 0
 global.key4 = 0
 global.mechanism = 0
+
+global.arcade1 = 0

@@ -10,8 +10,8 @@ global.isDamaged = 0
 global.allowDamage = 0
 global.lastIn = 5
 instance_create_depth(global.playerStartX,global.playerStartY,0,dippScarf)
-if global.storyProgress < 5{
-	global.storyProgress = 5
+if global.storyProgress < 6{
+	global.storyProgress = 6
 	global.cameraActive = 0
 	instance_create_depth(global.playerStartX,global.playerStartY,0,playerCutscene)
 }

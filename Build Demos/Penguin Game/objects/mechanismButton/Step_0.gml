@@ -8,7 +8,7 @@ if global.paused = -1{
 		y = y + 2
 		if y > startY + 40{
 			if room = CCC1{
-				global.mechanism = 700	
+				global.mechanism = 750	
 			}
 			if room = CCC2{
 				global.mechanism = 1000

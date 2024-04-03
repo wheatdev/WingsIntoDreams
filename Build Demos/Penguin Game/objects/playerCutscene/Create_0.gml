@@ -4,6 +4,11 @@ if global.playAs = 1{
 	image_xscale = .2
 	image_yscale = global.eGravity/50	
 }
+if room = Shop1{
+	type = 0
+	xVal1 = 0
+	yVal2 = 150
+}
 if room = springFactory{
 	global.cameraActive = 0
 	type = 1	

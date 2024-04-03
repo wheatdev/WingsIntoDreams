@@ -54,6 +54,7 @@
     {"name":"mpL","order":27,"path":"objects/mpL/mpL.yy",},
     {"name":"mpR","order":28,"path":"objects/mpR/mpR.yy",},
     {"name":"mpU","order":25,"path":"objects/mpU/mpU.yy",},
+    {"name":"brainShop","order":103,"path":"objects/brainShop/brainShop.yy",},
     {"name":"Orca","order":67,"path":"objects/Orca/Orca.yy",},
     {"name":"pauseCharacter","order":33,"path":"objects/pauseCharacter/pauseCharacter.yy",},
     {"name":"pauseCharacterMenu","order":34,"path":"objects/pauseCharacterMenu/pauseCharacterMenu.yy",},
@@ -95,6 +96,7 @@
     {"name":"upgradeCap2","order":29,"path":"objects/upgradeCap2/upgradeCap2.yy",},
     {"name":"upgradeCap3","order":43,"path":"objects/upgradeCap3/upgradeCap3.yy",},
     {"name":"upgradeCap4","order":61,"path":"objects/upgradeCap4/upgradeCap4.yy",},
+    {"name":"Walter","order":102,"path":"objects/Walter/Walter.yy",},
     {"name":"water","order":50,"path":"objects/water/water.yy",},
     {"name":"waterSurface","order":51,"path":"objects/waterSurface/waterSurface.yy",},
     {"name":"CCC1","order":9,"path":"rooms/CCC1/CCC1.yy",},
@@ -219,5 +221,7 @@
     {"name":"testice32","order":89,"path":"sprites/testice32/testice32.yy",},
     {"name":"testwater","order":57,"path":"sprites/testwater/testwater.yy",},
     {"name":"upgrade","order":23,"path":"sprites/upgrade/upgrade.yy",},
+    {"name":"walterSmoke","order":100,"path":"sprites/walterSmoke/walterSmoke.yy",},
+    {"name":"walterTalk","order":101,"path":"sprites/walterTalk/walterTalk.yy",},
   ],
 }

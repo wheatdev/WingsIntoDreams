@@ -7,8 +7,8 @@ global.allowDamage = 0
 global.key = 0
 global.lastIn = 4
 instance_create_depth(global.playerStartX,global.playerStartY,0,dippScarf)
-if global.storyProgress < 4{
-	global.storyProgress = 4
+if global.storyProgress < 5{
+	global.storyProgress = 5
 	instance_create_depth(global.playerStartX-850,global.playerStartY-220,0,playerCutscene)
 }
 else{

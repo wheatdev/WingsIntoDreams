@@ -1,3 +1,16 @@
+if type = 0{
+	if xVal1 = 0{
+		sprite_index =dippWalk
+		x = x + global.dippSpeed
+		if x > yVal2{
+			xVal1 = 1
+		}
+	}
+	if xVal1 = 1{
+		sprite_index = dippStand
+	}
+			
+}
 if type = 1{
 	sprite_index = dippWalk
 	image_xscale = 1/xVal1
