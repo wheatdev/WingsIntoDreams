@@ -157,6 +157,17 @@ if global.playAs = 1{
 						y = y - (global.eGravity * .85)
 					}
 				}
+				
+				if global.dippSpecial = 3{
+					if keyboard_check_pressed(ord("P")) or keyboard_check(ord("C")){
+						timer = 20
+						instance_create_depth(x,y,depth,Dynamite)
+					}
+					if timer >0{
+						dippState = 12
+						timer = timer - 1
+					}
+				}
 				if place_meeting(x,y,waterSurface){
 					swordUse = 0
 				}
@@ -217,6 +228,9 @@ if global.playAs = 1{
 				}
 				if dippState = 11{
 					sprite_index = dippGlide
+				}
+				if dippState = 12{
+					sprite_index = dippThrow
 				}
 			}
 			else{

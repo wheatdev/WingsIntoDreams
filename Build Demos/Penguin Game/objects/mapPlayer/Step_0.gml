@@ -37,6 +37,9 @@ if levelGoTo = 2{
 	if (keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right)) and global.storyProgress > 3{
 		levelGoTo = 4
 	}
+	if (keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down)) and global.minesUnlock > 0{
+		levelGoTo = 6
+	}
 	if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z"))) and timer > 30{
 		room_goto(Shop1)	
 	}
@@ -73,11 +76,29 @@ if levelGoTo = 4{
 if levelGoTo = 5{
 	x = 1632
 	y = 1600
-		global.lastPressed = -1
+	global.lastPressed = -1
 	if keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up){
 		levelGoTo = 4
 	}
 	if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z"))) and timer > 30{
 		room_goto(conCaveTemple)	
+	}
+}
+if levelGoTo = 6{
+	x = 0
+	y = 0
+	global.lastPressed = 1
+	if global.minesUnlock = 1{
+		global.playerStartX = 640
+		global.playerStartY = -1040
+	}
+	if global.minesUnlock = 2{
+		
+	}
+	if keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up){
+		levelGoTo = 2
+	}
+	if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z"))) and timer > 30{
+		room_goto(mineDownUnder)	
 	}
 }

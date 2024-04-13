@@ -53,3 +53,13 @@ if type = 3{
 		instance_destroy()
 	}
 }
+if type = 4{
+	sprite_index = dippSwimSword22
+	image_angle = image_angle - 25
+	y = y + (global.eGravity * 2)
+	if y > 489{
+		instance_create_depth(x,y,depth,Dipp)
+		global.cameraActive = 1
+		instance_destroy()
+	}
+}

@@ -14,7 +14,6 @@ if global.paused = -1{
 			}
 			global.isDamaged = 15
 			global.allowDamage = 100
-			allowRide = 0
 		}
 	}
 	if active = 2{
@@ -23,13 +22,7 @@ if global.paused = -1{
 			active = 1
 		}
 	}
-	if place_meeting(x,y-global.eGravity,Player) and allowRide = 1{
+	if place_meeting(x,y-global.eGravity,Player) and global.allowDamage = 0{
 		Player.y = Player.y - global.eGravity
 	}
-}
-if global.allowDamage = 0 or keyboard_check(ord("I")) or keyboard_check(ord("Z")){
-	allowRide = 1
-}
-if global.dippHealth < 1{
-	allowRide = 0
 }

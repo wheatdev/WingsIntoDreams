@@ -1,6 +1,6 @@
 if room = title{
 	if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter){
-		room_goto(springFactory)
+		room_goto(worldMap)
 	}
 }
 else{

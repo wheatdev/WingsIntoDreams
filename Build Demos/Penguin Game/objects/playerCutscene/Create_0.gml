@@ -29,6 +29,9 @@ if room = conCaveTemple{
 	depth = -4
 	type = 3
 }
+if room  = mineDownUnder{
+	type = 4	
+}
 if room = donnerShipInside{
-	type = 4
+	type = 5
 }

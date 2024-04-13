@@ -32,9 +32,10 @@ global.dippSpeed = 10
 global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
-global.dippSpecial = 0
-global.dippSpringGet = 0
+global.dippSpecial = 1
+global.dippSpringGet =1
 global.dippGlideGet = 0
+global.dippDynaGet = 0
 
 global.gumSpeed = 8
 global.gumHealth = 30
