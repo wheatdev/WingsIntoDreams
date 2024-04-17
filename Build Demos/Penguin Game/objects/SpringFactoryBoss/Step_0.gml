@@ -15,6 +15,11 @@ if global.paused = -1{
 				runAwayX = 1
 			}
 		}
+		if place_meeting(x,y,Dynamite) and allowHit = 0{
+			bHealth = bHealth  - (global.dippAttack * 2)
+			allowHit = 150
+			runAwayX = 1
+		}
 		if place_meeting(x,y,gumShoot) and allowHit = 0{
 			bHealth = bHealth - global.gumAttack
 			allowHit = 150

@@ -63,6 +63,12 @@ if global.paused = -1 and global.cameraActive = 1{
 			}
 		}
 		if place_meeting(x,y,Snowball) and allowHit = 0{
+			sealHealth = sealHealth - (global.dippAttack * 2)
+			allowHit = 50
+			angry = 1
+			y = y - global.eGravity
+		}
+		if place_meeting(x,y,Snowball) and allowHit = 0{
 			sealHealth = sealHealth - 2
 			allowHit = 50
 		}

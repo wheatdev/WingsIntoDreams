@@ -21,24 +21,24 @@ if global.playAs = 1{
 					coyoteTime = 0
 					global.pBounce = 0
 				}
-				if keyboard_check(vk_left) or keyboard_check(ord("A")){
+				if keyboard_check(vk_left) or keyboard_check(ord("A")) or gamepad_button_check(0,gp_padl){
 					direct = -1
-					if keyboard_check(vk_right) or keyboard_check(ord("D")){
+					if keyboard_check(vk_right) or keyboard_check(ord("D")) or gamepad_button_check(0,gp_padr){
 						direct = 0	
 					}
 				}
-				if keyboard_check(vk_right) or keyboard_check(ord("D")){
+				if keyboard_check(vk_right) or keyboard_check(ord("D")) or gamepad_button_check(0,gp_padr){
 					direct = 1
-					if keyboard_check(vk_left) or keyboard_check(ord("A")){
+					if keyboard_check(vk_left) or keyboard_check(ord("A")) or gamepad_button_check(0,gp_padl){
 						direct = 0
 					}
 				}
-				if keyboard_check(vk_right) or  keyboard_check(vk_left) or  keyboard_check(ord("A")) or  keyboard_check(ord("D")){
+				if keyboard_check(vk_right) or  keyboard_check(vk_left) or  keyboard_check(ord("A")) or  keyboard_check(ord("D")) or gamepad_button_check(0,gp_padr) or gamepad_button_check(0,gp_padl){
 					if swordUse < 1{
 						dippState = 2	
 					}
 				}
-				if keyboard_check_released(vk_right) or  keyboard_check_released(vk_left) or  keyboard_check_released(ord("A")) or  keyboard_check_released(ord("D")){
+				if keyboard_check_released(vk_right) or  keyboard_check_released(vk_left) or  keyboard_check_released(ord("A")) or  keyboard_check_released(ord("D")) or gamepad_button_check_released(0,gp_padr) or gamepad_button_check_released(0,gp_padl){
 					dippState = 1
 					direct = 0
 				}
@@ -50,7 +50,7 @@ if global.playAs = 1{
 				if place_meeting(x+(global.dippSpeed * global.lastPressed),y,Ground){
 					x = x -	(global.dippSpeed * global.lastPressed)
 				}		
-				if (keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("I"))) and jumpState = 1{
+				if (keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("I")) or gamepad_button_check_pressed(0,gp_face1)) and jumpState = 1{
 					if coyoteTime > 0{
 						jumpState = 2
 						audio_play_sound(dippJumpSE,0,false)
@@ -60,7 +60,7 @@ if global.playAs = 1{
 					jumpState = 0
 				}
 				if jumpState = 2{
-					if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down){
+					if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0,gp_padd){
 						instance_create_depth(x,y,0,DippSword)
 						swordUse = -1
 					}
@@ -78,32 +78,32 @@ if global.playAs = 1{
 							jumpState = 0
 						}
 					}
-					if keyboard_check_released(ord("Z")) or keyboard_check_released(ord("I")){
+					if keyboard_check_released(ord("Z")) or keyboard_check_released(ord("I")) or gamepad_button_check_released(0,gp_face1){
 						dippState = 4
 						jumpState = 0
 					}
 				}
 				if jumpState = 0{			
-					if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down){
+					if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0,gp_padd){
 						instance_create_depth(x,y,0,DippSword)
 						swordUse = -1
 					}	
 				}
-				if (keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X"))) and swordUse = 0{
+				if (keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X")) or gamepad_button_check_pressed(0,gp_face3)) and swordUse = 0{
 					instance_create_depth(x,y,0,DippSword)
 					swordUse = 1
 				}
 				if swordUse > 0{
 					swordUse = swordUse + 1
-					if keyboard_check(ord("A")) or keyboard_check(ord("D")) or keyboard_check(vk_left) or keyboard_check(vk_right){
+					if keyboard_check(ord("A")) or keyboard_check(ord("D")) or keyboard_check(vk_left) or keyboard_check(vk_right) or gamepad_button_check(0,gp_padl)  or gamepad_button_check(0,gp_padr){
 						dippState = 6
-						if keyboard_check(ord("A")) or keyboard_check(vk_left){
+						if keyboard_check(ord("A")) or keyboard_check(vk_left) or gamepad_button_check(0,gp_padl){
 							x = x - (global.dippSpeed * 1.05)
 							if place_meeting(x-(global.dippSpeed * 1.2),y,Ground){
 								x = x + (global.dippSpeed * 1.2)
 							}
 						}
-						if keyboard_check(ord("D")) or keyboard_check(vk_right){
+						if keyboard_check(ord("D")) or keyboard_check(vk_right) or gamepad_button_check(0,gp_padr){
 							x = x + (global.dippSpeed * 1.05)
 							if place_meeting(x+(global.dippSpeed * 1.2),y,Ground){
 								x = x - (global.dippSpeed * 1.2)
@@ -141,7 +141,7 @@ if global.playAs = 1{
 				}
 		
 				if global.dippSpecial = 1{
-					if keyboard_check(ord("P")) or keyboard_check(ord("C")){
+					if keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2){
 						dippState = 10
 						swordUse = 0
 						if place_meeting(x,y+(global.eGravity * 3), Ground){
@@ -150,7 +150,7 @@ if global.playAs = 1{
 					}
 				}
 				if global.dippSpecial = 2{
-					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) and jumpState != 1){
+					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and jumpState != 1{
 						dippState = 11
 						swordUse = 0
 						global.pBounce = 0
@@ -159,7 +159,7 @@ if global.playAs = 1{
 				}
 				
 				if global.dippSpecial = 3{
-					if keyboard_check_pressed(ord("P")) or keyboard_check(ord("C")){
+					if keyboard_check_pressed(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
 						timer = 20
 						instance_create_depth(x,y,depth,Dynamite)
 					}
@@ -240,7 +240,7 @@ if global.playAs = 1{
 				if place_meeting(x,y+(global.eGravity/5), Ground){
 					y = y - (global.eGravity/5)
 				}
-				if keyboard_check(ord("W")) or keyboard_check(vk_up){
+				if keyboard_check(ord("W")) or keyboard_check(vk_up) or gamepad_button_check(0,gp_padu){
 					y = y - global.dippSpeed
 					if place_meeting(x,y,waterSurface){
 						maxHeight = y - 250
@@ -250,11 +250,11 @@ if global.playAs = 1{
 						image_angle = 0
 					}
 				}
-				if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z"))) and swordUse = 0{
+				if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1)) and swordUse = 0{
 					instance_create_depth(x,y,0,DippSword)
 					swordUse = -1
 				}
-				if (keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X"))) and swordUse = 0{
+				if (keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X"))or gamepad_button_check_pressed(0,gp_face3)) and swordUse = 0{
 					instance_create_depth(x,y,0,DippSword)
 					swordUse = 1
 				}
@@ -264,7 +264,7 @@ if global.playAs = 1{
 					if place_meeting(x+(global.lastPressed * global.dippSpeed * 1.5),y,Ground){
 						x = x - (global.lastPressed * global.dippSpeed * 1.5)
 					}
-					if keyboard_check_released(ord("I")) or keyboard_check_released(ord("Z")){
+					if keyboard_check_released(ord("I")) or keyboard_check_released(ord("Z")) or gamepad_button_check_released(0,gp_face1){
 						swordUse = 0
 					}
 				}
@@ -277,18 +277,18 @@ if global.playAs = 1{
 						image_angle = 0
 					}
 				}
-				if keyboard_check(ord("S")) or keyboard_check(vk_down){
+				if keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd){
 					y = y + global.dippSpeed
 				}
-				if keyboard_check(ord("A")) or keyboard_check(vk_left){
+				if keyboard_check(ord("A")) or keyboard_check(vk_left) or gamepad_button_check(0,gp_padl){
 					direct = -1
-					if keyboard_check_released(ord("A")) or keyboard_check_released(vk_left){
+					if keyboard_check_released(ord("A")) or keyboard_check_released(vk_left) or gamepad_button_check_released(0,gp_padl){
 						direct = 0
 					}
 				}
-				if keyboard_check(ord("D")) or keyboard_check(vk_right){
+				if keyboard_check(ord("D")) or keyboard_check(vk_right) or gamepad_button_check(0,gp_padr){
 					direct = 1
-					if keyboard_check_released(ord("D")) or keyboard_check_released(vk_right){
+					if keyboard_check_released(ord("D")) or keyboard_check_released(vk_right) or gamepad_button_check_released(0,gp_padr){
 						direct = 0
 					}
 				}
@@ -357,8 +357,13 @@ if global.playAs = 1{
 }
 else{
 	if global.playAs = 2{
-		instance_create_depth(x,y,0,Gum)
-		instance_destroy()
+		if place_empty(x,y-64,Ground){	
+			instance_create_depth(x,y,0,Gum)
+			instance_destroy()
+		}
+		else{
+			global.playAs = 1
+		}
 	}
 	if global.playAs = 3{
 		instance_create_depth(x,y,0,Earnest)

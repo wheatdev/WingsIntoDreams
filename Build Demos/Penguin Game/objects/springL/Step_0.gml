@@ -30,7 +30,7 @@ if global.paused = -1{
 				timer = 0
 			}
 		}
-		if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y-global.eGravity,crusher){
+		if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y-global.eGravity,crusher) or place_meeting(x,y,Dynamite){
 			active = 0
 			if place_meeting(x,y,DippSword){
 				if roll = 0{

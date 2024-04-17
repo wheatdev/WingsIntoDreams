@@ -12,7 +12,7 @@ if global.paused = -1{
 	if place_meeting(x,y,Ground){
 		instance_destroy()
 	}
-	if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot){
+	if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y,Dynamite){
 		state = 3
 		if roll = 0{
 			randDrop = irandom_range(0,10)

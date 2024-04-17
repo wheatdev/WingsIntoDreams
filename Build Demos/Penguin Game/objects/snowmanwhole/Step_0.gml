@@ -29,7 +29,7 @@ if global.paused = -1 and global.cameraActive = 1{
 					x = x + (direct * 5)
 				}
 			}
-			if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot){
+			if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y,Dynamite){
 				friend = 0
 				instance_create_depth(x,y,depth,snowmanHead)
 				if place_meeting(x,y,DippSword) and (keyboard_check(ord("S")) or keyboard_check(vk_down)){
@@ -51,7 +51,7 @@ if global.paused = -1 and global.cameraActive = 1{
 				allowAmmends = 1
 				toss = 0
 			}
-			if (place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot))and allowAmmends = 1{
+			if (place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y,Dynamite))and allowAmmends = 1{
 				active = 0
 				maxHeight = y + 1000
 				if place_meeting(x,y,DippSword) and (keyboard_check(ord("S")) or keyboard_check(vk_down)){

@@ -25,15 +25,15 @@ global.playerStartY = 563
 global.lastSafeX = 0
 global.lastSafeY = 0
 global.dippActive = 1
-global.gumActive = 0
+global.gumActive = 1
 global.earnestActive = 0
 
 global.dippSpeed = 10
 global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
-global.dippSpecial = 1
-global.dippSpringGet =1
+global.dippSpecial = 0
+global.dippSpringGet =0
 global.dippGlideGet = 0
 global.dippDynaGet = 0
 
@@ -54,6 +54,7 @@ global.upgrade1Get = 0
 global.upgrade2Get = 0
 global.upgrade3Get = 0
 global.upgrade4Get = 0
+global.upgrade5Get = 0
 
 global.key = 0
 global.key1 = 0

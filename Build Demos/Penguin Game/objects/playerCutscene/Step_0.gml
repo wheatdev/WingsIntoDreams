@@ -25,7 +25,7 @@ if type = 1{
 }
 if type = 2{
 	if x < global.playerStartX{
-		x = x + 10
+		x = x + 12
 		if xVal1 = 0{
 			y = y - global.eGravity
 			sprite_index = dippJump1

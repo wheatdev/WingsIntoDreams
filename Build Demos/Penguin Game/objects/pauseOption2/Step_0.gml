@@ -17,6 +17,10 @@ if global.cameraActive = 1{
 				selectX = 1
 				selectY = 2
 			}
+			if global.dippSpecial = 3{
+				selectX = 2
+				selectY = 2
+			}
 		}
 		if global.playAs = 2{
 			if global.gumSpecial = 0{
@@ -57,6 +61,9 @@ if global.cameraActive = 1{
 					}
 					if selectX = 1 and selectY = 2 and global.dippGlideGet = 1{
 						global.dippSpecial = 2
+					}
+					if selectX = 2 and selectY = 2 and global.dippDynaGet = 1{
+						global.dippSpecial = 3
 					}
 				}
 				if global.playAs = 2{

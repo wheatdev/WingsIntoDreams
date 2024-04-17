@@ -31,7 +31,7 @@ if global.paused = -1{
 				instance_create_depth(x,y,0,heal1)
 			}
 		}
-		if place_meeting(x,y,Snowball){
+		if place_meeting(x,y,Snowball) or place_meeting(x,y,Dynamite){
 			active = 0
 		}
 		if place_meeting(x+5,y,IceSlopeG1) or place_meeting(x-5,y,IceSlopeG2){

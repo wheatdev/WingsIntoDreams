@@ -127,6 +127,7 @@ if global.playAs = 2{
 else{
 	if global.playAs = 1{
 		instance_create_depth(x,y,0,Dipp)
+		instance_create_depth(x,y,0,dippScarf)
 		instance_destroy()
 	}
 	if global.playAs = 3{

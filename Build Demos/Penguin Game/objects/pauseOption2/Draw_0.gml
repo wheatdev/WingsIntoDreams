@@ -22,6 +22,15 @@ if global.pauseX = 2{
 				draw_text(x-280,y-50,"GLIDE")
 			}	
 		}
+		if global.dippDynaGet = 1{
+			if selectY = 2 and selectX = 2{
+				draw_text(x,y-50,"> DYNA")
+			}
+			else{
+				draw_text(x,y-50,"DYNA")
+			}	
+		}
+		
 	}
 	if global.playAs = 2{
 		if selectY = 1 and selectX = 1{
