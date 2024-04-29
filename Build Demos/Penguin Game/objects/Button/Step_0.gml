@@ -8,7 +8,9 @@ if global.paused = -1{
 		y = y + 2
 		if y > startY + 40{
 			if room = mineDownUnder{
-				instance_create_depth(15328,-1184,depth,mpD)
+				if position = 1{
+					instance_create_depth(15360,-1184,depth,mpD)
+				}
 			}
 			activated = 2
 		}

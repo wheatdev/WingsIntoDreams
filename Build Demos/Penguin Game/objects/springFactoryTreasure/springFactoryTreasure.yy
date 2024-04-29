@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"springCanonL",
+  "%Name":"springFactoryTreasure",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"springCanonL",
+  "name":"springFactoryTreasure",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"Enemy",
-    "path":"objects/Enemy/Enemy.yy",
+    "name":"collectableSpecial",
+    "path":"objects/collectableSpecial/collectableSpecial.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"canon",
-    "path":"sprites/canon/canon.yy",
+    "name":"chest",
+    "path":"sprites/chest/chest.yy",
   },
   "spriteMaskId":null,
   "visible":true,

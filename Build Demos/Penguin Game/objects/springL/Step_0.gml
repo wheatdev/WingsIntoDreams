@@ -22,12 +22,14 @@ if global.paused = -1{
 				bouncetoX = x - 150
 			}
 		}
-		if bouncePlayer = 1{
-			timer = timer + 1
-			Player.x = Player.x - 10
-			if Player.x < bouncetoX or timer > 15{
-				bouncePlayer = 0
-				timer = 0
+		if global.itemGet = 0{
+			if bouncePlayer = 1{
+				timer = timer + 1
+				Player.x = Player.x - 10
+				if Player.x < bouncetoX or timer > 15{
+					bouncePlayer = 0
+					timer = 0
+				}
 			}
 		}
 		if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y-global.eGravity,crusher) or place_meeting(x,y,Dynamite){

@@ -232,7 +232,19 @@ if global.playAs = 1{
 				if dippState = 12{
 					sprite_index = dippThrow
 				}
-			}
+				
+				if place_meeting(x,y,springFactoryBossDoor) and (keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up)){
+					global.cameraActive = 0
+					instance_create_depth(Player.x,Player.y,0,playerCutscene)
+					instance_destroy()
+				}
+				if place_meeting(x,y,collectableSpecial){
+					global.itemGet = 1
+					global.cameraActive = 0 
+					instance_create_depth(Player.x,Player.y,0,playerCutscene)
+					instance_destroy()
+				}
+ 			}
 			else{
 				sprite_index = dippSwim
 				image_xscale = global.lastPressed/5

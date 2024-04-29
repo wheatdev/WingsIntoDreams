@@ -2,6 +2,8 @@ image_xscale = .2
 image_yscale = .2
 depth = 3
 
+global.cameraActive = 1
+
 dippState = 0
 coyoteTime = 0
 jumpState = 0

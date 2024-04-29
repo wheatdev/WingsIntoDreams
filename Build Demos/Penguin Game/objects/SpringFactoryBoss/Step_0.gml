@@ -63,6 +63,9 @@ if global.paused = -1{
 		}
 	}
 	else{
-		room_goto(worldMap)
+		if createTreasure = 0{
+			instance_create_depth(x,y,0,springFactoryTreasure)
+			createTreasure = 1
+		}
 	}
 }

@@ -1,4 +1,4 @@
-if global.playAs = 1{
+if global.playAs = 1 and global.cameraActive = 1{
 	x = Dipp.x
 	y = Dipp.y
 	image_xscale = global.lastPressed/5

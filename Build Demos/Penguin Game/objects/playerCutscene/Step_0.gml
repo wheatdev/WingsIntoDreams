@@ -8,10 +8,17 @@ if type = 0{
 	}
 	if xVal1 = 1{
 		sprite_index = dippStand
-	}
-			
+	}	
 }
 if type = 1{
+	if place_meeting(x,y,springFactoryBossDoor){
+		xVal1 = 6
+		yVal2 = 62.5
+		type = 6
+	} 
+	if place_meeting(x,y,springSpecial){
+		type = 7
+	}
 	sprite_index = dippWalk
 	image_xscale = 1/xVal1
 	image_yscale = global.eGravity/yVal2
@@ -59,6 +66,36 @@ if type = 4{
 	y = y + (global.eGravity * 2)
 	if y > 489{
 		instance_create_depth(x,y,depth,Dipp)
+		global.cameraActive = 1
+		instance_destroy()
+	}
+}
+if type = 6{
+	sprite_index = dippWalk
+	image_xscale = 1/xVal1
+	image_yscale = global.eGravity/yVal2
+	xVal1 = xVal1 + .002
+	yVal2 = yVal2 + .3125
+	if yVal2 > 62.5 or xVal1 > 6{
+		if global.storyProgress = 1{
+			room_goto(Cutscenes)
+		}
+		else{
+			room_goto(springFactoryBoss)
+		}
+	}
+}
+if type = 7{
+	sprite_index = dippHold
+	y = y + global.eGravity
+	image_xscale = .2
+	image_yscale = global.eGravity/50
+	if place_meeting(x,y+global.eGravity,Ground){
+		y = y - global.eGravity
+	}
+	if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")){
+		instance_create_depth(x,y,depth,Dipp)
+		global.itemGet = 0
 		global.cameraActive = 1
 		instance_destroy()
 	}

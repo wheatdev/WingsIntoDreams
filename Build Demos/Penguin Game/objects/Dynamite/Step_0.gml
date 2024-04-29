@@ -1,5 +1,11 @@
 if global.paused = -1{
 	if inWater = 0{
+		if state = -1{
+			timer = timer -1
+			if timer < 0{
+				instance_destroy()
+			}
+		}
 		if state = 0{
 			timer = timer + 1
 			x = Player.x
@@ -23,6 +29,10 @@ if global.paused = -1{
 		image_angle = image_angle - (direct * 10) 
 		if place_meeting(x,y,Ground){
 			instance_destroy()
+		}
+		if place_meeting(x,y,Enemy){
+			timer = 10
+			state = -1
 		}
 	}
 	else{

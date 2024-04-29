@@ -12,6 +12,7 @@ global.isDamaged = 0
 global.theMoney = 0 
 global.pBounce = 0
 global.pauseX = 1
+global.itemGet = 0
 global.escapeRope = 0
 
 global.storyProgress = 0
@@ -33,8 +34,8 @@ global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
 global.dippSpecial = 0
-global.dippSpringGet =0
-global.dippGlideGet = 0
+global.dippSpringGet = 0
+global.dippGlideGet =0
 global.dippDynaGet = 0
 
 global.gumSpeed = 8

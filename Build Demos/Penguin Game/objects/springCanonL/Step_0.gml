@@ -10,7 +10,7 @@ if global.paused = -1 and global.cameraActive = 1{
 		}
 		if place_meeting(x,y,DippSword) and allowHit = 0{
 			if keyboard_check(ord("S")) or keyboard_check(vk_down){
-				global.pBounce = 20
+				global.pBounce = 35
 			}
 			eHealth = eHealth - global.dippAttack
 			allowHit = 30
