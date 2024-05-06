@@ -1,4 +1,3 @@
-depth = 10
-if room = springFactory and global.storyProgress < 2{
-	instance_destroy()
+if x = 5856{
+	type = 1
 }

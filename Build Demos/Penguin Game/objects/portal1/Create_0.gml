@@ -5,3 +5,6 @@ depth = 4
 if global.key1 > 0{
 	instance_destroy()
 }
+if room = HUB1 and global.storyProgress < 6{
+	instance_destroy()
+}

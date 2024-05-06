@@ -7,5 +7,8 @@ if global.paused = -1{
 			global.playerStartY = 180
 			room_goto(CCC1)
 		}
+		if room = HUB1{
+			room_goto(conCaveTemple)
+		}
 	}
 }

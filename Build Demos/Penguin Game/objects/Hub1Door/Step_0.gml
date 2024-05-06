@@ -17,8 +17,8 @@ if global.paused = -1{
 			room_goto(Shop1)
 		}
 		if type = 5{
-			global.playerStartX = 832
-			global.playerStartY = 704
+		global.playerStartX = 640
+		global.playerStartY = -1040
 			if global.minesUnlock < 1{
 				global.minesUnlock = 1
 			}
