@@ -139,7 +139,7 @@ if type = 1{
 			active = 1
 		}
 		if selectY = 6{
-			room_goto(worldMap)
+			room_goto(HUB1)
 		}
 	}
 }

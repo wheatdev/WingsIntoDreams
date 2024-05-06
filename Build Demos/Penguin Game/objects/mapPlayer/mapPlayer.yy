@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"dippWalk",
-    "path":"sprites/dippWalk/dippWalk.yy",
+    "name":"dippWalkF1",
+    "path":"sprites/dippWalkF1/dippWalkF1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

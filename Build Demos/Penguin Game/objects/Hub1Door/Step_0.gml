@@ -1,0 +1,31 @@
+if global.paused = -1{
+	if (keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up)) and place_meeting(x,y,Player){
+		if type = 1{
+			global.playerStartX = -1280
+			global.playerStartY = -96
+			room_goto(HUB1)
+		}
+		if type = 2{
+			global.playerStartX = 120
+			global.playerStartY = 563
+			room_goto(springFactory)
+		}
+		if type = 3{
+			room_goto(DippHouse)
+		}
+		if type = 4{
+			room_goto(Shop1)
+		}
+		if type = 5{
+			global.playerStartX = 832
+			global.playerStartY = 704
+			if global.minesUnlock < 1{
+				global.minesUnlock = 1
+			}
+			room_goto(mineDownUnder)
+		}
+		if type = 6{
+			room_goto(mineDownUnder)
+		}
+	}
+}

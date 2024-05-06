@@ -34,7 +34,7 @@ if levelGoTo = 2{
 if levelGoTo = 1{
 	x = 1120
 	y = 672
-	global.playerStartX = 255
+	global.playerStartX = 120
 	global.playerStartY = 563
 	global.lastPressed = 1
 	if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down){

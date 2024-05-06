@@ -11,5 +11,5 @@ if direct = 2{
 	}
 }
 if place_meeting(x,y,Player){
-	room_goto(worldMap)
+	room_goto(HUB1)
 }

@@ -15,13 +15,16 @@ global.pauseX = 1
 global.itemGet = 0
 global.escapeRope = 0
 
+global.SuperPaperMode = 0 
+global.WorldMapActive = 1
+
 global.storyProgress = 0
 global.lastIn = 1
 global.minesUnlock = 0
 
 global.cutsceneTimer = 0
 global.cameraActive = 0
-global.playerStartX = 255
+global.playerStartX = 120
 global.playerStartY = 563
 global.lastSafeX = 0
 global.lastSafeY = 0

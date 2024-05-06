@@ -19,7 +19,7 @@ if type = 1{
 	if place_meeting(x,y,springSpecial){
 		type = 7
 	}
-	sprite_index = dippWalk
+	sprite_index = dippWalkF1
 	image_xscale = 1/xVal1
 	image_yscale = global.eGravity/yVal2
 	xVal1 = xVal1 - .004

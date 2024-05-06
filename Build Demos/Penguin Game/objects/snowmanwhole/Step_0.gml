@@ -4,7 +4,10 @@ if global.paused = -1 and global.cameraActive = 1{
 		if place_meeting(x,y+global.eGravity,Ground){
 			y = y - global.eGravity
 			maxHeight = y - 150
-			jumpState = 1
+			timer = timer + 1
+			if timer = 50{
+				jumpState = 1
+			}
 		}
 		range = abs(x - Player.x)
 		image_xscale = direct * .35
@@ -38,9 +41,11 @@ if global.paused = -1 and global.cameraActive = 1{
 			}
 		}	
 		if jumpState = 1{
+			sprite_index = snowmanjump
 			y = y - global.eGravity * 2
 			if y < maxHeight{
 				jumpState = 0
+				timer = 0 
 			}
 		}
 		if friend  =0{

@@ -9,3 +9,4 @@ direct = 1
 jumpState = 0
 toss = 0
 allowAmmends = 0
+timer = 0

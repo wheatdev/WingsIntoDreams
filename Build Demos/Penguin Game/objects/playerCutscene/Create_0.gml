@@ -1,5 +1,6 @@
 xVal1 = 0
 yVal2 = 0
+type = 0
 if global.itemGet = 0{
 	if global.playAs = 1{
 		image_xscale = .2

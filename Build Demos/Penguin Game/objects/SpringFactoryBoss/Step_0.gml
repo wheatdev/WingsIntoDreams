@@ -2,7 +2,7 @@ if global.paused = -1{
 	if bHealth > 0{
 		if place_meeting(x,y,DippSword) and allowHit = 0{
 			bHealth = bHealth - global.dippAttack
-			allowHit = 200
+			allowHit = 100
 			if global.pBounce > 0{
 				runAwayY = 1
 				runAwayX = 1
