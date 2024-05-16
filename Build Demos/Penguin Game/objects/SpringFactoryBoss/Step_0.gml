@@ -2,7 +2,7 @@ if global.paused = -1{
 	if bHealth > 0{
 		if place_meeting(x,y,DippSword) and allowHit = 0{
 			bHealth = bHealth - global.dippAttack
-			allowHit = 100
+			allowHit = 120
 			if global.pBounce > 0{
 				runAwayY = 1
 				runAwayX = 1
@@ -35,7 +35,10 @@ if global.paused = -1{
 			runAwayX = 0
 			runAwayY = 0
 		}
-
+		if bHealth < 6 and removeSpecial = 0{
+			instance_create_depth(x,y,0,specialRemoval)
+			removeSpecial = 1
+		}
 		if runAwayX = 1{
 			if Player.x < x{
 				x = x + 3

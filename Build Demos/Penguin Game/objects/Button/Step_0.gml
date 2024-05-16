@@ -11,6 +11,10 @@ if global.paused = -1{
 				if position = 1{
 					instance_create_depth(15360,-1184,depth,mpD)
 				}
+				if position = 2{
+					instance_create_depth(9312,2880,depth,mpU)
+					instance_create_depth(9248,1152,depth,Dynamite)
+				}
 			}
 			activated = 2
 		}

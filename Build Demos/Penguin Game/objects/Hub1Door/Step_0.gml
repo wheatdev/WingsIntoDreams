@@ -25,7 +25,17 @@ if global.paused = -1{
 			room_goto(mineDownUnder)
 		}
 		if type = 6{
+			if global.minesUnlock < 2{
+				global.minesUnlock = 2
+			}
+			global.playerStartX = 16576
+			global.playerStartY = 1104
 			room_goto(mineDownUnder)
+		}
+		if type = 7{
+			global.playerStartX = 3904
+			global.playerStartY = 1440
+			room_goto(HUB1)
 		}
 	}
 }

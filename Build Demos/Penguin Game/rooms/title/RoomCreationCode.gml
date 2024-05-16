@@ -15,9 +15,6 @@ global.pauseX = 1
 global.itemGet = 0
 global.escapeRope = 0
 
-global.SuperPaperMode = 0 
-global.WorldMapActive = 1
-
 global.storyProgress = 0
 global.lastIn = 1
 global.minesUnlock = 0
@@ -36,10 +33,10 @@ global.dippSpeed = 10
 global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
-global.dippSpecial = 0
-global.dippSpringGet = 0
+global.dippSpecial = 1
+global.dippSpringGet = 1
 global.dippGlideGet =0
-global.dippDynaGet = 0
+global.dippDynaGet = 1
 
 global.gumSpeed = 8
 global.gumHealth = 30

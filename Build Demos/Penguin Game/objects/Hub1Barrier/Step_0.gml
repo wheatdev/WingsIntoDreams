@@ -5,5 +5,11 @@ if global.paused = -1{
 			global.playerStartY = 704
 			room_goto(conicCaves)
 		}
+		if type = 2{
+			room_goto(HUB2)
+		}
+		if type = 3{
+			room_goto(HUB1)
+		}
 	}
 }

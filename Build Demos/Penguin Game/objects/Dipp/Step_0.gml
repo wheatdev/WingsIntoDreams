@@ -255,7 +255,8 @@ if global.playAs = 1{
 				if keyboard_check(ord("W")) or keyboard_check(vk_up) or gamepad_button_check(0,gp_padu){
 					y = y - global.dippSpeed
 					if place_meeting(x,y,waterSurface){
-						maxHeight = y - 250
+						y = y - global.dippSpeed
+						maxHeight = y - 350
 						jumpState = 2
 						inWater = 0
 						swordUse = 0
@@ -382,7 +383,7 @@ else{
 		instance_destroy()
 	}
 }
-if place_meeting(x,y,water){
+if place_meeting(x,y,water) and place_empty(x,y,waterSurface){
 	inWater = 1
 }
 else{

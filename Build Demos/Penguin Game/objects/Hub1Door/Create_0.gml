@@ -23,3 +23,6 @@ if room = HUB1{
 		type = 6
 	}
 }
+if room = mineDownUnder{
+	type = 7
+}
