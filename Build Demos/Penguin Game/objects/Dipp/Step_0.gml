@@ -389,3 +389,7 @@ if place_meeting(x,y,water) and place_empty(x,y,waterSurface){
 else{
 	inWater = 0
 }
+if global.cameraActive = -1{
+	instance_create_depth(x,y,depth,playerCutscene)
+	instance_destroy()
+}

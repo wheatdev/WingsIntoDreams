@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"springFactoryTreasure",
+  "%Name":"captainDonner",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"springFactoryTreasure",
+  "name":"captainDonner",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"collectableSpecial",
-    "path":"objects/collectableSpecial/collectableSpecial.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"chest",
-    "path":"sprites/chest/chest.yy",
+    "name":"testwater",
+    "path":"sprites/testwater/testwater.yy",
   },
   "spriteMaskId":null,
   "visible":true,

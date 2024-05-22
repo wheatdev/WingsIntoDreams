@@ -9,7 +9,7 @@ if global.paused = -1{
 			else{
 				sprite_index = slimeHide
 			}
-			if rangeX < 200 and rangeY < 200{
+			if rangeX < 400 and rangeY < 200{
 				instance_create_depth(x,y,0,goldSlime)	
 				instance_destroy()
 			}

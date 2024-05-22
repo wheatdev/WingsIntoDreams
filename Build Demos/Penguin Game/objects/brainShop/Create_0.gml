@@ -1,23 +1,15 @@
+type = 0
 if room = Shop1{
 	type = 1
-	if global.storyProgress < 3{
-		active = 1
-		global.theMoney = global.theMoney + 500
-		global.storyProgress = 3
-		set = 0 
-	}
-	else{
-		if global.storyProgress = 6{
-			active = 1
-			set = 6
-		}
-		else{
-			active = 2
-		}
-	}
-} 
+}
+cindex = 0
 words = ""
-conversationIndex = 0 
-selectY = 1
-draw_set_color(c_white)
+words2 = ""
+words3 = ""
+state = 0
+selectX = -1
+selectY = 0
+icon = 0
+
 draw_set_font(MenuFontSmall)
+draw_set_color(c_white)

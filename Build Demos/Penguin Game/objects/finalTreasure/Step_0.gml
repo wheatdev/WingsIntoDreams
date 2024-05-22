@@ -10,6 +10,9 @@ if global.paused = -1{
 		if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter){
 			global.playerStartX = -1280
 			global.playerStartY = -396
+			if room = mineDownUnder and global.minesUnlock < 3{
+				global.minesUnlock = 3
+			}
 			room_goto(HUB1)	
 		}
 	}

@@ -51,3 +51,6 @@ if global.itemGet = 0{
 else{
 	type = 7
 }
+if global.cameraActive = -1{
+	type = 8
+}

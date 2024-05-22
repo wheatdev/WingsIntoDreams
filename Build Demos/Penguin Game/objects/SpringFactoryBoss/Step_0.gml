@@ -67,7 +67,7 @@ if global.paused = -1{
 	}
 	else{
 		if createTreasure = 0{
-			instance_create_depth(x,y,0,springFactoryTreasure)
+			instance_create_depth(x,y,0,finalTreasure)
 			createTreasure = 1
 		}
 	}

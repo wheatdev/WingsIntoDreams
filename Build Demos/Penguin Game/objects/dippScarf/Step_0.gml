@@ -10,7 +10,7 @@ if global.dippHealth > 0 and global.playAs = 1 and global.cameraActive = 1{
 	}
 }
 else{
-	if global.cameraActive = 0{
+	if global.cameraActive < 1{
 		x = playerCutscene.x
 		y = playerCutscene.y
 	}
