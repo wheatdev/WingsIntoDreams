@@ -1,0 +1,9 @@
+image_xscale = .25
+image_yscale = .25
+direct = 1
+bHealth = 8
+grounded = 0
+agressive = 0 
+rangeX = x
+timer = 0
+maxHeight = y 

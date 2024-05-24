@@ -36,7 +36,7 @@ if global.paused = -1{
 			runAwayY = 0
 		}
 		if bHealth < 6 and removeSpecial = 0{
-			instance_create_depth(x,y,0,specialRemoval)
+			instance_create_depth(675,y,0,specialRemoval)
 			removeSpecial = 1
 		}
 		if runAwayX = 1{

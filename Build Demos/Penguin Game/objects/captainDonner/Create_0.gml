@@ -1,4 +1,4 @@
-if global.storyProgress = 7{
+if global.storyProgress = 7 or global.storyProgress = 6{
 	cindex = 0
 	words = ""
 	words2 = ""
