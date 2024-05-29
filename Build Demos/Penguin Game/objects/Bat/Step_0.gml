@@ -18,6 +18,10 @@ if global.paused = -1{
 					global.pBounce = 30	
 				}
 			}
+			if place_meeting(x,y,Dynamite) and allowHit = 0{
+				bHealth = bHealth - (global.dippAttack * 2)
+				allowHit = 30
+			}
 			if allowHit > 0{
 				image_alpha = .5
 				allowHit = allowHit - 1
@@ -66,6 +70,16 @@ if global.paused = -1{
 			}
 		}
 		else{
+			if roll = 0{
+				randDrop = irandom_range(0,10)
+				if randDrop = 10{
+					instance_create_depth(x,y,0,heal2)
+				}
+				if randDrop = 9 or randDrop = 8{
+					instance_create_depth(x,y,0,heal1)
+				}
+				roll = 1
+			}
 			image_alpha = 1
 			sprite_index = batFly
 			image_angle = image_angle + 5

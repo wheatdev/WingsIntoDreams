@@ -1,0 +1,11 @@
+image_xscale = .5
+image_yscale = .5
+gunPos = 2
+cHealth = 10
+xDiff = 700
+yDiff = y 
+rangeX = x
+rangeY = y 
+xPos = 0
+timer = 0 
+allowHit = 0

@@ -34,5 +34,5 @@
     "path":"sprites/test5/test5.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

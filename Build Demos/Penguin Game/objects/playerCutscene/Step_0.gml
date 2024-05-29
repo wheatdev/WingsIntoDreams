@@ -84,6 +84,14 @@ if type = 4{
 		instance_destroy()
 	}
 }
+if type = 5{
+	sprite_index = dippDeath2
+	if keyboard_check_pressed(ord("I"))	or keyboard_check_pressed(ord("Z")){
+		instance_create_depth(x,y,depth,Dipp)
+		global.cameraActive = 1
+		instance_destroy()
+	}
+}
 if type = 6{
 	sprite_index = dippWalk
 	image_xscale = 1/xVal1
@@ -91,12 +99,7 @@ if type = 6{
 	xVal1 = xVal1 + .002
 	yVal2 = yVal2 + .3125
 	if yVal2 > 62.5 or xVal1 > 6{
-		if global.storyProgress = 1{
-			room_goto(Cutscenes)
-		}
-		else{
-			room_goto(springFactoryBoss)
-		}
+		room_goto(springFactoryBoss)
 	}
 }
 if type = 7{

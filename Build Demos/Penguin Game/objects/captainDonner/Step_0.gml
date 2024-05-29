@@ -7,6 +7,8 @@ if global.paused = -1{
 			}
 		}
 		if state = 1{
+			global.playerStartX = 736
+			global.playerStartY = 480
 			room_goto(donnerShipInside)
 		}
 	}

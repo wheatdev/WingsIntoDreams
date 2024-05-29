@@ -1,0 +1,11 @@
+tHealth = 6
+image_xscale = .4
+image_yscale = .4
+maxHeight = y
+startX = x
+rangeX = x
+jumpState = 0
+agressive = 0 
+direct = 1
+timer = 0
+allowHit = 0

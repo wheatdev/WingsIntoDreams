@@ -7,3 +7,6 @@ if room = conicCaves{
 if room = mineDownUnder{
 	view_camera[0] = camera_create_view(-160, -50, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 }
+if room = donnerShipInside{
+	view_camera[0] = camera_create_view(global.playerStartX - 800, global.playerStartY - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+}

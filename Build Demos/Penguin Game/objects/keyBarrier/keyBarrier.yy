@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"test5",
-    "path":"sprites/test5/test5.yy",
+    "name":"test0",
+    "path":"sprites/test0/test0.yy",
   },
   "spriteMaskId":null,
   "visible":true,

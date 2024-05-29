@@ -45,6 +45,7 @@ if global.itemGet = 0{
 		type = 4	
 	}
 	if room = donnerShipInside{
+		global.cameraActive = 0
 		type = 5
 	}
 }

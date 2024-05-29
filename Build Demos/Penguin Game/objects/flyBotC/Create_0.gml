@@ -1,0 +1,9 @@
+image_xscale = .5
+image_yscale = .5
+cHealth = 5
+rangeX = x
+rangeY = y
+timer = 0 
+grab = 0 
+roll = 0 
+direct =0
