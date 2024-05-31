@@ -69,6 +69,9 @@ if global.paused = -1{
 				if y < maxHeight{
 					jumpState = 0
 				}
+				if place_meeting(x,y-global.eGravity,Ground){
+					jumpState = 0	
+				}
 			}
 		}
 	}

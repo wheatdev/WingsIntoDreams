@@ -87,9 +87,7 @@ if global.paused = -1{
 		else{
 			image_angle = image_angle + (direct * 15)
 			y = y + global.eGravity
-			if y > maxHeight + 2000{
-				instance_destroy()
-			}
+			image_alpha = 1
 		}
 	}
 }

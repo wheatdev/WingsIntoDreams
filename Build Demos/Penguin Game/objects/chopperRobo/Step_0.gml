@@ -21,7 +21,7 @@ if global.paused = -1{
 			}
 			rangeX = abs(Player.x - x)
 			rangeY = abs(Player.y - y)
-			if rangeX < 1000{
+			if rangeX < 1200{
 				if rangeY < 300{
 					gunPos = 1
 				}
@@ -76,13 +76,13 @@ if global.paused = -1{
 				}
 				if xPos = 1{
 					if Player.x > x + xDiff{
-						x = x + 12
+						x = x + 14
 						image_xscale = .5
 					}
 				}
 				if xPos = -1{
 					if Player.x < x - xDiff{
-						x = x - 12
+						x = x - 14
 						image_xscale = -.5
 					}
 				}

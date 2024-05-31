@@ -131,6 +131,7 @@
     {"name":"springR","order":10,"path":"objects/springR/springR.yy",},
     {"name":"springSpecial","order":23,"path":"objects/springSpecial/springSpecial.yy",},
     {"name":"theFan","order":132,"path":"objects/theFan/theFan.yy",},
+    {"name":"theWind","order":146,"path":"objects/theWind/theWind.yy",},
     {"name":"upgradeCap1","order":16,"path":"objects/upgradeCap1/upgradeCap1.yy",},
     {"name":"upgradeCap2","order":29,"path":"objects/upgradeCap2/upgradeCap2.yy",},
     {"name":"upgradeCap3","order":43,"path":"objects/upgradeCap3/upgradeCap3.yy",},

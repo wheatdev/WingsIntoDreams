@@ -1,4 +1,2 @@
-startY = y 
-flyBy = 1500
-rangeX = x
+timer = 0
 depth = 5

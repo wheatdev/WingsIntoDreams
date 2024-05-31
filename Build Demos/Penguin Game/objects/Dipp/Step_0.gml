@@ -84,9 +84,6 @@ if global.playAs = 1{
 					}
 				}
 				if jumpState = 0{	
-					if place_meeting(x,y-global.eGravity,Ground){
-						y = y + global.eGravity	
-					}
 					if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0,gp_padd){
 						instance_create_depth(x,y,0,DippSword)
 						swordUse = -1
