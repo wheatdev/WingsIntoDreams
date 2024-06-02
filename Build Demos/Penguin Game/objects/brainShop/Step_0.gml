@@ -56,6 +56,12 @@ if state = 0{
 					cindex = 39
 				}
 			}
+			if selectX = 1 and selectY = 1{
+				if global.escapeRope = 0 and global.theMoney > 49{
+					global.theMoney = global.theMoney - 50
+					global.escapeRope = 1
+				}
+			}
 		}
 		state = 1
 	}
@@ -339,6 +345,7 @@ if state = 1{
 			words2 = ""
 			words3 = ""
 		}
+		
 		
 		
 	}

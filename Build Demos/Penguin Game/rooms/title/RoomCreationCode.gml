@@ -13,7 +13,7 @@ global.theMoney = 0
 global.pBounce = 0
 global.pauseX = 1
 global.itemGet = 0
-global.escapeRope = 0
+global.escapeRope = 1
 
 global.storyProgress = 7
 global.lastIn = 1
@@ -26,6 +26,8 @@ global.playerStartX = 120
 global.playerStartY = 563
 global.playerStartX = 736
 global.playerStartY = 480
+global.playerStartX = 14432
+global.playerStartY = 864
 global.lastSafeX = 0
 global.lastSafeY = 0
 global.dippActive = 1
@@ -59,6 +61,8 @@ global.upgrade2Get = 0
 global.upgrade3Get = 0
 global.upgrade4Get = 0
 global.upgrade5Get = 0
+global.upgrade6Get = 0
+global.upgrade7Get = 0
 
 global.key = 0
 global.key1 = 0

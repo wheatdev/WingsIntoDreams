@@ -130,5 +130,22 @@ if type = 8{
 		type = 0 
 		image_xscale = .2
 		global.cameraActive = 0
+		if room = donnerShipInside{
+			instance_create_depth(x,y,depth,Dipp)
+			global.cameraActive = -2
+			type = -1
+		}
 	}
+	if place_meeting(x,y+global.eGravity,Ground){
+		y = y -global.eGravity
+	}
+	else{
+		y = y + global.eGravity
+	}
+}
+
+if type = -1{
+	visible = false
+	x = Player.x
+	y = Player.y
 }
