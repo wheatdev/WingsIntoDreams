@@ -1,4 +1,3 @@
-if global.cameraActive = 1{
 	if global.paused = 1{
 		visible = true
 	}
@@ -6,11 +5,11 @@ if global.cameraActive = 1{
 		visible = false
 		selected = -1
 	}
-	x = Player.x
-	y = Player.y - (100 + active)
+	x = pauseMenu.x
+	y = pauseMenu.y - (100 + active)
 
 	if global.pauseX = 3{
-		active = 20
+		active = -80
 		if selected = 1{
 			if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down){
 				selectY = selectY + 1
@@ -69,6 +68,5 @@ if global.cameraActive = 1{
 		}
 	}
 	else{
-		active = 0
+		active = -100
 	}
-}

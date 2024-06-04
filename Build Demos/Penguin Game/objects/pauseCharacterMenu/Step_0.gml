@@ -1,10 +1,10 @@
-if global.cameraActive =1{
+if global.cameraActive =1 or global.cameraActive = -2{
 	if global.paused = 1{
 		visible = true
 	}
 	else{
 		visible = false
 	}
-	x = Player.x
-	y = Player.y - 100
+	x = pauseMenu.x
+	y = pauseMenu.y 
 }

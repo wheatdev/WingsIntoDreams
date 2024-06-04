@@ -1,18 +1,17 @@
-if global.cameraActive =1{
 	if global.paused = 1{
 		visible = true
 	}
 	else{
 		visible = false
 	}
-	x = Player.x
-	y = Player.y - (100 + active)
+	x = pauseMenu.x
+	y = pauseMenu.y - (100 + active)
 
 	if global.pauseX = 1{
-		active = 20
+		active = -80
 	}
 	else{
-		active = 0
+		active = -100
 	}
 	if global.paused = 1 and global.pauseX = 1{
 		if keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")){
@@ -33,4 +32,3 @@ if global.cameraActive =1{
 			}
 		}
 	}
-}

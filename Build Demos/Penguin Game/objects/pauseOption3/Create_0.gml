@@ -1,5 +1,5 @@
 depth = -11
-active = 0
+active = -100
 selectY = 1
 selected = -1
 draw_set_font(MenuFont)

@@ -5,4 +5,9 @@ if global.paused = -1{
 			active = 1
 		}
 	}
+	if active = 1{
+		if aHealth > 0{
+			
+		}
+	}
 }

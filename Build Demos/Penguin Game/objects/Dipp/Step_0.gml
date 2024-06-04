@@ -159,7 +159,7 @@ if global.playAs = 1{
 				}
 				
 				if global.dippSpecial = 3{
-					if keyboard_check_pressed(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
+					if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
 						timer = 20
 						instance_create_depth(x,y,depth,Dynamite)
 					}
