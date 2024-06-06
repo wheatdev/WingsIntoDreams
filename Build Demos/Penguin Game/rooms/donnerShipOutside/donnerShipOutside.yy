@@ -275,6 +275,7 @@
     {"name":"inst_2DB67852","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},
     {"name":"inst_785F5288","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},
     {"name":"inst_1961C1F6","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},
+    {"name":"inst_6CFFA730","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -548,6 +549,7 @@
         {"$GMRInstance":"","%Name":"inst_2DB67852","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DB67852","objectId":{"name":"SlopeN1","path":"objects/SlopeN1/SlopeN1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-3168.0,"y":-480.0,},
         {"$GMRInstance":"","%Name":"inst_785F5288","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_785F5288","objectId":{"name":"SlopeN1","path":"objects/SlopeN1/SlopeN1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-3232.0,"y":-416.0,},
         {"$GMRInstance":"","%Name":"inst_1961C1F6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1961C1F6","objectId":{"name":"likeKanye","path":"objects/likeKanye/likeKanye.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":1.0,"x":9856.0,"y":1664.0,},
+        {"$GMRInstance":"","%Name":"inst_6CFFA730","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6CFFA730","objectId":{"name":"ladder","path":"objects/ladder/ladder.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.22728194,"scaleX":1.0,"scaleY":21.0,"x":7613.4614,"y":608.00507,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4284482659,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

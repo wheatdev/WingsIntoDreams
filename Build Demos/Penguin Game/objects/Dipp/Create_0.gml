@@ -11,4 +11,5 @@ maxHeight = y
 swordUse = 0
 timer = 0
 inWater = 0
+onLadder = 0
 direct = 0
