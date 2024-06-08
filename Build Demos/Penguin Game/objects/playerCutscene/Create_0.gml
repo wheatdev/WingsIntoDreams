@@ -31,11 +31,16 @@ if global.itemGet = 0{
 		}
 	}
 	if room = conicCaves{
-		global.cameraActive = 0
-		depth = -4
-		type = 2	
-		xVal1 = 0
-		yVal2 = y - 300
+		if global.cameraActive = -1{
+			type = 8
+		}
+		else{
+			global.cameraActive = 0
+			depth = -4
+			type = 2	
+			xVal1 = 0
+			yVal2 = y - 300
+		}
 	}
 	if room = conCaveTemple{
 		depth = -4

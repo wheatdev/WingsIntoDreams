@@ -10,6 +10,10 @@ if type = 0{
 		if xVal1 = 1{
 			sprite_index = dippStand
 		}	
+		if place_meeting(x,y+global.eGravity,Ground){
+			y = y -global.eGravity
+		}
+		y = y + global.eGravity
 	}
 	if global.cutsceneTimer = 1{
 		sprite_index = dippHold
@@ -139,9 +143,7 @@ if type = 8{
 	if place_meeting(x,y+global.eGravity,Ground){
 		y = y -global.eGravity
 	}
-	else{
-		y = y + global.eGravity
-	}
+	y = y + global.eGravity
 }
 
 if type = -1{

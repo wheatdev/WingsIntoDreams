@@ -1,6 +1,29 @@
 if global.playAs = 1{
 	if global.paused = -1{
 		if global.dippHealth > 0{
+			global.allowDamage = global.allowDamage - 1
+			global.isDamaged = global.isDamaged - 1
+			if global.allowDamage < 0{
+				global.allowDamage = 0
+			}
+			if global.isDamaged < 0{
+				global.isDamaged = 0
+			}
+			if global.allowDamage > 1{
+				image_alpha = .5
+			}
+			else{
+				image_alpha = 1
+			}
+			if global.isDamaged > 0{
+				dippState = 9
+			}
+			if global.dippHealth > global.dippHealthMax{
+				global.dippHealth = global.dippHealthMax
+			}
+			if global.dippHealth < 0{
+				global.dippHealth = 0
+			}
 			if inWater = 0 and onLadder = 0{
 				y = y + global.eGravity
 				image_xscale = global.lastPressed/5
@@ -9,7 +32,7 @@ if global.playAs = 1{
 				coyoteTime = coyoteTime - 1
 				if place_meeting(x,y+global.eGravity,Ground){
 					y = y - global.eGravity
-					coyoteTime = 5
+					coyoteTime = 10
 					maxHeight = y - (30 * global.eGravity)
 					jumpState = 1
 					if swordUse < 1{
@@ -171,31 +194,6 @@ if global.playAs = 1{
 				if place_meeting(x,y,waterSurface){
 					swordUse = 0
 				}
-				
-				global.allowDamage = global.allowDamage - 1
-				global.isDamaged = global.isDamaged - 1
-				if global.allowDamage < 0{
-					global.allowDamage = 0
-				}
-				if global.isDamaged < 0{
-					global.isDamaged = 0
-				}
-				if global.allowDamage > 1{
-					image_alpha = .5
-				}
-				else{
-					image_alpha = 1
-				}
-				if global.isDamaged > 0{
-					dippState = 9
-				}
-				if global.dippHealth > global.dippHealthMax{
-					global.dippHealth = global.dippHealthMax
-				}
-				if global.dippHealth < 0{
-					global.dippHealth = 0
-				}
-
 				if dippState = 1{
 					sprite_index = dippStand
 				}
@@ -324,26 +322,6 @@ if global.playAs = 1{
 					}
 					if place_meeting(x+global.dippSpeed,y,Ground){
 						x = x - global.dippSpeed
-					}
-					global.allowDamage = global.allowDamage - 1
-					global.isDamaged = global.isDamaged - 1
-					if global.allowDamage < 0{
-						global.allowDamage = 0
-					}
-					if global.isDamaged < 0{
-						global.isDamaged = 0
-					}
-					if global.allowDamage > 1{
-						image_alpha = .5
-					}
-					else{
-						image_alpha = 1
-					}
-					if global.dippHealth > global.dippHealthMax{
-						global.dippHealth = global.dippHealthMax
-					}
-					if global.dippHealth < 0{
-						global.dippHealth = 0
 					}
 				}
 				if onLadder = 1{

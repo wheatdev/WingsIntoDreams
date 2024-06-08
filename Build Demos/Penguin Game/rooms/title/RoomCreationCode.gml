@@ -26,12 +26,12 @@ global.playerStartX = 120
 global.playerStartY = 563
 global.playerStartX = 736
 global.playerStartY = 480
-//global.playerStartX = 14432
-//global.playerStartY = 864
+global.playerStartX = 14432
+global.playerStartY = 864
 global.lastSafeX = 0
 global.lastSafeY = 0
 global.dippActive = 1
-global.gumActive = 0
+global.gumActive = 1
 global.earnestActive = 0
 
 global.dippSpeed = 10
@@ -42,6 +42,7 @@ global.dippSpecial = 0
 global.dippSpringGet = 1
 global.dippGlideGet =1
 global.dippDynaGet = 1
+global.dippSnowballGet = 0
 
 global.gumSpeed = 8
 global.gumHealth = 30

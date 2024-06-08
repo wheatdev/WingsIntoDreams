@@ -175,9 +175,9 @@ if state = 1{
 			words3 = "verifiably ancient!"
 		}
 		if cindex = 17{
-			words = "To reach the chasm, you'd need to pass through the Conic Caves."
-			words2 = "They're down and to the right of us."
-			words3 = ""
+			words = "To reach the chasm, you'd need to pass"
+			words2 = "through the Conic Caves."
+			words3 = "They're down and to the right of us."
 		}
 		if cindex = 18{
 			words = "The entrance to chasm would be on the ground."
@@ -190,8 +190,8 @@ if state = 1{
 			words3 = ""
 		}
 		if cindex = 20{
-			words = "Stay low, but go high."
-			words2 = "Thanks for the tip, Walter."
+			words = "Stay low, but also go high."
+			words2 = "I think you're going senile, Walter."
 			words3 = ""
 			icon = 0
 		}
