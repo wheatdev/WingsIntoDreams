@@ -134,7 +134,7 @@ if type = 8{
 		type = 0 
 		image_xscale = .2
 		global.cameraActive = 0
-		if room = donnerShipInside{
+		if room = donnerShipInside or room = donnerShipOutside{
 			instance_create_depth(x,y,depth,Dipp)
 			global.cameraActive = -2
 			type = -1

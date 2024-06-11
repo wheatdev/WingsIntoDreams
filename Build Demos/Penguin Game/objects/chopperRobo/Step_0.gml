@@ -89,4 +89,7 @@ if global.paused = -1{
 			}
 		}
 	}
+	if global.cameraActive = -2{
+		instance_destroy()
+	}
 }

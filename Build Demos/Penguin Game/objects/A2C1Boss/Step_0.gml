@@ -13,7 +13,7 @@ if global.paused = -1{
 					global.dippHealth = global.dippHealth - 1
 					audio_play_sound(dippHurtSE,0,false)
 				}
-				global.allowDamage = 20
+				global.allowDamage = 40
 				global.isDamaged = 10
 			}
 			x = x + (xDirect * 12)

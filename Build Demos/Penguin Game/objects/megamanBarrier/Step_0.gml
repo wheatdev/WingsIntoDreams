@@ -8,5 +8,8 @@ if global.cameraActive = -1 and place_empty(x,y,Player){
 	if xPos = 15712{
 		instance_create_depth(16864,192,0,A2C1Boss)
 	}
+	if xPos = 17056{
+		instance_create_depth(18272,-3520,0,A2C2Boss)
+	}
 	instance_destroy()
 }

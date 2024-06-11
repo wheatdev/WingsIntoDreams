@@ -31,14 +31,26 @@ if global.paused = -1{
 				if direct = 1{
 					y = y - global.eGravity
 					Player.y = Player.y - global.eGravity
+					if place_meeting(x,y-global.eGravity,Ground){
+						y = y + global.eGravity
+						Player.y = Player.y + global.eGravity		
+					}
 				}
 				if direct = 2{
 					x = x - 10
 					Player.x = Player.x- 10
+					if place_meeting(x-10,y,Ground){
+						x = x + 10
+						Player.x = Player.x + 10
+					}
 				}
 				if direct = 3{
 					x = x + 10
 					Player.x = Player.x + 10
+					if place_meeting(x+10,y,Ground){
+						x = x - 10
+						Player.x = Player.x - 10
+					}
 				}
 				if keyboard_check(ord("A")) or keyboard_check(vk_left){
 					if global.playAs = 1{
@@ -59,5 +71,8 @@ if global.paused = -1{
 				grab = 0
 			}
 		}
+	}
+	if global.cameraActive = -2{
+		instance_destroy()
 	}
 }
