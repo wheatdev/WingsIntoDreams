@@ -59,3 +59,13 @@ else{
 if global.cameraActive = -1{
 	type = 8
 }
+if global.cutsceneTimer = 1{
+	if room = donnerShipOutside{
+		xVal1 = 0	
+	}
+	else{
+		xVal1 = 1
+	}
+	yVal2 = y
+	type = 9
+}

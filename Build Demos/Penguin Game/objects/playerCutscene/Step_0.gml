@@ -71,6 +71,7 @@ if type = 2{
 }
 if type = 3{
 	sprite_index = dippJump2
+	global.cutsceneTimer = 0
 	y = y + global.eGravity
 	if place_meeting(x,y+global.eGravity,Ground){
 		instance_create_depth(x,y,depth,Dipp)
@@ -137,7 +138,7 @@ if type = 8{
 		if room = donnerShipInside or room = donnerShipOutside{
 			instance_create_depth(x,y,depth,Dipp)
 			global.cameraActive = -2
-			type = -1
+			instance_destroy()
 		}
 	}
 	if place_meeting(x,y+global.eGravity,Ground){
@@ -145,9 +146,24 @@ if type = 8{
 	}
 	y = y + global.eGravity
 }
-
-if type = -1{
-	visible = false
-	x = Player.x
-	y = Player.y
+if type = 9{
+	if xVal1 = 0{
+		sprite_index = dippJump2
+		y = y + global.eGravity
+		if place_meeting(x,y+global.eGravity,Ground){
+			xVal1 = 1
+		}
+	}
+	if xVal1 = 1{
+		sprite_index = dippSpring
+		y = y - global.eGravity
+		if y < yVal2 - 800{
+			if room = donnerShipOutside{
+				room_goto(hopperHeliship)
+			}
+			else{
+				type = 3
+			}
+		}
+	}
 }

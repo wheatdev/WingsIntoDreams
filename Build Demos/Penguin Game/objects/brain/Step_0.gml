@@ -1,6 +1,6 @@
 if room = title{
 	if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(0,gp_start){
-		room_goto(donnerShipOutside)
+		room_goto(springFactory)
 	}
 }
 else{
@@ -75,6 +75,9 @@ if global.cameraActive = 1{
 	view_camera[0] = camera_create_view(Player.x - 800, Player.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 }
 if room = conCaveTemple and global.cameraActive = 0{
+	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+}
+if room = donnerShipOutside and global.cameraActive = 0{
 	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 }
 if global.itemGet = 1{

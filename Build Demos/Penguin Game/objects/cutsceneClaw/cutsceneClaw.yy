@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"coniccavetemplebarrier",
+  "%Name":"cutsceneClaw",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"coniccavetemplebarrier",
+  "name":"cutsceneClaw",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"test5",
-    "path":"sprites/test5/test5.yy",
+    "name":"flyBot",
+    "path":"sprites/flyBot/flyBot.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

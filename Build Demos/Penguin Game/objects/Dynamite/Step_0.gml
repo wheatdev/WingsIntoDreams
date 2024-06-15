@@ -8,7 +8,9 @@ if global.paused = -1{
 		}
 		if state = 0{
 			timer = timer + 1
-			x = Player.x
+			if global.cameraActive = 1{
+				x = Player.x
+			}
 			if timer = 10{
 				visible = true
 				state = 1
