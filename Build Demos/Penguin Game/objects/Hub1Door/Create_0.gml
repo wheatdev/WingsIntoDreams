@@ -7,19 +7,19 @@ if room = springFactory{
 	type = 1
 }
 if room = HUB1{
-	if x = -1280{
+	if x = 1536{
 		type = 2
 	}
-	if x = 896{
+	if x = 3712{
 		type = 3
 	}
-	if x = 1664{
+	if x = 4480{
 		type = 4
 	}
-	if x = 3392{
+	if x = 6208{
 		type = 5
 	}
-	if x = 3904{
+	if x = 6720{
 		type = 6
 	}
 }

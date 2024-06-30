@@ -64,7 +64,7 @@ if global.cutsceneTimer = 1{
 		xVal1 = 0	
 	}
 	else{
-		xVal1 = 1
+		xVal1 = 2
 	}
 	yVal2 = y
 	type = 9

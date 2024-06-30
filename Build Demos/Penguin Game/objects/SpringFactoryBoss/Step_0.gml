@@ -46,21 +46,21 @@ if global.paused = -1{
 			if Player.x > x{
 				x = x - 3
 			}
-			if x < 288{
-				x  = 288
+			if x < 1664{
+				x  = 1664
 			}
-			if x > 1088{
-				x = 1088
+			if x > 2400{
+				x = 2400
 			}
 		}
 		if runAwayY = 1{
 			y = y - 3
-			if y < -160{
-				y = -160
+			if y < 1824{
+				y = 1824
 			}
 		}
 		else{
-			if y < 32{
+			if y < 2014{
 				y = y + 3
 			}
 		}

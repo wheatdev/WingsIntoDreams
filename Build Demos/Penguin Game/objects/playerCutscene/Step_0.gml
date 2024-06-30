@@ -83,7 +83,7 @@ if type = 4{
 	sprite_index = dippSwimSword22
 	image_angle = image_angle - 25
 	y = y + (global.eGravity * 2)
-	if y > 489{
+	if y > 3000{
 		instance_create_depth(x,y,depth,Dipp)
 		global.cameraActive = 1
 		instance_destroy()
@@ -148,15 +148,22 @@ if type = 8{
 }
 if type = 9{
 	if xVal1 = 0{
-		sprite_index = dippJump2
-		y = y + global.eGravity
-		if place_meeting(x,y+global.eGravity,Ground){
-			xVal1 = 1
+		sprite_index = dippJump1
+		y = y - global.eGravity
+		if y < yVal2 - 300{
+			xVal1 = 1	
 		}
 	}
 	if xVal1 = 1{
+		sprite_index = dippJump2
+		y = y + (global.eGravity * 1.5)
+		if place_meeting(x,y+global.eGravity,Ground){
+			xVal1 = 2
+		}
+	}
+	if xVal1 = 2{
 		sprite_index = dippSpring
-		y = y - global.eGravity
+		y = y - (global.eGravity * 1.5)
 		if y < yVal2 - 800{
 			if room = donnerShipOutside{
 				room_goto(hopperHeliship)

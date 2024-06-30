@@ -74,5 +74,10 @@ if global.paused = -1{
 				}
 			}
 		}
+		else{
+			image_alpha= 1
+			y = y + global.eGravity
+			image_angle = image_angle + 15
+		}
 	}
 }

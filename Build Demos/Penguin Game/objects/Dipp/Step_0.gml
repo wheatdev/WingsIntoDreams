@@ -326,8 +326,12 @@ if global.playAs = 1{
 				}
 				if onLadder = 1{
 					sprite_index = dippClimb
+					swordUse = 0
 					if keyboard_check(ord("W")) or keyboard_check(vk_up){
 						y = y - global.eGravity
+						if place_meeting(x,y-global.eGravity,Ground){
+							y = y + global.eGravity
+						}
 					}
 					if keyboard_check(ord("S")) or keyboard_check(vk_down){
 						y = y + global.eGravity

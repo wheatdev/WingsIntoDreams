@@ -11,19 +11,21 @@ global.allowDamage = 0
 global.isDamaged = 0 
 global.theMoney = 0 
 global.pBounce = 0
+global.specialRemember = 0 
 global.pauseX = 1
 global.itemGet = 0
 global.escapeRope = 0
 
-global.storyProgress = 0
+global.storyProgress = 7
 global.lastIn = 1
 global.SFQ = 0 
 global.minesUnlock = 0
 
 global.cutsceneTimer = 0
+global.talking = 0 
 global.cameraActive = 0
-global.playerStartX = 120
-global.playerStartY = 563
+global.playerStartX = 1248
+global.playerStartY = 9056
 global.lastSafeX = 0
 global.lastSafeY = 0
 global.dippActive = 1
@@ -35,9 +37,9 @@ global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
 global.dippSpecial = 0
-global.dippSpringGet = 0
-global.dippGlideGet =0
-global.dippDynaGet = 0
+global.dippSpringGet = 1
+global.dippGlideGet =1
+global.dippDynaGet = 1
 global.dippSnowballGet = 0
 
 global.gumSpeed = 8
@@ -60,6 +62,7 @@ global.upgrade4Get = 0
 global.upgrade5Get = 0
 global.upgrade6Get = 0
 global.upgrade7Get = 0
+global.upgrade8Get = 0
 
 global.key = 0
 global.key1 = 0
