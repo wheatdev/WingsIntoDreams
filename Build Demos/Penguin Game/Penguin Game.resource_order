@@ -177,6 +177,7 @@
     {"name":"conicCavesMusic","order":8,"path":"sounds/conicCavesMusic/conicCavesMusic.yy",},
     {"name":"dippHurtSE","order":3,"path":"sounds/dippHurtSE/dippHurtSE.yy",},
     {"name":"dippJumpSE","order":2,"path":"sounds/dippJumpSE/dippJumpSE.yy",},
+    {"name":"donJointBossMusic","order":17,"path":"sounds/donJointBossMusic/donJointBossMusic.yy",},
     {"name":"DonnerShipBossMusic1","order":15,"path":"sounds/DonnerShipBossMusic1/DonnerShipBossMusic1.yy",},
     {"name":"donnerShipMusic","order":12,"path":"sounds/donnerShipMusic/donnerShipMusic.yy",},
     {"name":"donVal10GetSE","order":7,"path":"sounds/donVal10GetSE/donVal10GetSE.yy",},

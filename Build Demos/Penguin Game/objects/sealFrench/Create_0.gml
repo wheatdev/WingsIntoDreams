@@ -9,9 +9,8 @@ direct = -1
 range = x
 rangeX = x
 rangeY = y
-cindex = 0 
-words = ""
-words2 = ""
-words3 = ""
-icon = 0 
+deathY = y
 state = 0
+if global.dippSnowballGet = 1{
+	instance_destroy()
+}

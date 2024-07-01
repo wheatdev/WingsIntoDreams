@@ -197,6 +197,7 @@
     {"id":{"name":"conicCavesMusic","path":"sounds/conicCavesMusic/conicCavesMusic.yy",},},
     {"id":{"name":"dippHurtSE","path":"sounds/dippHurtSE/dippHurtSE.yy",},},
     {"id":{"name":"dippJumpSE","path":"sounds/dippJumpSE/dippJumpSE.yy",},},
+    {"id":{"name":"donJointBossMusic","path":"sounds/donJointBossMusic/donJointBossMusic.yy",},},
     {"id":{"name":"DonnerShipBossMusic1","path":"sounds/DonnerShipBossMusic1/DonnerShipBossMusic1.yy",},},
     {"id":{"name":"donnerShipMusic","path":"sounds/donnerShipMusic/donnerShipMusic.yy",},},
     {"id":{"name":"donVal10GetSE","path":"sounds/donVal10GetSE/donVal10GetSE.yy",},},

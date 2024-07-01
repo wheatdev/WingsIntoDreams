@@ -174,3 +174,6 @@ if type = 9{
 		}
 	}
 }
+if global.cutsceneTimer = -2{
+	visible = false	
+}

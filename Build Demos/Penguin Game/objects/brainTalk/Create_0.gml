@@ -1,8 +1,6 @@
 type = 0
 if room = conicCaves{
 	type = 2
-	x = sealFrench.x
-	y = sealFrench.y
 }
 cindex = 0
 words = ""
