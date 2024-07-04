@@ -17,6 +17,10 @@
 				selectY = 2
 			}
 			if global.dippSpecial = 3{
+				selectX = 3
+				selectY = 1
+			}
+			if global.dippSpecial = 4{
 				selectX = 2
 				selectY = 2
 			}
@@ -61,8 +65,11 @@
 					if selectX = 1 and selectY = 2 and global.dippGlideGet = 1{
 						global.dippSpecial = 2
 					}
-					if selectX = 2 and selectY = 2 and global.dippDynaGet = 1{
+					if selectX = 3 and selectY = 1 and global.dippDynaGet = 1{
 						global.dippSpecial = 3
+					}
+					if selectX = 2 and selectY = 2 and global.dippSnowballGet = 1{
+						global.dippSpecial = 4
 					}
 				}
 				if global.playAs = 2{

@@ -10,6 +10,7 @@ if global.paused = -1 and global.cameraActive = 1{
 	}
 	if global.cutsceneTimer = -2{
 		if audio_is_playing(donJointBossMusic){
+			global.lastSafeX = Player.x
 			y = y + global.eGravity
 			if place_meeting(x,y+global.eGravity,Ground){
 				y = y - global.eGravity
@@ -29,7 +30,7 @@ if global.paused = -1 and global.cameraActive = 1{
 			if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite){
 				global.cutsceneTimer = -3
 				global.talking =1
-				global.cameraActive = 0
+				global.cameraActive = -1
 				deathY = y
 			}
 		}

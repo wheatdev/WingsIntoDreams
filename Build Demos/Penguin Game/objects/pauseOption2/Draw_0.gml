@@ -23,11 +23,19 @@ if global.pauseX = 2{
 			}	
 		}
 		if global.dippDynaGet = 1{
-			if selectY = 2 and selectX = 2{
-				draw_text(x,y-50,"> DYNA")
+			if selectY = 1 and selectX = 3{
+				draw_text(x+280,y-150,"> DYNA")
 			}
 			else{
-				draw_text(x,y-50,"DYNA")
+				draw_text(x+280,y-150,"DYNA")
+			}	
+		}
+		if global.dippSnowballGet = 1{
+			if selectY = 2 and selectX = 2{
+				draw_text(x,y-50,"> SNOWBALL")
+			}
+			else{
+				draw_text(x,y-50,"SNOWBALL")
 			}	
 		}
 		
@@ -49,8 +57,8 @@ if global.pauseX = 2{
 	if selectX<1{
 		selectX = 1
 	}
-	if selectX > 2{
-		selectX = 2
+	if selectX > 3{
+		selectX = 3
 	}
 }
 draw_sprite(pauseoption2,0,x,y)

@@ -27,6 +27,7 @@
 					global.playerStartY = 20
 					global.paused = global.paused * -1
 					global.escapeRope = 0
+					global.cutsceneTimer = 0
 					room_goto(HUB1)
 				}
 			}

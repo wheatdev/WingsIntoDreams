@@ -333,7 +333,6 @@
     {"name":"inst_52F8340","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},
     {"name":"inst_588C5014","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},
     {"name":"inst_3AB384D4","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},
-    {"name":"inst_44562111","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -665,7 +664,6 @@
         {"$GMRInstance":"","%Name":"inst_52F8340","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52F8340","objectId":{"name":"areatrigger","path":"objects/areatrigger/areatrigger.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":18.0,"scaleY":12.5,"x":19136.0,"y":-2912.0,},
         {"$GMRInstance":"","%Name":"inst_588C5014","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_588C5014","objectId":{"name":"HopperBot","path":"objects/HopperBot/HopperBot.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.25,"x":16512.0,"y":-1184.0,},
         {"$GMRInstance":"","%Name":"inst_3AB384D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3AB384D4","objectId":{"name":"HopperBot","path":"objects/HopperBot/HopperBot.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.25,"x":17856.0,"y":-1184.0,},
-        {"$GMRInstance":"","%Name":"inst_44562111","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_44562111","objectId":{"name":"Dipp","path":"objects/Dipp/Dipp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":19072.0,"y":-3328.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4284482659,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

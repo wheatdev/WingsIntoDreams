@@ -167,28 +167,47 @@ if global.playAs = 1{
 					if keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2){
 						dippState = 10
 						swordUse = 0
-						if place_meeting(x,y+(global.eGravity * 3), Ground){
+						if place_meeting(x,y+(global.eGravity * 3), Ground) and global.specialMeter > 6{
+							global.specialMeter = global.specialMeter - 7
 							global.pBounce = 45
 						}
 					}
 				}
 				if global.dippSpecial = 2{
-					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and jumpState != 1{
+					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and jumpState != 1 and global.specialMeter > 0{
 						dippState = 11
 						swordUse = 0
 						global.pBounce = 0
 						y = y - (global.eGravity * .85)
+						global.specialMeter = global.specialMeter - .1
 					}
 				}
 				
 				if global.dippSpecial = 3{
-					if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
+					if (keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2)) and global.specialMeter > 19{
 						timer = 20
+						global.specialMeter = global.specialMeter - 20
 						instance_create_depth(x,y,depth,Dynamite)
 					}
 					if timer >0{
 						dippState = 12
 						timer = timer - 1
+					}
+				}
+				if global.dippSpecial = 4{
+					if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")){
+						instance_create_depth(x,y,0,dippSnowball)
+					}
+					if keyboard_check(ord("P")) or keyboard_check(ord("C")) and global.specialMeter > 0{
+						swordUse = -2
+						global.specialMeter = global.specialMeter - .1
+						x = x + (global.lastPressed * global.dippSpeed)
+						if place_meeting(x+(global.dippSpeed*global.lastPressed),y,Ground){
+							x = x - (global.lastPressed * global.dippSpeed)	
+						}
+					}
+					if keyboard_check_released(ord("P")) or keyboard_check_released(ord("C")){
+						swordUse = 0
 					}
 				}
 				if place_meeting(x,y,waterSurface){
@@ -229,6 +248,9 @@ if global.playAs = 1{
 				}
 				if dippState = 12{
 					sprite_index = dippThrow
+				}
+				if dippState = 13{
+					sprite_index = snowball
 				}
 				
 				if place_meeting(x,y,springFactoryBossDoor) and (keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up)){

@@ -174,6 +174,6 @@ if type = 9{
 		}
 	}
 }
-if global.cutsceneTimer = -2{
+if global.cutsceneTimer < -1{
 	visible = false	
 }

@@ -48,7 +48,9 @@ if type = 2{
 	if cindex = 7{
 		global.talking = 0
 		global.cutsceneTimer = -3
+		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
 		global.cameraActive = 1
+		cindex = 8
 	}
 }	
 if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z"))) and global.talking =1 {
