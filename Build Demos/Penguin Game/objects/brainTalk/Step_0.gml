@@ -1,3 +1,40 @@
+if type = 1{
+	if global.talking = 1{
+		view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	}
+	if cindex = 0{
+		words = "Alright, this is about where Walter said the "
+		words2 = "treasure room should be..."
+		words3 = ""
+	}
+	if cindex = 1{
+		words = "All I need to do is not set off any..."
+		words2 = "*Click*"
+		words3 = "Poo."
+	}
+	if cindex = 2{
+		words = "WARNING: INTRUDER ALERT!"
+		words2 = "LEAVE NOW OR FORCE WILL BE USED TO "
+		words3 = "FORCE YOUR REMOVAL."
+	}
+	if cindex = 3{
+		words = "Walter, you wide walrus, you said there'd be no "
+		words2 = "security... "
+		words3 = "... I don't get paid enough for this..."
+	}
+	if cindex = 4{
+		words = "BREAK"
+		words2 = ""
+		words3 = ""
+	}
+	if words = "BREAK"{
+		global.talking = 0
+		global.cutsceneTimer = -2
+		global.cameraActive = 1
+		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
+		cindex = 0
+	}
+}
 if type = 2{
 	if words = "BREAK"{
 		global.talking = 0

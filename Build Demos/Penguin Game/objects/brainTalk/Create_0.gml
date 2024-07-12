@@ -1,4 +1,9 @@
 type = 0
+if room = springFactoryBoss{
+	x = 2016
+	y = 2528
+	type = 1	
+}
 if room = conicCaves{
 	type = 2
 }

@@ -19,15 +19,22 @@ if global.paused = -1{
 			if room = CCC4{
 				global.mechanism = 1000	
 			}
+			if room = hopperHeliship{
+				global.mechanism = 2000
+			}
 			activated = 2
 		}
 	}
 	if activated = 2{
 		y = startY + 40	
 		global.mechanism = global.mechanism - 1
-		if global.mechanism = 0{
+		if global.mechanism = 0 and (room = CCC1 or room = CCC2 or room = CCC3 or room = CCC4){
 			audio_play_sound(portalTeleportSE,0,false)
 			room_restart()
+		}
+		if global.mechanism = 0{
+			y = startY
+			activated = 0
 		}
 	}
 		

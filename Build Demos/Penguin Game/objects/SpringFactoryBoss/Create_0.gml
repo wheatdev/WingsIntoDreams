@@ -5,5 +5,10 @@ createTreasure = 0
 runAwayX = 0
 runAwayY = 0
 removeSpecial = 0
-audio_stop_all()
-audio_play_sound(springFactoryBossMusic,0,true)
+if global.storyProgress < 2{
+	global.talking = 1
+	state = 0
+}
+else{
+	state = 1
+}

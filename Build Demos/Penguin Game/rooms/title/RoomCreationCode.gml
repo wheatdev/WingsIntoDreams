@@ -55,7 +55,7 @@ global.earnestHealthMax = 40
 global.earnestAttack = 6
 global.earnestSpecial = 1
 
-global.upgrade = 8
+global.upgrade = 10
 global.upgrade1Get = 1
 global.upgrade2Get = 1
 global.upgrade3Get = 1
@@ -64,6 +64,8 @@ global.upgrade5Get = 1
 global.upgrade6Get = 1
 global.upgrade7Get = 1
 global.upgrade8Get = 1
+global.upgrade9Get = 1
+global.upgrade10Get = 1
 
 global.key = 0
 global.key1 = 0

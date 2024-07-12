@@ -21,7 +21,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"Penguin Game",
   "resources":[
@@ -165,6 +165,7 @@
     {"id":{"name":"theFan","path":"objects/theFan/theFan.yy",},},
     {"id":{"name":"theWind","path":"objects/theWind/theWind.yy",},},
     {"id":{"name":"upgradeCap1","path":"objects/upgradeCap1/upgradeCap1.yy",},},
+    {"id":{"name":"upgradeCap10","path":"objects/upgradeCap10/upgradeCap10.yy",},},
     {"id":{"name":"upgradeCap2","path":"objects/upgradeCap2/upgradeCap2.yy",},},
     {"id":{"name":"upgradeCap3","path":"objects/upgradeCap3/upgradeCap3.yy",},},
     {"id":{"name":"upgradeCap4","path":"objects/upgradeCap4/upgradeCap4.yy",},},
@@ -172,6 +173,7 @@
     {"id":{"name":"upgradeCap6","path":"objects/upgradeCap6/upgradeCap6.yy",},},
     {"id":{"name":"upgradeCap7","path":"objects/upgradeCap7/upgradeCap7.yy",},},
     {"id":{"name":"upgradeCap8","path":"objects/upgradeCap8/upgradeCap8.yy",},},
+    {"id":{"name":"upgradeCap9","path":"objects/upgradeCap9/upgradeCap9.yy",},},
     {"id":{"name":"Walter","path":"objects/Walter/Walter.yy",},},
     {"id":{"name":"water","path":"objects/water/water.yy",},},
     {"id":{"name":"waterSurface","path":"objects/waterSurface/waterSurface.yy",},},

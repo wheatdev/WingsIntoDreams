@@ -168,7 +168,9 @@ if global.playAs = 1{
 						dippState = 10
 						swordUse = 0
 						if place_meeting(x,y+(global.eGravity * 3), Ground) and global.specialMeter > 6{
-							global.specialMeter = global.specialMeter - 7
+							if global.pBounce < 45{
+								global.specialMeter = global.specialMeter - 7
+							}
 							global.pBounce = 45
 						}
 					}
@@ -251,12 +253,6 @@ if global.playAs = 1{
 				}
 				if dippState = 13{
 					sprite_index = snowball
-				}
-				
-				if place_meeting(x,y,springFactoryBossDoor) and (keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up)){
-					global.cameraActive = 0
-					instance_create_depth(Player.x,Player.y,0,playerCutscene)
-					instance_destroy()
 				}
 				if place_meeting(x,y,collectableSpecial){
 					global.itemGet = 1
@@ -349,6 +345,7 @@ if global.playAs = 1{
 				if onLadder = 1{
 					sprite_index = dippClimb
 					swordUse = 0
+					global.pBounce = 0
 					if keyboard_check(ord("W")) or keyboard_check(vk_up){
 						y = y - global.eGravity
 						if place_meeting(x,y-global.eGravity,Ground){
