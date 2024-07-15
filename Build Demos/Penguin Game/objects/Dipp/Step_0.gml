@@ -167,9 +167,9 @@ if global.playAs = 1{
 					if keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2){
 						dippState = 10
 						swordUse = 0
-						if place_meeting(x,y+(global.eGravity * 3), Ground) and global.specialMeter > 6{
-							if global.pBounce < 45{
-								global.specialMeter = global.specialMeter - 7
+						if place_meeting(x,y+(global.eGravity * 3), Ground) and global.specialMeter > 9{
+							if global.pBounce < 20{
+								global.specialMeter = global.specialMeter - 10
 							}
 							global.pBounce = 45
 						}

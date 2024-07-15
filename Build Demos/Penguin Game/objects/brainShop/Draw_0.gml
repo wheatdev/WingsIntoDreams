@@ -78,7 +78,15 @@ if type = 1{
 				draw_text(800,250,"Buy Arcade Machine (200 Don)")
 			}
 		}
-		draw_text(800,300,"Don: "+string(global.theMoney))
+		if global.skyUnlock < 1{
+			if selectY = 3 and selectX = 2{
+				draw_text(800,300," > Buy Magic Bean (1000 Don)")
+			}
+			else{
+				draw_text(800,300," Buy Magic Bean (1000 Don)")
+			}
+		}
+		draw_text(1000,50,"Don: "+string(global.theMoney))
 	}
 	if state = 1{
 		draw_text(400,100,words)

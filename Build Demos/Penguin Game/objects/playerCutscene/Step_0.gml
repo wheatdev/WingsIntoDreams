@@ -135,7 +135,7 @@ if type = 8{
 		type = 0 
 		image_xscale = .2
 		global.cameraActive = 0
-		if room = donnerShipInside or room = donnerShipOutside{
+		if room = donnerShipInside or room = donnerShipOutside or hopperHeliship{
 			instance_create_depth(x,y,depth,Dipp)
 			global.cameraActive = -2
 			instance_destroy()
