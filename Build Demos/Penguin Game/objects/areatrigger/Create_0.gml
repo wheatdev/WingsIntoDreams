@@ -4,3 +4,6 @@ if room = conicCaves{
 if room = donnerShipOutside{
 	type = 2
 }
+if room =hopperHeliship{
+	type = 3	
+}

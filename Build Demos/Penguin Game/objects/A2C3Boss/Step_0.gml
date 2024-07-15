@@ -70,7 +70,6 @@ if global.paused = -1{
 			}
 		}
 		else{
-			global.mechanism = 10000
 			audio_stop_all()
 			audio_play_sound(hopperHelishipMusic,0,true)
 			active= 2
@@ -78,8 +77,12 @@ if global.paused = -1{
 	}
 	if  active= 2{
 		global.cameraActive = 1
+		global.mechanism = 10000
 		y = y + global.eGravity
 		image_angle = image_angle + 15
 		image_alpha =1 
+		if global.mechanism = 0{
+			instance_destroy()
+		}
 	}
 }

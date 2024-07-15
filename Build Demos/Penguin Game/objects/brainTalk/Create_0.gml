@@ -5,6 +5,8 @@ if room = springFactoryBoss{
 	type = 1	
 }
 if room = conicCaves{
+	x = 34656
+	y = 4384
 	type = 2
 }
 cindex = 0

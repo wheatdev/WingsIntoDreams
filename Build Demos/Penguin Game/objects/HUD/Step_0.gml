@@ -2,7 +2,7 @@ if global.paused = -1 and (global.cameraActive = 1 or global.cameraActive = -2) 
 	visible = true
 	x = Player.x - 500
 	y = Player.y - 430
-	if global.cameraActive = -2{
+	if global.cameraActive = -2 and type = 1{
 		x = megamanBarrier2.x + 288
 		y = megamanBarrier2.y - 160
 	}

@@ -10,5 +10,8 @@ if global.paused = -1{
 			global.playerStartY = 1050
 			type = 0
 		}
+		if type = 3{
+			global.mechanism = 0
+		}
 	}
 }

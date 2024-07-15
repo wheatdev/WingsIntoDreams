@@ -1,5 +1,11 @@
-x = A2C3Boss.x
-y = A2C3Boss.y
+if global.cameraActive = -2{
+	x = A2C3Boss.x
+	y = A2C3Boss.y
+	visible = true
+}
+else{
+ visible = false	
+}
 if active = 0 and y > -3744{
 	active = 1
 }

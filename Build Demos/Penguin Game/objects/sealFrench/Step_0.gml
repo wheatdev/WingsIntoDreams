@@ -3,8 +3,8 @@ if global.paused = -1 and global.cameraActive = 1{
 		rangeX = abs(Player.x - x)
 		rangeY = abs(Player.y - y)
 		if rangeX < 1000 and rangeY < 500{
-			global.lastSafeX = 33400
 			state = 1
+			global.lastSafeX = 33400
 			global.cameraActive = -1
 		}
 	}

@@ -31,7 +31,7 @@ if global.cameraActive = 1{
 		}
 	}
 }
-if global.cameraActive = -2{
+if global.cameraActive = -2 and type = 1{
 	x = megamanBarrier2.x + 704	
 	y = megamanBarrier2.y + 128
 		if global.paused = 1{
