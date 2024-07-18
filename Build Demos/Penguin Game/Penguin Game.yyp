@@ -21,7 +21,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"Penguin Game",
   "resources":[
@@ -88,6 +88,8 @@
     {"id":{"name":"Ground","path":"objects/Ground/Ground.yy",},},
     {"id":{"name":"Gum","path":"objects/Gum/Gum.yy",},},
     {"id":{"name":"GumArm","path":"objects/GumArm/GumArm.yy",},},
+    {"id":{"name":"GumBoss","path":"objects/GumBoss/GumBoss.yy",},},
+    {"id":{"name":"GumBossArm","path":"objects/GumBossArm/GumBossArm.yy",},},
     {"id":{"name":"gumShoot","path":"objects/gumShoot/gumShoot.yy",},},
     {"id":{"name":"heal1","path":"objects/heal1/heal1.yy",},},
     {"id":{"name":"heal2","path":"objects/heal2/heal2.yy",},},
@@ -201,6 +203,7 @@
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"title","path":"rooms/title/title.yy",},},
     {"id":{"name":"worldMap","path":"rooms/worldMap/worldMap.yy",},},
+    {"id":{"name":"bossSuspenseMusic","path":"sounds/bossSuspenseMusic/bossSuspenseMusic.yy",},},
     {"id":{"name":"conCaveTempleMusic","path":"sounds/conCaveTempleMusic/conCaveTempleMusic.yy",},},
     {"id":{"name":"conicCavesMusic","path":"sounds/conicCavesMusic/conicCavesMusic.yy",},},
     {"id":{"name":"dippHurtSE","path":"sounds/dippHurtSE/dippHurtSE.yy",},},

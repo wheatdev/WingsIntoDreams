@@ -90,6 +90,56 @@ if type = 2{
 		cindex = 8
 	}
 }	
+if type = 5{
+	if global.talking = 1{
+		view_camera[0] = camera_create_view(33056,-13432, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	}
+	if global.cutsceneTimer = -1{
+		instance_create_depth(playerCutscene.x,playerCutscene.y-10,0,Dipp)
+		global.cameraActive = -2
+		global.cutsceneTimer = -2
+	}
+	if cindex = 0{
+		words = "I AM SUPRISED YOU HAVE MADE IT THIS FAR."
+		words2 = "I WOULD HAVE THOUGHT THAT MY BROTHERS"
+		words3 = "WOULD HAVE DESTROYED YOU."
+	}
+	if cindex = 1{
+		words = "BUT IN ANY CASE, I CANNOT ALLOW YOU TO "
+		words2 = "INTERFERE ANYMORE IN MY MAKER'S MISSION."
+		words3 = ""
+	}
+	if cindex = 2{
+		words = "Dude, what??? You steal MY treasure, and"
+		words2 = "I'm the one interfering with YOU?"
+		words3 = "I was gonna make bank off that!"
+	}
+	if cindex = 3{
+		words = "THE ''CORE'' WE AQUIRED FROM THE DONNER SHIP"
+		words2 = "IS ESSENTIAL FOR OUR ULTIMATE GOAL."
+		words3 = ""
+	}
+	if cindex = 4{
+		words = "...Core?"
+		words2 = "What the heck is a Core?"
+		words3 = "Either way, give it back!"
+	}
+	if cindex = 5{
+		words = "NEGATIVE."
+		words2 = "MY OBJECTIVE IS TO RETRIEVE THE ''ICE CORE''."
+		words3 = "IF YOU ATTEMPT TO STOP ME..."
+	}
+	if cindex = 6{
+		words = "THEN I WILL SCRAP YOU LIKE YOU DID MY BROTHERS."
+		words2 = ""
+		words3 = ""
+	}
+	if cindex = 7{
+		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
+		global.cameraActive = -2
+		global.cutsceneTimer = -1
+	}
+}
 if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z"))) and global.talking =1 {
 	cindex = cindex + 1
 }

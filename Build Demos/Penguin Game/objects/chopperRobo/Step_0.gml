@@ -1,5 +1,6 @@
 if global.paused = -1{
 	if global.cameraActive = 1{
+		visible = true
 		if cHealth > 0{
 			if place_meeting(x,y,DippSword) and allowHit = 0{
 				cHealth = cHealth - global.dippAttack
@@ -95,6 +96,6 @@ if global.paused = -1{
 		}
 	}
 	if global.cameraActive = -2{
-		instance_destroy()
+		visible = false
 	}
 }

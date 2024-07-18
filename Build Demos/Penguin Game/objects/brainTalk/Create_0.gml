@@ -9,6 +9,11 @@ if room = conicCaves{
 	y = 4384
 	type = 2
 }
+if room = hopperHeliship{
+	x = 33900
+	y = -12850
+	type = 5	
+}
 cindex = 0
 words = ""
 words2 = ""

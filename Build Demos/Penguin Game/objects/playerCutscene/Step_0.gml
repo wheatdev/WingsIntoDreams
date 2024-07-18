@@ -135,7 +135,7 @@ if type = 8{
 		image_xscale = .2
 		global.cameraActive = 0	
 		type = 0 
-		if (room = donnerShipInside) or (room = donnerShipOutside) or (room = hopperHeliship){
+		if ((room = donnerShipInside) or (room = donnerShipOutside) or (room = hopperHeliship)) and global.talking = 0{
 			instance_create_depth(x,y,depth,Dipp)
 			global.cameraActive = -2
 			instance_destroy()

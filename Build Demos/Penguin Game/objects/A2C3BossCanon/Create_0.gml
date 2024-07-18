@@ -6,3 +6,4 @@ rangeX = x
 rangeY = y
 active = 0
 timer = 0
+startY = y

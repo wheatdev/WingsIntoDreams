@@ -17,7 +17,7 @@ global.pauseX = 1
 global.itemGet = 0
 global.escapeRope = 0
 
-global.storyProgress = 7
+global.storyProgress = 0
 global.lastIn = 1
 global.SFQ = 0 
 global.minesUnlock = 0

@@ -5,48 +5,51 @@ if global.cameraActive = -2{
 }
 else{
  visible = false	
+ y = y + 100
 }
 if active = 0 and y > -3744{
 	active = 1
 }
 if active = 1{
-	rangeX = abs(Player.x - x)
-	rangeY = abs(Player.y - y)
-	timer = timer + 1
-	if rangeX < 100{
-		if Player.y < y{
-			shootAngle = 1	
-		}
-		else{
-			shootAngle = 5	
-		}
-	}
-	if rangeX < 450{
-		if rangeY > 200{
-			if Player.y	< y{
-				if Player.x > x{
-					shootAngle = 2
-				}
-				else{
-					shootAngle = 8
-				}
+	if global.cameraActive = -2{
+		rangeX = abs(Player.x - x)
+		rangeY = abs(Player.y - y)
+		timer = timer + 1
+		if rangeX < 100{
+			if Player.y < y{
+				shootAngle = 1	
 			}
 			else{
-				if Player.x > x{
-					shootAngle = 4
+				shootAngle = 5	
+			}
+		}
+		if rangeX < 450{
+			if rangeY > 200{
+				if Player.y	< y{
+					if Player.x > x{
+						shootAngle = 2
+					}
+					else{
+						shootAngle = 8
+					}
 				}
 				else{
-					shootAngle = 6
+					if Player.x > x{
+						shootAngle = 4
+					}
+					else{
+						shootAngle = 6
+					}
 				}
 			}
 		}
-	}
-	if rangeY < 100{
-		if Player.x < x{
-			shootAngle = 7	
-		}
-		else{
-			shootAngle = 3
+		if rangeY < 100{
+			if Player.x < x{
+				shootAngle = 7	
+			}
+			else{
+				shootAngle = 3
+			}
 		}
 	}
 }
@@ -92,4 +95,8 @@ if timer > 60 and global.cameraActive = -2{
 		instance_create_depth(x,y,0,A2CBossShotD)
 	}
 	timer = 0
+}
+if y > startY + 1800{
+	global.mechanism = 0
+	instance_destroy()
 }

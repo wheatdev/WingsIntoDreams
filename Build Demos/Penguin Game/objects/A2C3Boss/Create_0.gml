@@ -10,4 +10,5 @@ image_xscale = .4
 image_yscale = .4
 gravDirec = 3
 timer = 0
+startY = y
 timerCap = irandom_range(30,100)
