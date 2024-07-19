@@ -1,7 +1,8 @@
 audio_stop_all()
 audio_play_sound(bossSuspenseMusic,0,true)
-window_set_caption("ENGAGING: HOSTILE INTRUDING PENGUIN.")
-instance_create_depth(x,y,0,GumBossArm)
+window_set_caption("ELIMINATING: HOSTILE PENGUIN")
+global.bossHelp2 = -1
+instance_create_depth(x,y,-1,GumBossArm)
 active = 0
 xPos = x
 gHealth = 40
@@ -11,7 +12,7 @@ image_yscale = .25
 type = 0
 xBarrierL = x - 1154
 xBarrierR = x
-attack = 8
+attack = irandom_range(0,9)
 if global.storyProgress = 9{
 	type = 1
 }

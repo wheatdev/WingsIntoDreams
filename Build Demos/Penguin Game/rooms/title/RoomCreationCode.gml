@@ -79,4 +79,3 @@ global.arcade1 = 0
 
 global.bossHelp1 = 0
 global.bossHelp2 = 0
-global.bossHelp3 = 0

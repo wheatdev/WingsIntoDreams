@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":180.19266,
+  "duration":69.17224,
   "name":"helishipBossMusic",
   "parent":{
     "name":"Sounds",
