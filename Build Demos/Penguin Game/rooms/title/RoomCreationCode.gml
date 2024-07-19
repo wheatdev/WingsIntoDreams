@@ -17,7 +17,7 @@ global.pauseX = 1
 global.itemGet = 0
 global.escapeRope = 0
 
-global.storyProgress = 0
+global.storyProgress = 9
 global.lastIn = 1
 global.SFQ = 0 
 global.minesUnlock = 0
@@ -31,7 +31,7 @@ global.playerStartY = 9056
 global.lastSafeX = 0
 global.lastSafeY = 0
 global.dippActive = 1
-global.gumActive = 0
+global.gumActive = 1
 global.earnestActive = 0
 
 global.dippSpeed = 10
@@ -56,7 +56,7 @@ global.earnestHealthMax = 50
 global.earnestAttack = 6
 global.earnestSpecial = 1
 
-global.upgrade = 0
+global.upgrade = 10
 global.upgrade1Get = 0
 global.upgrade2Get = 0
 global.upgrade3Get = 0
@@ -76,3 +76,7 @@ global.key4 = 0
 global.mechanism = 0
 
 global.arcade1 = 0
+
+global.bossHelp1 = 0
+global.bossHelp2 = 0
+global.bossHelp3 = 0

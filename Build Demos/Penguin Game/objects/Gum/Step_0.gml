@@ -94,18 +94,25 @@ if global.playAs = 2{
 				global.gumHealth = 0
 			}
 			
-			if keyboard_check(ord("P")){
-				if global.gumSpecial = 1{
-					x  = x + (10 * global.lastPressed)
+			if global.gumSpecial = 1{
+				if keyboard_check(ord("P")) and global.specialMeter > 0{
+					x  = x + ((global.gumSpeed * 1.25) * global.lastPressed)
+					global.specialMeter = global.specialMeter - .2
 					if jumpState = 1{
 						jumpState = 1
 					}
 					else{
 						y = y - (global.eGravity * .2)
 					}
-					if place_meeting(x+(10 * global.lastPressed),y,Ground){
-						x = x - (10 * global.lastPressed)
+					if place_meeting(x+((global.gumSpeed * 1.25) * global.lastPressed),y,Ground){
+						x = x - ((global.gumSpeed * 1.25) * global.lastPressed)
 					}
+				}
+			}
+			if global.gumSpecial = 2{
+				if keyboard_check(ord("P")) and global.specialMeter > 0 and place_empty(x,y-(global.eGravity*2.5),Ground){
+					y = y - (global.eGravity * 2.5)
+					global.specialMeter = global.specialMeter - .5
 				}
 			}
 		}

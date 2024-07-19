@@ -95,7 +95,6 @@ if type = 5{
 		view_camera[0] = camera_create_view(33056,-13432, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 	}
 	if global.cutsceneTimer = -1{
-		instance_create_depth(playerCutscene.x,playerCutscene.y-10,0,Dipp)
 		global.cameraActive = -2
 		global.cutsceneTimer = -2
 	}
@@ -138,6 +137,7 @@ if type = 5{
 		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
 		global.cameraActive = -2
 		global.cutsceneTimer = -1
+		cindex = 8
 	}
 }
 if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z"))) and global.talking =1 {

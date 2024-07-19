@@ -1,6 +1,6 @@
 if global.gumHealth > 0 and global.playAs = 2{
-	x = Gum.x - (53 * global.lastPressed)
-	y = Gum.y - 74
+	x = Gum.x
+	y = Gum.y 
 	image_xscale = .25 * global.lastPressed
 	image_yscale = global.eGravity/40
 	if global.allowDamage > 1{

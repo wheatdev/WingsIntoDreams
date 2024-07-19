@@ -401,7 +401,7 @@ if global.playAs = 1{
 else{
 	if global.playAs = 2{
 		if place_empty(x,y-64,Ground){	
-			instance_create_depth(x,y,0,Gum)
+			instance_create_depth(x-32,y-80,0,Gum)
 			instance_destroy()
 		}
 		else{

@@ -53,6 +53,12 @@ if global.pauseX = 2{
 		else{
 			draw_text(x,y-150,"DASH")
 		}	
+		if selectY = 1 and selectX = 3{
+			draw_text(x+280,y-150,"> JET")
+		}
+		else{
+			draw_text(x+280,y-150,"JET")
+		}	
 	}
 	if selectX<1{
 		selectX = 1

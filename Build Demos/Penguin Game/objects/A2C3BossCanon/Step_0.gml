@@ -4,52 +4,51 @@ if global.cameraActive = -2{
 	visible = true
 }
 else{
- visible = false	
- y = y + 100
+	if global.mechanism > 0{
+		y = y + 1000	
+	}
 }
 if active = 0 and y > -3744{
 	active = 1
 }
 if active = 1{
-	if global.cameraActive = -2{
-		rangeX = abs(Player.x - x)
-		rangeY = abs(Player.y - y)
-		timer = timer + 1
-		if rangeX < 100{
-			if Player.y < y{
-				shootAngle = 1	
-			}
-			else{
-				shootAngle = 5	
-			}
+	rangeX = abs(Player.x - x)
+	rangeY = abs(Player.y - y)
+	timer = timer + 1
+	if rangeX < 100{
+		if Player.y < y{
+			shootAngle = 1	
 		}
-		if rangeX < 450{
-			if rangeY > 200{
-				if Player.y	< y{
-					if Player.x > x{
-						shootAngle = 2
-					}
-					else{
-						shootAngle = 8
-					}
+		else{
+			shootAngle = 5	
+		}
+	}
+	if rangeX < 450{
+		if rangeY > 200{
+			if Player.y	< y{
+				if Player.x > x{
+					shootAngle = 2
 				}
 				else{
-					if Player.x > x{
-						shootAngle = 4
-					}
-					else{
-						shootAngle = 6
-					}
+					shootAngle = 8
+				}
+			}
+			else{
+				if Player.x > x{
+					shootAngle = 4
+				}
+				else{
+					shootAngle = 6
 				}
 			}
 		}
-		if rangeY < 100{
-			if Player.x < x{
-				shootAngle = 7	
-			}
-			else{
-				shootAngle = 3
-			}
+	}
+	if rangeY < 100{
+		if Player.x < x{
+			shootAngle = 7	
+		}
+		else{
+			shootAngle = 3
 		}
 	}
 }

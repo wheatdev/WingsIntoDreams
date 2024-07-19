@@ -34,6 +34,10 @@
 				selectX = 2
 				selectY = 1
 			}
+			if global.gumSpecial = 2{
+				selectX = 3
+				selectY = 1
+			}
 		}
 	}
 	x = pauseMenu.x
@@ -76,8 +80,11 @@
 					if selectX = 1 and selectY = 1{
 						global.gumSpecial = 0
 					}
-					if selectX = 2 and selectY = 1 and global.dippSpringGet = 1{
+					if selectX = 2 and selectY = 1{
 						global.gumSpecial = 1
+					}
+						if selectX = 3 and selectY = 1{
+						global.gumSpecial = 2
 					}
 				}
 			}

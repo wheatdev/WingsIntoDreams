@@ -81,7 +81,7 @@ if global.paused = -1{
 		y = y + global.eGravity
 		image_angle = image_angle + 15
 		image_alpha =1 
-		if y > startY + 2000{
+		if y > startY + 2000 and global.playerStartX > 28500{
 			global.mechanism = 0
 			instance_destroy()
 		}
