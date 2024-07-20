@@ -3,7 +3,7 @@ if type = 0{
 		if xVal1 = 0{
 			sprite_index =dippWalk
 			x = x + global.dippSpeed
-			if x > yVal2{
+			if x > 150{
 				xVal1 = 1
 			}
 		}
@@ -26,6 +26,18 @@ if type = 0{
 	}
 	if global.cutsceneTimer = 4{
 		sprite_index = dippPain
+	}
+	if global.cutsceneTimer = 5 and global.talking = 1{
+		yVal2 = yVal2 + 1
+		if yVal2 < 20{
+			sprite_index = dippJump1
+			y = y - (global.eGravity * 1.5)
+		}
+		else{
+			sprite_index = dippJump2
+			y = y + (global.eGravity * 1.5)
+		}
+			
 	}
 }
 if type = 1{

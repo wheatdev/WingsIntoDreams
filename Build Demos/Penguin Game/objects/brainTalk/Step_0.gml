@@ -139,6 +139,25 @@ if type = 5{
 		global.cutsceneTimer = -1
 		cindex = 8
 	}
+	if cindex = 8{
+		words = "WARNING: DAMAGE TO EXOTERIOR EXCEEDES"
+		words2 = "PROJECTED MAXIMUM."
+		words3 = "OVERHEATING. PLEaSE WAiT."
+	}
+	if cindex = 9{
+		words = "Ha.... ha..."
+		words2 = "Take that... stupid robot..."
+		words3 = "I... am out... of here..."
+	}
+	if cindex = 10{
+		global.cutsceneTimer = 5
+		words = "HoSTiLe PeNGuiN eSCaPiNG WiTH CoRe."
+		words2 = "eNGaGiNG: aRTiFiCiaL GRaViTY."
+		words3 = ""
+	}
+	if cindex = 11{
+		room_goto(hopperHelishipUnderside)
+	}
 }
 if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z"))) and global.talking =1 {
 	cindex = cindex + 1

@@ -19,3 +19,10 @@ if global.storyProgress = 9{
 maxHeight = y
 timer = 0
 jumpState = 0 
+if room = hopperHelishipUnderside{
+	areaType = 2
+	gHealth = 20
+}
+else{
+	areaType = 1
+}

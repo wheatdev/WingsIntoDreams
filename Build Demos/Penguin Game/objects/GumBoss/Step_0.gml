@@ -227,6 +227,8 @@ if global.paused = -1{
 				}
 			}
 			else{
+				global.playerStartX = Player.x 
+				global.cutsceneTimer = 0
 				active = 3
 			}
 		}
@@ -236,6 +238,11 @@ if global.paused = -1{
 		}
 	}
 	if active = 3{
-		image_angle = image_angle + 20
+		global.talking = 1
+		global.cameraActive = -1
+		y = y + global.eGravity
+		if place_meeting(x,y+global.eGravity,Ground){
+			y = y - global.eGravity	
+		}
 	}
 }

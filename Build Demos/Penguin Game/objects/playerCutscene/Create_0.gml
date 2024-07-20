@@ -9,7 +9,7 @@ if global.itemGet = 0{
 	if room = Shop1{
 		type = 0
 		xVal1 = 0
-		yVal2 = 150
+		yVal2 = 0
 	}
 	if room = springFactory{
 		global.cameraActive = 0

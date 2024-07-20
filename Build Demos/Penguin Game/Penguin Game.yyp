@@ -193,6 +193,7 @@
     {"id":{"name":"donnerShipInside","path":"rooms/donnerShipInside/donnerShipInside.yy",},},
     {"id":{"name":"donnerShipOutside","path":"rooms/donnerShipOutside/donnerShipOutside.yy",},},
     {"id":{"name":"hopperHeliship","path":"rooms/hopperHeliship/hopperHeliship.yy",},},
+    {"id":{"name":"hopperHelishipUnderside","path":"rooms/hopperHelishipUnderside/hopperHelishipUnderside.yy",},},
     {"id":{"name":"HUB1","path":"rooms/HUB1/HUB1.yy",},},
     {"id":{"name":"HUB2","path":"rooms/HUB2/HUB2.yy",},},
     {"id":{"name":"mineDownUnder","path":"rooms/mineDownUnder/mineDownUnder.yy",},},
@@ -382,6 +383,7 @@
     {"roomId":{"name":"HUB2","path":"rooms/HUB2/HUB2.yy",},},
     {"roomId":{"name":"hopperHeliship","path":"rooms/hopperHeliship/hopperHeliship.yy",},},
     {"roomId":{"name":"skyHighHeights","path":"rooms/skyHighHeights/skyHighHeights.yy",},},
+    {"roomId":{"name":"hopperHelishipUnderside","path":"rooms/hopperHelishipUnderside/hopperHelishipUnderside.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
