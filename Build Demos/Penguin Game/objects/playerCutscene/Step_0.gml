@@ -85,9 +85,14 @@ if type = 3{
 	sprite_index = dippJump2
 	global.cutsceneTimer = 0
 	y = y + global.eGravity
+	image_yscale = global.eGravity/50
 	if place_meeting(x,y+global.eGravity,Ground){
 		instance_create_depth(x,y,depth,Dipp)
 		global.cameraActive = 1
+		if room = hopperHelishipUnderside{
+			global.cameraActive = -2	
+			global.cutsceneTimer = -2
+		}
 		instance_destroy()
 	}
 }
@@ -123,7 +128,6 @@ if type = 7{
 	sprite_index = dippHold
 	y = y + global.eGravity
 	image_xscale = .2
-	image_yscale = global.eGravity/50
 	if place_meeting(x,y+global.eGravity,Ground){
 		y = y - global.eGravity
 	}

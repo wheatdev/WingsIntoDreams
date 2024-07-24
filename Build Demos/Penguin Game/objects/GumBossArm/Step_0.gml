@@ -6,13 +6,13 @@ if global.paused = -1 and global.talking = 0 and global.cameraActive = -2{
 		shootAngle = 7
 		timer = timer + 1
 		if timer = 50{
-			instance_create_depth(x,y+20,0,A2CBossShotH)
+			instance_create_depth(x,y+2.5*global.eGravity,0,A2CBossShotH)
 		}
 		if timer = 55{
-			instance_create_depth(x,y+20,0,A2CBossShotH)
+			instance_create_depth(x,y+2.5*global.eGravity,0,A2CBossShotH)
 		}
 		if timer > 59{
-			instance_create_depth(x,y+20,0,A2CBossShotH)
+			instance_create_depth(x,y+2.5*global.eGravity,0,A2CBossShotH)
 			timer = 0
 		}
 	}
@@ -20,13 +20,13 @@ if global.paused = -1 and global.talking = 0 and global.cameraActive = -2{
 		shootAngle = 3
 		timer = timer + 1
 		if timer = 50{
-			instance_create_depth(x,y+20,0,A2CBossShotH)
+			instance_create_depth(x,y+2.5*global.eGravity,0,A2CBossShotH)
 		}
 		if timer = 55{
-			instance_create_depth(x,y+20,0,A2CBossShotH)
+			instance_create_depth(x,y+2.5*global.eGravity,0,A2CBossShotH)
 		}
 		if timer > 59{
-			instance_create_depth(x,y+20,0,A2CBossShotH)
+			instance_create_depth(x,y+2.5*global.eGravity,0,A2CBossShotH)
 			timer = 0
 		}
 	}

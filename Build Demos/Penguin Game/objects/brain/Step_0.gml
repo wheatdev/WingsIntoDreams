@@ -1,6 +1,6 @@
 if room = title{
 	if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(0,gp_start){
-		room_goto(hopperHeliship)
+		room_goto(springFactory)
 	}
 }
 else{
@@ -80,12 +80,15 @@ if room = conCaveTemple and global.cameraActive = 0{
 if room = donnerShipOutside and global.cameraActive = 0{
 	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 }
+if room = hopperHelishipUnderside and global.cutsceneTimer = 0{
+	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+}
 if global.itemGet = 1{
 	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 }
-}
 if keyboard_check(vk_escape){
 	game_end()
+}
 }
 if keyboard_check_pressed(ord("F")){
 	global.fullscreen = global.fullscreen * -1
@@ -96,6 +99,7 @@ if global.fullscreen = 1{
 if global.fullscreen = -1{
 	window_set_fullscreen(false)
 }
+
 global.specialMeter = global.specialMeter + .05
 if global.specialMeter > 100{
 	global.specialMeter = 100

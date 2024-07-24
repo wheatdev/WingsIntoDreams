@@ -42,7 +42,7 @@ if global.itemGet = 0{
 			yVal2 = y - 300
 		}
 	}
-	if room = conCaveTemple{
+	if room = conCaveTemple or hopperHelishipUnderside{
 		depth = -4
 		type = 3
 	}

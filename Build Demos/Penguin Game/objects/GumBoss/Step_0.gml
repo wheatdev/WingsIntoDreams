@@ -22,6 +22,7 @@ if global.paused = -1{
 		global.cameraActive = -2
 		if audio_is_playing(helishipBossMusic){
 			if gHealth > 0{
+				image_yscale = (.25 * (global.eGravity/10))
 				image_xscale = (.25 * global.bossHelp2)
 				y = y + global.eGravity
 				if place_meeting(x,y+global.eGravity,Ground){
@@ -29,7 +30,7 @@ if global.paused = -1{
 					jumpState = 0
 					maxHeight = y - (25 * global.eGravity)
 					if attack = 4 or attack = 5{
-						instance_create_depth(x,y+20,0,A2CBossShotH)	
+						instance_create_depth(x,y+(4*global.eGravity),0,A2CBossShotH)
 					}
 				}
 				if place_meeting(x,y,DippSword) and allowHit = 0{
@@ -97,13 +98,13 @@ if global.paused = -1{
 					}
 					if global.eGravity > 0{
 						if y < maxHeight{
-							instance_create_depth(x,y+20,0,A2CBossShotH)
+							instance_create_depth(x,y+(4*global.eGravity),0,A2CBossShotH)
 							attack = irandom_range(0,9)
 						}
 					}
 					else{
 						if y > maxHeight{
-							instance_create_depth(x,y+20,0,A2CBossShotH)
+							instance_create_depth(x,y+(4*global.eGravity),0,A2CBossShotH)
 							attack = irandom_range(0,9)
 						}
 					}
@@ -120,14 +121,14 @@ if global.paused = -1{
 							y = y - (global.eGravity * 2)
 							if global.eGravity > 0{
 								if y < maxHeight{
-									instance_create_depth(x,y+20,0,A2CBossShotH)
+									instance_create_depth(x,y+(5*global.eGravity),0,A2CBossShotH)
 									jumpState = 1
 									timer = timer + 1	
 								}
 							}
 							else{
 								if y > maxHeight{
-									instance_create_depth(x,y+20,0,A2CBossShotH)
+									instance_create_depth(x,y+(4*global.eGravity),0,A2CBossShotH)
 									jumpState = 1
 									timer = timer + 1	
 								}
@@ -198,7 +199,7 @@ if global.paused = -1{
 					}
 					else{
 						if y < maxHeight + 300{
-							y = y + (global.eGravity  * 2.5)
+							y = y - (global.eGravity  * 2.5)
 						}
 					}
 					if x < xBarrierL{
@@ -218,7 +219,7 @@ if global.paused = -1{
 					}
 					else{
 						if y < maxHeight + 300{
-							y = y + (global.eGravity  * 2.5)
+							y = y - (global.eGravity  * 2.5)
 						}
 					}
 					if x > xBarrierR{
@@ -243,6 +244,13 @@ if global.paused = -1{
 		y = y + global.eGravity
 		if place_meeting(x,y+global.eGravity,Ground){
 			y = y - global.eGravity	
+		}
+	}
+	if active = 4{
+		global.cameraActive = 0
+		if global.cutsceneTimer = -2{
+			global.cutsceneTimer = -2
+			active = 2	
 		}
 	}
 }

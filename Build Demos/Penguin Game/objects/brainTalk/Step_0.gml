@@ -156,6 +156,7 @@ if type = 5{
 		words3 = ""
 	}
 	if cindex = 11{
+		global.cameraActive = 0
 		room_goto(hopperHelishipUnderside)
 	}
 }

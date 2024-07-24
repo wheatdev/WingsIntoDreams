@@ -21,7 +21,11 @@ timer = 0
 jumpState = 0 
 if room = hopperHelishipUnderside{
 	areaType = 2
+	active = 4
 	gHealth = 20
+	xBarrierL = 160
+	global.playerStartX =  768
+	instance_create_depth(x,y,0,specialRemoval)
 }
 else{
 	areaType = 1
