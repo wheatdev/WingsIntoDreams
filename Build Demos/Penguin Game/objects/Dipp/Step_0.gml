@@ -256,8 +256,8 @@ if global.playAs = 1{
 				}
 				if place_meeting(x,y,collectableSpecial){
 					global.itemGet = 1
-					global.cameraActive = 0 
 					instance_create_depth(Player.x,Player.y,0,playerCutscene)
+					global.cameraActive = 0 
 					instance_destroy()
 				}
  			}

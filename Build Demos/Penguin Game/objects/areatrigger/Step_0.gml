@@ -13,5 +13,13 @@ if global.paused = -1{
 		if type = 3{
 			global.mechanism = 0
 		}
+		if type = 4{
+			global.playerStartX = 704
+			global.playerStartY = 640
+			room_goto(skyHighHunting)
+		}
+		if type = 5{
+			room_goto(HUB1)	
+		}
 	}
 }

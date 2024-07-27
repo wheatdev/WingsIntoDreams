@@ -63,9 +63,9 @@ if state = 0{
 				}
 			}
 			if selectX = 1 and selectY = 3{
-				if global.skyUnlock < 1 and global.theMoney > 999{
-					global.theMoney = global.theMoney - 1000
-					global.skyUnlock = global.skyUnlock  = 1
+				if global.skyUnlock < 1 and global.theMoney > 1999{
+					global.theMoney = global.theMoney - 2000
+					global.skyUnlock = 1
 				}
 			}
 		}

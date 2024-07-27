@@ -1,71 +1,44 @@
-xVal1 = 0
-yVal2 = 0
 type = 0
-if global.itemGet = 0{
-	if global.playAs = 1{
-		image_xscale = .2
-		image_yscale = global.eGravity/50	
-	}
-	if room = Shop1{
-		type = 0
-		xVal1 = 0
-		yVal2 = 0
-	}
-	if room = springFactory{
+hVal1 = 0
+hVal2 = 0
+depth = -4
+image_xscale = .2
+image_yscale = .2
+if room = springFactory{
+	hVal1 = 6
+	hVal2 = 62.5
+	type = 1
+}
+if room = mineDownUnder{
+	type = 3	
+}
+if room = conicCaves{
+	if global.cameraActive = 1{
 		global.cameraActive = 0
-		if place_meeting(x,y,springFactoryBossDoor){
-			type = 6
-			xVal1 = 5
-			yVal2 = 50
-			depth = -4
-			image_xscale = 1/xVal1
-			image_yscale = global.eGravity/yVal2
-		}
-		else{
-			type = 1	
-			xVal1 = 6
-			yVal2 = 62.5
-			depth = -4
-			image_xscale = 1/xVal1
-			image_yscale = global.eGravity/yVal2
-		}
-	}
-	if room = conicCaves{
-		if global.cameraActive = -1{
-			type = 8
-		}
-		else{
-			global.cameraActive = 0
-			depth = -4
-			type = 2	
-			xVal1 = 0
-			yVal2 = y - 300
-		}
-	}
-	if room = conCaveTemple or hopperHelishipUnderside{
-		depth = -4
-		type = 3
-	}
-	if room  = mineDownUnder{
-		type = 4	
-	}
-	if room = donnerShipInside{
-		type = 5
+		hVal2 = y - 300
+		type = 4
 	}
 }
-else{
-	type = 7
+if room = conCaveTemple or room = hopperHelishipUnderside{
+	type = 5
 }
-if global.cameraActive = -1{
-	type = 8
+if room = donnerShipInside{
+	type = 6
 }
+if global.cameraActive = -1 or room = Shop1{
+ type = -1	
+}
+
 if global.cutsceneTimer = 1{
 	if room = donnerShipOutside{
-		xVal1 = 0	
+		hVal1 = 0	
 	}
 	else{
-		xVal1 = 2
+		hVal1 = 2
 	}
-	yVal2 = y
-	type = 9
+	hVal2 = y
+	type = 7
+}
+if global.itemGet = 1{
+	type = 2	
 }

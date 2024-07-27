@@ -17,11 +17,11 @@ global.pauseX = 1
 global.itemGet = 0
 global.escapeRope = 0
 
-global.storyProgress = 0
+global.storyProgress = 2
 global.lastIn = 1
 global.SFQ = 0 
 global.minesUnlock = 0
-global.skyUnlock = 0
+global.skyUnlock = 1
 
 global.cutsceneTimer = 0
 global.talking = 0 
@@ -56,7 +56,7 @@ global.earnestHealthMax = 50
 global.earnestAttack = 6
 global.earnestSpecial = 1
 
-global.upgrade = 10
+global.upgrade = 0
 global.upgrade1Get = 0
 global.upgrade2Get = 0
 global.upgrade3Get = 0

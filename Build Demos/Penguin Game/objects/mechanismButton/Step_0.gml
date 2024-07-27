@@ -32,10 +32,9 @@ if global.paused = -1{
 			audio_play_sound(portalTeleportSE,0,false)
 			room_restart()
 		}
-		if global.mechanism = 0{
-			y = startY
-			activated = 0
-		}
 	}
-		
+	if global.mechanism = 0{
+		y = startY
+		activated = 0
+	}
 }

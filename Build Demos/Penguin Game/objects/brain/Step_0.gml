@@ -99,10 +99,21 @@ if global.fullscreen = 1{
 if global.fullscreen = -1{
 	window_set_fullscreen(false)
 }
-
-global.specialMeter = global.specialMeter + .05
-if global.specialMeter > 100{
-	global.specialMeter = 100
+if global.paused = -1{
+	global.specialMeter = global.specialMeter + .05
+	if global.specialMeter > 100{
+		global.specialMeter = 100
+	}
+	if global.skyUnlock < 0{
+		global.skyUnlock = global.skyUnlock - 1
+		global.specialMeter = global.specialMeter + .05
+		if global.skyUnlock < -149{
+			if global.playAs = 1{
+				global.dippHealth = global.dippHealth + 1	
+			}
+			global.skyUnlock = -1	
+		}
+	}
 }
 
 
