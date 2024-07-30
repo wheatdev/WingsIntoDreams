@@ -7,7 +7,7 @@ if global.paused = -1{
 		moveOn = 1
 	}
 	if moveOn = 1{
-		if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter){
+		if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or  gamepad_button_check(0,gp_face1) or  gamepad_button_check(0,gp_start){
 			global.playerStartX = 1500
 			global.playerStartY = 0
 			if global.playAs =1{

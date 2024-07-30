@@ -1,3 +1,15 @@
+if keyboard_check(vk_escape){
+	game_end()
+}
+if keyboard_check_pressed(ord("F")){
+	global.fullscreen = global.fullscreen * -1
+}
+if global.fullscreen = 1{
+	window_set_fullscreen(true)
+}
+if global.fullscreen = -1{
+	window_set_fullscreen(false)
+}
 if room = title{
 	if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(0,gp_start){
 		room_goto(springFactory)
@@ -71,49 +83,39 @@ else{
 			global.playAs = 2
 		}
 	}
-if global.cameraActive = 1{	
-	view_camera[0] = camera_create_view(Player.x - 800, Player.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
-}
-if room = conCaveTemple and global.cameraActive = 0{
-	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
-}
-if room = donnerShipOutside and global.cameraActive = 0{
-	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
-}
-if room = hopperHelishipUnderside and global.cutsceneTimer = 0{
-	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
-}
-if global.itemGet = 1{
-	view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
-}
-if keyboard_check(vk_escape){
-	game_end()
-}
-}
-if keyboard_check_pressed(ord("F")){
-	global.fullscreen = global.fullscreen * -1
-}
-if global.fullscreen = 1{
-	window_set_fullscreen(true)
-}
-if global.fullscreen = -1{
-	window_set_fullscreen(false)
-}
-if global.paused = -1{
-	global.specialMeter = global.specialMeter + .05
-	if global.specialMeter > 100{
-		global.specialMeter = 100
+
+	if global.cameraActive = 1{	
+		view_camera[0] = camera_create_view(Player.x - 800, Player.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 	}
-	if global.skyUnlock < 0{
-		global.skyUnlock = global.skyUnlock - 1
+	if room = conCaveTemple and global.cameraActive = 0{
+		view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	}
+	if room = donnerShipOutside and global.cameraActive = 0{
+		view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	}
+	if room = hopperHelishipUnderside and global.cutsceneTimer = 0{
+		view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	}
+	if global.itemGet = 1{
+		view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	}
+	if global.paused = -1{
 		global.specialMeter = global.specialMeter + .05
-		if global.skyUnlock < -149{
-			if global.playAs = 1{
-				global.dippHealth = global.dippHealth + 1	
+		if global.specialMeter > 100{
+			global.specialMeter = 100
+		}
+		if global.skyUnlock < 0{
+			global.skyUnlock = global.skyUnlock - 1
+			global.specialMeter = global.specialMeter + .05
+			if global.skyUnlock < -149{
+				if global.playAs = 1{
+					global.dippHealth = global.dippHealth + 1	
+				}
+				global.skyUnlock = -1	
 			}
-			global.skyUnlock = -1	
+		}
+		if global.mechanism > 0{
+			global.mechanism = global.mechanism - 1
 		}
 	}
 }
-
-

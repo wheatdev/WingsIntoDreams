@@ -78,7 +78,7 @@ if type = 1{
 				draw_text(800,250,"Buy Arcade Machine (200 Don)")
 			}
 		}
-		if global.skyUnlock < 1{
+		if global.skyUnlock = 0{
 			if selectY = 3 and selectX = 1{
 				draw_text(800,300," > Buy Magic Bean (2000 Don)")
 			}

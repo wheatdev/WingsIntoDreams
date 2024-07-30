@@ -14,7 +14,7 @@ if global.paused = -1{
 						runAwayY = 1
 						runAwayX = 1
 					}
-					if keyboard_check(ord("S")) or keyboard_check(vk_down){
+					if keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd){
 						global.pBounce = 20
 						runAwayY = 1
 					}

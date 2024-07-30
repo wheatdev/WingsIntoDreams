@@ -5,8 +5,9 @@ if global.paused = -1{
 		}
 	}
 	if activated = 1{
-		y = y + 2
+		y = y + 5
 		if y > startY + 40{
+			global.mechanism = 1000
 			if room = CCC1{
 				global.mechanism = 750	
 			}
@@ -27,14 +28,13 @@ if global.paused = -1{
 	}
 	if activated = 2{
 		y = startY + 40	
-		global.mechanism = global.mechanism - 1
 		if global.mechanism = 0 and (room = CCC1 or room = CCC2 or room = CCC3 or room = CCC4){
 			audio_play_sound(portalTeleportSE,0,false)
 			room_restart()
 		}
-	}
-	if global.mechanism = 0{
-		y = startY
-		activated = 0
+		if global.mechanism = 0{
+			y = startY
+			activated = 0
+		}
 	}
 }

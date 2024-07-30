@@ -7,7 +7,7 @@ if global.paused = -1{
 		if place_meeting(x,y,Player) and Player.y > (startY - flyBy){
 			Player.y = Player.y - (global.eGravity * 1.5)
 		}
-		if global.dippSpecial = 2 and (keyboard_check(ord("P")) or keyboard_check(ord("Z"))){
+		if global.dippSpecial = 2 and (keyboard_check(ord("P")) or keyboard_check(ord("Z")) or gamepad_button_check(0,gp_face2)){
 			flyBy = 3000
 			y = y - (global.eGravity/2)
 			if place_meeting(x,y,Player) and Player.y > (startY - flyBy){

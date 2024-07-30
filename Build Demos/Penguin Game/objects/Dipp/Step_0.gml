@@ -197,10 +197,10 @@ if global.playAs = 1{
 					}
 				}
 				if global.dippSpecial = 4{
-					if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")){
+					if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
 						instance_create_depth(x,y,0,dippSnowball)
 					}
-					if keyboard_check(ord("P")) or keyboard_check(ord("C")) and global.specialMeter > 0{
+					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter > 0{
 						swordUse = -2
 						global.specialMeter = global.specialMeter - .1
 						x = x + (global.lastPressed * global.dippSpeed)
@@ -208,7 +208,7 @@ if global.playAs = 1{
 							x = x - (global.lastPressed * global.dippSpeed)	
 						}
 					}
-					if keyboard_check_released(ord("P")) or keyboard_check_released(ord("C")){
+					if keyboard_check_released(ord("P")) or keyboard_check_released(ord("C")) or gamepad_button_check_released(0,gp_face2){
 						swordUse = 0
 					}
 				}
@@ -346,26 +346,26 @@ if global.playAs = 1{
 					sprite_index = dippClimb
 					swordUse = 0
 					global.pBounce = 0
-					if keyboard_check(ord("W")) or keyboard_check(vk_up){
+					if keyboard_check(ord("W")) or keyboard_check(vk_up) or gamepad_button_check(0,gp_padu){
 						y = y - global.eGravity
 						if place_meeting(x,y-global.eGravity,Ground){
 							y = y + global.eGravity
 						}
 					}
-					if keyboard_check(ord("S")) or keyboard_check(vk_down){
+					if keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd){
 						y = y + global.eGravity
 						if place_meeting(x,y+global.eGravity,Ground){
 							image_speed =1
 							onLadder = 0
 						}
 					}
-					if keyboard_check(ord("S")) or keyboard_check(vk_down) or  keyboard_check(ord("W")) or keyboard_check(vk_up){
+					if keyboard_check(ord("S")) or keyboard_check(vk_down) or  keyboard_check(ord("W")) or keyboard_check(vk_up) or gamepad_button_check(0,gp_padu) or gamepad_button_check(0,gp_padd){
 						image_speed = 1	
 					}
 					else{
 						image_speed = 0
 					}
-					if keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right){
+					if keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or gamepad_button_check(0,gp_padl) or gamepad_button_check(0,gp_padr){
 						image_speed =1
 						onLadder = 0	
 					}
@@ -419,7 +419,7 @@ if place_meeting(x,y,water) and place_empty(x,y,waterSurface){
 else{
 	inWater = 0
 }
-if place_meeting(x,y,ladder) and (keyboard_check_pressed(ord("W")) or keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down)){
+if place_meeting(x,y,ladder) and (keyboard_check_pressed(ord("W")) or keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down) or gamepad_button_check(0,gp_padd) or gamepad_button_check(0,gp_padu)){
 	onLadder = 1
 }
 if global.cameraActive = -1{

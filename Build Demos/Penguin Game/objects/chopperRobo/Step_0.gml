@@ -5,7 +5,7 @@ if global.paused = -1{
 			if place_meeting(x,y,DippSword) and allowHit = 0{
 				cHealth = cHealth - global.dippAttack
 				allowHit = 30
-				if keyboard_check(ord("S")) or keyboard_check(vk_down){
+				if keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd){
 					global.pBounce = 30
 				}
 			}

@@ -45,20 +45,21 @@
 
 	if global.pauseX = 2{
 		active = -80
+		image_alpha = 1
 			if selected = 1{
-			if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down){
+			if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0,gp_padd){
 				selectY = selectY + 1
 			}
-			if keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up){
+			if keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up) or gamepad_button_check_pressed(0,gp_padu){
 				selectY = selectY - 1
 			}
-			if keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right){
+			if keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right) or gamepad_button_check_pressed(0,gp_padr){
 				selectX = selectX + 1
 			}
-			if keyboard_check_pressed(ord("A")) or keyboard_check_pressed(vk_left){
+			if keyboard_check_pressed(ord("A")) or keyboard_check_pressed(vk_left) or gamepad_button_check_pressed(0,gp_padl){
 				selectX = selectX - 1
 			}
-			if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")){
+			if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1){
 				if global.playAs = 1{
 					if selectX = 1 and selectY = 1{
 						global.dippSpecial = 0
@@ -89,10 +90,10 @@
 				}
 			}
 		}
-		if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")){
+		if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1){
 			selected = 1
 		}
-		if keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X")){
+		if keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X")) or gamepad_button_check_pressed(0,gp_face3){
 			selected = -1
 		}
 	}

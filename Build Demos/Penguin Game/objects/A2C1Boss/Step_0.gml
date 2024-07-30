@@ -227,7 +227,7 @@ if global.paused = -1{
 			}
 			if place_meeting(x,y,DippSword) and allowHit = 0{
 				aHealth = aHealth - global.dippAttack
-				if keyboard_check(ord("S")) or keyboard_check(vk_down){
+				if keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd){
 					global.pBounce = 20	
 				}
 				allowHit = 20

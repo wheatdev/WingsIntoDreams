@@ -58,7 +58,7 @@ if global.paused = -1 and global.cameraActive = 1{
 			allowHit = 30
 			angry = 1
 			y = y - global.eGravity
-			if keyboard_check(ord("S")) or keyboard_check(vk_down){
+			if keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd){
 				global.pBounce = 45
 			}
 		}

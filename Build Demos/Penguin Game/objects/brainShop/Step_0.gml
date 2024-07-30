@@ -1,5 +1,5 @@
 if state = 0{
-	if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")){
+	if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1){
 		state = 1
 		if type = 1{
 			if selectX = -1 and selectY = 0{
@@ -63,7 +63,7 @@ if state = 0{
 				}
 			}
 			if selectX = 1 and selectY = 3{
-				if global.skyUnlock < 1 and global.theMoney > 1999{
+				if global.skyUnlock =0 and global.theMoney > 1999{
 					global.theMoney = global.theMoney - 2000
 					global.skyUnlock = 1
 				}
@@ -71,13 +71,13 @@ if state = 0{
 		}
 		state = 1
 	}
-	if keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up){
+	if keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up) or gamepad_button_check_pressed(0,gp_padu){
 		selectY = selectY - 1
 	}
-	if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down){
+	if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0,gp_padd){
 		selectY = selectY + 1
 	}
-	if keyboard_check_pressed(ord("A")) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right){
+	if keyboard_check_pressed(ord("A")) or keyboard_check_pressed(vk_left) or keyboard_check_pressed(ord("D")) or keyboard_check_pressed(vk_right) or gamepad_button_check_pressed(0,gp_padl) or gamepad_button_check_pressed(0,gp_padr){
 		selectX = selectX * -1
 	}
 }
@@ -355,7 +355,7 @@ if state = 1{
 		
 		
 	}
-	if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")){
+	if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1){
 		cindex = cindex + 1
 	}
 }

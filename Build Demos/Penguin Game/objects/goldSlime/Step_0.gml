@@ -40,10 +40,10 @@ if global.paused = -1{
 				x = Player.x
 				y = Player.y
 				if (global.playAs = 1 and global.dippHealth > 0){
-					if keyboard_check(ord("A")) or keyboard_check(vk_left){
+					if keyboard_check(ord("A")) or keyboard_check(vk_left) or gamepad_button_check(0,gp_padl){
 						Player.x = Player.x + 1
 					}
-					if keyboard_check(ord("D")) or keyboard_check(vk_right){
+					if keyboard_check(ord("D")) or keyboard_check(vk_right) or gamepad_button_check(0,gp_padr){
 						Player.x = Player.x - 1
 					}
 				}

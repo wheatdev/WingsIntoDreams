@@ -52,12 +52,12 @@ if global.paused = -1{
 						Player.x = Player.x - 10
 					}
 				}
-				if keyboard_check(ord("A")) or keyboard_check(vk_left){
+				if keyboard_check(ord("A")) or keyboard_check(vk_left) or  gamepad_button_check(0,gp_padl){
 					if global.playAs = 1{
 						Player.x = Player.x + global.dippSpeed
 					}
 				}
-				if keyboard_check(ord("D")) or keyboard_check(vk_right){
+				if keyboard_check(ord("D")) or keyboard_check(vk_right) or gamepad_button_check(0,gp_padr){
 					if global.playAs = 1{
 						Player.x = Player.x - global.dippSpeed
 					}

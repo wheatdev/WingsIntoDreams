@@ -17,7 +17,7 @@ global.pauseX = 1
 global.itemGet = 0
 global.escapeRope = 0
 
-global.storyProgress = 2
+global.storyProgress = 7
 global.lastIn = 1
 global.SFQ = 0 
 global.minesUnlock = 0
@@ -38,11 +38,11 @@ global.dippSpeed = 10
 global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
-global.dippSpecial = 0
-global.dippSpringGet = 0
-global.dippGlideGet =0
-global.dippDynaGet = 0
-global.dippSnowballGet = 0
+global.dippSpecial = 1
+global.dippSpringGet = 1
+global.dippGlideGet =1
+global.dippDynaGet = 1
+global.dippSnowballGet = 1
 
 global.gumSpeed = 8
 global.gumHealth = 40
@@ -67,6 +67,8 @@ global.upgrade7Get = 0
 global.upgrade8Get = 0
 global.upgrade9Get = 0
 global.upgrade10Get = 0
+global.upgrade11Get = 0
+global.upgrade12Get = 0
 
 global.key = 0
 global.key1 = 0
