@@ -10,17 +10,12 @@ if gameStart = 0{
 }
 if gameStart = 1{
 	if type =1{
-		if global.bossHelp1 > 4{
-			global.bossHelp1 = 1
-		}
-		if global.bossHelp1 < 1{
-			global.bossHelp1 = 4
-		}
-		if global.bossHelp2 >0{
-			global.bossHelp2 = global.bossHelp2 + 1
-			if global.bossHelp2 > 69{
+		if global.bossHelp1 = 1{
+			hVal1 = hVal1 + 1
+			if hVal1 > 99{
+				hVal1 = 0
+				global.bossHelp1 = 0
 				instance_create_depth(640,0,0,Block37C)
-				global.bossHelp2 = 0
 			}
 		}
 	}

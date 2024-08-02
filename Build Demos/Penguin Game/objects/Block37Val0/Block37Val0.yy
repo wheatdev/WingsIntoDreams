@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"testice",
-    "path":"sprites/testice/testice.yy",
+    "name":"threeseven0",
+    "path":"sprites/threeseven0/threeseven0.yy",
   },
   "spriteMaskId":null,
   "visible":true,
