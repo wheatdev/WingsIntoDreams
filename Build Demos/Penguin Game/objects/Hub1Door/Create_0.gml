@@ -26,3 +26,6 @@ if room = HUB1{
 if room = mineDownUnder{
 	type = 7
 }
+if room = DippHouse{
+	type = 8	
+}

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oneWayPlatform",
+  "%Name":"Block37Val0",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oneWayPlatform",
+  "name":"Block37Val0",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"test0",
-    "path":"sprites/test0/test0.yy",
+    "name":"testice",
+    "path":"sprites/testice/testice.yy",
   },
   "spriteMaskId":null,
   "visible":true,

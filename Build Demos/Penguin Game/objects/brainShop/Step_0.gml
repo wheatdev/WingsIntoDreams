@@ -62,6 +62,12 @@ if state = 0{
 					global.escapeRope = 1
 				}
 			}
+			if selectY = 2 and selectX = 1{
+				if global.arcade1 < 1 and global.theMoney > 199{
+					global.theMoney = global.theMoney - 200
+					global.arcade1 = 1
+				}
+			}
 			if selectX = 1 and selectY = 3{
 				if global.skyUnlock =0 and global.theMoney > 1999{
 					global.theMoney = global.theMoney - 2000

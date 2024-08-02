@@ -1,9 +1,9 @@
 if global.paused = -1{
 	if place_meeting(x,y-(global.eGravity * 2),Player){
-		size = size - .002
+		size = size - .008
 	}
 	if place_meeting(x,y-(global.eGravity * 2),Enemy){
-		size = size - .002
+		size = size - .008
 	}
 	size = size + .0005
 	if size > .2{
