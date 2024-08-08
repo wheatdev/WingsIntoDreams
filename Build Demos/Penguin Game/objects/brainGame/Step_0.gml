@@ -15,6 +15,7 @@ if gameStart = 1{
 			if hVal1 > 99{
 				hVal1 = 0
 				global.bossHelp1 = 0
+				global.mechanism = global.mechanism + .05
 				instance_create_depth(640,0,0,Block37C)
 			}
 		}

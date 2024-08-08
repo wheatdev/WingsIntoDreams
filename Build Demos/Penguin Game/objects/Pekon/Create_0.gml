@@ -1,0 +1,9 @@
+image_xscale = .25
+image_yscale = .25
+rangeX = x
+pHealth = 3
+state = 0
+side = 0
+timer = 0
+startY = y
+allowHit = 0

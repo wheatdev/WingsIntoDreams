@@ -65,6 +65,9 @@ if global.paused = -1{
 				}
 			}
 		}
+		if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0,gp_padd){
+			y = y + global.mechanism	
+		}
 		if place_meeting(x,y+64,Ground){
 			global.bossHelp1 = 1
 		}	
