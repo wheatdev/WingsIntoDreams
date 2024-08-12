@@ -1,6 +1,7 @@
 if global.paused = -1{
 	if pHealth > 0{
-		if place_meeting(x,y,Player) and global.allowDamage = 0{
+		image_xscale = side * .25
+		if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 			if global.playAs = 1{
 				global.dippHealth = global.dippHealth - 2
 				audio_play_sound(dippHurtSE,0,false)
@@ -11,6 +12,9 @@ if global.paused = -1{
 		if place_meeting(x,y,DippSword) and allowHit = 0{
 			pHealth = pHealth - global.dippAttack
 			allowHit = 40
+			if keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd){
+				global.pBounce = 20	
+			}
 		}
 		if allowHit > 0{
 			allowHit = allowHit -1
@@ -20,7 +24,7 @@ if global.paused = -1{
 			image_alpha = 1
 		}
 		rangeX = abs(x-Player.x)
-		if rangeX < 3000{
+		if rangeX < 2000{
 			if state = 0{
 				if Player.x > x{
 					side = 1

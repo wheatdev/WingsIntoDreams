@@ -5,14 +5,14 @@ if global.paused = -1{
 		if place_meeting(x,y+global.eGravity,Ground){
 			y = y - global.eGravity	
 			maxHeight = y - 500
-			if place_meeting(x-(direct*32),y+64,Ground){
+			if place_meeting(x-(direct*32),y+64,Ground) and place_empty(x-(direct*32),y,Ground){
 				x = x - (7* direct)
 			}
 			else{
 				direct = direct * -1	
 			}
 		}
-		if place_meeting(x,y,Player) and global.allowDamage = 0{
+		if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 			if global.playAs = 1{
 				global.dippHealth = global.dippHealth - 1
 				audio_play_sound(dippHurtSE,0,false)
