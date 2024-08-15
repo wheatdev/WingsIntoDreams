@@ -215,45 +215,45 @@ if global.playAs = 1{
 				if place_meeting(x,y,waterSurface){
 					swordUse = 0
 				}
-				if dippState = 1{
-					sprite_index = dippStand
-				}
-				if dippState = 2{
-					sprite_index = dippWalk
-				}
-				if dippState = 3{
-					sprite_index = dippJump1
-				}
-				if dippState = 4{
-					sprite_index = dippJump2
-				}
-				if dippState = 5{
-					sprite_index = dippSword1
-				}
-				if dippState = 6{
-					sprite_index = dippSword2
-				}
-				if dippState = 7{
-					sprite_index = dippSword3
-				}
-				if dippState = 8{
-					sprite_index = dippAirSword1
-				}
-				if dippState = 9{
-					sprite_index = dippPain
-				}
-				if dippState = 10{
-					sprite_index = dippSpring
-				}
-				if dippState = 11{
-					sprite_index = dippGlide
-				}
-				if dippState = 12{
-					sprite_index = dippThrow
-				}
-				if dippState = 13{
-					sprite_index = snowball
-				}
+			//	if dippState = 1{
+			//		sprite_index = dippStand
+			//	}
+			//	if dippState = 2{
+			//		sprite_index = dippWalk
+			//	}
+			//	if dippState = 3{
+			//		sprite_index = dippJump1
+			//	}
+			//	if dippState = 4{
+			//		sprite_index = dippJump2
+			//	}
+			//	if dippState = 5{
+			//		sprite_index = dippSword1
+			//	}
+			//	if dippState = 6{
+			//		sprite_index = dippSword2
+			//	}
+			//	if dippState = 7{
+			//		sprite_index = dippSword3
+			//	}
+			//	if dippState = 8{
+			//		sprite_index = dippAirSword1
+			//	}
+			//	if dippState = 9{
+			//		sprite_index = dippPain
+			//	}
+			//	if dippState = 10{
+			//		sprite_index = dippSpring
+			//	}
+			//	if dippState = 11{
+			//		sprite_index = dippGlide
+			//	}
+			//	if dippState = 12{
+			//		sprite_index = dippThrow
+			//	}
+			//	if dippState = 13{
+			//		sprite_index = snowball
+			//	}
 				if place_meeting(x,y,collectableSpecial){
 					global.itemGet = 1
 					instance_create_depth(Player.x,Player.y,0,playerCutscene)
