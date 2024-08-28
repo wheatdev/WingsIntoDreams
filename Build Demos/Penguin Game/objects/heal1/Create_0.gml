@@ -1,4 +1,4 @@
-heartPump = .25
+heartPump = .2
 active = 1
 canGet = 0 
 image_xscale = heartPump

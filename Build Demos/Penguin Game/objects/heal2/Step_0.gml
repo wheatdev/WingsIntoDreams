@@ -15,7 +15,7 @@ if global.paused = -1{
 		}
 		else{
 			heartPump = heartPump - .02
-			if heartPump < .3{
+			if heartPump < .2{
 				active = 1
 			}
 		}

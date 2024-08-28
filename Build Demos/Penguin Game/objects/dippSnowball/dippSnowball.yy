@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"snowball",
-    "path":"sprites/snowball/snowball.yy",
+    "name":"dippGuard",
+    "path":"sprites/dippGuard/dippGuard.yy",
   },
   "spriteMaskId":null,
   "visible":true,

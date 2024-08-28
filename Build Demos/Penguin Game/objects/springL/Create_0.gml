@@ -7,5 +7,5 @@ timer = 0
 randDrop = 0
 roll = 0
 
-image_xscale = .3
-image_yscale = .3
+image_xscale = .2
+image_yscale = .2

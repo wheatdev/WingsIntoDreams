@@ -1,5 +1,5 @@
 if global.paused = -1{
-	image_xscale = direct * .3
+	image_xscale = direct * .2
 	if dazed = 0{
 		y = y + global.eGravity
 		image_angle = 0

@@ -15,9 +15,6 @@ if global.playAs = 1{
 			else{
 				image_alpha = 1
 			}
-			if global.isDamaged > 0{
-				dippState = 9
-			}
 			if global.dippHealth > global.dippHealthMax{
 				global.dippHealth = global.dippHealthMax
 			}
@@ -212,6 +209,9 @@ if global.playAs = 1{
 						swordUse = 0
 					}
 				}
+				if global.isDamaged > 0{
+					dippState = 9
+				}
 				if place_meeting(x,y,waterSurface){
 					swordUse = 0
 				}
@@ -252,7 +252,7 @@ if global.playAs = 1{
 					sprite_index = dippThrow
 				}
 				if dippState = 13{
-				sprite_index = snowball
+					sprite_index = snowball
 				}
 				if place_meeting(x,y,collectableSpecial){
 					global.itemGet = 1

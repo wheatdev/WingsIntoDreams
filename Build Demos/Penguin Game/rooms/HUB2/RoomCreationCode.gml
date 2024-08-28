@@ -5,7 +5,7 @@ else{
 	audio_stop_all()
 	audio_play_sound(worldMapMusic,0,true)
 }
-window_set_caption("The Lowest Peak")
+window_set_caption("Grim Prospects")
 
 global.key = 0
 global.key1 = 0

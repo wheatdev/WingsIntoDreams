@@ -107,6 +107,8 @@ if global.paused = -1 and global.cameraActive = 1{
 		drop = drop + 1
 		if drop = 1{
 			instance_create_depth(x,y,depth,donVal50)
+			instance_create_depth(x-50,y+50,depth,donVal50)
+			instance_create_depth(x+50,y+50,depth,donVal50)
 		}
 	}
 }

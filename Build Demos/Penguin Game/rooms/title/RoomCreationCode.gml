@@ -15,7 +15,7 @@ global.specialMeter = 100
 global.specialRemember = 0 
 global.pauseX = 1
 global.itemGet = 0
-global.escapeRope = 0
+global.escapeRope = 0 
 
 global.storyProgress = 2
 global.lastIn = 1
@@ -42,7 +42,7 @@ global.dippSpecial = 1
 global.dippSpringGet = 1
 global.dippGlideGet = 1
 global.dippDynaGet = 1
-global.dippSnowballGet = 0
+global.dippSnowballGet = 1
 
 global.gumSpeed = 8
 global.gumHealth = 40
@@ -56,7 +56,7 @@ global.earnestHealthMax = 50
 global.earnestAttack = 6
 global.earnestSpecial = 1
 
-global.upgrade = 13
+global.upgrade = 0
 global.upgrade1Get = 0
 global.upgrade2Get = 0
 global.upgrade3Get = 0

@@ -1,4 +1,4 @@
-size = .3
+size = .2
 image_xscale = size
 image_yscale =size
 depth = 3

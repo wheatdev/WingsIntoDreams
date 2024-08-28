@@ -80,10 +80,10 @@ if type = 1{
 		}
 		if global.skyUnlock = 0{
 			if selectY = 3 and selectX = 1{
-				draw_text(800,300," > Buy Magic Bean (2000 Don)")
+				draw_text(800,300," > Buy Magic Pot (2000 Don)")
 			}
 			else{
-				draw_text(800,300," Buy Magic Bean (2000 Don)")
+				draw_text(800,300," Buy Magic Pot (2000 Don)")
 			}
 		}
 		draw_text(1000,50,"Don: "+string(global.theMoney))

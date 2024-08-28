@@ -290,6 +290,7 @@
     {"id":{"name":"dippDeath1","path":"sprites/dippDeath1/dippDeath1.yy",},},
     {"id":{"name":"dippDeath2","path":"sprites/dippDeath2/dippDeath2.yy",},},
     {"id":{"name":"dippGlide","path":"sprites/dippGlide/dippGlide.yy",},},
+    {"id":{"name":"dippGuard","path":"sprites/dippGuard/dippGuard.yy",},},
     {"id":{"name":"dippHold","path":"sprites/dippHold/dippHold.yy",},},
     {"id":{"name":"dippJump1","path":"sprites/dippJump1/dippJump1.yy",},},
     {"id":{"name":"dippJump2","path":"sprites/dippJump2/dippJump2.yy",},},

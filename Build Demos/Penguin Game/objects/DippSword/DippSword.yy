@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"dippSword1",
-    "path":"sprites/dippSword1/dippSword1.yy",
+    "name":"dippSword12",
+    "path":"sprites/dippSword12/dippSword12.yy",
   },
   "spriteMaskId":null,
   "visible":false,
