@@ -70,6 +70,7 @@ global.upgrade10Get = 0
 global.upgrade11Get = 0
 global.upgrade12Get = 0
 global.upgrade13Get = 0
+global.upgrade14Get = 0
 
 global.key = 0
 global.key1 = 0

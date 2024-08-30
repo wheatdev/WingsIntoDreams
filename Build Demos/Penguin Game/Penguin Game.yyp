@@ -204,6 +204,7 @@
     {"id":{"name":"upgradeCap11","path":"objects/upgradeCap11/upgradeCap11.yy",},},
     {"id":{"name":"upgradeCap12","path":"objects/upgradeCap12/upgradeCap12.yy",},},
     {"id":{"name":"upgradeCap13","path":"objects/upgradeCap13/upgradeCap13.yy",},},
+    {"id":{"name":"upgradeCap14","path":"objects/upgradeCap14/upgradeCap14.yy",},},
     {"id":{"name":"upgradeCap2","path":"objects/upgradeCap2/upgradeCap2.yy",},},
     {"id":{"name":"upgradeCap3","path":"objects/upgradeCap3/upgradeCap3.yy",},},
     {"id":{"name":"upgradeCap4","path":"objects/upgradeCap4/upgradeCap4.yy",},},
@@ -234,6 +235,7 @@
     {"id":{"name":"mineDownUnder","path":"rooms/mineDownUnder/mineDownUnder.yy",},},
     {"id":{"name":"Shop1","path":"rooms/Shop1/Shop1.yy",},},
     {"id":{"name":"skyHighHunting","path":"rooms/skyHighHunting/skyHighHunting.yy",},},
+    {"id":{"name":"skyHighHuntingBoss","path":"rooms/skyHighHuntingBoss/skyHighHuntingBoss.yy",},},
     {"id":{"name":"springFactory","path":"rooms/springFactory/springFactory.yy",},},
     {"id":{"name":"springFactoryBoss","path":"rooms/springFactoryBoss/springFactoryBoss.yy",},},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
@@ -441,6 +443,7 @@
     {"roomId":{"name":"skyHighHunting","path":"rooms/skyHighHunting/skyHighHunting.yy",},},
     {"roomId":{"name":"hopperHelishipUnderside","path":"rooms/hopperHelishipUnderside/hopperHelishipUnderside.yy",},},
     {"roomId":{"name":"threeseven","path":"rooms/threeseven/threeseven.yy",},},
+    {"roomId":{"name":"skyHighHuntingBoss","path":"rooms/skyHighHuntingBoss/skyHighHuntingBoss.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -21,5 +21,10 @@ if global.paused = -1{
 		if type = 5{
 			room_goto(HUB1)	
 		}
+		if type = 6{
+			global.cameraActive = -1
+			global.lastSafeX = x
+			global.cutsceneTimer = 1
+		}
 	}
 }

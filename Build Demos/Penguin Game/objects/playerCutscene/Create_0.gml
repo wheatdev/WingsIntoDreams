@@ -30,7 +30,7 @@ if global.cameraActive = -1 or room = Shop1{
 }
 
 if global.cutsceneTimer = 1{
-	if room = donnerShipOutside{
+	if room = donnerShipOutside or skyHighHunting{
 		hVal1 = 0	
 	}
 	else{

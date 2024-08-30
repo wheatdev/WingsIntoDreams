@@ -130,6 +130,9 @@ if type = 7{
 				room_goto(hopperHeliship)
 			}
 			else{
+				if room = skyHighHunting{
+					room_goto(skyHighHuntingBoss)
+				}
 				type = 5
 			}
 		}

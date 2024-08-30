@@ -1,4 +1,4 @@
-if global.paused = -1{
+if global.paused = -1 and global.cameraActive = 1{
 	if pHealth > 0{
 		image_xscale = side * .25
 		if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{

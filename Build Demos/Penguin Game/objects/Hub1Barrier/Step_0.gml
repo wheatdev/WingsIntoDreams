@@ -7,12 +7,12 @@ if global.paused = -1{
 		}
 		if type = 2{
 			global.playerStartX = 160
-			global.playerStartY = Player.y + 452
+			global.playerStartY = Player.y -544
 			room_goto(HUB2)
 		}
 		if type = 3{
-			global.playerStartX = 6656
-			global.playerStartY = Player.y - 452
+			global.playerStartX = 9475
+			global.playerStartY = Player.y + 544
 			room_goto(HUB1)
 		}
 	}

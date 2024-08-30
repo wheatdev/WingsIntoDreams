@@ -6,8 +6,8 @@ if state = 0{
 				cindex = 0
 			}
 			if selectX = 1 and selectY = 0{
-				global.playerStartX = 1664
-				global.playerStartY = 480
+				global.playerStartX = 4480
+				global.playerStartY = 1472
 				room_goto(HUB1)	
 			}
 			if selectX = -1 and selectY = 1{
@@ -167,7 +167,7 @@ if state = 1{
 		}
 		if cindex = 13{
 			words = "When this isle was first covered in ice,"
-			words2 = "A group of scientists from the Mainland came"
+			words2 = "A group of scientists from the Suenos came"
 			words3 = "to determine what had happened."
 			icon = 1
 		}
@@ -344,7 +344,7 @@ if state = 1{
 		if cindex = 44{
 			words = "I'll tell you what though."
 			words2 = "I'll get you a ticket for the Donner Ship. Free of charge."
-			words3 = "You'll go to the mainland! Sell it there! And get rich!"
+			words3 = "You'll go to the Suenos! Sell it there! And get rich!"
 			global.cutsceneTimer = 0
 		}
 		if cindex = 45{
