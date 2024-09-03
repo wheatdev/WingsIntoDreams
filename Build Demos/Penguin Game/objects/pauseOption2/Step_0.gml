@@ -1,45 +1,5 @@
-	if global.paused = 1{
-		visible = true
-	}
-	else{
-		visible = false
-		if global.playAs = 1{
-			if global.dippSpecial = 0{
-				selectX = 1
-				selectY = 1
-			}
-			if global.dippSpecial = 1{
-				selectX = 2
-				selectY = 1
-			}
-			if global.dippSpecial = 2{
-				selectX = 1
-				selectY = 2
-			}
-			if global.dippSpecial = 3{
-				selectX = 3
-				selectY = 1
-			}
-			if global.dippSpecial = 4{
-				selectX = 2
-				selectY = 2
-			}
-		}
-		if global.playAs = 2{
-			if global.gumSpecial = 0{
-				selectX = 1
-				selectY = 1
-			}
-			if global.gumSpecial = 1{
-				selectX = 2
-				selectY = 1
-			}
-			if global.gumSpecial = 2{
-				selectX = 3
-				selectY = 1
-			}
-		}
-	}
+if global.paused = 1{
+	visible = true
 	x = pauseMenu.x
 	y = pauseMenu.y - (100 + active)
 
@@ -76,6 +36,18 @@
 					if selectX = 2 and selectY = 2 and global.dippSnowballGet = 1{
 						global.dippSpecial = 4
 					}
+					if selectX = 3 and selectY = 2 and global.dippCloudGet = 1{
+						global.dippSpecial = 5	
+					}
+					if selectX = 1 and selectY = 3 and global.dippIceGet = 1{
+						global.dippSpecial = 6
+					}
+					if selectX = 2 and selectY = 3 and global.dippFireGet = 1{
+						global.dippSpecial = 7
+					}
+					if selectX = 3 and selectY = 3 and ((global.dippSnowballGet = 1 or global.dippIceGet = 1) and global.dippFireGet = 1){
+						global.dippSpecial = 8	
+					}
 				}
 				if global.playAs = 2{
 					if selectX = 1 and selectY = 1{
@@ -100,3 +72,47 @@
 	else{
 		active = -100
 	}
+}
+else{
+	visible = false
+	if global.playAs = 1{
+		if global.dippSpecial = 0{
+			selectX = 1
+			selectY = 1
+		}
+		if global.dippSpecial = 1{
+			selectX = 2
+			selectY = 1
+		}
+		if global.dippSpecial = 2{
+			selectX = 1
+			selectY = 2
+		}
+		if global.dippSpecial = 3{
+			selectX = 3
+			selectY = 1
+		}
+		if global.dippSpecial = 4{
+			selectX = 2
+			selectY = 2
+		}
+		if global.dippSpecial = 5{
+			selectX = 3
+			selectY = 2
+		}
+	}
+	if global.playAs = 2{
+		if global.gumSpecial = 0{
+			selectX = 1
+			selectY = 1
+		}
+		if global.gumSpecial = 1{
+			selectX = 2
+			selectY = 1
+		}
+		if global.gumSpecial = 2{
+			selectX = 3
+			selectY = 1
+		}
+	}
+}	

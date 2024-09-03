@@ -28,6 +28,10 @@ if global.paused = -1{
 				aHealth = aHealth - (global.dippAttack * 2)
 				allowHit = 20
 			}
+			if place_meeting(x,y,dippBeam1) and allowHit = 0{
+				aHealth = aHealth - global.dippAttack
+				allowHit = 5
+			}
 			if allowHit > 0{
 				allowHit = allowHit - 1
 				image_alpha = .5
@@ -69,7 +73,7 @@ if global.paused = -1{
 				}
 			}
 			if state = 4{
-				if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite){
+				if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1){
 					state = 0	
 				}
 			}

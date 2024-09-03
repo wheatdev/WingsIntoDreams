@@ -1,7 +1,7 @@
 if global.paused = -1 and (global.cameraActive = 1 or global.cameraActive = -2) and hide = -1{
 	x = HUD.x - 127
 	y = HUD.y - 2
-	image_xscale = global.specialMeter/20
+	image_xscale = (global.specialMeter/global.specialMax) * 5
 	visible = true
 }
 else{

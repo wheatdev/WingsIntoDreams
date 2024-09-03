@@ -62,7 +62,11 @@ if global.paused = -1 and global.cameraActive = 1{
 				global.pBounce = 45
 			}
 		}
-		if place_meeting(x,y,Snowball) and allowHit = 0{
+		if place_meeting(x,y,dippBeam1) and allowHit = 0{
+			sealHealth = sealHealth - global.dippAttack
+			allowHit = 5
+		}
+		if place_meeting(x,y,Dynamite) and allowHit = 0{
 			sealHealth = sealHealth - (global.dippAttack * 2)
 			allowHit = 50
 			angry = 1

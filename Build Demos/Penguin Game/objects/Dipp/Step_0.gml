@@ -30,7 +30,7 @@ if global.playAs = 1{
 				if place_meeting(x,y+global.eGravity,Ground){
 					y = y - global.eGravity
 					coyoteTime = 10
-					maxHeight = y - (30 * global.eGravity)
+					maxHeight = y - ((30 * global.frogCoin) * global.eGravity)
 					jumpState = 1
 					if swordUse < 1{
 						dippState = 1
@@ -199,7 +199,7 @@ if global.playAs = 1{
 					}
 					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter > 0{
 						swordUse = -2
-						global.specialMeter = global.specialMeter - .1
+						global.specialMeter = global.specialMeter - .5
 						x = x + (global.lastPressed * global.dippSpeed)
 						if place_meeting(x+(global.dippSpeed*global.lastPressed),y,Ground){
 							x = x - (global.lastPressed * global.dippSpeed)	
@@ -207,6 +207,46 @@ if global.playAs = 1{
 					}
 					if keyboard_check_released(ord("P")) or keyboard_check_released(ord("C")) or gamepad_button_check_released(0,gp_face2){
 						swordUse = 0
+					}
+				}
+				if global.dippSpecial = 5{
+					if (keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2)) and global.specialMeter > 49{
+						instance_create_depth(x,y+(global.eGravity * 10),0,cloudPlatformS)
+						global.specialMeter = global.specialMeter - 50
+					}
+				}
+				if global.dippSpecial = 6{
+					if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
+						instance_create_depth(x,y,0,dippBeam1)	
+					}
+					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter>2{
+						dippState = 14
+						x = x - (global.dippSpeed * global.lastPressed)
+						if place_meeting(x-global.dippSpeed* global.lastPressed,y,Ground){
+							x = x + (global.dippSpeed * global.lastPressed)	
+						}
+						y = y - global.eGravity
+						global.specialMeter = global.specialMeter - 1
+					}
+				}
+				if global.dippSpecial = 7{
+					if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
+						instance_create_depth(x,y,0,dippFlame)	
+					}
+					if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter>3{
+						dippState = 15
+						swordUse = 0
+						y = y - global.eGravity
+						x = x + ((global.lastPressed * 3) * global.dippSpeed)
+						if place_meeting(x+(global.dippSpeed*(global.lastPressed*3)),y,Ground){
+							x = x - ((global.lastPressed *3) * global.dippSpeed)	
+						}
+						global.specialMeter = global.specialMeter - 2	
+					}
+				}
+				if global.dippSpecial = 8{
+					if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
+						instance_create_depth(x,y,0,dippWater)	
 					}
 				}
 				if global.isDamaged > 0{
@@ -253,6 +293,9 @@ if global.playAs = 1{
 				}
 				if dippState = 13{
 					sprite_index = snowball
+				}
+				if dippState = 14{
+					sprite_index = dippWave
 				}
 				if place_meeting(x,y,collectableSpecial){
 					global.itemGet = 1

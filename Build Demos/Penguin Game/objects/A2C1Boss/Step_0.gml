@@ -232,6 +232,10 @@ if global.paused = -1{
 				}
 				allowHit = 20
 			}
+			if place_meeting(x,y,dippBeam1) and allowHit = 0{
+				aHealth = aHealth - global.dippAttack
+				allowHit = 5
+			}
 			if place_meeting(x,y,Dynamite) and allowHit = 0{
 				aHealth = aHealth - (global.dippAttack * 2)
 				allowHit = 20

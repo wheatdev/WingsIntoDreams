@@ -1,0 +1,2 @@
+rangeX = x
+rangeY = y

@@ -8,7 +8,7 @@ if type = -1{
 		x = x + global.dippSpeed
 	}
 	if abs(x - global.lastSafeX) < 30{
-		image_xscale = .2
+		image_xscale = .2 * global.lastPressed
 		global.cameraActive = 0	
 		type = 0 
 		if ((room = donnerShipInside) or (room = donnerShipOutside) or (room = hopperHeliship)) and global.talking = 0{

@@ -100,13 +100,13 @@ else{
 		view_camera[0] = camera_create_view(playerCutscene.x - 800, playerCutscene.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 	}
 	if global.paused = -1{
-		global.specialMeter = global.specialMeter + .05
-		if global.specialMeter > 100{
-			global.specialMeter = 100
+		global.specialMeter = global.specialMeter + (global.specialMax/2000)
+		if global.specialMeter > global.specialMax{
+			global.specialMeter = global.specialMax
 		}
 		if global.skyUnlock < 0{
 			global.skyUnlock = global.skyUnlock - 1
-			global.specialMeter = global.specialMeter + .05
+			global.specialMeter =  global.specialMeter + (global.specialMax/2000)
 			if global.skyUnlock < -149{
 				if global.playAs = 1{
 					global.dippHealth = global.dippHealth + 1	

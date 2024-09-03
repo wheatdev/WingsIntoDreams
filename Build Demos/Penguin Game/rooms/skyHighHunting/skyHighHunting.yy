@@ -289,6 +289,7 @@
     {"name":"inst_20E0F635","path":"rooms/skyHighHunting/skyHighHunting.yy",},
     {"name":"inst_4110B92B","path":"rooms/skyHighHunting/skyHighHunting.yy",},
     {"name":"inst_679C53F9","path":"rooms/skyHighHunting/skyHighHunting.yy",},
+    {"name":"inst_7ECC1E93","path":"rooms/skyHighHunting/skyHighHunting.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -576,6 +577,7 @@
         {"$GMRInstance":"v1","%Name":"inst_20E0F635","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_20E0F635","objectId":{"name":"Ground","path":"objects/Ground/Ground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":14.0,"scaleY":11.0,"x":18016.0,"y":-14080.0,},
         {"$GMRInstance":"v1","%Name":"inst_4110B92B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4110B92B","objectId":{"name":"Ground","path":"objects/Ground/Ground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":39.5,"x":14976.0,"y":-15696.0,},
         {"$GMRInstance":"v1","%Name":"inst_679C53F9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_679C53F9","objectId":{"name":"Ground","path":"objects/Ground/Ground.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":39.5,"x":17888.0,"y":-15680.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7ECC1E93","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7ECC1E93","objectId":{"name":"princess","path":"objects/princess/princess.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-2176.0,"y":-1664.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4294947583,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

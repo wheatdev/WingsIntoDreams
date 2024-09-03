@@ -16,6 +16,14 @@ if global.paused = -1 and global.cameraActive = 1{
 				global.pBounce = 20	
 			}
 		}
+		if place_meeting(x,y,Dynamite) and allowHit = 0{
+			pHealth = pHealth - (global.dippAttack * 2)
+			allowHit = 30
+		}
+		if place_meeting(x,y,dippBeam1) and allowHit = 0{
+			pHealth = pHealth - global.dippAttack
+			allowHit = 5
+		}
 		if allowHit > 0{
 			allowHit = allowHit -1
 			image_alpha = .5

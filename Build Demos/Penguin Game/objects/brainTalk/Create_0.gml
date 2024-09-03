@@ -9,10 +9,23 @@ if room = conicCaves{
 	y = 4384
 	type = 2
 }
+if room = HUB2{
+	x = 896
+	y = 736
+	type = 3
+}
+if room = donnerShipInside{
+	type = 4
+}
 if room = hopperHeliship{
 	x = 33900
 	y = -12850
 	type = 5	
+}
+if room = skyHighHunting{
+	x = -1574
+	y =	-1564
+	type = 6
 }
 cindex = 0
 words = ""

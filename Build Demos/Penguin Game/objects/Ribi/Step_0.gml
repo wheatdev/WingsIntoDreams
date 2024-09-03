@@ -27,6 +27,10 @@ if global.paused = -1{
 				global.pBounce = 20	
 			}
 		}
+		if place_meeting(x,y,dippBeam1) and allowHit = 0{
+			rHealth = rHealth - global.dippAttack
+			allowHit = 5
+		}
 		if place_meeting(x,y,Dynamite) and allowHit = 0{
 			rHealth = rHealth - (global.dippAttack * 2)
 			allowHit = 50

@@ -12,6 +12,10 @@ if global.paused = -1{
 				tHealth = tHealth - (global.dippAttack * 2)
 				allowHit = 20
 			}
+			if place_meeting(x,y,dippBeam1) and allowHit = 0{
+				tHealth = tHealth - global.dippAttack
+				allowHit = 5
+			}
 			if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 				if global.playAs = 1{
 					global.dippHealth = global.dippHealth - 3

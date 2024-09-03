@@ -54,17 +54,22 @@
 							global.upgrade = global.upgrade - 1
 						}
 					}
+					if selectY = 4{
+						global.specialMax = global.specialMax + 20
+						global.specialMeter = global.specialMeter + 20
+						global.upgrade = global.upgrade - 1
+					}
 				}
 			}
 		}
 		if keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X")) or gamepad_button_check_pressed(0,gp_face3){
 			selected = -1
 		}
-		if selectY > 3{
+		if selectY > 4{
 			selectY = 1
 		}
 		if selectY < 1{
-			selectY = 3
+			selectY = 4
 		}
 	}
 	else{

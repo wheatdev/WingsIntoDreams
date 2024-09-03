@@ -31,5 +31,12 @@
 					room_goto(HUB1)
 				}
 			}
+			if selectY = 3{
+				global.specialMeter = global.specialMax
+				global.dippHealth = global.dippHealthMax
+				global.gumHealth = global.gumHealthMax
+				global.earnestHealth = global.earnestHealthMax
+				global.leftovers = 0
+			}
 		}
 	}

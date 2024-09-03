@@ -9,6 +9,10 @@ if global.paused = -1 and global.cameraActive = 1{
 				oHealth = oHealth - global.gumAttack
 			}
 		}
+		if place_meeting(x,y,dippBeam1) and allowHit = 0{
+			oHealth = oHealth - global.dippAttack
+			allowHit = 5
+		}
 		if place_meeting(x,y-global.eGravity,Icile) and allowHit = 0{
 			oHealth = oHealth - 5
 			allowHit = 50

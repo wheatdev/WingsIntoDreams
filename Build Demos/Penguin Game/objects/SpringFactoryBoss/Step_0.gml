@@ -32,6 +32,10 @@ if global.paused = -1{
 					allowHit = 150
 					runAwayX = 1
 				}
+				if place_meeting(x,y,dippBeam1) and allowHit = 0{
+					bHealth = bHealth - global.dippAttack
+					allowHit = 5
+				}
 
 				if allowHit > 0{
 					allowHit = allowHit - 1
