@@ -177,6 +177,7 @@ if type = 5{
 		view_camera[0] = camera_create_view(33056,-13432, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 	}
 	if global.cutsceneTimer = -1{
+		global.lastPressed = 1
 		global.cameraActive = -2
 		global.cutsceneTimer = -2
 	}

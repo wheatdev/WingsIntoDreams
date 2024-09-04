@@ -88,9 +88,51 @@ if type = 1{
 		}
 		draw_text(1000,50,"Don: "+string(global.theMoney))
 	}
-	if state = 1{
-		draw_text(400,100,words)
-		draw_text(400,150,words2)
-		draw_text(400,200,words3)
+}
+if type = 2{
+	if state = 0{
+		draw_text(200,50,"Ah, it's the Great Hero! Please, try my wares!")
+		if selectY = 0 and selectX = -1{
+			draw_text(100,150," > Talk")
+		}
+		else{
+			draw_text(100,150,"Talk")
+		}
+		if selectX = 1 and selectY = 0{
+			draw_text(800,150," > Leave")
+		}
+		else{
+			draw_text(800,150,"Leave")
+		}
+		if global.upgrade15Get = 0{
+			if selectX = -1 and selectY = 1{
+				draw_text(100,200," > Upgrade Capsule (1000 Don)")	
+			}
+			else{
+				draw_text(100,200,"Upgrade Capsule (1000 Don)")	
+			}
+		}
+		if global.dippCloudGet = 0{
+			if selectX = -1 and selectY = 2{
+				draw_text(100,250," > Cloud Power (2000 Don)")	
+			}
+			else{
+				draw_text(100,250,"Cloud Power (2000 Don)")	
+			}
+		}
+		if global.leftovers = 0{
+			if selectY = 2 and selectX = 1{
+				draw_text(800,200," > Apple Pie (500 Don)")	
+			}
+			else{
+				draw_text(800,200,"Apple Pie (500 Don)")	
+			}
+		}
+		draw_text(1000,50,"Don: "+string(global.theMoney))
 	}
+}
+if state = 1{
+	draw_text(400,100,words)
+	draw_text(400,150,words2)
+	draw_text(400,200,words3)
 }

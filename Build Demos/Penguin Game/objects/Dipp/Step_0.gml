@@ -420,23 +420,29 @@ if global.playAs = 1{
 			}
 		}
 		else{
-			if global.isDamaged > 0{
-				sprite_index = dippDeath1
+			if global.lifeSeed = 1{
+				global.dippHealth = global.dippHealthMax
+				global.lifeSeed = 0 
 			}
-			if global.isDamaged < 0{
-				sprite_index = dippDeath2
-			}
-			image_angle = 0
-			global.isDamaged = global.isDamaged - 2
-			y = y + global.eGravity
-			if place_meeting(x,y+global.eGravity,Ground){
-				y = y - global.eGravity
-			}
-			if place_meeting(x - global.dippSpeed,y,Ground){
-				x = x + global.dippSpeed
-			}		
-			if place_meeting(x + global.dippSpeed,y,Ground){
-				x = x - global.dippSpeed
+			else{
+				if global.isDamaged > 0{
+					sprite_index = dippDeath1
+				}
+				if global.isDamaged < 0{
+					sprite_index = dippDeath2
+				}
+				image_angle = 0
+				global.isDamaged = global.isDamaged - 2
+				y = y + global.eGravity
+				if place_meeting(x,y+global.eGravity,Ground){
+					y = y - global.eGravity
+				}
+				if place_meeting(x - global.dippSpeed,y,Ground){
+					x = x + global.dippSpeed
+				}		
+				if place_meeting(x + global.dippSpeed,y,Ground){
+					x = x - global.dippSpeed
+				}
 			}
 		}
 	}

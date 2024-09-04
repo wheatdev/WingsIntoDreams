@@ -60,20 +60,26 @@ if state = 0{
 				if global.escapeRope = 0 and global.theMoney > 49{
 					global.theMoney = global.theMoney - 50
 					global.escapeRope = 1
+					cindex = 47
 				}
 			}
 			if selectY = 2 and selectX = 1{
 				if global.arcade1 < 1 and global.theMoney > 199{
 					global.theMoney = global.theMoney - 200
 					global.arcade1 = 1
+					cindex = 51
 				}
 			}
 			if selectX = 1 and selectY = 3{
 				if global.skyUnlock =0 and global.theMoney > 1999{
 					global.theMoney = global.theMoney - 2000
 					global.skyUnlock = 1
+					cindex = 57
 				}
 			}
+		}
+		if test = 2{
+			
 		}
 		state = 1
 	}
@@ -357,9 +363,101 @@ if state = 1{
 			words2 = ""
 			words3 = ""
 		}
-		
-		
-		
+		if cindex = 47{
+			words = ""
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 48{
+			words = "Ah, the humble Escape Rope!"
+			words2 = "You plannin' on getting lost soon, boy?"
+			words3 = "Hohoho!"
+		}
+		if cindex = 49{
+			words = "They're one time use, but pretty handy!"
+			words2 = "They'll take you back to civilization when used."
+			words3 = "Just remember to come back for another!"
+		}
+		if cindex = 50{
+			words = "BREAK"
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 51{
+			words = ""
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 52{
+			words = "Hoho! Finally saved up enough for this arcade"
+			words2 = "cabinet, eh? This one's pretty old, but still"
+			words3 = "pretty popular with youngins'!"
+		}
+		if cindex = 53{
+			words = "It takes a lot of Spirit, but you too can be"
+			words2 = "a Game Master!"
+			words3 = ""
+		}
+		if cindex = 54{
+			words = "Is that a reference to something, Walter?"
+			words2 = "If it's a reference I don't get it."
+			words3 = ""
+		}
+		if cindex = 55{
+			words = "Er, just play the game."
+			words2 = "If you know, you'll know."
+			words3 = ""
+		}
+		if cindex = 56{
+			words = "BREAK"
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 57{
+			words = ""
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 58{
+			words = "Walter, could I, perchane, have"
+			words2 = "that pot you have over there?"
+			words3 = ""
+		}
+		if cindex = 59{
+			words = "Dipp, for the last time, you cannot"
+			words2 = "have a ''hit'' of my icicle."
+			words3 = "They're not good for you!"
+		}
+		if cindex = 60{
+			words = "No, Walter. I mean the physical pot"
+			words2 = " you've got back there. Like, for "
+			words3 = "plants and stuff."
+		}
+		if cindex = 61{
+			words = "O-oh! Er, well. Sure, I don't see why not."
+			words2 = "This did just fall out of the sky one day.."
+			words3 = "Maybe there's something magical about it...?"
+		}
+		if cindex = 62{
+			words = "Plant a seed, and hit it from below, to see"
+			words2 = "what happens!"
+			words3 = ""
+		}
+		if cindex = 63{
+			words = "Sweet! And can I also have a lick of"
+			words2 = "the icile?"
+			words3 = ""
+		}
+		if cindex = 64{
+			words = "..."
+			words2 = ""
+			words3 = "No. Get out."
+		}
+		if cindex = 65{
+			words = "BREAK"
+			words2 = ""
+			words3 = ""
+		}
 	}
 	if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1){
 		cindex = cindex + 1

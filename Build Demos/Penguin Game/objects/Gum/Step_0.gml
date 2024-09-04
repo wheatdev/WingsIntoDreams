@@ -115,6 +115,21 @@ if global.playAs = 2{
 					global.specialMeter = global.specialMeter - .5
 				}
 			}
+			if global.gumSpecial = 3{
+				if keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2){
+					gravSwap = gravSwap * -1	
+				}
+				if gravSwap = 1{
+					global.eGravity = 10
+				}
+				else{
+					global.eGravity = -10
+					global.specialMeter = global.specialMeter - 1
+					if global.specialMeter < 2{
+						gravSwap = 1	
+					}
+				}
+			}
 		}
 		else{
 			if global.isDamaged > 0{

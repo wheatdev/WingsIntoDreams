@@ -25,7 +25,7 @@ if room = conCaveTemple or room = hopperHelishipUnderside{
 if room = donnerShipInside{
 	type = 6
 }
-if global.cameraActive = -1 or room = Shop1{
+if global.cameraActive = -1 or room = Shop1 or room = Shop2{
  type = -1	
 }
 

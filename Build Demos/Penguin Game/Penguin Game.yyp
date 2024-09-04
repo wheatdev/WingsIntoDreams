@@ -21,7 +21,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"Penguin Game",
   "resources":[
@@ -83,6 +83,7 @@
     {"id":{"name":"Dipp","path":"objects/Dipp/Dipp.yy",},},
     {"id":{"name":"dippBeam1","path":"objects/dippBeam1/dippBeam1.yy",},},
     {"id":{"name":"dippFlame","path":"objects/dippFlame/dippFlame.yy",},},
+    {"id":{"name":"dippIce","path":"objects/dippIce/dippIce.yy",},},
     {"id":{"name":"dippScarf","path":"objects/dippScarf/dippScarf.yy",},},
     {"id":{"name":"dippSnowball","path":"objects/dippSnowball/dippSnowball.yy",},},
     {"id":{"name":"DippSword","path":"objects/DippSword/DippSword.yy",},},
@@ -165,6 +166,7 @@
     {"id":{"name":"pauseOption3","path":"objects/pauseOption3/pauseOption3.yy",},},
     {"id":{"name":"Pekon","path":"objects/Pekon/Pekon.yy",},},
     {"id":{"name":"PekonStork","path":"objects/PekonStork/PekonStork.yy",},},
+    {"id":{"name":"pixelDipp","path":"objects/pixelDipp/pixelDipp.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"playerCutscene","path":"objects/playerCutscene/playerCutscene.yy",},},
     {"id":{"name":"portal1","path":"objects/portal1/portal1.yy",},},
@@ -238,6 +240,7 @@
     {"id":{"name":"HUB2","path":"rooms/HUB2/HUB2.yy",},},
     {"id":{"name":"mineDownUnder","path":"rooms/mineDownUnder/mineDownUnder.yy",},},
     {"id":{"name":"Shop1","path":"rooms/Shop1/Shop1.yy",},},
+    {"id":{"name":"Shop2","path":"rooms/Shop2/Shop2.yy",},},
     {"id":{"name":"skyHighHunting","path":"rooms/skyHighHunting/skyHighHunting.yy",},},
     {"id":{"name":"skyHighHuntingBoss","path":"rooms/skyHighHuntingBoss/skyHighHuntingBoss.yy",},},
     {"id":{"name":"springFactory","path":"rooms/springFactory/springFactory.yy",},},
@@ -353,6 +356,7 @@
     {"id":{"name":"pauseoption1","path":"sprites/pauseoption1/pauseoption1.yy",},},
     {"id":{"name":"pauseoption2","path":"sprites/pauseoption2/pauseoption2.yy",},},
     {"id":{"name":"pauseoption3","path":"sprites/pauseoption3/pauseoption3.yy",},},
+    {"id":{"name":"pDippStand","path":"sprites/pDippStand/pDippStand.yy",},},
     {"id":{"name":"Pekon1","path":"sprites/Pekon1/Pekon1.yy",},},
     {"id":{"name":"placeholder","path":"sprites/placeholder/placeholder.yy",},},
     {"id":{"name":"portalD","path":"sprites/portalD/portalD.yy",},},
@@ -449,6 +453,7 @@
     {"roomId":{"name":"hopperHelishipUnderside","path":"rooms/hopperHelishipUnderside/hopperHelishipUnderside.yy",},},
     {"roomId":{"name":"threeseven","path":"rooms/threeseven/threeseven.yy",},},
     {"roomId":{"name":"skyHighHuntingBoss","path":"rooms/skyHighHuntingBoss/skyHighHuntingBoss.yy",},},
+    {"roomId":{"name":"Shop2","path":"rooms/Shop2/Shop2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -2,6 +2,10 @@ type = 0
 if room = Shop1{
 	type = 1
 }
+if room = Shop2{
+	type = 2	
+}
+global.lastPressed = 1
 cindex = 0
 words = ""
 words2 = ""

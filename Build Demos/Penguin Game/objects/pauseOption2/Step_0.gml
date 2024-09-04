@@ -7,6 +7,12 @@ if global.paused = 1{
 		active = -80
 		image_alpha = 1
 			if selected = 1{
+			if selectX<1{
+				selectX = 1
+			}
+			if selectX > 3{
+				selectX = 3
+			}
 			if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0,gp_padd){
 				selectY = selectY + 1
 			}
@@ -39,13 +45,18 @@ if global.paused = 1{
 					if selectX = 3 and selectY = 2 and global.dippCloudGet = 1{
 						global.dippSpecial = 5	
 					}
-					if selectX = 1 and selectY = 3 and global.dippIceGet = 1{
-						global.dippSpecial = 6
+					if selectX = 1 and selectY = 3{
+						if global.dippIceGet = 2 or global.dippIceGet = 1{
+							global.dippSpecial = 6
+						}
+						if global.dippIceGet = 3 or global.dippIceGet = 4{
+							global.dippSpecial = 6
+						}
 					}
 					if selectX = 2 and selectY = 3 and global.dippFireGet = 1{
 						global.dippSpecial = 7
 					}
-					if selectX = 3 and selectY = 3 and ((global.dippSnowballGet = 1 or global.dippIceGet = 1) and global.dippFireGet = 1){
+					if selectX = 3 and selectY = 3 and ((global.dippSnowballGet = 1 or global.dippIceGet > 0) and global.dippFireGet > 0){
 						global.dippSpecial = 8	
 					}
 				}
@@ -58,6 +69,9 @@ if global.paused = 1{
 					}
 						if selectX = 3 and selectY = 1{
 						global.gumSpecial = 2
+					}
+					if selectX = 1 and selectY = 2{
+						global.gumSpecial = 3	
 					}
 				}
 			}
