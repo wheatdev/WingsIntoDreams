@@ -139,3 +139,14 @@ if type = 7{
 	}
 	
 }
+if type = 8{
+	if x < global.playerStartX{
+		sprite_index = dippSword2	
+		x = x + (global.dippSpeed * 2)
+	}	
+	else{
+		instance_create_depth(x,y,depth,Dipp)
+		global.cameraActive = 1
+		instance_destroy()
+	}
+}

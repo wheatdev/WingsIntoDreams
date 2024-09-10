@@ -1,3 +1,3 @@
-image_yscale = .5
-image_xscale = .5
+image_yscale = .2
+image_xscale = .2
 moveOn = 0

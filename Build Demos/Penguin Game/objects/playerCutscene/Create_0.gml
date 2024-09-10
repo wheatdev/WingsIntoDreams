@@ -12,7 +12,7 @@ if room = springFactory{
 if room = mineDownUnder{
 	type = 3	
 }
-if room = conicCaves{
+if room = testRoom{
 	if global.cameraActive = 1{
 		global.cameraActive = 0
 		hVal2 = y - 300
@@ -41,4 +41,8 @@ if global.cutsceneTimer = 1{
 }
 if global.itemGet = 1{
 	type = 2	
+}
+if room = conicCaves{
+	global.cameraActive = 0
+	type = 8	
 }

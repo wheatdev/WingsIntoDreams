@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"chest",
-    "path":"sprites/chest/chest.yy",
+    "name":"chest1",
+    "path":"sprites/chest1/chest1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

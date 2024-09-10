@@ -29,3 +29,9 @@ if room = mineDownUnder{
 if room = DippHouse{
 	type = 8	
 }
+if room = skyHighHunting{
+	if global.skyUnlock < 3{
+		instance_destroy()
+	}
+	type = 9
+}

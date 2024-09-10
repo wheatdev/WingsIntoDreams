@@ -25,7 +25,7 @@ global.storyProgress = 2
 global.lastIn = 1
 global.SFQ = 0 
 global.minesUnlock = 0
-global.skyUnlock = -1
+global.skyUnlock = 1
 
 global.cutsceneTimer = 0
 global.talking = 0 
@@ -36,20 +36,20 @@ global.playerStartY = 9056
 global.lastSafeX = 0
 global.lastSafeY = 0
 global.dippActive = 1
-global.gumActive = 1
+global.gumActive = 0
 global.earnestActive = 0
 
 global.dippSpeed = 10
 global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
-global.dippSpecial = 7
+global.dippSpecial = 1
 global.dippSpringGet = 1
 global.dippGlideGet = 1
 global.dippDynaGet = 1
 global.dippSnowballGet = 1
 global.dippCloudGet = 1
-global.dippIceGet = 1
+global.dippIceGet =	1
 global.dippFireGet = 1
 
 global.gumSpeed = 8
@@ -64,7 +64,7 @@ global.earnestHealthMax = 50
 global.earnestAttack = 6
 global.earnestSpecial = 1
 
-global.upgrade = 100
+global.upgrade = 0
 global.upgrade1Get = 0
 global.upgrade2Get = 0
 global.upgrade3Get = 0

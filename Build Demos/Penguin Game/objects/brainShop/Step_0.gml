@@ -78,8 +78,15 @@ if state = 0{
 				}
 			}
 		}
-		if test = 2{
-			
+		if type = 2{
+			if selectX = -1 and selectY = 0{
+				cindex = 0
+			}
+			if selectX = 1 and selectY = 0{
+				global.playerStartX = -1238
+				global.playerStartY = -1344
+				room_goto(skyHighHunting)	
+			}
 		}
 		state = 1
 	}

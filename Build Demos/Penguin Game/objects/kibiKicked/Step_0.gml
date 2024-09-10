@@ -16,4 +16,7 @@ if global.paused = -1{
 		global.allowDamage = 60
 		global.isDamaged = 15
 	}
+	if place_meeting(x,y,DippSword) and (keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd)){
+		global.pBounce = 20	
+	}
 }

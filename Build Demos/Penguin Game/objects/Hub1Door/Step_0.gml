@@ -42,5 +42,8 @@ if global.paused = -1{
 			global.playerStartY = 1472
 			room_goto(HUB1)	
 		}
+		if type = 9{
+			room_goto(Shop2)
+		}
 	}
 }
