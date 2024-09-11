@@ -822,6 +822,7 @@
     {"name":"inst_4B5CB381","path":"rooms/conicCaves/conicCaves.yy",},
     {"name":"inst_3C2B3B30","path":"rooms/conicCaves/conicCaves.yy",},
     {"name":"inst_6AD91B48","path":"rooms/conicCaves/conicCaves.yy",},
+    {"name":"inst_2E13D0FB","path":"rooms/conicCaves/conicCaves.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -1633,6 +1634,7 @@
         {"$GMRInstance":"v1","%Name":"inst_4B5CB381","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B5CB381","objectId":{"name":"donVal200","path":"objects/donVal200/donVal200.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":35712.0,"y":4384.0,},
         {"$GMRInstance":"v1","%Name":"inst_3C2B3B30","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3C2B3B30","objectId":{"name":"donVal200","path":"objects/donVal200/donVal200.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":35776.0,"y":4384.0,},
         {"$GMRInstance":"v1","%Name":"inst_6AD91B48","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6AD91B48","objectId":{"name":"donVal200","path":"objects/donVal200/donVal200.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":35840.0,"y":4384.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2E13D0FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E13D0FB","objectId":{"name":"Dipp","path":"objects/Dipp/Dipp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":33248.0,"y":4832.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_492B4B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_492B4B1","objectId":{"name":"water","path":"objects/water/water.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":79.0,"scaleY":12.5,"x":3391.0,"y":6784.0,},

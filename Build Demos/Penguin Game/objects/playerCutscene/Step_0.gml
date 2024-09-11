@@ -23,6 +23,9 @@ if type = -1{
 	y = y + global.eGravity
 }
 if type = 0{
+	if global.cameraActive = 1{
+		visible = false
+	}
 	if global.cutsceneTimer = 0{
 		sprite_index = dippStand
 	}
@@ -90,13 +93,18 @@ if type = 5{
 	global.cutsceneTimer = 0
 	y = y + global.eGravity
 	if place_meeting(x,y+global.eGravity,Ground){
-		instance_create_depth(x,y,depth,Dipp)
-		global.cameraActive = 1
-		if room = hopperHelishipUnderside{
-			global.cameraActive = -2	
-			global.cutsceneTimer = -2
+		if room = skyHighHuntingBoss and global.skyUnlock < 3{
+			type = 0
 		}
-		instance_destroy()
+		else{
+			instance_create_depth(x,y,depth,Dipp)
+			global.cameraActive = 1
+			if room = hopperHelishipUnderside{
+				global.cameraActive = -2	
+				global.cutsceneTimer = -2
+			}
+			instance_destroy()
+		}
 	}
 }
 if type = 6{

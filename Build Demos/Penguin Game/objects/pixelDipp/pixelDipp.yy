@@ -13,8 +13,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"Player",
-    "path":"objects/Player/Player.yy",
+    "name":"Dipp",
+    "path":"objects/Dipp/Dipp.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

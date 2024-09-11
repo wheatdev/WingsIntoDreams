@@ -21,7 +21,7 @@ global.leftovers = 0
 global.frogCoin = 1
 global.lifeSeed = 0
 
-global.storyProgress = 2
+global.storyProgress = 7
 global.lastIn = 1
 global.SFQ = 0 
 global.minesUnlock = 0
@@ -47,7 +47,7 @@ global.dippSpecial = 1
 global.dippSpringGet = 1
 global.dippGlideGet = 1
 global.dippDynaGet = 1
-global.dippSnowballGet = 1
+global.dippSnowballGet = 0
 global.dippCloudGet = 1
 global.dippIceGet =	1
 global.dippFireGet = 1
@@ -64,7 +64,7 @@ global.earnestHealthMax = 50
 global.earnestAttack = 6
 global.earnestSpecial = 1
 
-global.upgrade = 0
+global.upgrade = 100
 global.upgrade1Get = 0
 global.upgrade2Get = 0
 global.upgrade3Get = 0

@@ -43,6 +43,8 @@ if global.itemGet = 1{
 	type = 2	
 }
 if room = conicCaves{
-	global.cameraActive = 0
-	type = 8	
+	if global.cameraActive = 1{
+		global.cameraActive = 0
+		type = 8	
+	}
 }

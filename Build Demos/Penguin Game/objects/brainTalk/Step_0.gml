@@ -251,6 +251,7 @@ if type = 6{
 		global.talking = 0
 		global.skyUnlock = 2
 		global.cameraActive = 1
+		room_restart()
 	}
 	if cindex = 0{
 		words = "Hark! A bird appears! Who art thou?"
@@ -299,6 +300,9 @@ if type = 6{
 		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
 		cindex = 9
 	}
+}
+if type = 8{
+
 }
 if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1)) and global.talking =1 {
 	cindex = cindex + 1

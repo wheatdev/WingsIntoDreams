@@ -27,6 +27,11 @@ if room = skyHighHunting{
 	y =	-1564
 	type = 6
 }
+if room = skyHighHuntingBoss{
+	x = 672
+	y = 352
+	type = 8
+}
 cindex = 0
 words = ""
 words2 = ""
