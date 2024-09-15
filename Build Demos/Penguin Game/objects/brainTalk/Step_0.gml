@@ -302,7 +302,46 @@ if type = 6{
 	}
 }
 if type = 8{
-
+	if words = "BREAK"{
+		global.talking = 0 
+		cindex = 7	
+	}
+	if cindex = 0{
+		words = "Eh? Who're you? A blue bird dude..."
+		words2 = "Are you the Hero that my minions"
+		words3 = "keep mentionin'?"
+	}
+	if cindex = 1{
+		words = "Those apple dudes are YOUR minions?"
+		words2 = "That must mean you're the giant who stole"
+		words3 = "the Cloud Amulet, yeah?"
+	}
+	if cindex = 2{
+		words = "Yeah, I stole the Cloud Amulet."
+		words2 = "It makes me strong! I feel invincible!"
+		words3 = "And it really brings out my eye, yeah?"
+	}
+	if cindex = 3{
+		words = "It does! I like the way it contrasts with your"
+		words2 = "skin tone..."
+		words3 = "I-I mean!!!"
+	}
+	if cindex = 4{
+		words = "I-I don't suppose you'd be willing to eh..."
+		words2 = "G-give it up...?"
+		words3 = ""
+	}
+	if cindex = 5{
+		words = "No way, little dude! This Amulet makes me"
+		words2 = "the strongest! You want it?"
+		words3 = "You're gonna have to pry it offa me!"
+	}
+	if cindex = 6{
+		words = "BREAK"
+		words2 = ""
+		words3 = ""
+		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
+	}
 }
 if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1)) and global.talking =1 {
 	cindex = cindex + 1

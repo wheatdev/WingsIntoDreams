@@ -4,6 +4,7 @@ global.pBounce = 0
 global.isDamaged = 0
 global.allowDamage = 0
 global.mechanism = 0 
+global.cameraActive = 0
 if global.skyUnlock < 3{
 	global.cutsceneTimer = 1
 	instance_create_depth(672,792,0,playerCutscene)	

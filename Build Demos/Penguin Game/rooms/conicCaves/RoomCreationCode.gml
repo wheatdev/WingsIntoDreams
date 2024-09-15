@@ -12,5 +12,5 @@ if global.storyProgress < 5{
 	instance_create_depth(global.playerStartX-920,global.playerStartY,0,playerCutscene)
 }
 else{
-	//instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)
+	instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)
 }
