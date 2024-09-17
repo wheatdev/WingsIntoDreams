@@ -1,4 +1,12 @@
 type = 0
+cindex = 0
+words = ""
+words2 = ""
+words3 = ""
+state = 0
+selectX = -1
+selectY = 0
+icon = 0
 if room = springFactoryBoss{
 	x = 2016
 	y = 2528
@@ -31,15 +39,10 @@ if room = skyHighHuntingBoss{
 	x = 672
 	y = 352
 	type = 8
+	if global.skyUnlock = 4{
+		cindex = 7	
+	}
 }
-cindex = 0
-words = ""
-words2 = ""
-words3 = ""
-state = 0
-selectX = -1
-selectY = 0
-icon = 0
 
 draw_set_font(MenuFontSmall)
 draw_set_color(c_white)

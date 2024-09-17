@@ -15,3 +15,4 @@ maxHeight = y - 20
 jumpState = 0
 healTimer = 0
 moveTimer = 0
+moving = 0

@@ -4,6 +4,7 @@ if global.paused = -1{
 			if global.playAs = 1 and global.dippHealth > 0{
 				global.dippHealth = global.dippHealth + 5
 			}
+			audio_play_sound(healSE,0,false)
 			instance_destroy()
 		}
 

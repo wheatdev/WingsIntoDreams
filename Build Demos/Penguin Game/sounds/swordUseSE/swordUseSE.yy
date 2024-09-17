@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":3,
   "conversionMode":0,
-  "duration":0.391837,
+  "duration":0.287347,
   "name":"swordUseSE",
   "parent":{
     "name":"Sounds",

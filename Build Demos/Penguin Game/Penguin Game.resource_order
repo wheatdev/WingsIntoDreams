@@ -241,6 +241,7 @@
     {"name":"donVal10GetSE","order":7,"path":"sounds/donVal10GetSE/donVal10GetSE.yy",},
     {"name":"donVal1GetSE","order":5,"path":"sounds/donVal1GetSE/donVal1GetSE.yy",},
     {"name":"giantBossMusic","order":22,"path":"sounds/giantBossMusic/giantBossMusic.yy",},
+    {"name":"healSE","order":23,"path":"sounds/healSE/healSE.yy",},
     {"name":"helishipBossMusic","order":18,"path":"sounds/helishipBossMusic/helishipBossMusic.yy",},
     {"name":"hopperHelishipMusic","order":16,"path":"sounds/hopperHelishipMusic/hopperHelishipMusic.yy",},
     {"name":"mineDownUnderMusic","order":14,"path":"sounds/mineDownUnderMusic/mineDownUnderMusic.yy",},

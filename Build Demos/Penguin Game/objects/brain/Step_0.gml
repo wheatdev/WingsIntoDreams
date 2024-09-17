@@ -111,6 +111,7 @@ else{
 				if global.playAs = 1{
 					global.dippHealth = global.dippHealth + 1	
 				}
+				audio_play_sound(healSE,0,false)
 				global.skyUnlock = -1	
 			}
 		}

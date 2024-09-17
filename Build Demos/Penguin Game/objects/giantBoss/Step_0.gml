@@ -1,15 +1,21 @@
 if type = 0{
+	view_camera[0] = camera_create_view(x-800,y -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 	if global.talking = 0{
+		global.skyUnlock = 4
 		type = 1	
 	}
 }
 if type = 1{
+	view_camera[0] = camera_create_view(x-800,y -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 	if audio_is_playing(giantBossMusic){
 		if gHealth > 0{
 			healTimer = healTimer + 1
 			moveTimer = moveTimer + 1
 			if healTimer > 400{
-				gHealth = gHealth + 1
+				if gHealth < 10{
+					audio_play_sound(healSE,0,false)
+					gHealth = gHealth + 1
+				}
 				healTimer = 0
 			}
 			if gHealth > 10{
@@ -37,13 +43,25 @@ if type = 1{
 					x = x + 4
 				}
 			}
+			if jumpState = 0{
+				y = y + .5	
+				if y > maxHeight + 20{
+					jumpState = 1	
+				}
+			}
+			if jumpState = 1{
+				y = y - .5
+				if y < maxHeight{
+					jumpState = 0	
+				}
+			}
 			if place_meeting(x,y,kibiKicked) and allowHit = 0{
 				gHealth = gHealth -1
 				healTimer = 0
 				allowHit = 30
 			}
 			if place_meeting(x,y,Dynamite) and allowHit = 0{
-				gHealth = gHealth - global.dippAttack
+				gHealth = gHealth - ((global.dippAttack * 2) - 1)
 				healTimer = 0 
 				allowHit = 30 
 			}
@@ -55,9 +73,17 @@ if type = 1{
 				image_alpha = 1	
 			}
 		}
+		else{
+			type =2	
+		}
 	}
 	else{
 		audio_play_sound(giantBossMusic,0,true)
 	}
 }
-view_camera[0] = camera_create_view(x-800,y -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+if type = 2{
+	view_camera[0] = camera_create_view(672-800,356 -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	global.talking = 1
+	y = y + 3
+	image_alpha = 1
+}

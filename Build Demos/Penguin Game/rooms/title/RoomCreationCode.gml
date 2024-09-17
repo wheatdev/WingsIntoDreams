@@ -47,10 +47,10 @@ global.dippSpecial = 1
 global.dippSpringGet = 1
 global.dippGlideGet = 1
 global.dippDynaGet = 1
-global.dippSnowballGet = 0
-global.dippCloudGet = 1
-global.dippIceGet =	1
-global.dippFireGet = 1
+global.dippSnowballGet = 1
+global.dippCloudGet = 0
+global.dippIceGet =	0
+global.dippFireGet = 0
 
 global.gumSpeed = 8
 global.gumHealth = 40

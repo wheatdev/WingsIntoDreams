@@ -261,6 +261,7 @@
     {"id":{"name":"donVal10GetSE","path":"sounds/donVal10GetSE/donVal10GetSE.yy",},},
     {"id":{"name":"donVal1GetSE","path":"sounds/donVal1GetSE/donVal1GetSE.yy",},},
     {"id":{"name":"giantBossMusic","path":"sounds/giantBossMusic/giantBossMusic.yy",},},
+    {"id":{"name":"healSE","path":"sounds/healSE/healSE.yy",},},
     {"id":{"name":"helishipBossMusic","path":"sounds/helishipBossMusic/helishipBossMusic.yy",},},
     {"id":{"name":"hopperHelishipMusic","path":"sounds/hopperHelishipMusic/hopperHelishipMusic.yy",},},
     {"id":{"name":"mineDownUnderMusic","path":"sounds/mineDownUnderMusic/mineDownUnderMusic.yy",},},
