@@ -30,7 +30,7 @@ if room = DippHouse{
 	type = 8	
 }
 if room = skyHighHunting{
-	if global.skyUnlock < 3{
+	if global.skyUnlock < 5{
 		instance_destroy()
 	}
 	type = 9

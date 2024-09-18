@@ -253,6 +253,12 @@ if type = 6{
 		global.cameraActive = 1
 		room_restart()
 	}
+	if words = "BREAK2"{
+		global.talking = 0
+		global.skyUnlock = 6
+		global.cameraActive = 1
+		room_restart()
+	}
 	if cindex = 0{
 		words = "Hark! A bird appears! Who art thou?"
 		words2 = "Are thee an adventurer?"
@@ -300,10 +306,46 @@ if type = 6{
 		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
 		cindex = 9
 	}
+	if cindex = 9{
+		words = "Hark! The Bird Hero returns!"
+		words2 = "I sense the Cloud Amulet in your possesion."
+		words3 = "Here, give it here!" 
+	}
+	if cindex = 10{
+		words = "There, much better."
+		words2 = "It looks much nicer on me than that Ugly"
+		words3 = "and most Foul looking Giant, does it not?"
+	}
+	if cindex = 11{
+		words = "..."
+		words2 = "I see you do not share this sentiment."
+		words3 = "Perhaps bird tastes differ from ours..."
+	}
+	if cindex = 12{
+		words = "No matter! You have proven yourself a true"
+		words2 = "Hero. As a reward, you may peruse the royal"
+		words3 = "shoppe."
+	}
+	if cindex = 13{
+		words = "Hail! Glory be to Dipp, the Hero!"
+		words2 = ""
+		words3 = ""
+	}
+	if cindex = 14{
+		words = "BREAK2"
+		words2 = ""
+		words3 = ""
+	}
+	
+	
 }
 if type = 8{
+	if global.itemGet = 1{
+		global.talking = 1	
+	}
 	if words = "BREAK"{
 		global.talking = 0 
+		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
 		cindex = 7	
 	}
 	if cindex = 0{
@@ -340,16 +382,56 @@ if type = 8{
 		words = "BREAK"
 		words2 = ""
 		words3 = ""
-		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
 	}
 	if cindex = 7{
-		words = "GIRL YOU GOT A LONG TONGUE"
-		words2 = "YOU CANT GO WTRONG"
-		words3 = "WHEN YOU SEE ME AN YOU SAY I TURN YOU ON"
-		
+		words = "So... This is the Cloud Amulet, huh?"
+		words2 = "I can see what that hot giant chick was"
+		words3 = "talking about... I feel stronger already..."
+	}
+	if cindex = 8{
+		words = "This Amulet looks pretty valuable too..."
+		words2 = "And the princess and her soldiers are way"
+		words3 = "far away... No one would know if I kept it..."
+		selectY = 0 
+	}
+	if cindex = 9{
+		words = "Should I keep the Amulet, or Return it?"
+		if selectY = 0{
+			words2 = "> KEEP IT"	
+		}
+		else{
+			words2 = "KEEP IT"
+		}
+		if selectY = 1{
+			words3 = "> RETURN IT"	
+		}
+		else{
+			words3 = "RETURN IT"
+		}
+	}
+	if cindex = 10{
+		global.talking = 0
+		global.itemGet = 0
+		if selectY = 0{
+			global.skyUnlock = -1
+			global.playerStartX = 5000
+			global.playerStartY = -600
+			room_goto(HUB1)
+		}
+		if selectY = 1{
+			global.skyUnlock = 5
+			global.playerStartX = -816
+			global.playerStartY = -1312
+			room_goto(skyHighHunting)
+		}
 	}
 }
 if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1)) and global.talking =1 {
 	cindex = cindex + 1
 }
-
+if keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up) or gamepad_button_check_pressed(0,gp_padu){
+	selectY = selectY - 1
+}
+if keyboard_check_pressed(ord("S")) or keyboard_check_pressed(vk_down) or gamepad_button_check_pressed(0,gp_padd){
+	selectY = selectY + 1
+}

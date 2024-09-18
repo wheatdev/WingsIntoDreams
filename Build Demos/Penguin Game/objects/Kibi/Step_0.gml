@@ -53,4 +53,8 @@ if global.paused = -1{
 	if timer > 0{
 		timer = timer - 1	
 	}
+	if place_meeting(x,y,giantHandL) or place_meeting(x,y,giantHandR){
+		instance_create_depth(x,y,0,kibiKicked)
+		instance_destroy()	
+	}
 }

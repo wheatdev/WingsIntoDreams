@@ -7,83 +7,92 @@ if type = 0{
 }
 if type = 1{
 	view_camera[0] = camera_create_view(x-800,y -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
-	if audio_is_playing(giantBossMusic){
-		if gHealth > 0{
-			healTimer = healTimer + 1
-			moveTimer = moveTimer + 1
-			if healTimer > 400{
-				if gHealth < 10{
-					audio_play_sound(healSE,0,false)
-					gHealth = gHealth + 1
+	if global.paused = -1{
+		if audio_is_playing(giantBossMusic){
+			if gHealth > 0{
+				global.bossHelp1 = global.bossHelp1 + 1
+				moveTimer = moveTimer + 1
+				if global.bossHelp2 = 0{
+					attackTimer = attackTimer + 1
 				}
-				healTimer = 0
-			}
-			if gHealth > 10{
-				gHealth = 10
-			}
-			if moveTimer > 400{
-				position = irandom_range(1,3)
-				moveTimer = 0
-			}
-			if position = 1{
-				if x > 512{
-					x = x - 4	
+				if global.bossHelp1 > 400{
+					if gHealth < 10{
+						audio_play_sound(healSE,0,false)
+						gHealth = gHealth + 1
+					}
+					global.bossHelp1 = 0
 				}
-			}
-			if position = 2{
-				if x < 	672{
-					x = x + 4
+				if gHealth > 10{
+					gHealth = 10
 				}
-				if x > 	672{
-					x = x - 4
+				if moveTimer > 400{
+					position = irandom_range(1,3)
+					moveTimer = 0
 				}
-			}
-			if position = 3{
-				if x < 	832{
-					x = x + 4
+				if position = 1{
+					if x > 512{
+						x = x - 4	
+					}
 				}
-			}
-			if jumpState = 0{
-				y = y + .5	
-				if y > maxHeight + 20{
-					jumpState = 1	
+				if position = 2{
+					if x < 	672{
+						x = x + 4
+					}
+					if x > 	672{
+						x = x - 4
+					}
 				}
-			}
-			if jumpState = 1{
-				y = y - .5
-				if y < maxHeight{
-					jumpState = 0	
+				if position = 3{
+					if x < 	832{
+						x = x + 4
+					}
 				}
-			}
-			if place_meeting(x,y,kibiKicked) and allowHit = 0{
-				gHealth = gHealth -1
-				healTimer = 0
-				allowHit = 30
-			}
-			if place_meeting(x,y,Dynamite) and allowHit = 0{
-				gHealth = gHealth - ((global.dippAttack * 2) - 1)
-				healTimer = 0 
-				allowHit = 30 
-			}
-			if allowHit > 0{
-				allowHit = allowHit - 1
-				image_alpha = .5
+				if jumpState = 0{
+					y = y + .5	
+					if y > maxHeight + 20{
+						jumpState = 1	
+					}
+				}
+				if jumpState = 1{
+					y = y - .5
+					if y < maxHeight{
+						jumpState = 0	
+					}
+				}
+				if place_meeting(x,y,kibiKicked) and allowHit = 0{
+					gHealth = gHealth -1
+					global.bossHelp1 = 0
+					allowHit = 30
+				}
+				if place_meeting(x,y,Dynamite) and allowHit = 0{
+					gHealth = gHealth - ((global.dippAttack * 2) - 1)
+					global.bossHelp1 = 0
+					allowHit = 30 
+				}
+				if attackTimer > 149{
+					global.bossHelp2 = irandom_range(1,4)
+					attackTimer = 0
+				}
+				if allowHit > 0{
+					allowHit = allowHit - 1
+					image_alpha = .5
+				}
+				else{
+					image_alpha = 1	
+				}
 			}
 			else{
-				image_alpha = 1	
+				instance_create_depth(x,y,0,cloudAmulet)
+				type =2	
 			}
 		}
 		else{
-			type =2	
+			audio_play_sound(giantBossMusic,0,true)
 		}
-	}
-	else{
-		audio_play_sound(giantBossMusic,0,true)
 	}
 }
 if type = 2{
 	view_camera[0] = camera_create_view(672-800,356 -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
-	global.talking = 1
 	y = y + 3
 	image_alpha = 1
 }

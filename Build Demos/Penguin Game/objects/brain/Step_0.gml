@@ -109,9 +109,11 @@ else{
 			global.specialMeter =  global.specialMeter + (global.specialMax/2000)
 			if global.skyUnlock < -149{
 				if global.playAs = 1{
-					global.dippHealth = global.dippHealth + 1	
+					if global.dippHealth < global.dippHealthMax{
+						global.dippHealth = global.dippHealth + 1
+						audio_play_sound(healSE,0,false)
+					}
 				}
-				audio_play_sound(healSE,0,false)
 				global.skyUnlock = -1	
 			}
 		}
