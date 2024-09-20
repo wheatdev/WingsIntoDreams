@@ -121,7 +121,7 @@ if type = 2{
 			}
 		}
 		if global.leftovers = 0{
-			if selectY = 2 and selectX = 1{
+			if selectY = 1 and selectX = 1{
 				draw_text(800,200," > Apple Pie (500 Don)")	
 			}
 			else{

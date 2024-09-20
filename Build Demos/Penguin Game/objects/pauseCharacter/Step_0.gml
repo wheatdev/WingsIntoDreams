@@ -1,6 +1,6 @@
 if global.cameraActive = 1{
-	x = Player.x - 480
-	y = Player.y - 250
+	x = pauseMenu.x - 480
+	y = pauseMenu.y - 150
 }
 if global.cameraActive = -2{
 	x = pauseMenu.x - 480

@@ -39,12 +39,12 @@ if global.cutsceneTimer = 1{
 	hVal2 = y
 	type = 7
 }
-if global.itemGet = 1{
-	type = 2	
-}
 if room = conicCaves{
 	if global.cameraActive = 1{
 		global.cameraActive = 0
 		type = 8	
 	}
+}
+if global.itemGet = 1{
+	type = 2	
 }

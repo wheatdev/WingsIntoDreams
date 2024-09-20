@@ -7,6 +7,10 @@ if global.cameraActive = 1{
 	}
 	x = Player.x
 	y = Player.y - 100
+	if type = 2{
+		x = giantBoss.x
+		y = giantBoss.y - 100
+	}
 
 	if global.paused = 1{
 		if selected = -1{

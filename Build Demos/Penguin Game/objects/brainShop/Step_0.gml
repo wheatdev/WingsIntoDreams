@@ -87,6 +87,20 @@ if state = 0{
 				global.playerStartY = -1344
 				room_goto(skyHighHunting)	
 			}
+			if selectX = -1 and selectY = 1 and global.upgrade15Get = 0 and global.theMoney > 999{
+				global.upgrade15Get = 1
+				global.upgrade = global.upgrade + 1
+				global.theMoney = global.theMoney - 1000
+			}
+			if selectX = 1 and selectY = 1 and global.leftovers = 0 and global.theMoney > 499{
+				global.leftovers = 1
+				global.theMoney = global.theMoney - 500
+			}
+			if selectX = -1 and selectY = 2 and global.dippCloudGet = 0 and global.theMoney > 1999{
+				global.dippCloudGet = 1
+				global.theMoney = global.theMoney - 2000
+			}
+				
 		}
 		state = 1
 	}
@@ -466,10 +480,14 @@ if state = 1{
 			words3 = ""
 		}
 	}
+	if type = 2{
+		state = 0	
+	}
 	if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1){
 		cindex = cindex + 1
 	}
 }
+	
 
 if keyboard_check(vk_escape){
 	game_end()

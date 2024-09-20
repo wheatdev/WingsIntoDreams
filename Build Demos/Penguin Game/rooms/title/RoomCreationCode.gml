@@ -16,16 +16,16 @@ global.specialMax = 100
 global.specialRemember = 0 
 global.pauseX = 1
 global.itemGet = 0
-global.escapeRope = 1
+global.escapeRope = 0
 global.leftovers = 0
 global.frogCoin = 1
 global.lifeSeed = 0
 
-global.storyProgress = 7
+global.storyProgress = 0
 global.lastIn = 1
 global.SFQ = 0 
 global.minesUnlock = 0
-global.skyUnlock = 1
+global.skyUnlock = 0
 
 global.cutsceneTimer = 0
 global.talking = 0 
@@ -43,11 +43,11 @@ global.dippSpeed = 10
 global.dippHealth = 20
 global.dippHealthMax = 20
 global.dippAttack = 1
-global.dippSpecial = 1
-global.dippSpringGet = 1
-global.dippGlideGet = 1
-global.dippDynaGet = 1
-global.dippSnowballGet = 1
+global.dippSpecial = 0
+global.dippSpringGet = 0
+global.dippGlideGet = 0
+global.dippDynaGet = 0
+global.dippSnowballGet = 0
 global.dippCloudGet = 0
 global.dippIceGet =	0
 global.dippFireGet = 0
@@ -64,7 +64,7 @@ global.earnestHealthMax = 50
 global.earnestAttack = 6
 global.earnestSpecial = 1
 
-global.upgrade = 100
+global.upgrade = 0
 global.upgrade1Get = 0
 global.upgrade2Get = 0
 global.upgrade3Get = 0
@@ -88,7 +88,7 @@ global.key3 = 0
 global.key4 = 0
 global.mechanism = 0
 
-global.arcade1 = 1
+global.arcade1 = 0
 
 global.bossHelp1 = 0
 global.bossHelp2 = 0

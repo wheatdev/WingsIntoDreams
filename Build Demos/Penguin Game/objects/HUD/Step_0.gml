@@ -8,6 +8,10 @@ if global.paused = -1 and (global.cameraActive = 1 or global.cameraActive = -2) 
 	}
 	draw_set_color(c_white)
 	draw_set_font(MenuFontSmall)
+	if type = 2{
+		x = giantBoss.x - 500
+		y = giantBoss.y - 430
+	}
 }
 else{
 	if global.talking = 1{

@@ -92,7 +92,7 @@ if type = 5{
 	image_yscale = global.eGravity/50
 	global.cutsceneTimer = 0
 	y = y + global.eGravity
-	if place_meeting(x,y+global.eGravity,Ground){
+	if place_meeting(x,y+(global.eGravity*2),Ground){
 		if room = skyHighHuntingBoss and global.skyUnlock < 3{
 			type = 0
 		}

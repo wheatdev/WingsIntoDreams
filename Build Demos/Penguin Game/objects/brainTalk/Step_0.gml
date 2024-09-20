@@ -304,7 +304,6 @@ if type = 6{
 		words2 = ""
 		words3 = ""
 		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
-		cindex = 9
 	}
 	if cindex = 9{
 		words = "Hark! The Bird Hero returns!"
@@ -414,6 +413,9 @@ if type = 8{
 		global.itemGet = 0
 		if selectY = 0{
 			global.skyUnlock = -1
+			global.dippHealthMax = global.dippHealthMax + 10
+			global.dippHealth = global.dippHealth + 10
+			global.dippAttack = global.dippAttack + 2
 			global.playerStartX = 5000
 			global.playerStartY = -600
 			room_goto(HUB1)
