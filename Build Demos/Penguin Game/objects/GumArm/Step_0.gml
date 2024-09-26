@@ -38,7 +38,7 @@ if global.gumHealth > 0 and global.playAs = 2{
 	if shootAngle = 2{
 		image_angle = 0	
 	}
-	if keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X")){
+	if keyboard_check_pressed(ord("O")) or keyboard_check_pressed(ord("X")) or gamepad_button_check_pressed(0,gp_face3){
 		instance_create_depth(x,y,0,gumShoot)
 	}
 }

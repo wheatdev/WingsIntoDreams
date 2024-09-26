@@ -9,6 +9,6 @@ if room = mineDownUnder{
 		instance_destroy()
 	}
 }
-if room = conicCaves and upgradeCap11 = 1{
+if room = conicCaves and upgradeCap11 > 0{
 	instance_destroy()	
 }

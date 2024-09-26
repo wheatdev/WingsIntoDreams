@@ -1,5 +1,5 @@
-image_xscale = .25
-image_yscale = .25
+image_xscale = .2
+image_yscale = .2
 direct = 1
 bHealth = 8
 grounded = 0

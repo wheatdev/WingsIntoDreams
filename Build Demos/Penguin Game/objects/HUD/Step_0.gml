@@ -12,6 +12,10 @@ if global.paused = -1 and (global.cameraActive = 1 or global.cameraActive = -2) 
 		x = giantBoss.x - 500
 		y = giantBoss.y - 430
 	}
+	if type = 3{
+		x = Player.x - 500
+		y = Player.y + 200
+	}
 }
 else{
 	if global.talking = 1{

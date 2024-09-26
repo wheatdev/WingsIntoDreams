@@ -78,16 +78,21 @@ if type = 2{
 		words3 = "art of seal snowball making, no?"
 	}
 	if cindex = 6{
+		words = "Zis power vill let you surround yourself"
+		words2 = "in ze snow, and roll quickly!"
+		words3 = "It is un special ability, no?"
+	}
+	if cindex = 7{
 		words = "He who fights and runs away,"
 		words2 = "lives to fight another day!"
 		words3 = "Honhonhonhon!!!"
 	}
-	if cindex = 7{
+	if cindex = 8{
 		global.talking = 0
 		global.cutsceneTimer = -3
 		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
 		global.cameraActive = 1
-		cindex = 8
+		cindex = 9
 	}
 }	
 if type = 3{

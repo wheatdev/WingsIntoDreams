@@ -13,6 +13,9 @@ if global.paused = -1{
 					global.dippHealth = global.dippHealth - 1
 					audio_play_sound(dippHurtSE,0,false)
 				}
+				if global.playAs = 2{
+					global.gumHealth = global.gumHealth - 1	
+				}
 				global.allowDamage = 40
 				global.isDamaged = 10
 			}
@@ -240,6 +243,10 @@ if global.paused = -1{
 				aHealth = aHealth - (global.dippAttack * 2)
 				allowHit = 20
 			}
+			if place_meeting(x,y,gumShoot) and allowHit = 0{
+				aHealth = aHealth - global.gumAttack
+				allowHit = 10
+			}
 			if allowHit > 0{
 				image_alpha = .5
 				allowHit = allowHit - 1
@@ -249,7 +256,13 @@ if global.paused = -1{
 			}
 		}
 		else{
-			instance_create_depth(16416,832,0,DonnerDoor)
+			if room = donnerShipInside{
+				instance_create_depth(16416,832,0,DonnerDoor)
+			}
+			if room = tutorial{
+				global.talking = 1
+				room_goto(title)
+			}	
 			active = 2
 		}	
 	}

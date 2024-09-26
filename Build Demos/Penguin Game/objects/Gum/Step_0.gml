@@ -16,15 +16,15 @@ if global.playAs = 2{
 				coyoteTime = 0
 				global.pBounce = 0
 			}
-			if keyboard_check(vk_left) or keyboard_check(ord("A")){
+			if keyboard_check(vk_left) or keyboard_check(ord("A")) or gamepad_button_check(0,gp_padl){
 				direct = -1
-				if keyboard_check(vk_right) or keyboard_check(ord("D")){
+				if keyboard_check(vk_right) or keyboard_check(ord("D")) or gamepad_button_check(0,gp_padr){
 					direct = 0	
 				}
 			}
-			if keyboard_check(vk_right) or keyboard_check(ord("D")){
+			if keyboard_check(vk_right) or keyboard_check(ord("D")) or gamepad_button_check(0,gp_padr){
 				direct = 1
-				if keyboard_check(vk_left) or keyboard_check(ord("A")){
+				if keyboard_check(vk_left) or keyboard_check(ord("A")) or gamepad_button_check(0,gp_padl){
 					direct = 0
 				}
 			}
@@ -37,11 +37,11 @@ if global.playAs = 2{
 					x = x -	(global.gumSpeed * global.lastPressed)
 				}	
 
-			if keyboard_check_released(vk_right) or  keyboard_check_released(vk_left) or  keyboard_check_released(ord("A")) or  keyboard_check_released(ord("D")){
+			if keyboard_check_released(vk_right) or  keyboard_check_released(vk_left) or  keyboard_check_released(ord("A")) or  keyboard_check_released(ord("D")) or gamepad_button_check_released(0,gp_padl) or gamepad_button_check_released(0,gp_padr){
 				gumState = 1
 				direct = 0
 			}
-			if (keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("I"))) and jumpState = 1{
+			if (keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("I")) or gamepad_button_check_pressed(0,gp_face1)) and jumpState = 1{
 				if coyoteTime > 0{
 					jumpState = 2
 				}
@@ -60,7 +60,7 @@ if global.playAs = 2{
 						jumpState = 0
 					}
 				}
-				if keyboard_check_released(ord("Z")) or keyboard_check_released(ord("I")){
+				if keyboard_check_released(ord("Z")) or keyboard_check_released(ord("I")) or gamepad_button_check_released(0,gp_face1){
 					gumState = 4
 					jumpState = 0
 				}
@@ -95,7 +95,7 @@ if global.playAs = 2{
 			}
 			
 			if global.gumSpecial = 1{
-				if keyboard_check(ord("P")) and global.specialMeter > 0{
+				if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter > 0{
 					x  = x + ((global.gumSpeed * 1.25) * global.lastPressed)
 					global.specialMeter = global.specialMeter - .2
 					if jumpState = 1{
@@ -110,7 +110,7 @@ if global.playAs = 2{
 				}
 			}
 			if global.gumSpecial = 2{
-				if keyboard_check(ord("P")) and global.specialMeter > 0 and place_empty(x,y-(global.eGravity*2.5),Ground){
+				if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter > 0 and place_empty(x,y-(global.eGravity*2.5),Ground){
 					y = y - (global.eGravity * 2.5)
 					global.specialMeter = global.specialMeter - .5
 				}

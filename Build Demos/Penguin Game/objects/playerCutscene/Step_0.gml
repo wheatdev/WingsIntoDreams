@@ -158,3 +158,48 @@ if type = 8{
 		instance_destroy()
 	}
 }
+if type = 9{
+	view_camera[0] = camera_create_view(x-800,y -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	if hVal1 = 0{
+		y = y + global.eGravity
+		sprite_index = dippJump2
+		if place_meeting(x,y+(2*global.eGravity),Ground){
+			hVal1 = 1
+		}
+	}
+	if hVal1 = 1{
+		sprite_index = dippWalk
+		y = y + global.eGravity
+		if place_meeting(x,y+global.eGravity,Ground){
+			y = y - global.eGravity
+			hVal2 = y - 300
+		}
+		x = x + global.dippSpeed	
+		if x > 2752{
+			hVal1 = 2	
+		}
+	}
+	if hVal1 = 2{
+		x = x + global.dippSpeed
+		sprite_index = dippJump1
+		y = y - global.eGravity
+		if y < hVal2{
+			hVal1 = 3	
+		}
+	}
+	if hVal1 = 3{
+		x = x + global.dippSpeed	
+		sprite_index = dippJump2
+		y = y + global.eGravity
+		if place_meeting(x,y+(2*global.eGravity),Ground){
+			hVal1 = 4
+		}
+	}
+	if hVal1 = 4{
+		x = x + global.dippSpeed
+		sprite_index = dippWalk
+		if place_meeting(x,y,Hub1Door) and x > 4000{
+			room_goto(Shop1)	
+		}
+	}
+}

@@ -7,4 +7,7 @@ if room = donnerShipInside or room = donnerShipOutside or room = hopperHeliship{
 if room = skyHighHuntingBoss{
 	type = 2	
 }
+if room = tutorial{
+	type = 3	
+}
 instance_create_depth(x,y,0,specialMeter)

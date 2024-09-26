@@ -20,4 +20,9 @@ global.gumHealth = global.gumHealthMax
 global.earnestHealth = global.earnestHealthMax
 
 instance_create_depth(global.playerStartX,global.playerStartY,0,dippScarf)
-instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)
+if global.storyProgress = 2 and global.playerStartX = 1500 and global.lastIn = 1{
+	instance_create_depth(global.playerStartX,global.playerStartY,0,playerCutscene)
+}	
+else{
+	instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)
+}

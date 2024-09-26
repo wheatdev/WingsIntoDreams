@@ -47,4 +47,8 @@ if room = conicCaves{
 }
 if global.itemGet = 1{
 	type = 2	
+	instance_create_depth(x,y-80,0,itemCollected)
+}
+if room = HUB1{
+	type = 9	
 }
