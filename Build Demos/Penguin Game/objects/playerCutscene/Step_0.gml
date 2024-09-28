@@ -1,17 +1,29 @@
 if type = -1{
-	sprite_index = dippWalk
-	if x > global.lastSafeX{
-		x = x - global.dippSpeed
-		image_xscale = -.2
+	if global.playAs = 1{
+		sprite_index = dippWalk
+		if x > global.lastSafeX{
+			x = x - global.dippSpeed
+			image_xscale = -.2
+		}
+		if x < global.lastSafeX{
+			x = x + global.dippSpeed
+		}
 	}
-	if x < global.lastSafeX{
-		x = x + global.dippSpeed
+	if global.playAs = 2{
+		sprite_index = A2CStand
+		if x > global.lastSafeX{
+			x = x - global.gumSpeed
+			image_xscale = -.2
+		}
+		if x < global.lastSafeX{
+			x = x + global.gumSpeed
+		}
 	}
 	if abs(x - global.lastSafeX) < 30{
 		image_xscale = .2 * global.lastPressed
 		global.cameraActive = 0	
 		type = 0 
-		if ((room = donnerShipInside) or (room = donnerShipOutside) or (room = hopperHeliship)) and global.talking = 0{
+		if ((room = donnerShipInside) or (room = donnerShipOutside) or (room = hopperHeliship) or (room = tutorial)) and global.talking = 0{
 			instance_create_depth(x,y,depth,Dipp)
 			global.cameraActive = -2
 			instance_destroy()

@@ -250,11 +250,21 @@ if type = 5{
 }
 if type = 6{
 	if global.talking = 1{
-		view_camera[0] = camera_create_view(princess.x-300, princess.y -450, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+		if global.dialouge = 0{	
+			view_camera[0] = camera_create_view(princess.x-300, princess.y -450, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+		}
+		if global.dialouge = 1{
+			view_camera[0] = camera_create_view(dukeKickem.x - 800, dukeKickem.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+			x = dukeKickem.x
+			y = dukeKickem.y
+		}
 	}		
 	if words = "BREAK"{
+		global.playerStartX = playerCutscene.x
 		global.talking = 0
-		global.skyUnlock = 2
+		if global.dialouge = 0{
+			global.skyUnlock = 2
+		}
 		global.cameraActive = 1
 		room_restart()
 	}
@@ -265,55 +275,123 @@ if type = 6{
 		room_restart()
 	}
 	if cindex = 0{
-		words = "Hark! A bird appears! Who art thou?"
-		words2 = "Are thee an adventurer?"
-		words3 = "Would you care for a quest?"
+		if global.dialouge = 0{
+			words = "Hark! A bird appears! Who art thou?"
+			words2 = "Are thee an adventurer?"
+			words3 = "Would you care for a quest?"
+		}
+		else{
+			words = "So, this pedestal is where the Cloud Amulet"	
+			words2 = "is supposed to be kept?"
+			words3 = ""
+		}
 	}
 	if cindex = 1{
-		words = "Uh, yeah. I'm an ''adventurer'' of sorts."
-		words2 = "And a bird as well."
-		words3 = "What quest you need me to do, lady?"
+		if global.dialouge = 1{
+			words = "Oh, no no no, Sir Dipp!"
+			words2 = "This pedestal is meant for another, far more"
+			words3 = "valuable treasure!"
+		}
+		else{
+			words = "Uh, yeah. I'm an ''adventurer'' of sorts."
+			words2 = "And a bird as well."
+			words3 = "What quest you need me to do, lady?"
+		}
 	}
 	if cindex = 2{
-		words = "Hark! An adventurous Bird Hero!"
-		words2 = "The sacred treasure of my kingdom,"
-		words3 = "the Cloud Amulet, has been stolen!"
+		if global.dialouge = 1{	
+			words = "Well, at least it was!"
+			words2 = "Long ago, a powerful orb was kept up here."
+			words3 = ""
+		}
+		else{
+			words = "Hark! An adventurous Bird Hero!"
+			words2 = "The sacred treasure of my kingdom,"
+			words3 = "the Cloud Amulet, has been stolen!"
+		}
 	}
 	if cindex = 3{
-		words = "The vile Giant has used it's power"
-		words2 = "to construct beasts most foul, preventing"
-		words3 = "my army from reaching it's Vile Tower."
+		if global.dialouge = 1{
+			words = "It constantly created clouds."
+			words2 = "In fact, all of this land up here was"
+			words3 = "made by that one orb!"
+		}
+		else{
+			words = "The vile Giant has used it's power"
+			words2 = "to construct beasts most foul, preventing"
+			words3 = "my army from reaching it's Vile Tower."
+		}
 	}
 	if cindex = 4{
-		words = "My foot-soldiers have had little luck in"
-		words2 = "reaching the tower. But a bird! Why, you"
-		words3 = "can just fly to the top, could you not?"
+		if global.dialouge = 1{
+			words = "Long ago, though, some hooded figures"
+			words2 = "came, and took the orb. Something about"
+			words3 = "needing to ''protet the planet from destruction.''"
+		}
+		else{
+			words = "My foot-soldiers have had little luck in"
+			words2 = "reaching the tower. But a bird! Why, you"
+			words3 = "can just fly to the top, could you not?"
+		}
 	}
 	if cindex = 5{
-		words = "..."
-		words2 = "Y-yeah. Of course."
-		words3 = "I can fly. Totally."
+		if global.dialouge = 1{
+			words = "Luckily, the Cloud Amulet is made from a fragment"
+			words2 = "of that orb's power. It's what keeps us from"
+			words3 = "falling to the surface!"
+		}
+		else{
+			words = "..."
+			words2 = "Y-yeah. Of course."
+			words3 = "I can fly. Totally."
+		}
 	}
 	if cindex = 6{
-		words = "Wonderful! Can you go and"
-		words2 = "retrieve the Cloud Amulet then?"
-		words3 = "It shouldn't be too much issue for a bird."
+		if global.dialouge = 1{
+			words = "But! That's why it's so important that you get"
+			words2 = "the amulet back!"
+			words3 = "Now! Hurry along! Chop chop!"
+		}
+		else{
+			words = "Wonderful! Can you go and"
+			words2 = "retrieve the Cloud Amulet then?"
+			words3 = "It shouldn't be too much issue for a bird."
+		}
 	}
 	if cindex = 7{
-		words = "No... problem..."
-		words2 = "I'll... be right... back..."
-		words3 = ""
+		if global.dialouge = 1{
+			words = "And, when you return to the surface, do"
+			words2 = "keep an eye out for our stolen orb!"
+			words3 = "We will reward you handsomely!"
+		}
+		else{
+			words = "No... problem..."
+			words2 = "I'll... be right... back..."
+			words3 = ""
+		}
 	}
 	if cindex = 8{
-		words = "BREAK"
-		words2 = ""
-		words3 = ""
-		instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
+		if global.dialouge = 1{
+			words = "Sure thing. I'll keep an eye out."
+			words2 = "..."
+			words3 = "Jerk."
+		}
+		else{
+			words = "BREAK"
+			words2 = ""
+			words3 = ""
+			instance_create_depth(playerCutscene.x,playerCutscene.y,0,Dipp)
+		}
 	}
 	if cindex = 9{
-		words = "Hark! The Bird Hero returns!"
-		words2 = "I sense the Cloud Amulet in your possesion."
-		words3 = "Here, give it here!" 
+		if global.dialouge = 1{
+			words = "BREAK"
+		}
+		else{
+			words = "Hark! The Bird Hero returns!"
+			words2 = "I sense the Cloud Amulet in your possesion."
+			words3 = "Here, give it here!" 
+		}
 	}
 	if cindex = 10{
 		words = "There, much better."

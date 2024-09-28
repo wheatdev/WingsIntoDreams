@@ -1,7 +1,7 @@
 if global.paused = -1{
 	if place_meeting(x,y-(global.eGravity * 2),Player) and global.cameraActive = 1{
 		Player.x = Player.x + (global.lastPressed * 3)
-		timer = 100
+		timer = 50
 		direct = global.lastPressed
 	}
 	else{

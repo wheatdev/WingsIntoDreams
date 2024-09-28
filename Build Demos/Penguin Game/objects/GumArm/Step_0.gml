@@ -1,4 +1,4 @@
-if global.gumHealth > 0 and global.playAs = 2{
+if global.gumHealth > 0 and global.playAs = 2 and (global.cameraActive =1 or global.cameraActive = -2) {
 	x = Gum.x
 	y = Gum.y 
 	image_xscale = .25 * global.lastPressed

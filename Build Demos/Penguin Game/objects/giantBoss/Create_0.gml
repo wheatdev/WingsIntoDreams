@@ -17,4 +17,3 @@ global.bossHelp1 = 0
 global.bossHelp2 = 0 
 attackTimer = 0 
 moveTimer = 0
-moving = 0

@@ -88,6 +88,7 @@ if global.paused = -1{
 		}	
 		if global.bossHelp2 = 4{
 			if state = 0{
+				sprite_index = bigLadyFlat
 				if y < Player.y{
 					y = y + 5
 				}
@@ -95,7 +96,6 @@ if global.paused = -1{
 					y = y - 5	
 				}
 				if abs(Player.y - y) < 30{
-					sprite_index = bigLadyFlat
 					state = 1	
 				}
 			}

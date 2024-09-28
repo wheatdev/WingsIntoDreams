@@ -157,3 +157,7 @@ else{
 		instance_destroy()
 	}
 }
+if global.cameraActive = -1{
+	instance_create_depth(x,y,depth,playerCutscene)
+	instance_destroy()
+}

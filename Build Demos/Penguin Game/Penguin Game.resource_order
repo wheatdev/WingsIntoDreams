@@ -79,6 +79,7 @@
     {"name":"donVal50","order":76,"path":"objects/donVal50/donVal50.yy",},
     {"name":"donVal50Chest","order":77,"path":"objects/donVal50Chest/donVal50Chest.yy",},
     {"name":"Door","order":109,"path":"objects/Door/Door.yy",},
+    {"name":"dukeKickem","order":207,"path":"objects/dukeKickem/dukeKickem.yy",},
     {"name":"Dynamite","order":92,"path":"objects/Dynamite/Dynamite.yy",},
     {"name":"dynamiteChest","order":94,"path":"objects/dynamiteChest/dynamiteChest.yy",},
     {"name":"dynamiteSpecial","order":93,"path":"objects/dynamiteSpecial/dynamiteSpecial.yy",},
