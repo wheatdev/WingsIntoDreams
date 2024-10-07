@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet1",
+  "%Name":"TileSet2",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":2,
@@ -8,7 +8,7 @@
     "TileCompressedData":[-5,0,3,1,2,3,],
     "TileDataFormat":1,
   },
-  "name":"TileSet1",
+  "name":"TileSet2",
   "out_columns":15,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -19,8 +19,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"TS1",
-    "path":"sprites/TS1/TS1.yy",
+    "name":"TS2",
+    "path":"sprites/TS2/TS2.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

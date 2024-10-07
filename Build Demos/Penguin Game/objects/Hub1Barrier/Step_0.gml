@@ -7,7 +7,7 @@ if global.paused = -1{
 			else{
 				global.playerStartX = 608
 			}
-			global.playerStartY = 6144
+			global.playerStartY = 6090
 			room_goto(conicCaves)
 		}
 		if type = 2{
@@ -22,7 +22,7 @@ if global.paused = -1{
 		}
 		if type = 4{
 			global.playerStartX = 8832
-			global.playerStartY = 2432
+			global.playerStartY = 2435
 			room_goto(HUB1)
 		}
 	}

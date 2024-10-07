@@ -261,7 +261,6 @@ if global.paused = -1{
 			}
 			if room = tutorial{
 				global.talking = 1
-				room_goto(title)
 			}	
 			active = 2
 		}	

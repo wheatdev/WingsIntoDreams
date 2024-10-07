@@ -23,6 +23,9 @@ if room = HUB2{
 	type = 3
 }
 if room = donnerShipInside{
+	audio_stop_all()
+	x = global.playerStartX
+	y = global.playerStartY
 	type = 4
 }
 if room = hopperHeliship{
@@ -45,6 +48,11 @@ if room = skyHighHuntingBoss{
 	if global.skyUnlock = 4{
 		cindex = 7	
 	}
+}
+if room = tutorial{
+	type = 9	
+	x = 16450
+	y = 1000
 }
 
 draw_set_font(MenuFontSmall)

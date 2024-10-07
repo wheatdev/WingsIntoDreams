@@ -9,7 +9,7 @@ if type = 1{
 	}
 	if cindex = 1{
 		words = "All I need to do is not set off any..."
-		words2 = "*Click*"
+		words2 = "*CLICK*"
 		words3 = "Poo."
 	}
 	if cindex = 2{
@@ -175,6 +175,42 @@ if type = 3{
 		words = "BREAK"
 		words2 = ""
 		words3 = ""
+	}
+}
+if type = 4{
+	if cindex = 0{
+		if x = 736{
+			global.talking = 1
+		}
+		words = "*BZZZRT*"
+		words2 = "Attention all pasengers, this is yer Captain speakin'."
+		words3 = "I-er... Uh, we've been invaded."
+	}
+	if cindex = 1{
+		words = "Yep. Buncha robots have practically taken over the ship."
+		words2 = "But! Youse got no reason to worry. I've been told they"
+		words3 = "ain't interested in you, or most o' yer valuables."
+	}
+	if cindex = 2{
+		words = "Only thing these dumbbots seem to care about is"
+		words2 = "something called the ''Ice Core''. So, long as that ain't"
+		words3 = "yours, please just stay in yer seats. Thank you!"
+	}
+	if cindex = 3{
+		words =	"..."
+		words2 = "The Ice Core is totally that weird orb I found in the"
+		words3 = "Conic Caves, isn't it..."
+	}
+	if cindex = 4{
+		words = "So much for a relaxing airship ride..."
+		words2 = ""
+		words3 = ""
+	}
+	if cindex = 5{
+		global.talking = 0
+		if !audio_is_playing(donnerShipMusic){
+			audio_play_sound(donnerShipMusic,0,true)
+		}
 	}
 }
 if type = 5{
@@ -509,6 +545,32 @@ if type = 8{
 			global.playerStartY = -1312
 			room_goto(skyHighHunting)
 		}
+	}
+}
+if type = 9{
+	if cindex = 0{
+		words = "Perfect, perfect! You're amazing, A2C-PGU.M-004!"
+		words2 = "You've met and surpassed all expectations for"
+		words3 = "your first field test."
+	}
+	if cindex = 1{
+		words = "And not a moment too soon. Poncho has just given word"
+		words2 = "that the De- er... ''Ice'' Core has just been put up"
+		words3 = "for auction in Suenos."
+	}
+	if cindex = 2{
+		words = "Some punk kid found it, and is riding the Donner Ship"
+		words2 = "with the ''Ice'' Core. I'll be sending in you and the"
+		words3 = "other A2C models to retrieve it."
+	}	
+	if cindex = 3{
+		words = "With all your powers combined, it should be easier"
+		words2 = "than taking candy from a baby. Now go!"
+		words3 = "Retrieve the ''Ice'' Core for Poncho!"
+	}
+	if cindex = 4{
+		audio_stop_all()
+		room_goto(title)
 	}
 }
 if (keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1)) and global.talking =1 {
