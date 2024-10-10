@@ -132,5 +132,6 @@ if type = 1{
 		words2 = "piece of cake for you."
 		words3 = "Good luck!"
 		global.dialouge = 0
+	
 	}
 }

@@ -54,7 +54,7 @@ if room = tutorial{
 	x = 16450
 	y = 1000
 }
-
+depth = -10
 draw_set_font(MenuFontSmall)
 draw_set_color(c_white)
 depth = -10

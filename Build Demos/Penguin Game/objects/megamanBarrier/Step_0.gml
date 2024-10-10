@@ -9,8 +9,8 @@ if place_meeting(x-20,y,Player){
 }
 if global.cameraActive = -1 and place_empty(x,y,Player) and touched = 1 and global.dialouge = 0{
 	instance_create_depth(x,y,0,megamanBarrier2)	
-	if xPos = 15712 or xPos =11520{
-		instance_create_depth(16864,192,0,A2C1Boss)
+	if xPos = 15712{
+		instance_create_depth(16864,y - 512,0,A2C1Boss)
 	}
 	if xPos = 17056{
 		instance_create_depth(18272,-3520,0,A2C2Boss)

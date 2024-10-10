@@ -1,7 +1,7 @@
 if global.paused = -1{
 	if active = 0{
 		y = y + 6
-		if y > 704{
+		if y > startY + 512{
 			active = 1
 		}
 	}
@@ -26,7 +26,7 @@ if global.paused = -1{
 			pXPos = Player.x
 			rangeY = abs(Player.y -y )
 
-			if pXPos < 16768 and pXPos > 16090 and Player.y > 960{
+			if pXPos < 16768 and pXPos > 16090 and Player.y > startY + 768{
 				hideTimer = hideTimer + 1	
 			}
 			else{
@@ -111,10 +111,10 @@ if global.paused = -1{
 			}
 			if attack = 1{
 				if setup = 0{
-					if y < 720{
+					if y < startY + 528{
 						yWant = 1
 					}
-					if y > 1040{
+					if y > startY + 848{
 						yWant = 2
 					}
 					setup = 1
@@ -122,13 +122,13 @@ if global.paused = -1{
 				if setup = 1{
 					if yWant = 1{
 						yDirect = 1
-						if yPos > 1056{
+						if yPos > startY + 856{
 							setup = 2
 						}
 					}
 					if yWant = 2{
 						yDirect = -1
-						if yPos  < 704{
+						if yPos  < startY + 528{
 							setup = 2
 						}
 					}
@@ -181,10 +181,10 @@ if global.paused = -1{
 			}
 			if attack = 3{
 				if setup = 0{
-					if y < 720{
+					if y < startY + 528{
 						yWant = 1
 					}
-					if y > 1040{
+					if y > startY + 848{
 						yWant = 2
 					}
 					bounceTimer = irandom_range(1,3)
@@ -193,14 +193,14 @@ if global.paused = -1{
 				if setup = 1{
 					if yWant = 1{
 						yDirect = 1
-						if yPos > 1056{
+						if yPos > startY + 864{
 							bounce = bounce + 1
 							yWant = 2
 						}
 					}
 					if yWant = 2{
 						yDirect = -1
-						if yPos  < 704{
+						if yPos  < startY + 528{
 							bounce = bounce + 1
 							yWant =1
 						}
@@ -219,10 +219,10 @@ if global.paused = -1{
 				}	
 			}
 			if attack = 4{
-				if yPos < 1056{
+				if yPos < startY + 864{
 					yDirect = 1
 				}
-				if yPos > 1056{
+				if yPos > startY + 864{
 					yDirect = 0	
 				}
 				xDirect = 0

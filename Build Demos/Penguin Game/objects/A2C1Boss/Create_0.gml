@@ -21,3 +21,5 @@ bounce = 0
 bounceTimer = 0
 hideTimer = 0 
 shootAngle = 0 
+startY = y 
+depth = -10
