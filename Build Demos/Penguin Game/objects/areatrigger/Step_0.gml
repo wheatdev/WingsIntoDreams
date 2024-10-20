@@ -14,8 +14,8 @@ if global.paused = -1{
 			global.mechanism = 0
 		}
 		if type = 4{
-			global.playerStartX = 704
-			global.playerStartY = 640
+			global.playerStartX = 3720
+			global.playerStartY = 18330
 			room_goto(skyHighHunting)
 		}
 		if type = 5{

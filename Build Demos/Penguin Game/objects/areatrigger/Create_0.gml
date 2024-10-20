@@ -15,7 +15,7 @@ if room = HUB1{
 	}
 }
 if room = skyHighHunting{
-	if y < 100 {
+	if y < 1000 {
 		type =6
 	}
 	else{
