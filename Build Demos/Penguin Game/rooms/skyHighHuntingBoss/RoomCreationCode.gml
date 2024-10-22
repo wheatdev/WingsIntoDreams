@@ -7,8 +7,8 @@ global.mechanism = 0
 global.cameraActive = 0
 if global.skyUnlock < 3{
 	global.cutsceneTimer = 1
-	instance_create_depth(672,792,0,playerCutscene)	
+	instance_create_depth(1376,1100,0,playerCutscene)	
 }
 else{
-	instance_create_depth(672,480,0,Dipp)
+	instance_create_depth(1376,576,0,Dipp)
 }

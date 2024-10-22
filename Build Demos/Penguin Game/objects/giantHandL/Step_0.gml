@@ -22,7 +22,7 @@ if global.paused = -1{
 		}	
 		if global.bossHelp2 = 1{
 			if state = 0{
-				if x < 1568{
+				if x < 2250{
 					x = x +5
 				}
 				else{
@@ -30,7 +30,7 @@ if global.paused = -1{
 				}
 			}
 			if state = 1{
-				if y > 288{
+				if y > 370{
 					y = y - 5
 				}
 				else{

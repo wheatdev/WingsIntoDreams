@@ -30,20 +30,20 @@ if type = 1{
 					moveTimer = 0
 				}
 				if position = 1{
-					if x > 512{
+					if x > 1216{
 						x = x - 4	
 					}
 				}
 				if position = 2{
-					if x < 	672{
+					if x < 	1376{
 						x = x + 4
 					}
-					if x > 	672{
+					if x > 	1376{
 						x = x - 4
 					}
 				}
 				if position = 3{
-					if x < 	832{
+					if x < 	1536{
 						x = x + 4
 					}
 				}

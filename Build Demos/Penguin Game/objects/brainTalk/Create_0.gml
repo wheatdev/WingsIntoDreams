@@ -42,8 +42,8 @@ if room = skyHighHunting{
 	}
 }
 if room = skyHighHuntingBoss{
-	x = 672
-	y = 352
+	x = 1376
+	y = 452
 	type = 8
 	if global.skyUnlock = 4{
 		cindex = 7	
@@ -57,4 +57,3 @@ if room = tutorial{
 depth = -10
 draw_set_font(MenuFontSmall)
 draw_set_color(c_white)
-depth = -10
