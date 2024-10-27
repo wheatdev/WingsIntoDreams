@@ -424,6 +424,9 @@
     {"name":"TS3","order":5,"path":"sprites/TS3/TS3.yy",},
     {"name":"TS4","order":8,"path":"sprites/TS4/TS4.yy",},
     {"name":"TS5","order":10,"path":"sprites/TS5/TS5.yy",},
+    {"name":"TS6","order":11,"path":"sprites/TS6/TS6.yy",},
+    {"name":"TS7","order":14,"path":"sprites/TS7/TS7.yy",},
+    {"name":"TS8","order":15,"path":"sprites/TS8/TS8.yy",},
     {"name":"upgrade","order":23,"path":"sprites/upgrade/upgrade.yy",},
     {"name":"walterSmoke","order":100,"path":"sprites/walterSmoke/walterSmoke.yy",},
     {"name":"walterTalk","order":101,"path":"sprites/walterTalk/walterTalk.yy",},
@@ -431,5 +434,8 @@
     {"name":"TileSet3","order":6,"path":"tilesets/TileSet3/TileSet3.yy",},
     {"name":"TileSet4","order":7,"path":"tilesets/TileSet4/TileSet4.yy",},
     {"name":"TileSet5","order":9,"path":"tilesets/TileSet5/TileSet5.yy",},
+    {"name":"TileSet6","order":12,"path":"tilesets/TileSet6/TileSet6.yy",},
+    {"name":"TileSet7","order":13,"path":"tilesets/TileSet7/TileSet7.yy",},
+    {"name":"TileSet8","order":16,"path":"tilesets/TileSet8/TileSet8.yy",},
   ],
 }
