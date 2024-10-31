@@ -42,8 +42,8 @@ if room = skyHighHunting{
 	}
 }
 if room = skyHighHuntingBoss{
-	x = 1376
-	y = 452
+	x = 832
+	y = 15552
 	type = 8
 	if global.skyUnlock = 4{
 		cindex = 7	

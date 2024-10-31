@@ -26,7 +26,7 @@ if global.paused = -1{
 			pXPos = Player.x
 			rangeY = abs(Player.y -y )
 
-			if pXPos < 16768 and pXPos > 16090 and Player.y > startY + 768{
+			if pXPos < startX - 96 and pXPos > startX - 774 and Player.y > startY + 768{
 				hideTimer = hideTimer + 1	
 			}
 			else{
@@ -80,10 +80,10 @@ if global.paused = -1{
 			}
 			if attack = 0{
 				if setup = 0{
-					if x < 15910{
+					if x < startX -954{
 						xWant = 1
 					}
-					if x > 16860{
+					if x > startX - 4{
 						xWant = 2
 					}
 					setup = 1
@@ -91,13 +91,13 @@ if global.paused = -1{
 				if setup = 1{
 					if xWant = 1{
 						xDirect = 1
-						if xPos > 16864{
+						if xPos > startX{
 							setup = 2
 						}
 					}
 					if xWant = 2{
 						xDirect = -1
-						if xPos  < 15904{
+						if xPos  < startX - 960{
 							setup = 2
 						}
 					}
@@ -142,10 +142,10 @@ if global.paused = -1{
 			}
 			if attack = 2{
 				if setup = 0{
-					if x < 15910{
+					if x < startX - 954{
 						xWant = 1
 					}
-					if x > 16860{
+					if x > startX - 4{
 						xWant = 2
 					}
 					bounceTimer = irandom_range(1,3)
@@ -154,14 +154,14 @@ if global.paused = -1{
 				if setup = 1{
 					if xWant = 1{
 						xDirect = 1
-						if xPos > 16864{
+						if xPos > startX{
 							bounce = bounce + 1
 							xWant = 2
 						}
 					}
 					if xWant = 2{
 						xDirect = -1
-						if xPos  < 15904{
+						if xPos  < startX - 960{
 							bounce = bounce + 1
 							xWant = 1
 						}
@@ -257,7 +257,7 @@ if global.paused = -1{
 		}
 		else{
 			if room = donnerShipInside{
-				instance_create_depth(16416,832,0,DonnerDoor)
+				instance_create_depth(21376,5568,0,DonnerDoor)
 			}
 			if room = tutorial{
 				global.talking = 1

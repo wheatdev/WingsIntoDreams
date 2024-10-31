@@ -12,11 +12,14 @@ if global.cameraActive = -1 and place_empty(x,y,Player) and touched = 1 and glob
 	if xPos = 15712{
 		instance_create_depth(16864,y - 512,0,A2C1Boss)
 	}
-	if xPos = 17056{
-		instance_create_depth(18272,-3520,0,A2C2Boss)
+	if xPos = 20672{
+		instance_create_depth(21824,y - 512,0,A2C1Boss)
 	}
-	if xPos = 26560{
-		instance_create_depth(27808,-4544,0,A2C3Boss)
+	if xPos = 22016{
+		instance_create_depth(23168,y-512,0,A2C2Boss)
+	}
+	if xPos = 29600{
+		instance_create_depth(30752,y-512,0,A2C3Boss)
 	}
 	if xPos = 33120{
 		instance_create_depth(34460,-13504,0,GumBoss)

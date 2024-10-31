@@ -1,7 +1,7 @@
 if global.paused = -1{
 	if active = 0{
 		y = y + 6
-		if y > -2816{
+		if y > startY + 704{
 			active = 1
 		}
 	}
@@ -41,12 +41,12 @@ if global.paused = -1{
 			}
 			if state < 4{
 				y = y + global.eGravity
-				if place_meeting(x,y+global.eGravity,Ground) or y > -2720{
+				if place_meeting(x,y+global.eGravity,Ground) or y > startY + 800{
 					y = y - global.eGravity	
 				}
 			}
 			if state = 0{
-				if xPos > 17800{
+				if xPos > startX - 472{
 					state = 1
 				}
 				else{
@@ -55,19 +55,19 @@ if global.paused = -1{
 			}
 			if state = 1{
 				x = x - 14
-				if place_meeting(x,y,theWind) and xPos < 17800{
+				if place_meeting(x,y,theWind) and xPos < startX - 472{
 					state = 3
 				}
 			}
 			if state = 2{
 				x = x + 14	
-				if place_meeting(x,y,theWind) and xPos > 17800{ 
+				if place_meeting(x,y,theWind) and xPos > startX - 472{ 
 					state = 3
 				}
 			}
 			if state = 3{
 				y = y - (global.eGravity * 2)
-				if y < -3200{
+				if y < startY + 520{
 					instance_create_depth(x,y,0,A2CExpand)
 					state = 4	
 				}

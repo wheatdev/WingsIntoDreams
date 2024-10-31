@@ -8,7 +8,7 @@ else{
 		y = y + 1000	
 	}
 }
-if active = 0 and y > -3744{
+if active = 0 and y > startY + 800{
 	active = 1
 }
 if active = 1{
@@ -95,7 +95,7 @@ if timer > 60 and global.cameraActive = -2{
 	}
 	timer = 0
 }
-if y > startY + 1800{
+if y > startY + 3000{
 	global.mechanism = 0
 	instance_destroy()
 }

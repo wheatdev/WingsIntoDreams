@@ -3,7 +3,7 @@ if type = 1{
 }
 if type = 3{
 	y = y - global.eGravity
-	if y < -4000{
+	if y < 0{
 		global.cameraActive = -1
 		global.lastSafeX = x
 		global.cutsceneTimer = 1

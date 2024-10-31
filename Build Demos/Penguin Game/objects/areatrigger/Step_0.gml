@@ -6,8 +6,8 @@ if global.paused = -1{
 		if type = 2{
 			global.cameraActive = 1
 			instance_create_depth(x,y,0,cutsceneClaw)
-			global.playerStartX = 650
-			global.playerStartY = 1050
+			global.playerStartX = 3700
+			global.playerStartY = 15000
 			type = 0
 		}
 		if type = 3{

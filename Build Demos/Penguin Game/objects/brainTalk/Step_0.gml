@@ -288,6 +288,8 @@ if type = 6{
 	if global.talking = 1{
 		if global.dialouge = 0{	
 			view_camera[0] = camera_create_view(princess.x-300, princess.y -450, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+			x = princess.x + 500
+			y = princess.y + 100
 		}
 		if global.dialouge = 1{
 			view_camera[0] = camera_create_view(dukeKickem.x - 800, dukeKickem.y - 550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
