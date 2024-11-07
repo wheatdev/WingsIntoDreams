@@ -16,7 +16,7 @@ if global.paused = -1 and global.cameraActive = 1{
 				y = y - global.eGravity
 			}
 			sprite_index = sealMoveF
-			image_xscale = .3 * direct
+			image_xscale = .2 * direct
 			x = x - (3 * direct)
 			if place_meeting(x-(3*direct),y,Ground){
 				x = x + (3 * direct)

@@ -41,13 +41,13 @@ if keyboard_check(ord("D")) or keyboard_check(vk_right) or gamepad_button_check(
 		global.lastPressed = 1
 	}
 }
-if keyboard_check_pressed(ord("Q")) or gamepad_button_check(0,gp_shoulderlb){
+if keyboard_check_pressed(ord("Q")) or gamepad_button_check_pressed(0,gp_shoulderlb){
 	global.playAs = global.playAs - 1
 	if global.playAs < 1{
 		global.playAs = 3
 	}
 }
-if keyboard_check_pressed(ord("E")) or gamepad_button_check(0,gp_shoulderrb){
+if keyboard_check_pressed(ord("E")) or gamepad_button_check_pressed(0,gp_shoulderrb){
 	global.playAs = global.playAs + 1
 	if global.playAs > 3{
 		global.playAs = 1

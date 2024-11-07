@@ -1,6 +1,6 @@
 active = 1
-image_yscale = .35
-image_xscale = .35
+image_yscale = .2
+image_xscale = .2
 depth = 4
 range = x
 friend = 1

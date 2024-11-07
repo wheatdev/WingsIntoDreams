@@ -10,9 +10,9 @@ if global.paused = -1 and global.cameraActive = 1{
 			}
 		}
 		range = abs(x - Player.x)
-		image_xscale = direct * .35
+		image_xscale = direct * .2
 		if abs(Player.x - x) < 50{
-			image_xscale = .35
+			image_xscale = .2
 		}
 		if x > Player.x{
 			direct = 1
