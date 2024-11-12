@@ -1,5 +1,5 @@
-image_xscale = .5
-image_yscale = .5
+image_xscale = .2
+image_yscale = .2
 gunPos = 2
 cHealth = 10
 xDiff = 700

@@ -1,6 +1,7 @@
 if global.paused = -1{
 	image_xscale = direct * .2
 	if dazed = 0{
+		sprite_index = Kibi1
 		y = y + global.eGravity
 		image_angle = 0
 		if place_meeting(x,y+global.eGravity,Ground){
@@ -28,12 +29,13 @@ if global.paused = -1{
 	}
 	else{
 		if (place_meeting(x,y,Player) or place_meeting(x,y,DippSword) or place_meeting(x,y,dippBeam1)) and timer = 0{
-			instance_create_depth(x,y,0,kibiKicked)
+			instance_create_depth(x,y-global.eGravity,0,kibiKicked)
 			instance_destroy()	
 		}	
 	}
 	if dazed = -1{
 		y = y - global.eGravity
+		sprite_index = kibi2
 		image_angle = image_angle + 15
 		if y < maxHeight{
 			dazed = -2

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Kibi1",
-    "path":"sprites/Kibi1/Kibi1.yy",
+    "name":"kibi3",
+    "path":"sprites/kibi3/kibi3.yy",
   },
   "spriteMaskId":null,
   "visible":true,
