@@ -21,8 +21,8 @@ if global.cameraActive = -1 and place_empty(x,y,Player) and touched = 1 and glob
 	if xPos = 29600{
 		instance_create_depth(30752,y-512,0,A2C3Boss)
 	}
-	if xPos = 33120{
-		instance_create_depth(34460,-13504,0,GumBoss)
+	if xPos = 36160{
+		instance_create_depth(37560,y-512,0,GumBoss)
 	}
 	instance_destroy()
 }

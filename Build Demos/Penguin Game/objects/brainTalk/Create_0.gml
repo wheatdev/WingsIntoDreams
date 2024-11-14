@@ -23,14 +23,13 @@ if room = HUB2{
 	type = 3
 }
 if room = donnerShipInside{
-	audio_stop_all()
 	x = global.playerStartX
 	y = global.playerStartY
 	type = 4
 }
 if room = hopperHeliship{
-	x = 33900
-	y = -12850
+	x = 36900
+	y = 1100
 	type = 5	
 }
 if room = skyHighHunting{
@@ -42,8 +41,8 @@ if room = skyHighHunting{
 	}
 }
 if room = skyHighHuntingBoss{
-	x = 832
-	y = 15552
+	x = 1376
+	y = 452
 	type = 8
 	if global.skyUnlock = 4{
 		cindex = 7	

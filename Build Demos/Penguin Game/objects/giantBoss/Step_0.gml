@@ -92,7 +92,7 @@ if type = 1{
 	}
 }
 if type = 2{
-	view_camera[0] = camera_create_view(672-800,356 -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+	view_camera[0] = camera_create_view(576,456 -550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 	y = y + 3
 	image_alpha = 1
 }

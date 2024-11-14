@@ -1,7 +1,7 @@
 if global.paused = -1{
 	if active = 0{
 		y = y + 5
-		if place_meeting(x,y+global.eGravity,Ground) and y > -13120{
+		if place_meeting(x,y+global.eGravity,Ground) and y > 800{
 			if type = 1{
 				active = 1	
 			}
@@ -193,8 +193,8 @@ if global.paused = -1{
 				if attack = 8{
 					global.bossHelp2 = -1
 					x = x - 8
-					if place_meeting(x,y-global.eGravity,Ground){
-						y = y + global.eGravity 	
+					if place_meeting(x,y-(global.eGravity *2.5),Ground){
+						y = y + (global.eGravity * 2.5)	
 					}
 					if global.eGravity > 0{
 						if y > maxHeight - 300{
@@ -212,8 +212,8 @@ if global.paused = -1{
 				}
 				if attack = 9{
 					x = x + 8
-					if place_meeting(x,y-global.eGravity,Ground){
-						y = y + global.eGravity 	
+					if place_meeting(x,y-(global.eGravity * 2.5),Ground){
+						y = y + (global.eGravity * 2.5)
 					}
 					global.bossHelp2 = 1
 					if global.eGravity > 0{

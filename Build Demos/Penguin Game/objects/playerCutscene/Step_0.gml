@@ -215,3 +215,10 @@ if type = 9{
 		}
 	}
 }
+if type = 10{
+	hVal1 = hVal1 + 1
+	if hVal1 > 60{
+		instance_create_depth(x,y,depth,Dipp)
+		instance_destroy()
+	}
+}

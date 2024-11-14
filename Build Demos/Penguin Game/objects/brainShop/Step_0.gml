@@ -83,8 +83,8 @@ if state = 0{
 				cindex = 0
 			}
 			if selectX = 1 and selectY = 0{
-				global.playerStartX = -1238
-				global.playerStartY = -1344
+				global.playerStartX = 1760
+				global.playerStartY = 15840
 				room_goto(skyHighHunting)	
 			}
 			if selectX = -1 and selectY = 1 and global.upgrade15Get = 0 and global.theMoney > 999{

@@ -179,7 +179,7 @@ if type = 3{
 }
 if type = 4{
 	if cindex = 0{
-		if x = 736{
+		if x = 5950{
 			global.talking = 1
 		}
 		words = "*BZZZRT*"
@@ -215,7 +215,7 @@ if type = 4{
 }
 if type = 5{
 	if global.talking = 1{
-		view_camera[0] = camera_create_view(33056,-13432, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+		view_camera[0] = camera_create_view(36096,552, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 	}
 	if global.cutsceneTimer = -1{
 		global.lastPressed = 1
@@ -543,8 +543,8 @@ if type = 8{
 		}
 		if selectY = 1{
 			global.skyUnlock = 5
-			global.playerStartX = -816
-			global.playerStartY = -1312
+			global.playerStartX = 2170
+			global.playerStartY = 15560
 			room_goto(skyHighHunting)
 		}
 	}

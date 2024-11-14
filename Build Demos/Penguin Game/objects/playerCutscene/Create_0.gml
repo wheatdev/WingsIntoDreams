@@ -52,3 +52,8 @@ if global.itemGet = 1{
 if room = HUB1{
 	type = 9	
 }
+if global.cutsceneTimer = 2{
+	type = 10	
+	sprite_index = dippStand
+	visible = false
+}

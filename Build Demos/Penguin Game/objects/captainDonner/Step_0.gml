@@ -16,7 +16,7 @@ if global.paused = -1{
 		}
 		if state = 1{
 			global.playerStartX = 5950
-			global.playerStartY = 5280
+			global.playerStartY = 5248
 			global.talking = 1
 		}
 	}

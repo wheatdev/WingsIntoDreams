@@ -1,11 +1,11 @@
 if global.paused = -1{
-	if image_yscale  = global.eGravity/10{
-		if place_meeting(x+30, y- (global.eGravity * 2), Player) and (keyboard_check(vk_left) or keyboard_check(ord("A")) or gamepad_button_check(0,gp_padl)){
-			Player.y = Player.y - (3.2 * (global.eGravity/10)) - (global.eGravity/2)
-			Player.x = Player.x - (64/xVal)	
+	if image_yscale = global.eGravity/10{
+		if (keyboard_check(vk_left) or keyboard_check(ord("A")) or gamepad_button_check(0,gp_padl)) and place_meeting(x+(xVal*2),y,Player){
+			Player.y = Player.y - global.eGravity
+			Player.x = Player.x - xVal
 		}
-	}
-	if global.playAs = 1{
-		xVal = global.dippSpeed
+		if global.playAs = 1{
+			xVal = global.dippSpeed
+		}
 	}
 }
