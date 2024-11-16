@@ -1,8 +1,8 @@
 if global.paused = -1 and global.cameraActive = 1{
 	if sealHealth > 0{
-		image_xscale = .2 * direct
+		image_xscale = direct
 		if abs(Player.x - x) < 50{
-			image_xscale = .2
+			image_xscale = 1
 		}
 		if inWater = 0{
 			range = abs(x - Player.x)

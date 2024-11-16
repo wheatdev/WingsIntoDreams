@@ -100,10 +100,10 @@ if global.paused = -1 and global.cameraActive = 1{
 	}
 	else{
 		if Player.x < x{
-			image_xscale = .2
+			image_xscale = 1
 		}
 		else{
-			image_xscale = -.2
+			image_xscale = -1
 		}
 	}
 	if state > 1 and place_meeting(x,y,snowmanWhole){

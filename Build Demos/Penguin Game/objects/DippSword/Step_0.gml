@@ -1,7 +1,7 @@
 if global.playAs = 1 and (global.cameraActive = 1 or global.cameraActive = -2){
 	x = Dipp.x
 	y = Dipp.y
-	image_xscale = global.lastPressed/5
+	image_xscale = global.lastPressed
 	if place_empty(x,y,water){
 		if downStab = 0{
 			swordUse = swordUse + 1

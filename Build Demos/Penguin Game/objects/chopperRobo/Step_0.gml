@@ -82,13 +82,13 @@ if global.paused = -1{
 				if xPos = 1{
 					if Player.x > x + xDiff{
 						x = x + 14
-						image_xscale = .2
+						image_xscale = 1
 					}
 				}
 				if xPos = -1{
 					if Player.x < x - xDiff{
 						x = x - 14
-						image_xscale = -.2
+						image_xscale = -1
 					}
 				}
 			}

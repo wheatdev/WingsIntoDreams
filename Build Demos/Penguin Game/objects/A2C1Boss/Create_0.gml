@@ -2,8 +2,6 @@ audio_stop_all()
 audio_play_sound(DonnerShipBossMusic1,0,true)
 window_set_caption("ENGAGING: HOSTILE PENGUIN")
 active = 0 
-image_xscale = .2
-image_yscale = .2
 aHealth = 20
 attack = 3
 allowHit = 0

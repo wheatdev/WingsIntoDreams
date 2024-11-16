@@ -1,6 +1,6 @@
 if global.paused = -1{
 	if rHealth > 0{
-		image_xscale = direct * .2
+		image_xscale = direct 
 		y = y + global.eGravity
 		if place_meeting(x,y+global.eGravity,Ground){
 			y = y - global.eGravity	

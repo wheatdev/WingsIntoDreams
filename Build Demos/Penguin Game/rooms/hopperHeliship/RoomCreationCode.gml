@@ -12,6 +12,6 @@ if global.lastIn = 8{
 	}
 }
 else{
-	//instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)
+	instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)
 }
 global.lastIn = 9

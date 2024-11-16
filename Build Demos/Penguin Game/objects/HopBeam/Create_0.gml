@@ -4,5 +4,4 @@ if Player.x > x{
 else{
 	direct = -1
 }
-image_xscale = direct * -.25
-image_yscale = .25
+image_xscale = direct 

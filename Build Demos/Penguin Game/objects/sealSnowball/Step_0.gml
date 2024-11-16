@@ -3,7 +3,7 @@ if global.paused = -1{
 		y = y + global.eGravity
 		if place_meeting(x,y+global.eGravity,Ground){
 			y = y - global.eGravity
-			size = size + .001
+			size = size + .005
 			x = x + (5 * direct)
 			image_angle = image_angle + (direct *-5)
 		}
@@ -41,9 +41,9 @@ if global.paused = -1{
 			y = y - 6.4
 		}
 		if place_meeting(x,y,water){
-			size = size - .01
+			size = size - .05
 		}
-		if size < .005{
+		if size < .025{
 			instance_destroy()
 		}
 		image_xscale = size

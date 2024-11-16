@@ -23,8 +23,8 @@ if global.playAs = 1{
 			}
 			if inWater = 0 and onLadder = 0{
 				y = y + global.eGravity
-				image_xscale = global.lastPressed/5
-				image_yscale = global.eGravity/50
+				image_xscale = global.lastPressed
+				image_yscale = global.eGravity/10
 				image_angle = 0
 				coyoteTime = coyoteTime - 1
 				if place_meeting(x,y+global.eGravity,Ground){
@@ -307,7 +307,7 @@ if global.playAs = 1{
 			else{
 				if inWater = 1{
 					sprite_index = dippSwim
-					image_xscale = global.lastPressed/5
+					image_xscale = global.lastPressed
 					y = y + (global.eGravity/5)
 					if place_meeting(x,y+(global.eGravity/5), Ground){
 						y = y - (global.eGravity/5)

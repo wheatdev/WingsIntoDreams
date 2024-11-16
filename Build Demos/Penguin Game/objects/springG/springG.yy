@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spring2",
-    "path":"sprites/spring2/spring2.yy",
+    "name":"spring1",
+    "path":"sprites/spring1/spring1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

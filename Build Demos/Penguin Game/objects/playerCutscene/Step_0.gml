@@ -3,7 +3,7 @@ if type = -1{
 		sprite_index = dippWalk
 		if x > global.lastSafeX{
 			x = x - global.dippSpeed
-			image_xscale = -.2
+			image_xscale = -1
 		}
 		if x < global.lastSafeX{
 			x = x + global.dippSpeed
@@ -13,14 +13,14 @@ if type = -1{
 		sprite_index = A2CStand
 		if x > global.lastSafeX{
 			x = x - global.gumSpeed
-			image_xscale = -.2
+			image_xscale = -1
 		}
 		if x < global.lastSafeX{
 			x = x + global.gumSpeed
 		}
 	}
 	if abs(x - global.lastSafeX) < 30{
-		image_xscale = .2 * global.lastPressed
+		image_xscale = global.lastPressed
 		global.cameraActive = 0	
 		type = 0 
 		if ((room = donnerShipInside) or (room = donnerShipOutside) or (room = hopperHeliship) or (room = tutorial)) and global.talking = 0{
@@ -45,7 +45,7 @@ if type = 0{
 if type = 1{
 	sprite_index = dippWalkF1
 	image_xscale = 1/hVal1
-	image_yscale = 10/hVal2
+	image_yscale = 50/hVal2
 	hVal1 = hVal1 - .004
 	hVal2 = hVal2 - .625
 	if hVal1 < 5 or hVal2 < 50{
@@ -56,8 +56,8 @@ if type = 1{
 if type = 2{
 	sprite_index = dippHold
 	y = y + global.eGravity
-	image_xscale = .2
-	image_yscale = global.eGravity/50
+	image_xscale = 1
+	image_yscale = global.eGravity/10
 	if place_meeting(x,y+global.eGravity,Ground){
 		y = y - global.eGravity
 	}
@@ -101,7 +101,7 @@ if type = 4{
 }
 if type = 5{
 	sprite_index = dippJump2
-	image_yscale = global.eGravity/50
+	image_yscale = global.eGravity/10
 	global.cutsceneTimer = 0
 	y = y + global.eGravity
 	if place_meeting(x,y+(global.eGravity*2),Ground){
@@ -217,7 +217,7 @@ if type = 9{
 }
 if type = 10{
 	hVal1 = hVal1 + 1
-	if hVal1 > 60{
+	if hVal1 > 150{
 		instance_create_depth(x,y,depth,Dipp)
 		instance_destroy()
 	}

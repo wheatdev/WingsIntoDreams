@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"snowball",
-    "path":"sprites/snowball/snowball.yy",
+    "name":"A2CShot",
+    "path":"sprites/A2CShot/A2CShot.yy",
   },
   "spriteMaskId":null,
   "visible":true,

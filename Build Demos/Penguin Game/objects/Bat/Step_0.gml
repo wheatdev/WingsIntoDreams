@@ -49,11 +49,11 @@ if global.paused = -1{
 			else{
 				if gotoX = -1{
 					x = x - 7
-					image_xscale = .2
+					image_xscale = 1
 				}
 				if gotoX = 1{
 					x = x + 7	
-					image_xscale = -.2
+					image_xscale = -1
 				}
 				if place_meeting(x+(7*gotoX),y,Ground){
 					gotoX = gotoX * -1

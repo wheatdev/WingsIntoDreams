@@ -2,10 +2,10 @@ type = 0
 hVal1 = 0
 hVal2 = 0
 depth = -4
-image_xscale = .2
-image_yscale = .2
+image_xscale = 1
+image_yscale = 1
 if room = springFactory{
-	hVal1 = 6
+	hVal1 = 30
 	hVal2 = 62.5
 	type = 1
 }

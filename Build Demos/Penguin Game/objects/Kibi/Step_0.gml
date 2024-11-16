@@ -1,5 +1,5 @@
 if global.paused = -1{
-	image_xscale = direct * .2
+	image_xscale = direct 
 	if dazed = 0{
 		sprite_index = Kibi1
 		y = y + global.eGravity

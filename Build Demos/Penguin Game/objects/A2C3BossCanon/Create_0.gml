@@ -1,6 +1,4 @@
 depth = 5
-image_xscale = .2
-image_yscale = .2
 shootAngle = 1
 rangeX = x
 rangeY = y

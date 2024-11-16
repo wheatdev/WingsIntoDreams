@@ -81,9 +81,9 @@ if global.paused = -1 and global.cameraActive = 1{
 			if place_meeting(x,y-(directY*7),Ground){
 				y = y + (directY * 7)
 			}
-			image_xscale = directX * .2
+			image_xscale = directX 
 			if abs(Player.x - x) < 100{
-				image_xscale = .2
+				image_xscale = 1
 			}
 			if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 				if global.playAs = 1{

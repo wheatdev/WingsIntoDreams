@@ -1,6 +1,4 @@
 depth = 10
-image_xscale = .2
-image_yscale = .2
 if global.skyUnlock < 3{
 	type = 0
 	global.talking = 1

@@ -1,6 +1,6 @@
 direct = global.lastPressed
-image_xscale = .2 * direct
-image_yscale = .2
+image_xscale = direct
+image_yscale = 1
 timer = 0
 if place_meeting(x,y,giantHandL){
 	direct = -1	
