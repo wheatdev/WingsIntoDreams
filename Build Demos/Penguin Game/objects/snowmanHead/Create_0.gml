@@ -1,5 +1,6 @@
 image_xscale = 1
 image_yscale = 1
+visible = true
 flingx = irandom_range(1,2)
 flingy = y - 150
 state = 1

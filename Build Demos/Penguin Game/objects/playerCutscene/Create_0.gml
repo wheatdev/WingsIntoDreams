@@ -5,14 +5,14 @@ depth = -4
 image_xscale = 1
 image_yscale = 1
 if room = springFactory{
-	hVal1 = 30
+	hVal1 = 6
 	hVal2 = 62.5
 	type = 1
 }
 if room = mineDownUnder{
 	type = 3	
 }
-if room = testRoom{
+if room = donnerDiving{
 	if global.cameraActive = 1{
 		global.cameraActive = 0
 		hVal2 = y - 300

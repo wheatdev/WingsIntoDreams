@@ -62,7 +62,7 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.earnestAttack = 6
 			global.earnestSpecial = 1
 
-			global.upgrade = 15
+			global.upgrade = 0
 			global.upgrade1Get = 0
 			global.upgrade2Get = 0
 			global.upgrade3Get = 0

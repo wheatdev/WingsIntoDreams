@@ -38,5 +38,5 @@
     "path":"sprites/testIce2/testIce2.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -9,9 +9,9 @@ if global.paused = -1{
 				}
 				if place_meeting(x,y+global.eGravity,Ground){
 					sprite_index = slimeOoze
-					image_xscale = direct * -.2
+					image_xscale = direct
 					if abs(Player.x - x) < 100{
-						image_xscale = -.2
+						image_xscale = -1
 					}
 					if place_meeting(x,y,DippSword) and allowHit = 0{
 						instance_create_depth(x+(direct*20),y,0,goldSlime)

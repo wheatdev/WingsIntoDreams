@@ -13,4 +13,7 @@ if room = donnerShipInside{
 if room = hopperHeliship{
 	view_camera[0] = camera_create_view(global.playerStartX-800, 13880, 1600, 900, 0, Dipp, 5, 5, -1, -1)
 }
+if room = donnerDiving{
+	view_camera[0] = camera_create_view(640-800, 480-550, 1600, 900, 0, Dipp, 5, 5, -1, -1)
+}
 instance_create_depth(x,y,0,brainTalk)

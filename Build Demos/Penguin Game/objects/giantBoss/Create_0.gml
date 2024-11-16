@@ -15,3 +15,5 @@ global.bossHelp1 = 0
 global.bossHelp2 = 0 
 attackTimer = 0 
 moveTimer = 0
+image_xscale = 1
+image_yscale = 1

@@ -38,5 +38,5 @@
     "path":"sprites/testice/testice.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

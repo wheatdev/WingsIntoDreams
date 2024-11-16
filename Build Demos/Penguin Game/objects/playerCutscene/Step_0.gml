@@ -45,7 +45,7 @@ if type = 0{
 if type = 1{
 	sprite_index = dippWalkF1
 	image_xscale = 1/hVal1
-	image_yscale = 50/hVal2
+	image_yscale = 10/hVal2
 	hVal1 = hVal1 - .004
 	hVal2 = hVal2 - .625
 	if hVal1 < 5 or hVal2 < 50{
