@@ -1,7 +1,7 @@
 if global.paused = -1 and global.talking = 0 and global.cameraActive = -2{
 	x = GumBoss.x
 	y = GumBoss.y
-	image_xscale = (.25 * global.bossHelp2)
+	image_xscale = (global.bossHelp2)
 	if global.bossHelp1 = 0{
 		shootAngle = 7
 		timer = timer + 1

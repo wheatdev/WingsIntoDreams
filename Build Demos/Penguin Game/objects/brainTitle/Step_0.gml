@@ -78,6 +78,7 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.upgrade13Get = 0
 			global.upgrade14Get = 0
 			global.upgrade15Get = 0
+			global.upgrade16Get = 0
 
 			global.key = 0
 			global.key1 = 0
@@ -141,8 +142,8 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.dippDynaGet = 1
 			global.dippSnowballGet = 1
 			global.dippCloudGet = 1
-			global.dippIceGet =	0
-			global.dippFireGet = 0
+			global.dippIceGet =	1
+			global.dippFireGet = 1
 
 			global.gumSpeed = 8
 			global.gumHealth = 40
@@ -156,7 +157,7 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.earnestAttack = 6
 			global.earnestSpecial = 1
 
-			global.upgrade = 15
+			global.upgrade = 16
 			global.upgrade1Get = 1
 			global.upgrade2Get = 1
 			global.upgrade3Get = 1
@@ -172,6 +173,7 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.upgrade13Get = 1
 			global.upgrade14Get = 1
 			global.upgrade15Get = 1
+			global.upgrade16Get = 1
 
 			global.key = 0
 			global.key1 = 0

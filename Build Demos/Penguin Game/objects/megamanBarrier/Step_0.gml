@@ -8,7 +8,7 @@ if place_meeting(x-xVal,y,Player){
 	}
 }
 if global.playAs = 1{
-	xVal = global.dippSpeed
+	xVal = (global.dippSpeed * 2)
 }
 if global.cameraActive = -1 and place_empty(x,y,Player) and touched = 1 and global.dialouge = 0{
 	instance_create_depth(x,y,0,megamanBarrier2)	

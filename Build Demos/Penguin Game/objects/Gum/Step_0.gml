@@ -2,8 +2,8 @@ if global.playAs = 2{
 	if global.paused = -1{
 		if global.gumHealth > 0{
 			y = y + global.eGravity
-			image_xscale = global.lastPressed/4
-			image_yscale = global.eGravity/40
+			image_xscale = global.lastPressed
+			image_yscale = global.eGravity/10
 			coyoteTime = coyoteTime - 1
 			if place_meeting(x,y+global.eGravity,Ground){
 				y = y - global.eGravity

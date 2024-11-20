@@ -1,8 +1,8 @@
 if global.gumHealth > 0 and global.playAs = 2 and (global.cameraActive =1 or global.cameraActive = -2) {
 	x = Gum.x
 	y = Gum.y 
-	image_xscale = .25 * global.lastPressed
-	image_yscale = global.eGravity/40
+	image_xscale = global.lastPressed
+	image_yscale = global.eGravity/10
 	if global.allowDamage > 1{
 		image_alpha = .5
 	}

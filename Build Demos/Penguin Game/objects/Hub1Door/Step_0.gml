@@ -45,5 +45,15 @@ if global.paused = -1{
 		if type = 9{
 			room_goto(Shop2)
 		}
+		if type = 10{
+			global.playerStartX = -256
+			global.playerStartY = -3488
+			room_goto(jungleRapidRunway)
+		}
+		if type = 11{
+			global.playerStartX = 604736
+			global.playerStartY = -96
+			room_goto(HUB2)
+		}
 	}
 }

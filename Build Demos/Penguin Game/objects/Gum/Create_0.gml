@@ -1,5 +1,5 @@
-image_xscale = .25
-image_yscale = .25
+image_xscale = 1
+image_yscale = 1
 instance_create_depth(x,y,-1,GumArm)
 
 gumState = 0

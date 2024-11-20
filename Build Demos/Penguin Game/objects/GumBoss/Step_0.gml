@@ -22,8 +22,8 @@ if global.paused = -1{
 		global.cameraActive = -2
 		if audio_is_playing(helishipBossMusic){
 			if gHealth > 0{
-				image_yscale = (.25 * (global.eGravity/10))
-				image_xscale = (.25 * global.bossHelp2)
+				image_yscale = (global.eGravity/10)
+				image_xscale = global.bossHelp2
 				y = y + global.eGravity
 				if place_meeting(x,y+global.eGravity,Ground){
 					y = y - global.eGravity
@@ -235,6 +235,12 @@ if global.paused = -1{
 				global.playerStartX = Player.x 
 				global.cutsceneTimer = 0
 				active = 3
+				if room = hopperHelishipUnderside{
+					global.playerStartX = 640
+					global.playerStartY = 480
+					global.eGravity = 10
+					room_goto(jungleRapidRunway)	
+				}
 			}
 		}
 		else{

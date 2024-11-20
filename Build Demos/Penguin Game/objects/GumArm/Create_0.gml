@@ -1,4 +1,4 @@
-image_xscale = .25	* global.lastPressed
-image_yscale = .25 
+image_xscale = global.lastPressed
+image_yscale = 1
 
 shootAngle = 0 

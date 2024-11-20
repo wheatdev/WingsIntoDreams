@@ -35,3 +35,9 @@ if room = skyHighHunting{
 	}
 	type = 9
 }
+if x = 604736{
+	type = 10 
+}
+if x = -256{
+	type = 11
+}
