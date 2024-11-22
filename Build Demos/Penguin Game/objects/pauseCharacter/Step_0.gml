@@ -9,13 +9,13 @@ if global.cameraActive = -2{
 
 if global.playAs = 1{
 	sprite_index = dippStand
-	image_xscale = .3
-	image_yscale = .3
+	image_xscale = 1
+	image_yscale = 1
 }
 if global.playAs = 2{
 	sprite_index = A2CStand
-	image_xscale = .4
-	image_yscale = .4
+	image_xscale = 1
+	image_yscale = 1
 }
 if global.paused = 1{
 	visible = true

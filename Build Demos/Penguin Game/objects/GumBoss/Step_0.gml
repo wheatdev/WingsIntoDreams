@@ -48,6 +48,10 @@ if global.paused = -1{
 					gHealth = gHealth - global.dippAttack
 					allowHit = 5
 				}
+				if place_meeting(x,y,gumShoot) and allowHit = 0{
+					gHealth = gHealth - global.gumAttack
+					allowHit = 50
+				}
 				if allowHit > 0{
 					allowHit = allowHit -1	
 					image_alpha = .5
@@ -58,7 +62,10 @@ if global.paused = -1{
 				if place_meeting(x,y,Player) and allowHit = 0 and global.allowDamage = 0{
 					if global.playAs = 1{
 						audio_play_sound(dippHurtSE,0,false)
-						global.dippHealth = global.dippHealth -2
+						global.dippHealth = global.dippHealth - 3
+					}
+					if global.playAs = 2{
+						global.gumHealth = global.gumHealth - 3
 					}
 					global.isDamaged = 10
 					global.allowDamage = 50
@@ -66,6 +73,7 @@ if global.paused = -1{
 				global.bossHelp1 = attack
 				if attack = 0{
 					x = x - 8
+					sprite_index = A2CStand
 					global.bossHelp2 = -1
 					if x < xBarrierL{
 						attack = irandom_range(0,9)
@@ -73,6 +81,7 @@ if global.paused = -1{
 				}
 				if attack = 1{
 					x = x + 8
+					sprite_index = A2CStand
 					global.bossHelp2 = 1
 					if x > xBarrierR{
 						attack = irandom_range(0,9)
@@ -80,6 +89,7 @@ if global.paused = -1{
 				}
 				if attack = 2{
 					x = x - 18	
+					sprite_index = A2CDash
 					global.bossHelp2 = -1
 					if x < xBarrierL{
 						attack = irandom_range(0,9)
@@ -87,12 +97,14 @@ if global.paused = -1{
 				}
 				if attack = 3{
 					x = x + 18	
+					sprite_index = A2CDash
 					global.bossHelp2 = 1
 					if x > xBarrierR{
 						attack = irandom_range(0,9)
 					}
 				}
 				if attack = 4{
+					sprite_index = A2CStand
 					y = y - (global.eGravity * 2)
 					if Player.x > x{
 						global.bossHelp2 = 1
@@ -114,6 +126,7 @@ if global.paused = -1{
 					}
 				}
 				if attack = 5{
+					sprite_index = A2CStand
 					if timer < 5{
 					if Player.x > x{
 						global.bossHelp2 = 1
@@ -146,6 +159,7 @@ if global.paused = -1{
 				}
 				if attack = 6{
 					x = x - 18	
+					sprite_index = A2CDash
 					if x < xBarrierR - 200 and place_meeting(x,y+global.eGravity,Ground){
 						jumpState = 0
 					}
@@ -169,6 +183,7 @@ if global.paused = -1{
 				}
 				if attack = 7{
 					x = x + 18	
+					sprite_index = A2CDash
 					if x > xBarrierL + 200 and place_meeting(x,y+global.eGravity,Ground){
 						jumpState = 0
 					}
@@ -191,6 +206,7 @@ if global.paused = -1{
 					}
 				}
 				if attack = 8{
+					sprite_index = A2CJet
 					global.bossHelp2 = -1
 					x = x - 8
 					if place_meeting(x,y-(global.eGravity *2.5),Ground){
@@ -212,6 +228,7 @@ if global.paused = -1{
 				}
 				if attack = 9{
 					x = x + 8
+					sprite_index = A2CJet
 					if place_meeting(x,y-(global.eGravity * 2.5),Ground){
 						y = y + (global.eGravity * 2.5)
 					}

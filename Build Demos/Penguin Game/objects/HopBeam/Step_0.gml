@@ -9,7 +9,7 @@ if global.paused = -1{
 			audio_play_sound(dippHurtSE,0,false)
 		}
 		if global.playAs = 2{
-			global.gumHealth = global.gumHealth - 2	
+			global.gumHealth = global.gumHealth - 3
 		}
 		global.allowDamage = 50
 		global.isDamaged = 10

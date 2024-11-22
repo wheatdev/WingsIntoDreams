@@ -6,10 +6,13 @@ if global.paused = -1{
 			if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 				if global.playAs = 1{
 					global.dippHealth = global.dippHealth - 2
-					global.allowDamage = 40
-					global.isDamaged = 10
 					audio_play_sound(dippHurtSE,0,false)
 				}
+				if global.playAs = 2{
+					global.gumHealth = global.gumHealth - 1
+				}
+				global.allowDamage = 40
+				global.isDamaged = 10
 			}
 			if place_meeting(x,y,DippSword) and allowHit = 0{
 				bHealth = bHealth - global.dippAttack
@@ -25,6 +28,10 @@ if global.paused = -1{
 			if place_meeting(x,y,Dynamite) and allowHit = 0{
 				bHealth = bHealth - (global.dippAttack * 2)
 				allowHit = 30
+			}
+			if place_meeting(x,y,gumShoot) and allowHit = 0{
+				bHealth = bHealth - global.gumAttack	
+				allowHit = 15
 			}
 			if allowHit > 0{
 				image_alpha = .5

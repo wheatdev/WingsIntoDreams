@@ -1,6 +1,6 @@
 if global.paused = -1 and global.talking = 0 and global.cameraActive = -2{
 	x = GumBoss.x
-	y = GumBoss.y
+	y = GumBoss.y + Goffset
 	image_xscale = (global.bossHelp2)
 	if global.bossHelp1 = 0{
 		shootAngle = 7
@@ -98,6 +98,12 @@ if global.paused = -1 and global.talking = 0 and global.cameraActive = -2{
 			instance_create_depth(x,y,0,A2CBossShotD)
 			timer = 0
 		}
+	}
+	if global.bossHelp1 = 2 or global.bossHelp1 = 3 or global.bossHelp1 = 6 or global.bossHelp1 = 7{
+		Goffset = 40
+	}
+	else{
+		Goffset = 0
 	}
 }
 if shootAngle = 5{

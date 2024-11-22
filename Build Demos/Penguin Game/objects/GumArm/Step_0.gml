@@ -1,6 +1,6 @@
 if global.gumHealth > 0 and global.playAs = 2 and (global.cameraActive =1 or global.cameraActive = -2) {
 	x = Gum.x
-	y = Gum.y 
+	y = Gum.y + Goffset
 	image_xscale = global.lastPressed
 	image_yscale = global.eGravity/10
 	if global.allowDamage > 1{
@@ -23,6 +23,12 @@ if global.gumHealth > 0 and global.playAs = 2 and (global.cameraActive =1 or glo
 		if keyboard_check_released(ord("S")) or keyboard_check_released(vk_down){
 			shootAngle = 0
 		}
+	}
+	if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter > 0 and global.gumSpecial = 1{
+		Goffset = 40
+	}
+	else{
+		Goffset = 0	
 	}
 	if shootAngle = 0{
 		if global.lastPressed = -1{

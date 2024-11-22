@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"testwater",
-    "path":"sprites/testwater/testwater.yy",
+    "name":"test1",
+    "path":"sprites/test1/test1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

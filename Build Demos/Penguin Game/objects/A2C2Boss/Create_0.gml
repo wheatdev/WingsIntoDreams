@@ -8,5 +8,5 @@ startX = x
 startY = y
 aHealth = 25
 allowHit = 0
-image_xscale = .6
-image_yscale = .6
+image_xscale = 1
+image_yscale = 1

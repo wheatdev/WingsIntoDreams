@@ -16,4 +16,7 @@ if global.paused = -1{
 	if global.playAs = 1{
 		xVal = global.dippSpeed
 	}
+	if global.playAs = 2{
+		xVal = global.gumSpeed
+	}	
 }

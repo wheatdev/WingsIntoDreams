@@ -45,6 +45,9 @@ if global.paused = -1{
 						global.dippHealth = global.dippHealth - 3
 						audio_play_sound(dippHurtSE,0,false)
 					}
+					if global.playAs = 2{
+						global.gumHealth = global.gumHealth - 4
+					}
 					global.isDamaged = 10
 					global.allowDamage = 50
 				}
@@ -77,6 +80,9 @@ if global.paused = -1{
 						global.dippHealth = global.dippHealth - 3
 						audio_play_sound(dippHurtSE,0,false)
 					}
+					if global.playAs = 2{
+						global.gumHealth = global.gumHealth - 4
+					}
 					global.isDamaged = 10
 					global.allowDamage = 50
 				}
@@ -105,6 +111,9 @@ if global.paused = -1{
 					if global.playAs = 1{
 						global.dippHealth = global.dippHealth - 3
 						audio_play_sound(dippHurtSE,0,false)
+					}			
+					if global.playAs = 2{
+						global.gumHealth = global.gumHealth - 4
 					}
 					global.isDamaged = 10
 					global.allowDamage = 50

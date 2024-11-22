@@ -17,6 +17,9 @@ if global.paused = -1 and global.cameraActive = 1{
 			audio_play_sound(dippHurtSE,0,false)
 			global.dippHealth = global.dippHealth - 5
 		}
+		if global.playAs = 2{
+			global.gumHealth = global.gumHealth - 3
+		}
 		global.allowDamage = 50
 		global.isDamaged = 10
 	}

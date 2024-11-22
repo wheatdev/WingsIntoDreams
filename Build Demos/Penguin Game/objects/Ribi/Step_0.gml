@@ -17,6 +17,9 @@ if global.paused = -1{
 				global.dippHealth = global.dippHealth - 1
 				audio_play_sound(dippHurtSE,0,false)
 			}
+			if global.playAs = 2{
+				global.gumHealth = global.gumHealth - 1	
+			}
 			global.allowDamage = 40
 			global.isDamaged = 10
 		}
@@ -34,6 +37,10 @@ if global.paused = -1{
 		if place_meeting(x,y,Dynamite) and allowHit = 0{
 			rHealth = rHealth - (global.dippAttack * 2)
 			allowHit = 50
+		}
+		if place_meeting(x,y,gumShoot) and allowHit = 0{
+			rHealth = rHealth - global.gumAttack
+			allowHit = 40
 		}
 		if place_meeting(x,y,kibiKicked){
 			rHealth = rHealth - 3

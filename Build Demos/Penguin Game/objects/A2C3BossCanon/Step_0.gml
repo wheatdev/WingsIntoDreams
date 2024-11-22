@@ -77,7 +77,7 @@ if shootAngle = 7{
 if shootAngle = 8{
 	image_angle = -315
 }
-if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1){
+if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,gumShoot){
 	timer = timer -10	
 }
 if timer < 0{

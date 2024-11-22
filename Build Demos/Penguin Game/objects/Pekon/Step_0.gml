@@ -6,6 +6,9 @@ if global.paused = -1 and global.cameraActive = 1{
 				global.dippHealth = global.dippHealth - 2
 				audio_play_sound(dippHurtSE,0,false)
 			}
+			if global.playAs = 2{
+				global.gumHealth = global.gumHealth - 1
+			}
 			global.allowDamage = 50
 			global.isDamaged = 10
 		}
@@ -23,6 +26,10 @@ if global.paused = -1 and global.cameraActive = 1{
 		if place_meeting(x,y,dippBeam1) and allowHit = 0{
 			pHealth = pHealth - global.dippAttack
 			allowHit = 5
+		}
+		if place_meeting(x,y,gumShoot) and allowHit = 0{
+			pHealth = pHealth - global.gumAttack
+			allowHit = 30
 		}
 		if allowHit > 0{
 			allowHit = allowHit -1

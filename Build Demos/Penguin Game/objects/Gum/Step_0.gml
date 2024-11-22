@@ -96,6 +96,7 @@ if global.playAs = 2{
 			
 			if global.gumSpecial = 1{
 				if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter > 0{
+					gumState = 2
 					x  = x + ((global.gumSpeed * 1.25) * global.lastPressed)
 					global.specialMeter = global.specialMeter - .2
 					if jumpState = 1{
@@ -108,11 +109,18 @@ if global.playAs = 2{
 						x = x - ((global.gumSpeed * 1.25) * global.lastPressed)
 					}
 				}
+				if (keyboard_check_released(ord("P")) or keyboard_check_released(ord("C")) or gamepad_button_check_released(0,gp_face2)){
+					gumState = 1
+				}
 			}
 			if global.gumSpecial = 2{
 				if (keyboard_check(ord("P")) or keyboard_check(ord("C")) or gamepad_button_check(0,gp_face2)) and global.specialMeter > 0 and place_empty(x,y-(global.eGravity*2.5),Ground){
 					y = y - (global.eGravity * 2.5)
+					gumState = 3
 					global.specialMeter = global.specialMeter - .5
+				}
+				if (keyboard_check_released(ord("P")) or keyboard_check_released(ord("C")) or gamepad_button_check_released(0,gp_face2)){
+					gumState = 1
 				}
 			}
 			if global.gumSpecial = 3{
@@ -130,6 +138,22 @@ if global.playAs = 2{
 					}
 				}
 			}
+			
+		if gumState = 0 or gumState = 1{
+			sprite_index = A2CStand	
+		}	
+		if gumState = 2{
+			sprite_index = A2CDash
+		}
+		if gumState = 3{
+			sprite_index = A2CJet
+		}
+		if place_meeting(x,y,collectableSpecial){
+			global.itemGet = 1
+			instance_create_depth(Player.x,Player.y,0,playerCutscene)
+			global.cameraActive = 0 
+			instance_destroy()
+		}
 		}
 		else{
 			if global.isDamaged > 0{

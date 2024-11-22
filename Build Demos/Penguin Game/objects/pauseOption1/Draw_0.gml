@@ -46,5 +46,11 @@ if global.pauseX = 1{
 			draw_text(x+20,y+240,"Life Seed")
 		} 
 	}
+	if selectY < 0{
+		selectY = 0	
+	}
+	if selectY > 4{
+		selectY = 4	
+	}
 }
 draw_sprite(pauseoption1,0,x,y)

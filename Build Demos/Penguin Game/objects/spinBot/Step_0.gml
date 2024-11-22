@@ -16,10 +16,17 @@ if global.paused = -1{
 				tHealth = tHealth - global.dippAttack
 				allowHit = 5
 			}
+			if place_meeting(x,y,gumShoot) and allowHit = 0{
+				tHealth = tHealth - global.gumAttack
+				allowHit = 20
+			}	
 			if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 				if global.playAs = 1{
 					global.dippHealth = global.dippHealth - 3
 					audio_play_sound(dippHurtSE,0,false)
+				}
+				if global.playAs = 2{
+					global.gumHealth = global.gumHealth - 2
 				}
 				global.allowDamage = 30
 				global.isDamaged = 10

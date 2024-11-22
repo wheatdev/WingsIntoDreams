@@ -90,6 +90,9 @@ if global.paused = -1 and global.cameraActive = 1{
 					global.dippHealth = global.dippHealth - 10
 					audio_play_sound(dippHurtSE,0,false)
 				}
+				if global.playAs = 2{
+					global.gumHealth = global.gumHealth - 10	
+				}
 				global.isDamaged = 10
 				global.allowDamage = 200
 			}

@@ -8,6 +8,9 @@ if global.paused = -1{
 			global.dippHealth = global.dippHealth - 1
 			audio_play_sound(dippHurtSE,0,false)
 		}
+		if global.playAs = 2{
+			global.dippHealth = global.dippHealth - 2
+		}
 		global.allowDamage = 15
 		global.isDamaged = 10
 	}

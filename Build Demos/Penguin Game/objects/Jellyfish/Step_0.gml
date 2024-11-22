@@ -39,11 +39,14 @@ if global.paused = -1 and global.cameraActive = 1{
 					global.dippHealth = global.dippHealth - 3
 					audio_play_sound(dippHurtSE,0,false)
 				}
+				if global.playAs = 2{
+					global.gumHealth = global.gumHealth - 5
+				}
 				global.allowDamage = 30
 				global.isDamaged = 10	
 			}
 		}
-		if place_meeting(x,y,DippSword) and sting =0{
+		if (place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot)) and sting =0{
 			active = 0
 		}
 		if rangeX > 2000 or rangeY > 2000{
