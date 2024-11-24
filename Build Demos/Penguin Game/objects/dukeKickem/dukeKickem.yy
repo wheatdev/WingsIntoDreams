@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"testwater",
-    "path":"sprites/testwater/testwater.yy",
+    "name":"duke",
+    "path":"sprites/duke/duke.yy",
   },
   "spriteMaskId":null,
   "visible":true,

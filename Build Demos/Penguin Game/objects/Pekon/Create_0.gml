@@ -1,5 +1,5 @@
-image_xscale = .25
-image_yscale = .25
+image_xscale = 1
+image_yscale = 1
 rangeX = x
 pHealth = 3
 state = 0

@@ -1,6 +1,6 @@
 if global.paused = -1 and global.cameraActive = 1{
 	if pHealth > 0{
-		image_xscale = side * .25
+		image_xscale = side 
 		if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 			if global.playAs = 1{
 				global.dippHealth = global.dippHealth - 2

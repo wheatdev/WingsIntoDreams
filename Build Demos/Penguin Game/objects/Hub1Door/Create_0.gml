@@ -41,3 +41,6 @@ if x = 604736{
 if x = -256{
 	type = 11
 }
+if place_meeting(x,y,Prop){
+	visible = false	
+}

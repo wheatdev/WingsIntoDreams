@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"testwater",
-    "path":"sprites/testwater/testwater.yy",
+    "name":"donnerHide",
+    "path":"sprites/donnerHide/donnerHide.yy",
   },
   "spriteMaskId":null,
   "visible":true,

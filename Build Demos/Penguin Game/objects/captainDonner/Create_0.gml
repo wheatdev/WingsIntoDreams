@@ -5,3 +5,4 @@ if global.storyProgress = 7 or global.storyProgress = 6{
 else{
 	instance_destroy()
 }
+timer = 0
