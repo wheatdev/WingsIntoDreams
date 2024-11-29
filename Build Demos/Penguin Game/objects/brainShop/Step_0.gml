@@ -116,6 +116,7 @@ if state = 0{
 }
 if state = 1{
 	if words = "BREAK"{
+		room_restart()
 		state = 0	
 	}
 	if type = 1{
@@ -393,6 +394,7 @@ if state = 1{
 			words = "Ah, the humble Escape Rope!"
 			words2 = "You plannin' on getting lost soon, boy?"
 			words3 = "Hohoho!"
+			icon = 1
 		}
 		if cindex = 49{
 			words = "They're one time use, but pretty handy!"
@@ -413,6 +415,7 @@ if state = 1{
 			words = "Hoho! Finally saved up enough for this arcade"
 			words2 = "cabinet, eh? This one's pretty old, but still"
 			words3 = "pretty popular with youngins'!"
+			icon = 1
 		}
 		if cindex = 53{
 			words = "It takes a lot of Spirit, but you too can be"
@@ -423,11 +426,13 @@ if state = 1{
 			words = "Is that a reference to something, Walter?"
 			words2 = "If it's a reference I don't get it."
 			words3 = ""
+			icon = 0
 		}
 		if cindex = 55{
 			words = "Er, just play the game."
 			words2 = "If you know, you'll know."
 			words3 = ""
+			icon = 1
 		}
 		if cindex = 56{
 			words = "BREAK"
@@ -443,21 +448,25 @@ if state = 1{
 			words = "Walter, could I, perchane, have"
 			words2 = "that pot you have over there?"
 			words3 = ""
+			icon = 0
 		}
 		if cindex = 59{
 			words = "Dipp, for the last time, you cannot"
 			words2 = "have a ''hit'' of my icicle."
 			words3 = "They're not good for you!"
+			icon = 1
 		}
 		if cindex = 60{
 			words = "No, Walter. I mean the physical pot"
 			words2 = " you've got back there. Like, for "
 			words3 = "plants and stuff."
+			icon = 0
 		}
 		if cindex = 61{
 			words = "O-oh! Er, well. Sure, I don't see why not."
 			words2 = "This did just fall out of the sky one day.."
 			words3 = "Maybe there's something magical about it...?"
+			icon = 1
 		}
 		if cindex = 62{
 			words = "Plant a seed, and hit it from below, to see"
@@ -468,11 +477,13 @@ if state = 1{
 			words = "Sweet! And can I also have a lick of"
 			words2 = "the icile?"
 			words3 = ""
+			icon = 0
 		}
 		if cindex = 64{
 			words = "..."
 			words2 = ""
 			words3 = "No. Get out."
+			icon = 1
 		}
 		if cindex = 65{
 			words = "BREAK"

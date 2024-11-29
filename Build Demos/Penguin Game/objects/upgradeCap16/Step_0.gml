@@ -11,6 +11,9 @@ if direct = 2{
 	}
 }
 if place_meeting(x,y,Player){
+	if global.upgrade = 0 and global.upgradeTotal = 0{
+		instance_create_depth(x,y,-10,brainTalk2)
+	}
 	global.upgrade = global.upgrade + 1
 	global.upgrade16Get = 1
 	audio_play_sound(upgradeGetSE,0,false)

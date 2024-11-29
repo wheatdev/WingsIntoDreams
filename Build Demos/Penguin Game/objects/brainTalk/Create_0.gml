@@ -50,8 +50,6 @@ if room = skyHighHuntingBoss{
 }
 if room = tutorial{
 	type = 9	
-	x = 16450
-	y = 1000
 }
 depth = -10
 draw_set_font(MenuFontSmall)

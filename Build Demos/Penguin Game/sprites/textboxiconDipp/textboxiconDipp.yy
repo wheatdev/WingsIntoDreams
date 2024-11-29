@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"textboxiconDipp",
   "bboxMode":0,
-  "bbox_bottom":358,
+  "bbox_bottom":346,
   "bbox_left":92,
-  "bbox_right":460,
+  "bbox_right":501,
   "bbox_top":44,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"aaa88338-c912-433e-9b6f-fb6dbefe7de8","name":"aaa88338-c912-433e-9b6f-fb6dbefe7de8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"9169f8d2-1787-4f17-8a0d-fcb68f2e1baa","name":"9169f8d2-1787-4f17-8a0d-fcb68f2e1baa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":810,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"ad1a1176-0f6f-41e1-bf18-fb8a3449bf67","blendMode":0,"displayName":"default","isLocked":false,"name":"ad1a1176-0f6f-41e1-bf18-fb8a3449bf67","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5710fdc5-2939-4b51-8686-19ed046bdb40","blendMode":0,"displayName":"default","isLocked":false,"name":"5710fdc5-2939-4b51-8686-19ed046bdb40","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"textboxiconDipp",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aaa88338-c912-433e-9b6f-fb6dbefe7de8","path":"sprites/textboxiconDipp/textboxiconDipp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a581148c-f44e-4a4e-b5ce-d0d90eb07aa9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9169f8d2-1787-4f17-8a0d-fcb68f2e1baa","path":"sprites/textboxiconDipp/textboxiconDipp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f6c0bdfb-e65e-4e5c-a5b9-d9fdd14e37f2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

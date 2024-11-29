@@ -260,6 +260,8 @@ if global.paused = -1{
 				instance_create_depth(21376,5568,0,DonnerDoor)
 			}
 			if room = tutorial{
+				global.lastSafeX = 16480
+				global.cameraActive = -1
 				global.talking = 1
 			}	
 			active = 2

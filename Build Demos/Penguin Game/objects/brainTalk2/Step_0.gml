@@ -4,7 +4,17 @@ if global.cameraActive = 1{
 }
 draw_set_font(MenuFontSmall)
 draw_set_color(c_white)
+if type = 0{
+	words = "You found a hidden Upgrade Capsule!"
+	words2 = "You can use it to increase your Health, Attack, Speed,"
+	words3 = "or Special Meter in the pause menu!"
+	timer = timer + 1
+	if timer > 700{
+		instance_destroy()	
+	}
+}
 if type = 1{
+	icon = 5
 	if x > 3600{
 		cindex = 2
 	}
@@ -114,7 +124,7 @@ if type = 1{
 		words2 = "hard to reach areas. You can use them to upgrade your"
 		words3 = "stats from the pause menu."
 		timer = timer + 1
-		if timer > 300{
+		if timer > 250{
 			cindex = 13	
 		}
 	}
@@ -123,7 +133,7 @@ if type = 1{
 		words2 = "trial. It's an earlier model in the A2C series. Once"
 		words3 = "you beat him, your training will be deemed a success."
 		timer = timer + 1
-		if timer > 600{
+		if timer > 500{
 			cindex = 14	
 		}
 	}
@@ -131,7 +141,9 @@ if type = 1{
 		words = "Based off of your performance so far, it should be a "
 		words2 = "piece of cake for you."
 		words3 = "Good luck!"
-		global.dialouge = 0
-	
+		timer = timer + 1
+		if timer > 750{
+			global.dialouge = 0
+		}
 	}
 }

@@ -26,3 +26,4 @@ if global.storyProgress = 2 and global.playerStartX = 1500 and global.lastIn = 1
 else{
 	instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)
 }
+global.lastIn = -1

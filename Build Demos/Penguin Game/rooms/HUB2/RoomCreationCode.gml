@@ -21,3 +21,4 @@ global.earnestHealth = global.earnestHealthMax
 
 instance_create_depth(global.playerStartX,global.playerStartY,0,dippScarf)
 instance_create_depth(global.playerStartX,global.playerStartY,0,Dipp)
+global.lastIn = -2

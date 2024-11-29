@@ -10,7 +10,7 @@ if room =hopperHeliship{
 }
 if room = HUB1{
 	type = 4
-	if global.skyUnlock = -1{
+	if global.skyUnlock < 0{
 		instance_destroy()
 	}
 }

@@ -114,3 +114,4 @@ if global.paused = -1{
 		global.mechanism = global.mechanism - 1
 	}
 }
+global.upgradeTotal = global.upgrade1Get + global.upgrade2Get + global.upgrade3Get + global.upgrade4Get + global.upgrade5Get + global.upgrade6Get + global.upgrade7Get + global.upgrade8Get + global.upgrade9Get + global.upgrade10Get + global.upgrade11Get + global.upgrade12Get + global.upgrade13Get + global.upgrade14Get + global.upgrade15Get + global.upgrade16Get

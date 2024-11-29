@@ -6,6 +6,7 @@ if type = 1{
 		words = "Alright, this is about where Walter said the "
 		words2 = "treasure room should be..."
 		words3 = ""
+		icon = 0 
 	}
 	if cindex = 1{
 		words = "All I need to do is not set off any..."
@@ -16,11 +17,13 @@ if type = 1{
 		words = "WARNING: INTRUDER ALERT!"
 		words2 = "LEAVE NOW OR FORCE WILL BE USED TO "
 		words3 = "FORCE YOUR REMOVAL."
+		icon = 2
 	}
 	if cindex = 3{
 		words = "Walter, you wide walrus, you said there'd be no "
 		words2 = "security... "
 		words3 = "... I don't get paid enough for this..."
+		icon = 0
 	}
 	if cindex = 4{
 		words = "BREAK"
@@ -51,6 +54,7 @@ if type = 2{
 		words = "ZUT ALORS!!!"
 		words2 = "After all zees years, I 'ave finally been found!"
 		words3 = ""
+		icon = 9
 	}
 	if cindex = 1{
 		words = "Oui! I am ze master criminal."
@@ -71,6 +75,7 @@ if type = 2{
 		words = "MERCI!!!"
 		words2 = ""
 		words3 = ""
+		icon = 9
 	}
 	if cindex = 5{
 		words = "You are sparing my life, no?"
@@ -108,11 +113,13 @@ if type = 3{
 			words = "OI! Where do youse think yer goin', brat?!"
 			words2 = "You don't see me standin' here?"
 			words3 = ""
+			icon = 3
 		}
 		else{
 			words = "Eyyyyy, you're Walter's kid, right?"
 			words2 = "Your name's Dipp, yeah?"
 			words3 = ""
+			icon = 3
 		}
 	}
 	if cindex = 1{
@@ -120,6 +127,7 @@ if type = 3{
 			words = "No dude, I didn't see you. You're like half my "
 			words2 = "size and hiding in the bushes."
 			words3 = ""
+			icon = 0
 		}
 		else{
 			words = "The name's Captain Donner. The ship here's"
@@ -132,6 +140,7 @@ if type = 3{
 			words = "HAHA! You've definitely got a mouth on you!"
 			words2 = "Walter's been raising you 'bout as good as"
 			words3 = "I'd expect!"
+			icon = 3
 		}
 		else{
 			words = "Since you're Walter's boy, I'll fly you to Suenos"
@@ -149,22 +158,26 @@ if type = 3{
 			words = "Niiiiiiice, nice!"
 			words2 = "You're a pretty chill dude, Captain."
 			words3 = "And your ship's cool."	
+			icon = 0
 		}
 	}
 	if cindex = 4{
 		words = "By the ways, Dipp. Youse a bird as well, ain't ya?"
 		words2 = "How fast can you fly?"
 		words3 = "Donner Ship over here can go 2,000 miles per hour."
+		icon = 3
 	}
 	if cindex = 5{
 		words = "I... uh... Can't fly."
 		words2 = "Penguins are flightless birds."
 		words3 = ""
+		icon = 0
 	}
 	if cindex = 6{
 		words = "..."
 		words2 = ""
 		words3 = ""
+		icon = 3
 	}
 	if cindex = 7{
 		words = "S-sorry 'bout that, lad. Er, let's just"
@@ -185,6 +198,7 @@ if type = 4{
 		words = "*BZZZRT*"
 		words2 = "Attention all pasengers, this is yer Captain speakin'."
 		words3 = "I-er... Uh, we've been invaded."
+		icon = 3
 	}
 	if cindex = 1{
 		words = "Yep. Buncha robots have practically taken over the ship."
@@ -200,6 +214,7 @@ if type = 4{
 		words =	"..."
 		words2 = "The Ice Core is totally that weird orb I found in the"
 		words3 = "Conic Caves, isn't it..."
+		icon = 0 
 	}
 	if cindex = 4{
 		words = "So much for a relaxing airship ride..."
@@ -226,6 +241,7 @@ if type = 5{
 		words = "I AM SUPRISED YOU HAVE MADE IT THIS FAR."
 		words2 = "I WOULD HAVE THOUGHT THAT MY BROTHERS"
 		words3 = "WOULD HAVE DESTROYED YOU."
+		icon = 4
 	}
 	if cindex = 1{
 		words = "BUT IN ANY CASE, I CANNOT ALLOW YOU TO "
@@ -236,21 +252,25 @@ if type = 5{
 		words = "Dude, what??? You steal MY treasure, and"
 		words2 = "I'm the one interfering with YOU?"
 		words3 = "I was gonna make bank off that!"
+		icon = 0
 	}
 	if cindex = 3{
 		words = "THE ''CORE'' WE AQUIRED FROM THE DONNER SHIP"
 		words2 = "IS ESSENTIAL FOR OUR ULTIMATE GOAL."
 		words3 = ""
+		icon = 4
 	}
 	if cindex = 4{
 		words = "...Core?"
 		words2 = "What the heck is a Core?"
 		words3 = "Either way, give it back!"
+		icon = 0 
 	}
 	if cindex = 5{
 		words = "NEGATIVE."
 		words2 = "MY OBJECTIVE IS TO RETRIEVE THE ''ICE CORE''."
 		words3 = "IF YOU ATTEMPT TO STOP ME..."
+		icon = 4
 	}
 	if cindex = 6{
 		words = "THEN I WILL SCRAP YOU LIKE YOU DID MY BROTHERS."
@@ -272,12 +292,14 @@ if type = 5{
 		words = "Ha.... ha..."
 		words2 = "Take that... stupid robot..."
 		words3 = "I... am out... of here..."
+		icon = 0 
 	}
 	if cindex = 10{
 		global.cutsceneTimer = 5
 		words = "HoSTiLe PeNGuiN eSCaPiNG WiTH CoRe."
 		words2 = "eNGaGiNG: aRTiFiCiaL GRaViTY."
 		words3 = ""
+		icon = 4
 	}
 	if cindex = 11{
 		global.cameraActive = 0
@@ -317,11 +339,13 @@ if type = 6{
 			words = "Hark! A bird appears! Who art thou?"
 			words2 = "Are thee an adventurer?"
 			words3 = "Would you care for a quest?"
+			icon = 6
 		}
 		else{
 			words = "So, this pedestal is where the Cloud Amulet"	
 			words2 = "is supposed to be kept?"
 			words3 = ""
+			icon = 0
 		}
 	}
 	if cindex = 1{
@@ -329,11 +353,13 @@ if type = 6{
 			words = "Oh, no no no, Sir Dipp!"
 			words2 = "This pedestal is meant for another, far more"
 			words3 = "valuable treasure!"
+			icon = 7
 		}
 		else{
 			words = "Uh, yeah. I'm an ''adventurer'' of sorts."
 			words2 = "And a bird as well."
 			words3 = "What quest you need me to do, lady?"
+			icon = 0
 		}
 	}
 	if cindex = 2{
@@ -346,6 +372,7 @@ if type = 6{
 			words = "Hark! An adventurous Bird Hero!"
 			words2 = "The sacred treasure of my kingdom,"
 			words3 = "the Cloud Amulet, has been stolen!"
+			icon = 6
 		}
 	}
 	if cindex = 3{
@@ -382,6 +409,7 @@ if type = 6{
 			words = "..."
 			words2 = "Y-yeah. Of course."
 			words3 = "I can fly. Totally."
+			icon = 0 
 		}
 	}
 	if cindex = 6{
@@ -394,6 +422,7 @@ if type = 6{
 			words = "Wonderful! Can you go and"
 			words2 = "retrieve the Cloud Amulet then?"
 			words3 = "It shouldn't be too much issue for a bird."
+			icon = 6
 		}
 	}
 	if cindex = 7{
@@ -406,6 +435,7 @@ if type = 6{
 			words = "No... problem..."
 			words2 = "I'll... be right... back..."
 			words3 = ""
+			icon = 0
 		}
 	}
 	if cindex = 8{
@@ -413,6 +443,7 @@ if type = 6{
 			words = "Sure thing. I'll keep an eye out."
 			words2 = "..."
 			words3 = "Jerk."
+			icon = 0
 		}
 		else{
 			words = "BREAK"
@@ -429,6 +460,7 @@ if type = 6{
 			words = "Hark! The Bird Hero returns!"
 			words2 = "I sense the Cloud Amulet in your possesion."
 			words3 = "Here, give it here!" 
+			icon = 6
 		}
 	}
 	if cindex = 10{
@@ -472,21 +504,25 @@ if type = 8{
 		words = "Eh? Who're you? A blue bird dude..."
 		words2 = "Are you the Hero that my minions"
 		words3 = "keep mentionin'?"
+		icon = 8
 	}
 	if cindex = 1{
 		words = "Those apple dudes are YOUR minions?"
 		words2 = "That must mean you're the giant who stole"
 		words3 = "the Cloud Amulet, yeah?"
+		icon = 0
 	}
 	if cindex = 2{
 		words = "Yeah, I stole the Cloud Amulet."
 		words2 = "It makes me strong! I feel invincible!"
 		words3 = "And it really brings out my eye, yeah?"
+		icon = 8
 	}
 	if cindex = 3{
 		words = "It does! I like the way it contrasts with your"
 		words2 = "skin tone..."
 		words3 = "I-I mean!!!"
+		icon = 0
 	}
 	if cindex = 4{
 		words = "I-I don't suppose you'd be willing to eh..."
@@ -497,6 +533,7 @@ if type = 8{
 		words = "No way, little dude! This Amulet makes me"
 		words2 = "the strongest! You want it?"
 		words3 = "You're gonna have to pry it offa me!"
+		icon = 8
 	}
 	if cindex = 6{
 		words = "BREAK"
@@ -507,6 +544,7 @@ if type = 8{
 		words = "So... This is the Cloud Amulet, huh?"
 		words2 = "I can see what that hot giant chick was"
 		words3 = "talking about... I feel stronger already..."
+		icon = 0
 	}
 	if cindex = 8{
 		words = "This Amulet looks pretty valuable too..."
@@ -554,6 +592,7 @@ if type = 9{
 		words = "Perfect, perfect! You're amazing, A2C-PGU.M-004!"
 		words2 = "You've met and surpassed all expectations for"
 		words3 = "your first field test."
+		icon = 5
 	}
 	if cindex = 1{
 		words = "And not a moment too soon. Poncho has just given word"

@@ -63,6 +63,7 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.earnestSpecial = 1
 
 			global.upgrade = 0
+			global.upgradeTotal = 0 
 			global.upgrade1Get = 0
 			global.upgrade2Get = 0
 			global.upgrade3Get = 0
@@ -140,7 +141,7 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.dippSpringGet = 1
 			global.dippGlideGet = 1
 			global.dippDynaGet = 1
-			global.dippSnowballGet = 1
+			global.dippSnowballGet = 0
 			global.dippCloudGet = 1
 			global.dippIceGet =	1
 			global.dippFireGet = 1
@@ -158,6 +159,7 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.earnestSpecial = 1
 
 			global.upgrade = 16
+			global.upgradeTotal = 16
 			global.upgrade1Get = 1
 			global.upgrade2Get = 1
 			global.upgrade3Get = 1
@@ -192,7 +194,7 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 		}
 		if selectY = 2{
 			global.eGravity = 10
-			global.playAs = 1
+			global.playAs = 2
 			global.paused = -1
 			global.fullscreen = 1
 			global.lastPressed = 1
@@ -232,6 +234,22 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 
 			global.upgrade = 0
 			global.upgrade1Get = 0
+			global.upgrade2Get = 1
+			global.upgrade3Get = 1
+			global.upgrade4Get = 1
+			global.upgrade5Get = 1
+			global.upgrade6Get = 1
+			global.upgrade7Get = 1
+			global.upgrade8Get = 1
+			global.upgrade9Get = 1
+			global.upgrade10Get = 1
+			global.upgrade11Get = 1
+			global.upgrade12Get = 1
+			global.upgrade13Get = 1
+			global.upgrade14Get = 1
+			global.upgrade15Get = 1
+			global.upgrade16Get = 1
+			global.upgradeTotal = 0 
 
 			global.bossHelp1 = 0
 			global.bossHelp2 = 0

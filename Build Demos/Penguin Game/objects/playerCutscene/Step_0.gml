@@ -39,7 +39,12 @@ if type = 0{
 		visible = false
 	}
 	if global.cutsceneTimer = 0{
-		sprite_index = dippStand
+		if global.playAs =1{
+			sprite_index = dippStand
+		}
+		if global.playAs = 2{
+			sprite_index = A2CStand
+		}
 	}
 }
 if type = 1{

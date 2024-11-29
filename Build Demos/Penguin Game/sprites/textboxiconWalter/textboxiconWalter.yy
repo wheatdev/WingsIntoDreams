@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"textboxiconWalter",
   "bboxMode":0,
-  "bbox_bottom":386,
+  "bbox_bottom":405,
   "bbox_left":92,
-  "bbox_right":394,
+  "bbox_right":398,
   "bbox_top":44,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"3124ee61-ce09-4a9f-bb7a-e6a952b06dea","name":"3124ee61-ce09-4a9f-bb7a-e6a952b06dea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3c1ff5fe-01b9-40cd-b27a-41c5ba167da6","name":"3c1ff5fe-01b9-40cd-b27a-41c5ba167da6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":810,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"030aaf98-7c53-43a3-baf2-414a58146273","blendMode":0,"displayName":"default","isLocked":false,"name":"030aaf98-7c53-43a3-baf2-414a58146273","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"132fa941-08c5-4192-8d4b-c2dba8faa572","blendMode":0,"displayName":"default","isLocked":false,"name":"132fa941-08c5-4192-8d4b-c2dba8faa572","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"textboxiconWalter",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3124ee61-ce09-4a9f-bb7a-e6a952b06dea","path":"sprites/textboxiconWalter/textboxiconWalter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e17733f3-024e-49df-905a-e6f3e196610f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c1ff5fe-01b9-40cd-b27a-41c5ba167da6","path":"sprites/textboxiconWalter/textboxiconWalter.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0090d392-6908-4549-b56c-ab769940e79f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

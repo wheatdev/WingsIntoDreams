@@ -8,4 +8,5 @@ words = ""
 words2 = ""
 words3 = ""
 timer = 0
+icon = 0
 depth = -10
