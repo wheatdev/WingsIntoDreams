@@ -44,7 +44,7 @@ if global.paused = -1 and global.cameraActive = 1{
 		if place_meeting(x,y+global.eGravity,Ground){
 			y = y - global.eGravity
 		}
-		if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1){
+		if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,kibiKickedP){
 			flingy = y + 1000
 			if place_meeting(x,y,DippSword) and (keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd)){
 				global.pBounce = 60

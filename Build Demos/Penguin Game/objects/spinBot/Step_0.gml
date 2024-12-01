@@ -20,6 +20,10 @@ if global.paused = -1{
 				tHealth = tHealth - global.gumAttack
 				allowHit = 20
 			}	
+			if place_meeting(x,y,kibiKickedP) and allowHit = 0{
+				tHealth = tHealth - (global.dippAttack * 2)
+				allowHit = 30
+			}
 			if place_meeting(x,y,Player) and global.allowDamage = 0 and allowHit = 0{
 				if global.playAs = 1{
 					global.dippHealth = global.dippHealth - 3

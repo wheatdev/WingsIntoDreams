@@ -249,6 +249,17 @@ if global.playAs = 1{
 						instance_create_depth(x,y,0,dippWater)	
 					}
 				}
+				if global.dippSpecial = 9{
+					if (keyboard_check_pressed(ord("P")) or keyboard_check_pressed(ord("C")) or gamepad_button_check_pressed(0,gp_face2)) and global.specialMeter > 19{
+						timer = 20
+						global.specialMeter = global.specialMeter - 20
+						instance_create_depth(x,y-(global.eGravity * 1.5),depth,kibiKickedP)
+					}
+					if timer >0{
+						dippState = 12
+						timer = timer - 1
+					}				
+				}
 				if global.isDamaged > 0{
 					dippState = 9
 				}
@@ -426,10 +437,10 @@ if global.playAs = 1{
 			}
 			else{
 				if global.isDamaged > 0{
-					sprite_index = dippDeath1
+					sprite_index = dippPain
 				}
 				if global.isDamaged < 0{
-					sprite_index = dippDeath2
+					sprite_index = dippDeath
 				}
 				image_angle = 0
 				global.isDamaged = global.isDamaged - 2

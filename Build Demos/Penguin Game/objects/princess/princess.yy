@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"heart1",
-    "path":"sprites/heart1/heart1.yy",
+    "name":"Princess",
+    "path":"sprites/Princess/Princess.yy",
   },
   "spriteMaskId":null,
   "visible":true,

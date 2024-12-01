@@ -32,7 +32,7 @@ if global.paused = -1{
 				}
 			}
 		}
-		if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y-global.eGravity,crusher) or place_meeting(x,y,dippBeam1){
+		if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y-global.eGravity,crusher) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,kibiKickedP){
 			active = 0
 			maxHeight = y + 2000
 			if place_meeting(x,y,DippSword){

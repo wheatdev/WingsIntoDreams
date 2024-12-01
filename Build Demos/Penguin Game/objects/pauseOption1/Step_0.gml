@@ -23,6 +23,12 @@
 		if keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right) or keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D")) or gamepad_button_check_pressed(0,gp_padl) or gamepad_button_check_pressed(0,gp_padr){
 			selectX = selectX * -1	
 		}
+		if selectY < 0{
+			selectY = 0
+		}
+		if selectY > 3{
+			selectY = 3	
+		}
 		if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1){
 			if selectY = 1 and selectX = -1{
 				if global.escapeRope = 1{
@@ -43,3 +49,4 @@
 			}
 		}
 	}
+	

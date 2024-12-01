@@ -141,10 +141,10 @@ if keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter) or gamep
 			global.dippSpringGet = 1
 			global.dippGlideGet = 1
 			global.dippDynaGet = 1
-			global.dippSnowballGet = 0
+			global.dippSnowballGet = 1
 			global.dippCloudGet = 1
-			global.dippIceGet =	1
-			global.dippFireGet = 1
+			global.dippIceGet =	4
+			global.dippFireGet = 2
 
 			global.gumSpeed = 8
 			global.gumHealth = 40

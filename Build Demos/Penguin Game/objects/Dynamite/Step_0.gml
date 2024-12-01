@@ -36,6 +36,9 @@ if global.paused = -1{
 			timer = 10
 			state = -1
 		}
+		if global.dippHealth < 1 or global.gumHealth < 1{
+			instance_destroy()	
+		}
 	}
 	else{
 		image_angle = image_angle + 2

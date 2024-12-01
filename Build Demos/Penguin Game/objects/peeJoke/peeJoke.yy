@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"test1",
-    "path":"sprites/test1/test1.yy",
+    "name":"bathroom",
+    "path":"sprites/bathroom/bathroom.yy",
   },
   "spriteMaskId":null,
   "visible":true,

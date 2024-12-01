@@ -32,7 +32,7 @@ if global.paused = -1 and global.cameraActive = 1{
 					x = x + (direct * 5)
 				}
 			}
-			if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1){
+			if place_meeting(x,y,DippSword) or place_meeting(x,y,gumShoot) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,kibiKickedP){
 				friend = 0
 				instance_create_depth(x,y,depth,snowmanHead)
 				if place_meeting(x,y,DippSword) and (keyboard_check(ord("S")) or keyboard_check(vk_down) or gamepad_button_check(0,gp_padd)){

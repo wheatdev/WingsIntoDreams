@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"test",
-    "path":"sprites/test/test.yy",
+    "name":"Arcade1",
+    "path":"sprites/Arcade1/Arcade1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

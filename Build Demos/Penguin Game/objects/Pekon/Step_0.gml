@@ -23,6 +23,10 @@ if global.paused = -1 and global.cameraActive = 1{
 			pHealth = pHealth - (global.dippAttack * 2)
 			allowHit = 30
 		}
+		if place_meeting(x,y,kibiKickedP) and allowHit = 0{
+			pHealth = pHealth - (global.dippAttack * 2)
+			allowHit = 35
+		}
 		if place_meeting(x,y,dippBeam1) and allowHit = 0{
 			pHealth = pHealth - global.dippAttack
 			allowHit = 5

@@ -11,7 +11,7 @@ if direct = 2{
 	}
 }
 allowCollect = allowCollect + 1
-if place_meeting(x,y,Player) and allowCollect > 40{
+if (place_meeting(x,y,Player) or place_meeting(x,y,kibiKickedP)) and allowCollect > 20{
 	global.theMoney = global.theMoney + 50
 	instance_destroy()
 }

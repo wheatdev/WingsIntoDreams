@@ -148,6 +148,9 @@ if global.playAs = 2{
 		if gumState = 3{
 			sprite_index = A2CJet
 		}
+		if gumState = 9{
+			sprite_index = A2CPain
+		}
 		if place_meeting(x,y,collectableSpecial){
 			global.itemGet = 1
 			instance_create_depth(Player.x,Player.y,0,playerCutscene)

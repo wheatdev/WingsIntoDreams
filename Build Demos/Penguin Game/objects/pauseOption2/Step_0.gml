@@ -45,6 +45,9 @@ if global.paused = 1{
 					if selectX = 3 and selectY = 2 and global.dippCloudGet = 1{
 						global.dippSpecial = 5	
 					}
+					if selectX = 3 and selectY = 2 and global.skyUnlock < 0{
+						global.dippSpecial = 9
+					}
 					if selectX = 1 and selectY = 3{
 						if global.dippIceGet = 2 or global.dippIceGet = 1{
 							global.dippSpecial = 6
@@ -53,7 +56,7 @@ if global.paused = 1{
 							global.dippSpecial = 6
 						}
 					}
-					if selectX = 2 and selectY = 3 and global.dippFireGet = 1{
+					if selectX = 2 and selectY = 3 and global.dippFireGet > 0{
 						global.dippSpecial = 7
 					}
 					if selectX = 3 and selectY = 3 and ((global.dippSnowballGet = 1 or global.dippIceGet > 0) and global.dippFireGet > 0){

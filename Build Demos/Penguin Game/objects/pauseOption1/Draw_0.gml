@@ -53,4 +53,5 @@ if global.pauseX = 1{
 		selectY = 4	
 	}
 }
+
 draw_sprite(pauseoption1,0,x,y)

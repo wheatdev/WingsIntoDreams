@@ -44,6 +44,10 @@ if global.paused = -1{
 					gHealth = gHealth - (global.dippAttack * 2)
 					allowHit = 70
 				}
+				if place_meeting(x,y,kibiKickedP) and allowHit = 0{
+					gHealth = gHealth - (global.dippAttack * 2)
+					allowHit = 50
+				}
 				if place_meeting(x,y,dippBeam1) and allowHit = 0{
 					gHealth = gHealth - global.dippAttack
 					allowHit = 5
@@ -55,6 +59,7 @@ if global.paused = -1{
 				if allowHit > 0{
 					allowHit = allowHit -1	
 					image_alpha = .5
+					sprite_index = A2CPain
 				}
 				else{
 					image_alpha = 1

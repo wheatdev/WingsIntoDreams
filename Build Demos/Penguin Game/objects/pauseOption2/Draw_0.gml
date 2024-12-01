@@ -39,12 +39,20 @@ if global.pauseX = 2{
 					draw_text(x,y-50,"SNOWBALL")
 				}	
 			}
-			if global.dippCloudGet = 1{
+			if global.dippCloudGet = 1 and global.skyUnlock > -1{
 				if selectX = 3 and selectY = 2{
 					draw_text(x+350,y-50,"> CLOUD")	
 				}
 				else{
 					draw_text(x+350,y-50,"CLOUD")	
+				}
+			}
+			if global.skyUnlock < 0{
+				if selectX = 3 and selectY = 2{
+					draw_text(x+350,y-50,"> KIBI")	
+				}
+				else{
+					draw_text(x+350,y-50,"KIBI")	
 				}
 			}
 			if global.dippIceGet = 1 or global.dippIceGet = 2{
@@ -123,11 +131,11 @@ if global.pauseX = 2{
 			draw_text(x-280,y-50,"ANTI-GRAV")
 		}
 	}
-	if selectX = 3 and selectY = 4{
-		draw_text(x+350,y+150, "> NEXT")
+	if selectX = 3 and selectY = 5{
+		draw_text(x+350,y+250, "> NEXT")
 	}
 	else{
-		draw_text(x+350,y+150, "NEXT")
+		draw_text(x+350,y+250, "NEXT")
 	}
 }
 draw_sprite(pauseoption2,0,x,y)

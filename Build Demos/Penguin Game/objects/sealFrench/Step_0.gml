@@ -27,7 +27,7 @@ if global.paused = -1 and global.cameraActive = 1{
 			else{
 				direct = -1
 			}
-			if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,gumShoot){
+			if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,gumShoot) or place_meeting(x,y,kibiKickedP){
 				global.cutsceneTimer = -3
 				global.talking =1
 				global.cameraActive = -1

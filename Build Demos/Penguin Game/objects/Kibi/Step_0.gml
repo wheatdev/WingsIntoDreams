@@ -14,7 +14,7 @@ if global.paused = -1{
 				direct = direct * -1	
 			}
 		}
-		if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,gumShoot){
+		if place_meeting(x,y,DippSword) or place_meeting(x,y,Dynamite) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,gumShoot) or place_meeting(x,y,kibiKickedP) or place_meeting(x,y,kibiKicked){
 			dazed = -1
 			timer = 20
 		}	
@@ -28,7 +28,7 @@ if global.paused = -1{
 		}
 	}
 	else{
-		if (place_meeting(x,y,Player) or place_meeting(x,y,DippSword) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,gumShoot)) and timer = 0{
+		if (place_meeting(x,y,Player) or place_meeting(x,y,DippSword) or place_meeting(x,y,dippBeam1) or place_meeting(x,y,gumShoot) or  place_meeting(x,y,kibiKickedP) or place_meeting(x,y,kibiKicked)) and timer = 0{
 			instance_create_depth(x,y-global.eGravity,0,kibiKicked)
 			instance_destroy()	
 		}	

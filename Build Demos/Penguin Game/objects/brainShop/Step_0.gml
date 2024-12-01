@@ -91,14 +91,17 @@ if state = 0{
 				global.upgrade15Get = 1
 				global.upgrade = global.upgrade + 1
 				global.theMoney = global.theMoney - 1000
+				cindex = 0
 			}
 			if selectX = 1 and selectY = 1 and global.leftovers = 0 and global.theMoney > 499{
 				global.leftovers = 1
 				global.theMoney = global.theMoney - 500
+				cindex = 6
 			}
 			if selectX = -1 and selectY = 2 and global.dippCloudGet = 0 and global.theMoney > 1999{
 				global.dippCloudGet = 1
 				global.theMoney = global.theMoney - 2000
+				cindex = 14
 			}
 				
 		}
@@ -492,7 +495,113 @@ if state = 1{
 		}
 	}
 	if type = 2{
-		state = 0	
+		if cindex = 0{
+			words = ""
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 1{
+			words = "Oh, you're actually interested in this thing?"
+			words2 = "I found it in a really hard to reach spot, that"
+			words3 = "seems to be common for these things."
+		}
+		if cindex = 2{
+			words = "It's called an upgrade capsule. You can use this to"
+			words2 = "increase your attack, speed, health, or special stats."
+			words3 = ""
+		}
+		if cindex = 3{
+			words = "I'd use it myself, but I've got no real use for it."
+			words2 = "You seem like the adventourous type, so I'll give it"
+			words3 = "to you at a discount."
+		}
+		if cindex = 4{
+			words = "That's... actually really nice of you."
+			words2 = ""
+			words3 = "Thank you....?"
+		}
+		if cindex = 5{
+			words = "BREAK"
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 6{
+			words = ""
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 7{
+			words = "Hey, what's that? It looks good."
+			words2 = "Smells good too..."
+			words3 = "Probabbly tastes good..."
+		}
+		if cindex = 8{
+			words = "Oh, this? It's some apple pie my daughter made."
+			words2 = "It's absolutely delicious. I'd be willing to"
+			words3 = "part with a slice for... 500 Don?"
+		}
+		if cindex = 9{
+			words = "..."
+			words2 = "It does look really good..."
+			words3 = "You've got yourself a deal, lady!"
+		}
+		if cindex = 10{
+			words = "*OM NOM NOM*"
+			words2 = "..."
+			words3 = "This is the greatest meal I've had in my life."
+		}
+		if cindex = 11{
+			words = "Hahaha! That good, huh? I'll tell my daughter"
+			words2 = "you said that. Here, take a little bit extra."
+			words3 = ""
+		}
+		if cindex = 12{
+			words = "I'm sure if you eat that while exploring, "
+			words2 = "your health and special will be completely restored!"
+			words3 = ""
+		}
+		if cindex = 13{
+			words = "BREAK"
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 14{
+			words = ""
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 15{
+			words = "Say, you managed to touch the Cloud Amulet, right?"
+			words2 = "That probabbly means you absorbed some of it's "
+			words3 = "essence..."
+		}
+		if cindex = 16{
+			words = "So?"
+			words2 = ""
+			words3 = ""
+		}
+		if cindex = 17{
+			words = "Well, if you're interested, I could teach you a"
+			words2 = "trick you could do with that essence."
+			words3 = "For a fee, of course."
+		}
+		if cindex = 18{
+			words = "You'd be able to make one of those cloud platforms"
+			words2 = "that you see outside."
+			words3 = ""
+		}
+		if cindex = 19{
+			words = "Oh! That sounds awesome!"
+			words2 = "Teach me, teach me!"
+			words3 = ""
+		}
+		if cindex = 20{
+			words = "BREAK"
+			words2 = ""
+			words3 = ""
+		}
+		
+		
 	}
 	if keyboard_check_pressed(ord("I")) or keyboard_check_pressed(ord("Z")) or gamepad_button_check_pressed(0,gp_face1){
 		cindex = cindex + 1

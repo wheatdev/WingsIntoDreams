@@ -13,6 +13,10 @@ if global.paused = -1{
 				cHealth = cHealth - (global.dippAttack * 2)
 				allowHit = 40
 			}
+			if place_meeting(x,y,kibiKickedP) and allowHit = 0{
+				cHealth = cHealth - (global.dippAttack * 2)
+				allowHit = 30
+			}
 			if place_meeting(x,y,dippBeam1) and allowHit = 0{
 				cHealth = cHealth - global.dippAttack
 				allowHit = 5

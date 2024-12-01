@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"money3",
-    "path":"sprites/money3/money3.yy",
+    "name":"cloudA",
+    "path":"sprites/cloudA/cloudA.yy",
   },
   "spriteMaskId":null,
   "visible":true,
